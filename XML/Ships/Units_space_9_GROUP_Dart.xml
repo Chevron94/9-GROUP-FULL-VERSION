@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<Squadrons>   
+		<SpaceUnit Name="Dart_Fighter">
+		<Text_ID>TEXT_WRAITH_SPACE_UNIT_DART</Text_ID>
+		<Encyclopedia_Text>TEXT_WRAITH_SPACE_UNIT_DART_TOOLTIP</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against> Y-Wing B-Wing Skipray_Blastboat </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Starviper_Fighter Crusader_Gunship Corellian_Corvette </Encyclopedia_Vulnerable_To>
+		<Space_Model_Name>Wraith_Space_Unit_Dart.ALO</Space_Model_Name>
+		<Galactic_Fleet_Override_Model_Name> W_planet_fleet_Dart.ALO </Galactic_Fleet_Override_Model_Name>
+		<Galactic_Fleet_Override_Icon_Index> 4 </Galactic_Fleet_Override_Icon_Index>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Select_Box_Scale>70</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Mass>0.985</Mass>
+		<Max_Speed>4.5</Max_Speed>
+		<Min_Speed>2.5</Min_Speed>
+		<Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+		<Max_Lift>4</Max_Lift>
+		<Max_Thrust>1.0</Max_Thrust>
+		<Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>40</Bank_Turn_Angle>
+		<Hyperspace>no</Hyperspace>
+		<Hyperspace_Speed>0</Hyperspace_Speed>
+		<Begin_Turn_Towards_Distance>800.0</Begin_Turn_Towards_Distance>
+		<Fires_Forward>no</Fires_Forward>
+		<Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+		<Affiliation>Underworld, Pirates</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Tactical_Health>50</Tactical_Health>
+    <Energy_Capacity>999</Energy_Capacity>
+    <Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+    <Armor_Type>Armor_Fighter</Armor_Type>
+    <Ship_Class>fighter</Ship_Class>
+    <Damage_Type>Damage_Fighter</Damage_Type>     
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Number_per_Squadron>10</Number_per_Squadron>
+		<Build_Cost_Credits>30</Build_Cost_Credits>
+		<Build_Time_Seconds>5</Build_Time_Seconds>
+		<Size_Value>8</Size_Value>
+		<SpaceBehavior>HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Projectile_Types>Proj_Dart</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.03</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1.8</Projectile_Fire_Recharge_Seconds>
+		<Fire_Inaccuracy_Distance> Fighter, 2.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 2.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Transport, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 12.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 25.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 1.0 </Fire_Inaccuracy_Distance>
+		<Land_FOW_Reveal_Range>130.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>700.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+		<Death_Explosions>Small_Explosion_Space_Empire</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Explosion_Figther</Death_SFXEvent_Start_Die>
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<SFXEvent_Fire> Weapon_Light_Plasma_Wraith </SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Wraith_FB</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Wraith_FB</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Spawn_Wraith_FB</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Wraith_FB</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Wraith_FB</SFXEvent_Guard>
+		<SFXEvent_Move_Into_Asteroid_Field/>
+		<SFXEvent_Move_Into_Nebula/>
+		<SFXEvent_Health_Low_Warning/>
+		<SFXEvent_Health_Critical_Warning/>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning/>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning/>
+		<SFXEvent_Ambient_Moving/>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Engine_Wraith_Dart </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<CategoryMask> Fighter | AntiBomber</CategoryMask>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Icon_Name>WRAITH_SPACE_UNIT_DART.TGA</Icon_Name>
+		<Victory_Relevant>Yes</Victory_Relevant>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Custom_Footprint_Radius> 15.0 </Custom_Footprint_Radius>
+		<MovementClass> Space </MovementClass>
+		<FormationOrder>1</FormationOrder>
+		<Out_Of_Combat_Defense_Adjustment>-1.0</Out_Of_Combat_Defense_Adjustment>
+		<Minimum_Follow_Distance>50.0</Minimum_Follow_Distance>
+		<Create_Team>Yes</Create_Team>
+		<AI_Combat_Power>35</AI_Combat_Power>
+		<Collision_Box_Modifier>2.0</Collision_Box_Modifier>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<No_Colorization_Color> 75, 75, 75, 255 </No_Colorization_Color>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+				<Alternate_Name_Text>TEXT_ABILITY_WRAITH_SPACE_DART_GEGNER_JAGEN </Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_DART_GEGNER_JAGEN </Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.4</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space_Empire</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die/>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Tactical_Bribe_Cost>100</Tactical_Bribe_Cost>
+		<Strafe_Distance>500.0</Strafe_Distance>
+		<Population_Value>0</Population_Value>
+	</SpaceUnit>
+
+    <Squadron Name="Dart_Fighter_Squadron">
+		<Text_ID>TEXT_WRAITH_SPACE_UNIT_DART</Text_ID>
+		<Encyclopedia_Good_Against> Y-Wing B-Wing Skipray_Blastboat </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> Starviper_Fighter Crusader_Gunship Corellian_Corvette </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Affiliation>Underworld, Pirates</Affiliation>
+		<Build_Cost_Credits>350</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline/>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures/>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>Dart_Fighter, Dart_Fighter, Dart_Fighter, Dart_Fighter</Squadron_Units>
+		<Squadron_Units>Dart_Fighter, Dart_Fighter, Dart_Fighter</Squadron_Units>
+		<Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,60.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,-60.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-120.0,90.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-120.0,-90.0,0.0</Squadron_Offsets>
+		<Icon_Name>WRAITH_SPACE_UNIT_DART.TGA</Icon_Name>
+		<GUI_Model_Name>EV_TieFighter.ALO</GUI_Model_Name>
+		<GUI_Distance>120</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+    <SFXEvent_Build_Started/>
+    <SFXEvent_Build_Cancelled/>
+    <SFXEvent_Build_Complete/>
+		<FormationOrder>1</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>35.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Property_Flags> SmallShip </Property_Flags>
+		<Score_Cost_Credits> 420</Score_Cost_Credits>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+				<Alternate_Name_Text>TEXT_ABILITY_WRAITH_SPACE_DART_GEGNER_JAGEN </Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_DART_GEGNER_JAGEN </Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		<Encyclopedia_Text>TEXT_WRAITH_SPACE_UNIT_DART_TOOLTIP</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_DART</Encyclopedia_Unit_Class>
+		<Tactical_Build_Cost_Multiplayer>400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites/>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Population_Value>1</Population_Value>
+	</Squadron>
+	<!--Оружие-->
+	<Projectile Name="Proj_Dart">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>Wraith_Projectile_Fighter.ALO</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Max_Speed>35.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior> AFFECTED_BY_SHIELD </SpaceBehavior>
+		<Projectile_Max_Flight_Distance>180.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>5.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>5</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Particle_General_Hit_Small</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Particle_General_Hit_Small</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Particle_Wraith_Fighter_Shield_Hit</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor>Effect_Shield_Absorb_Light</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+ </Squadrons>

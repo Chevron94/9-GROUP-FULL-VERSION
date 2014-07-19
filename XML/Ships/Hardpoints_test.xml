@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<HardPoints>
+<HardPoint Name="Dalek_Soldier">
+	<Type> HARD_POINT_WEAPON_LASER </Type>
+	<Is_Targetable>No</Is_Targetable>
+	<Is_Destroyable>No</Is_Destroyable>
+	<Tooltip_Text>TEXT_WEAPON_TURBOLASER1</Tooltip_Text>
+	<Health>46.0</Health>
+	<Death_Explosion_Particles> SG1_Large_Explosion_Space </Death_Explosion_Particles>
+	<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+	<Attachment_Bone>dalek001_0</Attachment_Bone>
+	<Collision_Mesh>dalek001_0</Collision_Mesh>
+	<Damage_Decal>HP_B-R_BLAST</Damage_Decal>
+	<Damage_Particles>HP_B-R_EMITDAMAGE</Damage_Particles>
+	<Fire_Bone_A>dalek001_0</Fire_Bone_A>
+	<Fire_Bone_B>dalek001_0</Fire_Bone_B>
+	<Fire_Cone_Width>180.0</Fire_Cone_Width>
+	<Fire_Cone_Height>170.0</Fire_Cone_Height>
+	<Fire_Projectile_Type>Proj_Dalek_Laser_Green</Fire_Projectile_Type>
+	<Fire_Min_Recharge_Seconds>1.0</Fire_Min_Recharge_Seconds>
+	<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+	<Fire_Pulse_Count>5</Fire_Pulse_Count>
+	<Fire_Pulse_Delay_Seconds>0.09</Fire_Pulse_Delay_Seconds>
+	<Fire_Range_Distance>1400.0</Fire_Range_Distance>
+	<Fire_SFXEvent>Unit_304_Laser_Fire</Fire_SFXEvent>
+	<Fire_Inaccuracy_Distance> Fighter, 1.0 </Fire_Inaccuracy_Distance>
+	<Fire_Inaccuracy_Distance> Bomber, 1.0 </Fire_Inaccuracy_Distance>
+	<Fire_Inaccuracy_Distance> Transport, 1.0 </Fire_Inaccuracy_Distance>
+	<Fire_Inaccuracy_Distance> Corvette, 1.0 </Fire_Inaccuracy_Distance>
+	<Fire_Inaccuracy_Distance> Frigate, 1.0 </Fire_Inaccuracy_Distance>
+	<Fire_Inaccuracy_Distance> Capital, 1.0 </Fire_Inaccuracy_Distance>
+	<Fire_Inaccuracy_Distance> Super, 1.0 </Fire_Inaccuracy_Distance>
+</HardPoint>
+
+<HardPoint Name="Dalek_Saucer_object6">
+	<Type> HARD_POINT_WEAPON_LASER </Type>
+	<Is_Targetable>No</Is_Targetable>
+	<Is_Destroyable>No</Is_Destroyable>
+	<Tooltip_Text>TEXT_WEAPON_TURBOLASER1</Tooltip_Text>
+	<Health>46.0</Health>
+	<Death_Explosion_Particles> SG1_Large_Explosion_Space </Death_Explosion_Particles>
+	<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+	<Attachment_Bone>object6</Attachment_Bone>
+	<Collision_Mesh>object6</Collision_Mesh>
+	<Damage_Decal>HP_B-R_BLAST</Damage_Decal>
+	<Damage_Particles>HP_B-R_EMITDAMAGE</Damage_Particles>
+	<Fire_Bone_A>object6</Fire_Bone_A>
+	<Fire_Bone_B>object6</Fire_Bone_B>
+	<Fire_Cone_Width>360.0</Fire_Cone_Width>
+	<Fire_Cone_Height>180.0</Fire_Cone_Height>
+	<Fire_Projectile_Type>Proj_Dalek_MS_Green</Fire_Projectile_Type>
+	<Fire_Min_Recharge_Seconds>1.0</Fire_Min_Recharge_Seconds>
+	<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+	<Fire_Pulse_Count>5</Fire_Pulse_Count>
+	<Fire_Pulse_Delay_Seconds>0.09</Fire_Pulse_Delay_Seconds>
+	<Fire_Range_Distance>1400.0</Fire_Range_Distance>
+	<Fire_SFXEvent>Unit_ID4_beam</Fire_SFXEvent>
+	<Fire_Inaccuracy_Distance> Fighter, 1.0 </Fire_Inaccuracy_Distance>
+	<Fire_Inaccuracy_Distance> Bomber, 1.0 </Fire_Inaccuracy_Distance>
+	<Fire_Inaccuracy_Distance> Transport, 1.0 </Fire_Inaccuracy_Distance>
+	<Fire_Inaccuracy_Distance> Corvette, 1.0 </Fire_Inaccuracy_Distance>
+	<Fire_Inaccuracy_Distance> Frigate, 1.0 </Fire_Inaccuracy_Distance>
+	<Fire_Inaccuracy_Distance> Capital, 1.0 </Fire_Inaccuracy_Distance>
+	<Fire_Inaccuracy_Distance> Super, 1.0 </Fire_Inaccuracy_Distance>
+</HardPoint>
+
+
+<HardPoint Name="Dalek_Saucer_Hangar">
+	<Type> HARD_POINT_FIGHTER_BAY </Type>
+	<Is_Targetable>No</Is_Targetable>
+	<Is_Destroyable>No</Is_Destroyable>
+	<Attachment_Bone>object6</Attachment_Bone>
+	<Collision_Mesh>object6</Collision_Mesh>
+	<Tooltip_Text>TEXT_FIGHTER_BAY_HARDPOINT</Tooltip_Text>
+	<Health>10.0</Health>
+	<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+	<!-- STUBBED PLACEHOLDER -->
+	<Death_Explosion_SFXEvent>Unit_Hardpoint_Bay_Death</Death_Explosion_SFXEvent>
+	<!-- STUBBED PLACEHOLDER -->
+</HardPoint>	
+	
+</HardPoints>	

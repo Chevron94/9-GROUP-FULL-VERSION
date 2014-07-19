@@ -1,0 +1,1082 @@
+<?xml version="1.0"?>
+<StarBases>
+
+<StarBase Name="Pirates_Star_Base_1">
+		<GUI_Bounds_Scale>0.025</GUI_Bounds_Scale>
+		<Text_ID>TEXT_Pirates_STAR_BASE_1</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION1 TEXT_TOOLTIP_GARRISON_P_1</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>		
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>No</Is_Dummy>
+		<Space_Model_Name>EAST3.ALO</Space_Model_Name>
+		<Galactic_Model_Name>I_EB_STATION_LEVEL1.ALO</Galactic_Model_Name>
+		<Select_Box_Scale>1200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Affiliation>Pirates</Affiliation>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<AI_Combat_Power>5000</AI_Combat_Power>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>10</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>1</Base_Level>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> IDLE,SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Prev_Level_Base/>
+		<Next_Level_Base>Pirates_Star_Base_2</Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Autoresolve_Health>750</Autoresolve_Health>
+		<Damage>35</Damage>
+		<Shield_Points>1000</Shield_Points>
+		<Tactical_Health>900</Tactical_Health>
+		<Shield_Refresh_Rate>40</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>RAIDERSB_Explosion_Space</Death_Explosions>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>CN_Viper2_Squadron, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CN_Viper2_Squadron, 2</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+
+		<Spawned_Squadron_Delay_Seconds>9</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Pirates,
+				ES_Enhanced_Reactors_L1_Upgrade,
+				ES_Reinforced_Armor_L1_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+			HP_EASTHG01,
+			HP_EASTHG02,
+			HP_EASTHG03,
+			HP_EASTHG04,
+			HP_EASTHG05,
+			HP_EASTHG06,
+			HP_EASTHG07,
+			HP_EASTHG08,
+			HP_EASTHG09,
+			HP_EASTHG10,
+			HP_EASTHG11,
+			HP_EASTHG12,
+            HP_EASTHGJAW01,
+            HP_EASTHGJAW02,
+            HP_RAKETEN00,
+            HP_RAKETEN01,
+			HANGER01,
+			HP_EASHHG01,
+            HP_EASHHG02
+		</HardPoints>
+		
+		<!-- Comm array and supply dock should be replaced by dummy hard points -->
+		
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Custom_Soft_Footprint_Radius> 250 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust> -200 </Layer_Z_Adjust>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>I_RADAR_STATION3_ERDE.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.15  0.15</Radar_Icon_Size>
+		<Radar_Rotate_Icon>Yes</Radar_Rotate_Icon>
+			<!-- Non-Hero unit abilities description -->
+	
+		<Icon_Name>I_BUTTON_EASTBASIS3.tga</Icon_Name>
+		<Score_Cost_Credits> 1500</Score_Cost_Credits>
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_1_Empire</Retreat_Self_Destruct_Explosion>
+
+		<Death_Clone>Damage_Normal, Pirates_Star_Base_1_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>10</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Pirates_Star_Base_1_Death_Clone">
+		<Text_ID>TEXT_REBEL_STAR_BASE_2</Text_ID>
+		<Space_Model_Name>EASB6_D.alo</Space_Model_Name>
+		<xxxSpace_Model_Name>EASB6_D_die_00.ala</xxxSpace_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+
+
+
+
+	<StarBase Name="Pirates_Star_Base_2">
+		<GUI_Bounds_Scale>0.025</GUI_Bounds_Scale>
+		<Text_ID>TEXT_Pirates_STAR_BASE_2</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION2 TEXT_TOOLTIP_GARRISON_P_2</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>			
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>No</Is_Dummy>
+
+		<Space_Model_Name>EAST4.ALO</Space_Model_Name>
+		<Galactic_Model_Name>I_EB_STATION_LEVEL2.ALO</Galactic_Model_Name>
+		<Select_Box_Scale>400</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Affiliation>Pirates</Affiliation>
+		<Build_Cost_Credits>1600</Build_Cost_Credits>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>20</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>2</Base_Level>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> IDLE,SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Prev_Level_Base>Pirates_Star_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Pirates_Star_Base_3</Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Autoresolve_Health>1250</Autoresolve_Health>
+		<Damage>45</Damage>
+		<Shield_Points>1500</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Shield_Refresh_Rate>80</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>RAIDERSB_Explosion_Space</Death_Explosions>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>CN_Viper2_Squadron, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CN_Viper2_Squadron, 2</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+
+		<Starting_Spawned_Units_Tech_0>CN_Viper7_Squadron, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CN_Viper7_Squadron, 1</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+
+
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+		
+		<Tactical_Buildable_Objects_Campaign>
+			Pirates,
+				ES_Enhanced_Reactors_L1_Upgrade,
+				ES_Reinforced_Armor_L1_Upgrade,
+				ES_Improved_Weapons_L1_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+                   	HP_EASTHG01,
+			HP_EASTHG02,
+			HP_EASTHG03,
+			HP_EASTHG04,
+			HP_EASTHG05,
+			HP_EASTHG06,
+			HP_EASTHG07,
+			HP_EASTHG08,
+			HP_EASTHG09,
+			HP_EASTHG10,
+			HP_EASTHG11,
+			HP_EASTHG12,
+			HP_EASTHG13,
+			HP_EASTHG14,
+                        HP_EASTHGJAW01,
+                        HP_EASTHGJAW02,
+                        HP_RAKETEN00,
+                        HP_RAKETEN01,
+			HANGER01,
+ 			HP_EASHHG01,
+                        HP_EASHHG02,
+			HP_EASHHG03,
+                        HP_EASHHG04,
+		</HardPoints>
+		
+		<!-- Comm array and supply dock should be replaced by dummy hard points -->
+		
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Custom_Soft_Footprint_Radius> 250 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-350.0</Layer_Z_Adjust>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>I_RADAR_STATION4_ERDE.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.15  0.15</Radar_Icon_Size>
+		<Radar_Rotate_Icon>Yes</Radar_Rotate_Icon>
+		
+		<Icon_Name>I_BUTTON_EASTBASIS4.tga</Icon_Name>
+		<Score_Cost_Credits> 3000</Score_Cost_Credits>
+		
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_2_Empire</Retreat_Self_Destruct_Explosion>
+
+		<Death_Clone>Damage_Normal, Pirates_Star_Base_2_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>13</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Pirates_Star_Base_2_Death_Clone">
+	
+		<Text_ID>TEXT_REBEL_STAR_BASE_2</Text_ID>
+		<Space_Model_Name>EASB7_D.alo</Space_Model_Name>
+		<xxxSpace_Model_Name>EASB7_D_die_00.ala</xxxSpace_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+
+<StarBase Name="Pirates_Star_Base_3">
+		<GUI_Bounds_Scale>0.025</GUI_Bounds_Scale>
+		<Text_ID>TEXT_Pirates_STAR_BASE_3</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION3 TEXT_TOOLTIP_GARRISON_P_3</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>		
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>No</Is_Dummy>
+
+		<Space_Model_Name>BABYLON6.ALO</Space_Model_Name>
+		<Galactic_Model_Name>I_EB_STATION_LEVEL3.ALO</Galactic_Model_Name>
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Affiliation>Pirates</Affiliation>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<AI_Combat_Power>15000</AI_Combat_Power>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>30</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>3</Base_Level>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> IDLE,SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Prev_Level_Base>Pirates_Star_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Pirates_Star_Base_4</Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Autoresolve_Health>1750</Autoresolve_Health>
+		<Damage>55</Damage>
+		<Shield_Points>2500</Shield_Points>
+		<Tactical_Health>2500</Tactical_Health>
+		<Shield_Refresh_Rate>120</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space_Empire</Death_Explosions>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>CN_Viper2_Squadron, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CN_Viper2_Squadron, 2</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+
+		<Starting_Spawned_Units_Tech_0>CN_Viper7_Squadron, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CN_Viper7_Squadron, 1</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+
+		<Starting_Spawned_Units_Tech_0>Firestar, 1</Starting_Spawned_Units_Tech_0> <!-- 2 X-wing squadrons at a time -->
+		<Reserve_Spawned_Units_Tech_0>Firestar, 0</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+		
+		<Tactical_Buildable_Objects_Campaign>
+			Pirates,
+				ES_Enhanced_Reactors_L1_Upgrade,
+				ES_Enhanced_Reactors_L2_Upgrade,
+				ES_Reinforced_Armor_L1_Upgrade,
+				ES_Reinforced_Armor_L2_Upgrade,
+				ES_Improved_Weapons_L1_Upgrade,
+				ES_Improved_Weapons_L2_Upgrade,
+				ES_Improved_Defenses_L1_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+                   HANGER01
+                   HP_EASBRAK01,
+                   HP_EASBRAK02,
+                   HP_B5HG01,
+                   HP_B5HG02,
+                   HP_B5HG03,
+                   HP_B5HG04,
+                   HP_B5HG05,
+                   HP_B5HG06,
+                   HP_B5HG07,
+                   HP_B5HG08,
+                   HP_B5HG09,
+                   HP_B5HG22,
+                   HP_B5HG23,
+                   HP_B5HG24,
+                   HP_B5HG25,
+                   HP_B5HG26,
+                   HP_B5HG27,
+                   HP_B5HG28,
+                   HP_B5HG29,
+                   HP_B5HG30,
+                   HP_RAILGUNORB10,
+                   HP_RAILGUNORB09,
+                   HP_RAILGUNORB08,
+                   HP_RAILGUNORB07,
+                   HP_RAILGUNORB06,
+                   HP_RAILGUNORB05,
+                   HP_RAILGUNORB04,
+ 			HP_EASHHG01,
+                        HP_EASHHG02,
+			HP_EASHHG03,
+                        HP_EASHHG04,
+			HP_EASHHG05,
+                        HP_EASHHG06,
+		</HardPoints>
+
+           <!-- Comm array and supply dock should be replaced by dummy hard points -->
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Custom_Soft_Footprint_Radius> 250 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-350.0</Layer_Z_Adjust>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>I_RADAR_STATION5_ERDE.tga</Radar_Icon_Name>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+		<Radar_Icon_Size>0.15  0.15</Radar_Icon_Size>
+		<Radar_Rotate_Icon>Yes</Radar_Rotate_Icon>
+		
+		<Icon_Name>I_BUTTON_EABABYLON6.tga</Icon_Name>
+		<Score_Cost_Credits> 6000</Score_Cost_Credits>
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_5_Empire</Retreat_Self_Destruct_Explosion>
+
+		<Death_Clone>Damage_Normal, Pirates_Star_Base_3_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>15</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Pirates_Star_Base_3_Death_Clone">
+
+		<Text_ID>TEXT_REBEL_STAR_BASE_2</Text_ID>
+		<Space_Model_Name>BABYLON6_D.ALO</Space_Model_Name>
+		<xxxSpace_Model_Name>BABYLON6_D_die_00.ala</xxxSpace_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+	
+	<StarBase Name="Pirates_Star_Base_4">
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>		
+		<Is_Dummy>No</Is_Dummy>
+		<GUI_Bounds_Scale>1.0</GUI_Bounds_Scale>
+		<Text_ID>TEXT_Pirates_STAR_BASE_4</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION4 TEXT_TOOLTIP_GARRISON_P_4</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Layer_Z_Adjust>-130.0</Layer_Z_Adjust>
+        <Space_Model_Name>EABABYLON4.ALO</Space_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Scale_Factor>0.50</Scale_Factor>
+		<Select_Box_Scale>1530</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Galactic_Model_Name>I_EB_STATION_LEVEL4.ALO</Galactic_Model_Name>
+		<Affiliation>Pirates</Affiliation>
+		<Build_Cost_Credits>5800</Build_Cost_Credits>
+		<AI_Combat_Power>20000</AI_Combat_Power>
+		<Build_Time_Seconds>50</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>40</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>4</Base_Level>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> IDLE,SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Prev_Level_Base>Pirates_Star_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Pirates_Star_Base_4</Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Autoresolve_Health>2250</Autoresolve_Health>
+		<Damage>65</Damage>
+		<Shield_Points>4750</Shield_Points>
+		<Tactical_Health>4750</Tactical_Health>
+		<Shield_Refresh_Rate>160</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space_Empire</Death_Explosions>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>CN_Viper2_Squadron, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CN_Viper2_Squadron, 2</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+
+		<Starting_Spawned_Units_Tech_0>CN_Viper7_Squadron, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CN_Viper7_Squadron, 1</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+
+		<Starting_Spawned_Units_Tech_0>Firestar, 2</Starting_Spawned_Units_Tech_0> <!-- 2 X-wing squadrons at a time -->
+		<Reserve_Spawned_Units_Tech_0>Firestar, 0</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+	
+		<Starting_Spawned_Units_Tech_0>Strikestar, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Strikestar, 0</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+		
+
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+		
+		<Tactical_Buildable_Objects_Campaign>
+			Pirates,
+				ES_Enhanced_Reactors_L1_Upgrade,
+				ES_Enhanced_Reactors_L2_Upgrade,
+				ES_Reinforced_Armor_L1_Upgrade,
+				ES_Reinforced_Armor_L2_Upgrade,
+				ES_Improved_Weapons_L1_Upgrade,
+				ES_Improved_Weapons_L2_Upgrade,
+				ES_Improved_Defenses_L1_Upgrade,
+				ES_Improved_Defenses_L2_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+                 HANGER01
+                 HP_EASBRAK01,
+                 HP_EASBRAK02,
+                 HP_B5RAILGUN01, 
+                 HP_B5RAILGUN02, 
+                 HP_B5RAILGUN03,
+                 HP_B5RAILGUN04,
+                 HP_B5RAILGUN05,
+                 HP_B5RAILGUN06, 
+                 HP_B5RAILGUN07, 
+                 HP_B5RAILGUN08,
+                 HP_B5RAILGUN09,
+                 HP_B5RAILGUN10,
+                 HP_B5RAILGUN11,
+                 HP_B5RAILGUN12,
+                 HP_B5HG01,
+                 HP_B5HG02,
+                 HP_B5HG03,
+                 HP_B5HG04,
+                 HP_B5HG05,
+                 HP_B5HG06,
+                 HP_B5HG07,
+                 HP_B5HG08,
+                 HP_B5HG09,
+                 HP_B5HG10,
+                 HP_B5HG11,
+                 HP_B5HG12,
+                 HP_B5HG13,
+                 HP_B5HG14,
+                 HP_B5HG15,
+                 HP_B5HG16,
+                 HP_B5HG17,
+                 HP_B5HG18,
+                 HP_B5HG19,
+                 HP_B5HG20,
+                 HP_B5HG21,
+                 HP_B5HG22,
+                 HP_B5HG23,
+                 HP_B5HG24,
+                 HP_B5HG25,
+                 HP_B5HG26,
+                 HP_B5HG27,
+                 HP_B5HG28,
+                 HP_RAILGUNORB10,
+                 HP_RAILGUNORB09,
+                 HP_RAILGUNORB08,
+                 HP_RAILGUNORB07,
+                 HP_RAILGUNORB06,
+                 HP_RAILGUNORB05,
+                 HP_RAILGUNORB04,
+		</HardPoints>
+
+           <!-- Comm array and supply dock should be replaced by dummy hard points -->
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Custom_Soft_Footprint_Radius> 250 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-350.0</Layer_Z_Adjust>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>I_RADAR_STATION1_BABYLON5.tga</Radar_Icon_Name>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+		<Radar_Icon_Size>0.15  0.15</Radar_Icon_Size>
+		<Radar_Rotate_Icon>Yes</Radar_Rotate_Icon>
+		
+		<Icon_Name>I_BUTTON_EABABYLON4.tga</Icon_Name>
+		<Score_Cost_Credits> 12000</Score_Cost_Credits>
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_4_Empire</Retreat_Self_Destruct_Explosion>
+
+		<Death_Clone>Damage_Normal, Pirates_Star_Base_4_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>16</Additional_Population_Capacity>
+	</StarBase>
+	
+
+
+	<StarBase Name="Pirates_Star_Base_4_Death_Clone">
+		
+		<Text_ID>TEXT_REBEL_STAR_BASE_2</Text_ID>
+		<Space_Model_Name>EABABYLON4_d.alo</Space_Model_Name>
+		<xxxSpace_Model_Name>EABABYLON4_d_die_00.ala</xxxSpace_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-130.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+	
+	
+	<StarBase Name="Pirates_Star_Base_5">
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<GUI_Bounds_Scale>1.0</GUI_Bounds_Scale>
+		<Text_ID>TEXT_Pirates_STAR_BASE_5</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION5 TEXT_TOOLTIP_GARRISON_P_5</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Scale_Factor>0.50</Scale_Factor>
+		<Layer_Z_Adjust>-130.0</Layer_Z_Adjust>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>No</Is_Dummy>
+		
+		<Space_Model_Name>ISABABYLON5.ALO</Space_Model_Name>
+		<Galactic_Model_Name>I_EB_STATION_LEVEL5.ALO</Galactic_Model_Name>
+		
+		<Select_Box_Scale>1530</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		
+		<Affiliation>Pirates</Affiliation>
+		<Build_Cost_Credits>7500</Build_Cost_Credits>
+		<AI_Combat_Power>35000</AI_Combat_Power>
+		<Build_Time_Seconds>75</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>50</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>5</Base_Level>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> IDLE,SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Prev_Level_Base>Pirates_Star_Base_4</Prev_Level_Base>
+		<Next_Level_Base />
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>4</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Autoresolve_Health>2750</Autoresolve_Health>
+		<Damage>75</Damage>
+		<Shield_Points>8000</Shield_Points>
+		<Tactical_Health>8000</Tactical_Health>
+		<Shield_Refresh_Rate>200</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space_Empire</Death_Explosions>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>CN_Viper2_Squadron, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CN_Viper2_Squadron, 2</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+
+		<Starting_Spawned_Units_Tech_0>CN_Viper7_Squadron, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>CN_Viper7_Squadron, 1</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+
+		<Starting_Spawned_Units_Tech_0>Firestar, 2</Starting_Spawned_Units_Tech_0> <!-- 2 X-wing squadrons at a time -->
+		<Reserve_Spawned_Units_Tech_0>Firestar, 0</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+	
+		<Starting_Spawned_Units_Tech_0>Strikestar, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Strikestar, 0</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+
+		<Starting_Spawned_Units_Tech_0>Defender, 1</Starting_Spawned_Units_Tech_0>	
+		<Reserve_Spawned_Units_Tech_0>Defender, 0</Reserve_Spawned_Units_Tech_0> <!-- -1 == no limit -->
+
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+		
+		<Tactical_Buildable_Objects_Campaign>
+			Pirates,
+				ES_Enhanced_Reactors_L1_Upgrade,
+				ES_Enhanced_Reactors_L2_Upgrade,
+				ES_Enhanced_Reactors_L3_Upgrade,
+				ES_Reinforced_Armor_L1_Upgrade,
+				ES_Reinforced_Armor_L2_Upgrade,
+				ES_Reinforced_Armor_L3_Upgrade,
+				ES_Improved_Weapons_L1_Upgrade,
+				ES_Improved_Weapons_L2_Upgrade,
+				ES_Improved_Weapons_L3_Upgrade,
+				ES_Improved_Defenses_L1_Upgrade,
+				ES_Improved_Defenses_L2_Upgrade,
+				ES_Improved_Defenses_L3_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+                 HANGER01
+                 HP_EASBRAK01,
+                 HP_EASBRAK02,
+                 HP_B5RAILGUN01, 
+                 HP_B5RAILGUN02, 
+                 HP_B5RAILGUN03,
+                 HP_B5RAILGUN04,
+                 HP_B5RAILGUN05,
+                 HP_B5RAILGUN06, 
+                 HP_B5RAILGUN07, 
+                 HP_B5RAILGUN08,
+                 HP_B5RAILGUN09,
+                 HP_B5RAILGUN10,
+                 HP_B5RAILGUN11,
+                 HP_B5RAILGUN12,
+                 HP_B5HG01,
+                 HP_B5HG02,
+                 HP_B5HG03,
+                 HP_B5HG04,
+                 HP_B5HG05,
+                 HP_B5HG06,
+                 HP_B5HG07,
+                 HP_B5HG08,
+                 HP_B5HG09,
+                 HP_B5HG10,
+                 HP_B5HG11,
+                 HP_B5HG12,
+                 HP_B5HG13,
+                 HP_B5HG14,
+                 HP_B5HG15,
+                 HP_B5HG16,
+                 HP_B5HG17,
+                 HP_B5HG18,
+                 HP_B5HG19,
+                 HP_B5HG20,
+                 HP_B5HG21,
+                 HP_B5HG22,
+                 HP_B5HG23,
+                 HP_B5HG24,
+                 HP_B5HG25,
+                 HP_B5HG26,
+                 HP_B5HG27,
+                 HP_B5HG28,
+                 HP_B5HG29,
+                 HP_RAILGUNORB10,
+                 HP_RAILGUNORB09,
+                 HP_RAILGUNORB08,
+                 HP_RAILGUNORB07,
+                 HP_RAILGUNORB06,
+                 HP_RAILGUNORB05,
+                 HP_RAILGUNORB04,
+		</HardPoints>
+
+           <!-- Comm array and supply dock should be replaced by dummy hard points -->
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Custom_Soft_Footprint_Radius> 250 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-350.0</Layer_Z_Adjust>
+		
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>I_RADAR_STATION1_BABYLON5.tga</Radar_Icon_Name>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+		<Radar_Icon_Size>0.15  0.15</Radar_Icon_Size>
+		<Radar_Rotate_Icon>Yes</Radar_Rotate_Icon>
+		
+		<Icon_Name>I_BUTTON_ISABABYLON5.tga</Icon_Name>
+		<Score_Cost_Credits> 24000</Score_Cost_Credits>
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_5_Empire</Retreat_Self_Destruct_Explosion>
+
+		<Death_Clone>Damage_Normal, Pirates_Star_Base_5_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>17</Additional_Population_Capacity>
+	</StarBase>
+
+
+	<StarBase Name="Pirates_Star_Base_5_Death_Clone">
+		
+		<Text_ID>TEXT_REBEL_STAR_BASE_2</Text_ID>
+		<Space_Model_Name>ISABABYLON5_d.alo</Space_Model_Name>
+		<xxxSpace_Model_Name>ISABABYLON5_d_die_00.ala</xxxSpace_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-130.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+	
+	
+	<!--Оружие-->
+	<!--Рельсовая пушка-->
+	<Projectile Name="PROJ_PIRATE_STARBASE_RAILGUL">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>PROJ_SHJ.ALO</Space_Model_Name>
+		<Scale_Factor>1.4</Scale_Factor>
+		<Damage_Type> Damage_Turbolaser </Damage_Type>
+		<Max_Speed>35.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>1000.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>3.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>20</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle> Noch_Kleiner_Explosion_Space </Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Noch_Kleiner_Explosion_Space</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle />
+		<Projectile_Lifetime_Detonation_Particle />
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>10</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+	
+	<Projectile Name="PROJ_PIRATE_STARBASE_RAILGUL_2">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>Proj_NARNBB.ALO</Space_Model_Name>
+		<Projectile_Width>1</Projectile_Width><!--5,10-->
+		<Projectile_Length>70</Projectile_Length>
+		<Projectile_Texture_Slot>1,0</Projectile_Texture_Slot>
+		<Scale_Factor>1.90</Scale_Factor>
+		<Damage_Type> Damage_Turbolaser </Damage_Type>
+		<Max_Speed>38.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>2500.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>10.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>20</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle> Large_Damage_Space </Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Large_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle />
+		<Projectile_Lifetime_Detonation_Particle />
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>800</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+	
+	<!--Лазер-->
+	<Projectile Name="PROJ_PIRATE_STARBASE_LASER">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>Proj_NARNCA.ALO</Space_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Damage_Type> Damage_Turbolaser </Damage_Type>
+		<Max_Speed>45.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>2200.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>15.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>25</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle> Kleinere_Explosion_Space </Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Kleinere_Explosion_Space</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle />
+		<Projectile_Lifetime_Detonation_Particle />
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>40</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+	<!--Ракеты-->
+	<Projectile Name="PROJ_PIRATE_STARBASE_RAKETE_1">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>PROJ_ATOMRAKETE.alo</Space_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Max_Speed>27.5</Max_Speed>
+		<Max_Rate_Of_Turn>50</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>ROCKET</Projectile_Category>
+		<Projectile_Rocket_Curve_Distance>500</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>0</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>500</Projectile_Rocket_Straight_Distance>
+		<Projectile_Max_Flight_Distance>2500.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>1500.0</Projectile_Max_Scan_Range>
+		<Explode_When_Reached_Target_Radius> Yes </Explode_When_Reached_Target_Radius>
+		<Projectile_Blast_Area_Dropoff>True</Projectile_Blast_Area_Dropoff>
+		<Projectile_Blast_Area_Dropoff_Tiers>7</Projectile_Blast_Area_Dropoff_Tiers>
+		<Projectile_Damage>80</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 20 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 300 </Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Death_Explosions>p_MC80M_detonate</Death_Explosions> 
+  		<Death_SFXEvent_Start_Die> SFX_Sizemic_Detonation </Death_SFXEvent_Start_Die>
+		<Projectile_SFXEvent_Detonate>SFX_Sizemic_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Huge_Explosion_Space</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Huge_Explosion_Space</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Huge_Explosion_Space</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>150</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="PROJ_PIRATE_STARBASE_RAKETE_2">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_concussion_missile.alo</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Max_Speed>7.0</Max_Speed>
+		<Max_Rate_Of_Turn>30</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Damage_Type> Damage_Con_Missile_GRND </Damage_Type>
+		<Projectile_Category>ROCKET</Projectile_Category>
+		<Projectile_Rocket_Curve_Distance>70</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>15</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>20</Projectile_Rocket_Straight_Distance>
+
+		<!-- MAL standard rockets will be bombard-type -->
+		<Explode_When_Reached_Target_Radius> True </Explode_When_Reached_Target_Radius>
+		<Projectile_Target_Point_On_Terrain> True </Projectile_Target_Point_On_Terrain>
+
+		<Projectile_Max_Flight_Distance>500.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>600.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>20.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 12 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 23 </Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Small_Explosion_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Missile_Explosion_Ground_Hit</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Small_Explosion_Land</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Small_Explosion_Land</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>300</AI_Combat_Power>
+		<Projectile_Fire_Pulse_Count>9</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>4.0</Projectile_Fire_Recharge_Seconds>
+		<SFXEvent_Fire>Unit_MPTL_Tank_Fire</SFXEvent_Fire>
+	</Projectile>
+	<!--Торпеды-->
+	<Projectile Name="PROJ_PIRATE_STARBASE_TORPEDO">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>K_PLASMA_PROJECTILE.ALO</Space_Model_Name>
+		<Land_Model_Name>K_PLASMA_PROJECTILE.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Max_Speed>14.0</Max_Speed>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>ROCKET</Projectile_Category>
+		<Projectile_Rocket_Curve_Distance>500</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>0</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>500</Projectile_Rocket_Straight_Distance>
+		<Projectile_Max_Flight_Distance>2200.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>1500.0</Projectile_Max_Scan_Range>
+		<Damage_Type> Damage_Proton_Torp </Damage_Type>
+		<Projectile_Blast_Area_Dropoff>True</Projectile_Blast_Area_Dropoff>
+		<Projectile_Blast_Area_Dropoff_Tiers>5</Projectile_Blast_Area_Dropoff_Tiers>
+		<Projectile_Damage>85</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>30 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>200</Projectile_Blast_Area_Range>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>500</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Large_Explosion_Space</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Large_Explosion_Space</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Large_Explosion_Space</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Large_Explosion_Space</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>105</AI_Combat_Power>
+		<SFXEvent_Fire>Unit_Torpedo_Fire</SFXEvent_Fire>
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+</StarBases>

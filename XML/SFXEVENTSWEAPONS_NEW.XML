@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+
+<SFXEvents>
+
+		 <SFXEvent Name="Babylon5_RAILGUN">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\EASSCHUSS.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+
+
+		 <SFXEvent Name="Babylon5_Hyperion_JAG">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\npulse.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_techno">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\techno.wav</Samples>
+	                        <Min_Volume>150</Min_Volume>
+			            <Max_Volume>150</Max_Volume>
+
+		 </SFXEvent>
+
+             <SFXEvent Name="Babylon5_DRASTRAH">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\DRASTRAH.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_ISAWS">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\wsneutron.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_VORLONEN_STG">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\vpk.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_Hyperion_HB">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\HYPERIONHB.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_NARNSTG">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\NARNSTG.wav</Samples>
+	                        <Min_Volume>450</Min_Volume>
+			            <Max_Volume>450</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_SFRUY">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\SFRUY.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_CENGUN">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\CENGUN.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_CENTIONGUN">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\CENTIONGUN.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_CENHPARTIKELGUN">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\CENHPARTIKELGUN.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_NARNIMPG">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\NARNIMPG.wav</Samples>
+				      <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_NARNENGTOP">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\NARNENGTOP.wav</Samples>
+				      <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_NARNHBGUN">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\NARNHBGUN.wav</Samples>
+				      <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_NARNHPARTGUN">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\NARNHPARTGUN.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_MINNAIL">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\MINNAIL.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_MINSTRAHL">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\MINSTRAHL.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_SHIMPGUN">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\SHIMPGUN.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_EAIMPGUN">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\EAIMPGUN.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_EASTRAHLGUN">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\EASTRAHLGUN.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_EAHSTRAHLGUN">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\EAHSTRAHLGUN.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_EANOVAHB">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\EANOVAHB.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_VREEGUN">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\VREEGUN.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_DRASIHB">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\DRASIHB.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_VICTSTAHLGUN">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\VICTSTAHLGUN.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Babylon5_CENHPARTIKELGUN">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\CENHPARTIKELGUN.wav</Samples>
+	                        <Min_Volume>250</Min_Volume>
+			            <Max_Volume>250</Max_Volume>
+		 </SFXEvent>
+
+
+		 <SFXEvent Name="Babylon5_SHSCHNEIDST">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>Data\Audio\SFX\SHSCHNEIDST.wav</Samples>
+	                <Min_Volume>250</Min_Volume>
+			        <Max_Volume>250</Max_Volume>
+		</SFXEvent>
+		
+		<SFXEvent Name="Weapon_Light_Plasma_Wraith">
+			<Use_Preset>Preset_GUNV</Use_Preset>
+			<Samples>Data\Audio\SFX\Wraith_Light_Plasma.wav</Samples>
+			<Min_Volume>125</Min_Volume>
+			<Max_Volume>125</Max_Volume>
+		</SFXEvent>
+		
+		<SFXEvent Name="Weapon_Artillery_Plasma_Wraith">
+			<Use_Preset>Preset_GUNV</Use_Preset>
+			<Samples>Data\Audio\SFX\Wraith_Artillery.wav</Samples>
+			<Min_Volume>125</Min_Volume>
+			<Max_Volume>125</Max_Volume>
+		</SFXEvent>
+		
+		<SFXEvent Name="Weapon_Heavy_Plasma_Wraith">
+			<Use_Preset>Preset_GUNV</Use_Preset>
+			<Samples>Data\Audio\SFX\Wraith_Heavy_Plasma.wav</Samples>
+			<Min_Volume>125</Min_Volume>
+			<Max_Volume>125</Max_Volume>
+		</SFXEvent>
+		
+		<SFXEvent Name="Weapon_Railgun_Fire">                       <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Railgun_Fire1.wav Data\Audio\SFX\Railgun_Fire2.wav Data\Audio\SFX\Railgun_Fire3.wav</Samples>
+   			   <Min_Volume> 40 </Min_Volume>
+			   <Max_Volume> 70 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	   
+	    <SFXEvent Name="Unit_Boron_Missile_Fire">
+				 <Use_Preset>Preset_GUNS</Use_Preset>
+				 <Samples>GUN_Repulsor_1.wav</Samples>
+				 <Min_Volume>60</Min_Volume>
+			    <Max_Volume>60</Max_Volume>
+		</SFXEvent>
+	   
+	   <SFXEvent Name="Weapon_Drohne_Jumper">                        <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Jumper_Drohne1.wav</Samples>
+   			   <Min_Volume> 50 </Min_Volume>
+			   <Max_Volume> 80 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	   
+	   <SFXEvent Name="Unit_Antiker_Drohnen">                               <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Aurora_Drohne1.wav</Samples>
+   			   <Min_Volume> 40 </Min_Volume>
+			   <Max_Volume> 70 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	   
+	   <SFXEvent Name="Unit_Antiker_Laser">                                 <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Phasengeschütze_Fire_1.wav</Samples>
+   			   <Min_Volume> 50 </Min_Volume>
+			   <Max_Volume> 70 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	   
+	   <SFXEvent Name="Unit_Grace_Ship_Fire">                        <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Grace_Fire_1.wav</Samples>
+   			   <Min_Volume> 50 </Min_Volume>
+			   <Max_Volume> 80 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+		
+		<SFXEvent Name="Unit_Asgard_Ship_Ionen_Pulse">                       <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Ionenpulse_Asgard.wav</Samples>
+   			   <Min_Volume> 80 </Min_Volume>
+			   <Max_Volume> 110 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>	
+	   
+	   <SFXEvent Name="Unit_Asgard_Ship_Ionen_Fire">                        <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Ionengun_Asgard.wav</Samples>          
+   			   <Min_Volume> 50 </Min_Volume>
+			   <Max_Volume> 80 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+		
+		<SFXEvent Name="Weapon_Ship_Superlaser_Fire">                    <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\AsgardPlasmabeam.wav</Samples>
+   			   <Min_Volume> 80 </Min_Volume>
+			   <Max_Volume> 110 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+		
+		<SFXEvent Name="Federation_Quantum_Loop">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>Data/Audio/SFX/Quantum_Blast.wav</Samples>
+		</SFXEvent>
+	
+		<SFXEvent Name="Federation_Photon_Loop">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>Data/Audio/SFX/Photon_Blast.wav</Samples>
+		</SFXEvent>
+	
+		<SFXEvent Name="Federation_Phaser_Loop">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>Data/Audio/SFX/Phaser_Loop.wav</Samples>
+		</SFXEvent>
+		 
+		<SFXEvent Name="Federation_Puls_Phaser">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>Data/Audio/Pulse_Phaser.wav</Samples>
+		</SFXEvent>
+		
+		<SFXEvent Name="Federation_Phaser_Loop_Future">
+			<Use_Preset>Preset_GUNV</Use_Preset>
+			<Min_Volume>150</Min_Volume>
+			<Max_Volume>150</Max_Volume>
+			<Samples>Data/Audio/SFX/SubParticle.wav</Samples>
+		</SFXEvent>
+		
+		<SFXEvent Name="Federation_Future_Torpedos">
+			<Use_Preset>Preset_GUNV</Use_Preset>
+			<Min_Volume>150</Min_Volume>
+			<Max_Volume>150</Max_Volume>
+			<Samples>Data/Audio/SFX/TemporalPhasic.wav</Samples>
+		</SFXEvent>
+		
+		<SFXEvent Name="Unit_Turbo_Fire">
+				<Use_Preset>Preset_GUNS</Use_Preset>
+				<Samples>GUN_Turbo_1.wav GUN_Turbo_2.wav</Samples>
+		</SFXEvent>
+	
+		<SFXEvent Name="Unit_Torpedo_Fire">
+				<Use_Preset>Preset_GUNS</Use_Preset>
+				<Samples>GUN_Proton_1.wav</Samples>
+		</SFXEvent>
+
+		<SFXEvent Name="Unit_Missile_Fire">
+				<Use_Preset>Preset_GUNS</Use_Preset>
+				<Samples>GUN_Missile_1.wav GUN_Missile_3.wav</Samples>
+		</SFXEvent>
+		 
+		<SFXEvent Name="Unit_SUPERFLAGSHIP_Ship_Superlaser_Fire">                      <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Ori_Superlaser_1.wav</Samples>
+   			   <Min_Volume> 50 </Min_Volume>
+			   <Max_Volume> 80 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	   
+        <SFXEvent Name="Unit_SUPERFLAGSHIP_Ship_Laser_Fire">                           <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Ori_Fire1.wav</Samples>
+   			   <Min_Volume> 100 </Min_Volume>
+			   <Max_Volume> 130 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	<!--***************-->  
+		<SFXEvent Name="Unit_Fire_KPVT_Gun">
+			<Use_Preset>Preset_GUNV</Use_Preset> 
+			<Samples>Data\Audio\SFX\kpvt.wav</Samples> 
+			<Min_Pitch>90</Min_Pitch> 
+			<Max_Pitch>100</Max_Pitch> 
+			<Min_Volume>90</Min_Volume> 
+			<Max_Volume>100</Max_Volume> 
+		</SFXEvent>
+		
+		<SFXEvent Name="Unit_125MM_Shot">
+			<Use_Preset>Preset_GUNV</Use_Preset> 
+			<Samples>Data\Audio\SFX\T90_3p_fire.wav Data\Audio\SFX\t90_125mm_shot.wav</Samples> 
+			<Min_Pitch>90</Min_Pitch> 
+			<Max_Pitch>90</Max_Pitch> 
+			<Min_Volume>130</Min_Volume> 
+			<Max_Volume>130</Max_Volume> 
+		</SFXEvent>
+		
+		<SFXEvent Name="Unit_Fire_Missile_Konkurs">
+			<Use_Preset>Preset_GUNV</Use_Preset> 
+			<Samples>Data\Audio\SFX\konkurs_launch_andengine.wav</Samples> 
+			<Min_Pitch>90</Min_Pitch> 
+			<Max_Pitch>100</Max_Pitch> 
+			<Min_Volume>110</Min_Volume> 
+			<Max_Volume>130</Max_Volume> 
+		</SFXEvent>
+		
+		<SFXEvent Name="Unit_Fire_PKM">
+			<Use_Preset>Preset_GUNV</Use_Preset> 
+			<Samples>Data\Audio\SFX\PKM.wav</Samples> 
+			<Min_Pitch>90</Min_Pitch> 
+			<Max_Pitch>100</Max_Pitch> 
+			<Min_Volume>90</Min_Volume> 
+			<Max_Volume>100</Max_Volume> 
+		</SFXEvent>
+		
+		<SFXEvent Name="Unit_Shilka_4_Random">
+			<Use_Preset>Preset_GUNV</Use_Preset> 
+			<Samples>Data\Audio\SFX\shilka_1_shot.wav Data\Audio\SFX\shilka_2_shot.wav Data\Audio\SFX\shilka_3_shot.wav Data\Audio\SFX\shilka_4_shot.wav</Samples> 
+			<Min_Pitch>90</Min_Pitch> 
+			<Max_Pitch>100</Max_Pitch> 
+			<Min_Volume>90</Min_Volume> 
+			<Max_Volume>100</Max_Volume> 
+		</SFXEvent>
+</SFXEvents>

@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<Story>
+
+<Event Name="Andaria_6"> 
+    <Event_Type>STORY_ELAPSED</Event_Type> 
+    <Event_Param1>0</Event_Param1> 
+</Event> 
+
+<Event Name="NO_AUTORESOLVE"> 
+    <Event_Type>STORY_TRIGGER</Event_Type> 
+    <Reward_Type>HIDE_AUTORESOLVE</Reward_Type> 
+    <Prereq>Andaria_6</Prereq> 
+</Event>
+
+<Event Name="No_Retreat_Pirates">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>DISABLE_RETREAT</Reward_Type>
+	<Reward_Param1>Pirates</Reward_Param1>
+	<Reward_Param2>1</Reward_Param2>
+	<Prereq>Andaria_6</Prereq>
+</Event>
+
+
+<Event Name="No_Retreat_Underworld">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>DISABLE_RETREAT</Reward_Type>
+	<Reward_Param1>Underworld</Reward_Param1>
+	<Reward_Param2>1</Reward_Param2>
+	<Prereq>Andaria_6</Prereq>
+</Event>
+
+<Event Name="MISSION_BRIFFING">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>EVENT_TEXT_56_6_1</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>Andaria_6</Prereq>
+</Event>
+
+<Event Name="MISSION_6_1">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_56_MISSION_6_1</Reward_Param1>
+	<Prereq>MISSION_BRIFFING</Prereq>
+</Event>
+
+<Event Name="UNDERWORLD_LOSE_ALL">
+	<Event_Type>STORY_CHECK_DESTROYED</Event_Type>
+	<Event_Param1>UNDERWORLD</Event_Param1>
+	<Event_Param2>DESTROY_ALL</Event_Param2>
+</Event>
+
+<Event Name="PIRATES_LOSE_ALL">
+	<Event_Type>STORY_CHECK_DESTROYED</Event_Type>
+	<Event_Param1>Pirates</Event_Param1>
+	<Event_Param2>DESTROY_ALL</Event_Param2>
+</Event>                                                    
+
+<Event Name="Pirates_WINNER">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Pirates</Reward_Param1>
+	<Prereq>UNDERWORLD_LOSE_ALL</Prereq>
+</Event>
+	
+<Event Name="UNDERWORLD_WINNER">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Underworld</Reward_Param1>
+	<Prereq>PIRATES_LOSE_ALL</Prereq>
+</Event>
+	
+<Event Name="Increment_flag"> <!-- increments the flag VICTORY_CHECK by 1 if the rebel faction wins -->
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Underworld</Event_Param1>  <!-- checks if the rebel faction has won; assuming the player plays the rebels -->
+		<Reward_Type>INCREMENT_FLAG</Reward_Type> <!-- increments a flag -->
+		<Reward_Param1>VICTORY_CHECK</Reward_Param1>  <!-- flag to increment -->
+		<Reward_Param2>1</Reward_Param2>    <!-- amount to increment -->
+
+</Event>
+
+<Event Name="Increment_flag1"> <!-- increments the flag VICTORY_CHECK by 1 if the rebel faction wins -->
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>Pirates</Event_Param1>  <!-- checks if the rebel faction has won; assuming the player plays the rebels -->
+		<Reward_Type>INCREMENT_FLAG</Reward_Type> <!-- increments a flag -->
+		<Reward_Param1>LOSE_CHECK</Reward_Param1>  <!-- flag to increment -->
+		<Reward_Param2>1</Reward_Param2>    <!-- amount to increment -->
+	</Event>
+	
+<Event Name="MISSION_6_1_COMPLETE">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+	<Reward_Param1>EVENT_TEXT_56_MISSION_6_1</Reward_Param1>
+	<Prereq>UNDERWORLD_WINNER</Prereq>
+</Event>
+	
+<Event Name="MISSION_6_1_FALLED">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+	<Reward_Param1>EVENT_TEXT_56_MISSION_6_1</Reward_Param1>
+	<Prereq>Pirates_WINNER</Prereq>
+</Event>
+</Story>

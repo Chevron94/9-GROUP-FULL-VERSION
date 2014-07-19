@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+
+<B5_windows>
+
+
+	<Particle Name="Entry_slipspace">
+		 <Land_Model_Name>p_slipspace.alo</Land_Model_Name>
+		 <Space_Model_Name>p_slipspace.alo</Space_Model_Name>
+		 <Scale_Factor>1.0</Scale_Factor>
+		 <Is_Decoration>Yes</Is_Decoration>
+		 <Behavior>PARTICLE</Behavior>
+		 <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+
+<!-- Slipspace Medium -->
+
+
+	<Particle Name="Entry_slipspace_medium">
+		 <Land_Model_Name>p_slipspace_medium.alo</Land_Model_Name>
+		 <Space_Model_Name>p_slipspace_medium.alo</Space_Model_Name>
+		 <Scale_Factor>2.0</Scale_Factor>
+		 <Is_Decoration>Yes</Is_Decoration>
+		 <Behavior>PARTICLE</Behavior>
+		 <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+
+<!-- Slipspace Large -->
+
+
+	<Particle Name="Entry_slipspace_large">
+		 <Land_Model_Name>p_slipspace_large.alo</Land_Model_Name>
+		 <Space_Model_Name>p_slipspace_large.alo</Space_Model_Name>
+		 <Scale_Factor>3.0</Scale_Factor>
+		 <Is_Decoration>Yes</Is_Decoration>
+		 <Behavior>PARTICLE</Behavior>
+		 <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+<!-- Slipspace massive -->
+
+
+	<Particle Name="Entry_slipspace_massive">
+		 <Land_Model_Name>p_slipspace_massive.alo</Land_Model_Name>
+		 <Space_Model_Name>p_slipspace_massive.alo</Space_Model_Name>
+		 <Scale_Factor>4.0</Scale_Factor>
+		 <Is_Decoration>Yes</Is_Decoration>
+		 <Behavior>PARTICLE</Behavior>
+		 <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+	</Particle>
+
+	<Marker Name="Teleport_Marker"><!-- Point of telepartation -->
+		<Text_ID> GENERIC_MARKER </Text_ID>
+		<Space_Model_Name>null_mesh.ALO</Space_Model_Name>
+		<Land_Model_Name>null_mesh.ALO</Land_Model_Name>
+		<Behavior>SPACE_OBSTACLE</Behavior>
+	</Marker>
+
+	<Marker Name="FTL_Marker"><!-- Point of object before teleportation to attach particle effect -->
+		<Text_ID> GENERIC_MARKER </Text_ID>
+		<Space_Model_Name>null_mesh.ALO</Space_Model_Name>
+		<Land_Model_Name>null_mesh.ALO</Land_Model_Name>
+		<Behavior>SPACE_OBSTACLE</Behavior>
+	</Marker>
+
+</B5_windows>

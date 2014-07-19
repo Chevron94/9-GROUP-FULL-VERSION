@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+
+<Hard_Point_Files>
+	<File>HardPoints.xml</File>
+	<File>HardPoints_Daleks.xml</File>
+	<File>Ships\Hardpoints_test.xml</File>
+	<File>CIN_HardPoints.xml</File>
+	<File>Ships\Hardpoints_9_GROUP.xml</File>
+	<File>Land\Hardpoints_Land_9_GROUP.xml</File>
+</Hard_Point_Files>

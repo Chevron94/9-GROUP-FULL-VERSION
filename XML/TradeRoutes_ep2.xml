@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+
+<TradeRoutes>
+
+
+	<TradeRoute Name="Earth_Gate3">
+
+            <Point_A>Ears_NEW</Point_A>
+            <Point_B>Supergate3</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Gate3_Gate4">
+
+            <Point_A>Supergate4</Point_A>
+            <Point_B>Supergate3</Point_B>
+            <HS_Speed_Factor>4.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+
+	<TradeRoute Name="Gate4_IKAR">
+
+            <Point_A>Supergate4</Point_A>
+            <Point_B>IKAR</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Belsa_Genii">
+
+            <Point_A>Belsa_NEW</Point_A>
+            <Point_B>Genii_NEW</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+
+	<TradeRoute Name="Andaria_Genii">
+
+            <Point_A>Andaria_NEW</Point_A>
+            <Point_B>Genii_NEW</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Belsa_Ears">
+
+            <Point_A>Belsa_NEW</Point_A>
+            <Point_B>Ears_NEW</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+
+	<TradeRoute Name="Andaria_Ears">
+
+            <Point_A>Andaria_NEW</Point_A>
+            <Point_B>Ears_NEW</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Belsa_Atlantis">
+
+            <Point_A>Belsa_NEW</Point_A>
+            <Point_B>Atlantis_NEW</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Andaria_Cohall">
+
+            <Point_A>Andaria_NEW</Point_A>
+            <Point_B>Cohall_NEW</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Sontar_Gallifrey">
+
+            <Point_A>Gallifrey</Point_A>
+            <Point_B>Sontar</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="CLOM_Dravidia">
+
+            <Point_A>Dravidia</Point_A>
+            <Point_B>CLOM</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="CLOM_Gallifrey">
+
+            <Point_A>Gallifrey</Point_A>
+            <Point_B>CLOM</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Dravidia_Gallifrey">
+
+            <Point_A>Gallifrey</Point_A>
+            <Point_B>Dravidia</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="CLOM_Sontar">
+
+            <Point_A>Sontar</Point_A>
+            <Point_B>CLOM</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Nibiru_Gamma">
+
+            <Point_A>Nibiru</Point_A>
+            <Point_B>Gamma</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="CLOM_Nibiru">
+
+            <Point_A>Nibiru</Point_A>
+            <Point_B>CLOM</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Solaris_Dravidia">
+
+            <Point_A>Dravidia</Point_A>
+            <Point_B>Solaris</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Trill_Solaris">
+
+            <Point_A>Trill</Point_A>
+            <Point_B>Solaris</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Trill_Gamma">
+
+            <Point_A>Trill</Point_A>
+            <Point_B>Gamma</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Trill_Nibiru">
+
+            <Point_A>Trill</Point_A>
+            <Point_B>Nibiru</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Trill_Dravidia">
+
+            <Point_A>Trill</Point_A>
+            <Point_B>Dravidia</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Omega_Gamma">
+
+            <Point_A>Gamma</Point_A>
+            <Point_B>Omega</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Omega_Skaro">
+
+            <Point_A>Skaro</Point_A>
+            <Point_B>Omega</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Vega_Solaris">
+
+            <Point_A>Solaris</Point_A>
+            <Point_B>Vega</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Vega_Omega">
+
+            <Point_A>Omega</Point_A>
+            <Point_B>Vega</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Vega_Trill">
+
+            <Point_A>Trill</Point_A>
+            <Point_B>Vega</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Vega_Skaro">
+
+            <Point_A>Skaro</Point_A>
+            <Point_B>Vega</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="IKAR_Solaris">
+
+            <Point_A>Solaris</Point_A>
+            <Point_B>IKAR</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="IKAR_Skaro">
+
+            <Point_A>Ikar</Point_A>
+            <Point_B>Skaro</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Micron_Gallifrey">
+
+            <Point_A>Gallifrey</Point_A>
+            <Point_B>Micron</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Micron_Sontar">
+
+            <Point_A>Sontar</Point_A>
+            <Point_B>Micron</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="IKAR_Epsilon">
+
+            <Point_A>Ikar</Point_A>
+            <Point_B>Epsilon</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="IKAR_Tau">
+
+            <Point_A>Ikar</Point_A>
+            <Point_B>Tau</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="TAU_Epsilon">
+
+            <Point_A>Tau</Point_A>
+            <Point_B>Epsilon</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="TAU_Dravidia">
+
+            <Point_A>Tau</Point_A>
+            <Point_B>Dravidia</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="TAU_Gallifrey">
+
+            <Point_A>Tau</Point_A>
+            <Point_B>Gallifrey</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Helioptis_Gallifrey">
+
+            <Point_A>Helioptis</Point_A>
+            <Point_B>Gallifrey</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Helioptis_Epsilon">
+
+            <Point_A>Helioptis</Point_A>
+            <Point_B>Epsilon</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Helioptis_Micron">
+
+            <Point_A>Helioptis</Point_A>
+            <Point_B>Micron</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Krion_Epsilon">
+
+            <Point_A>Krion</Point_A>
+            <Point_B>Epsilon</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+	<TradeRoute Name="Krion_Micron">
+
+            <Point_A>Krion</Point_A>
+            <Point_B>Micron</Point_B>
+            <HS_Speed_Factor>1.2</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0.0</Credit_Gain_Factor>
+            <Visible_Line_Name>DEFAULT</Visible_Line_Name>
+    </TradeRoute>
+	
+</TradeRoutes>

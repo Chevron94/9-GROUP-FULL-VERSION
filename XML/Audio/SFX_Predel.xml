@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<SFXEvents> 
+ 
+ <!--Предел-->
+	
+	<SFXEvent Name="9_GROUP_Predel_Shield_Down">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\predel\shield_1.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent>   
+	  
+	<SFXEvent Name="9_GROUP_predel_Attack">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\predel\attack_1.wav Data\Audio\Units\predel\attack_2.wav Data\Audio\Units\predel\attack_3.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+
+	  </SFXEvent> 
+	  
+	<SFXEvent Name="9_GROUP_predel_Select">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\predelselect_1.wav</Samples>
+				<Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent> 
+	  
+	<SFXEvent Name="9_GROUP_predel_Move">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\predel\move_1.wav Data\Audio\Units\predel\move_2.wav Data\Audio\Units\predel\move_3.wav Data\Audio\Units\predel\move_4.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent>   
+	  
+	  <SFXEvent Name="9_GROUP_predel_Death">
+				<Use_Preset>Preset_EXPC</Use_Preset>
+            <Samples></Samples>  
+    </SFXEvent>
+	
+	 <SFXEvent Name="9_GROUP_predel_Guard">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\predel\guard_1.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent>
+	
+	<SFXEvent Name="9_GROUP_predel_Complete">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\predel\complete_1.wav Data\Audio\Units\predel\complete_2.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 			
+			 
+	  </SFXEvent>
+
+</SFXEvents>	  

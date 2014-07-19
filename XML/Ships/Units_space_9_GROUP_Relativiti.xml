@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+
+
+<FV_Excalibur_Data>
+
+	<SpaceUnit Name="FV_Relativity">
+	<Variant_Of_Existing_Type>Ears_Ship</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_FV_Relativity</Text_ID>
+
+		<Encyclopedia_Text> TEXT_UNIT_FV_Relativity_TOOLTIP</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_RELATIVITY.TGA</Icon_Name>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_SHIPNAME_RELATIVITY </Encyclopedia_Unit_Class>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>FV_Relativity.ALO</Space_Model_Name>
+		<Select_Box_Scale>370</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Mass>0.9995</Mass>
+		<Layer_Z_Adjust> -100.0 </Layer_Z_Adjust>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Moniker>Alliance_Assault_Frigate.txt</Moniker>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+	    <Build_Cost_Credits>30000</Build_Cost_Credits>
+		<Build_Time_Seconds>150</Build_Time_Seconds>
+        <Max_Speed> 2.7 </Max_Speed>
+		<Max_Rate_Of_Turn> 0.3 </Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>1.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>45</Bank_Turn_Angle>
+		<Build_Cost_Credits>14000</Build_Cost_Credits>
+		<AI_Combat_Power>11040</AI_Combat_Power>
+		<Autoresolve_Health>9180</Autoresolve_Health>
+		<Shield_Points>3000</Shield_Points>
+		<Tactical_Health>7000</Tactical_Health>
+		<Affiliation>Underworld, Pirates</Affiliation>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Death_Clone>Damage_Normal, Relativity_Death_Clone</Death_Clone>
+		<!--Required_Planets>SchwarzesLoch_1</Required_planets-->
+		<Required_Special_Structures>Federation_Werft</Required_Special_Structures>
+		<HardPoints>
+			HP_Relativity_1,
+			HP_Relativity_2,
+			HP_Relativity_3,
+			HP_Relativity_4,
+			HP_Relativity_5,
+			HP_Relativity_6,
+			HP_Relativity_7,
+			HP_Relativity_8,
+			HP_Relativity_9,
+			HP_Relativity_10,
+			HP_Relativity_11,
+			HP_Relativity_12,
+			HP_Relativity_13,
+			HP_Relativity_14,
+			HP_Relativity_15,
+			HP_Relativity_Engine,
+			HP_Relativity_Shield,
+		</HardPoints>
+		
+		<SFXEvent_Build_Started>Unit_Elite_Move</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>Unit_Elite_Select</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>9_GROUP_igor_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Carrack_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Select>9_GROUP_artem_Select</SFXEvent_Select>
+		<SFXEvent_Move>9_GROUP_artem_Move</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>9_GROUP_artem_Move</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>9_GROUP_artem_Attack</SFXEvent_Attack>
+		<SFXEvent_Guard>9_GROUP_artem_Guard</SFXEvent_Guard>
+		<SFXEvent_Stop>Unit_Elite_Select</SFXEvent_Stop>
+		<SFXEvent_Barrage>9_GROUP_artem_Attack</SFXEvent_Barrage>
+		<SFXEvent_Move_Into_Nebula> Unit_Elite_Move </SFXEvent_Move_Into_Nebula>
+		<Death_SFXEvent_Start_Die>9_GROUP_artem_Death</Death_SFXEvent_Start_Die>
+		
+		<Tactical_Build_Cost_Multiplayer>14000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>47</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier> <!-- make it faster to recharge -->
+				<Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier> <!-- make it faster to recharge -->
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.8f</Mod_Multiplier>
+				<Recharge_Seconds>40</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Calamari</SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+
+			<Combat_Bonus_Ability Name="Braxton_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Capital | Corvette | Frigate | Fighter | SpaceHero | Super</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Capital | Corvette | Frigate | Fighter | SpaceHero | Super</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage> 1.30</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage> 1.30 </Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage> 1.30 </Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage> 1.30 </Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage> 1.30 </Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage> 1.30 </Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+		</Abilities>
+	<Lua_Script>HSW_anubis</Lua_Script>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Relativity_Death_Clone">
+		<Text_ID>TEXT_UNIT_LEGACY</Text_ID>
+		<Space_Model_Name>FV_Relativity.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die> Unit_Calamari_Death_SFX </Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Scale_Factor> 0.75 </Scale_Factor>
+		<Layer_Z_Adjust> -290.0 </Layer_Z_Adjust>
+		<Max_Speed> 0.25 </Max_Speed>
+		<Max_Rate_Of_Turn> 0.4 </Max_Rate_Of_Turn>
+		<Max_Thrust> 0.05 </Max_Thrust>
+		<Max_Rate_Of_Roll> 0.10 </Max_Rate_Of_Roll>
+		<Bank_Turn_Angle> 8 </Bank_Turn_Angle>
+		<Affiliation> Rebel </Affiliation>
+		<Ship_Class> frigate </Ship_Class>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceUnit>
+	
+	<!--Оружие-->
+	<!--Фазеры-->
+	<Projectile Name="Proj_RELATIVITY_PHASER">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>P_FEDERATION_FUTURE_PHASER.ALO</Space_Model_Name>
+		<Land_Model_Name>P_FEDERATION_FUTURE_PHASER.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type> Damage_Phaser_Future </Damage_Type>
+		<Max_Speed>30.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior>IDLE</SpaceBehavior>
+		<LandBehavior>IDLE</LandBehavior>
+		<Projectile_Category>LASER</Projectile_Category>
+		<Projectile_Max_Flight_Distance>4000.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+
+		<Projectile_Damage>50.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>50.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>50.0</Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+
+		<Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+
+		<Projectile_Object_Detonation_Particle>p_kraytdestoyer_detonate</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Huge_Explosion_Space</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Huge_Dud</Projectile_Lifetime_Detonation_Particle>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+	</Projectile>
+	<!--Торпеда(я бы сказал летающая смерть)-->
+    <Projectile Name="Proj_Relativity_Torpedo">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>borg_torpedo.ALO</Space_Model_Name>
+		<Land_Model_Name>borg_torpedo.ALO</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Max_Speed>17</Max_Speed>
+		<Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>MISSILE</Projectile_Category>
+		<Projectile_Max_Flight_Distance>2200.0</Projectile_Max_Flight_Distance> <!-- was 1200 -->
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>	<!-- was 750, changed so it doesn't reacquire targets -->
+		<Projectile_Damage>150.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>50.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>200.0</Projectile_Blast_Area_Range>
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle> Conc_Missile_Detonation_Particle </Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Large_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle />
+		<Projectile_Lifetime_Detonation_Particle />
+		<Projectile_Absorbed_By_Shields_Particle />
+		<AI_Combat_Power>600</AI_Combat_Power>
+	</Projectile>
+	</FV_Excalibur_Data>

@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+
+
+<FV_Nebula_Data>
+
+	<SpaceUnit Name="FV_Nebula">
+		<Text_ID>TEXT_UNIT_FV_Nebula</Text_ID>
+		<Encyclopedia_Good_Against> Star_Destroyer Kedalbe_Battleship </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Bomber Vengeance_Frigate </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text> TEXT_UNIT_FV_Nebula_TOOLTIP</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FRIGATE </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_FV_NEBULA.TGA</Icon_Name>
+		
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>FV_Nebula.ALO</Space_Model_Name>
+		<Select_Box_Scale>370</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Mass>0.9995</Mass>
+		<Scale_Factor>1.3</Scale_Factor>
+		<Moniker>Alliance_Assault_Frigate.txt</Moniker>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+
+        <Ranking_In_Category>6</Ranking_In_Category>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Max_Speed>4.0</Max_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.8</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .05 </OverrideDeceleration>
+		
+		<Max_Thrust>1.5</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.2</Maintenance_Cost>
+
+		<Armor_Type> Armor_MC30_Frigate </Armor_Type>
+        <Shield_Armor_Type>Shield_Frigate</Shield_Armor_Type>
+		<Damage>204</Damage>
+		<Autoresolve_Health>6168</Autoresolve_Health>
+		<Shield_Points>4500</Shield_Points>
+		<Tactical_Health>2500</Tactical_Health>
+		<Shield_Refresh_Rate>62</Shield_Refresh_Rate>
+		<Energy_Capacity>2040</Energy_Capacity>
+		<Energy_Refresh_Rate>500</Energy_Refresh_Rate>
+
+		<Affiliation>Underworld</Affiliation>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Slice_Cost_Credits>1400</Slice_Cost_Credits>
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+		<Required_Special_Structures>Anti_Werft</Required_Special_Structures>
+		<Required_Planets />
+		<Build_Cost_Credits>5500</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Squadron_Capacity>12</Squadron_Capacity>
+		<Transport_Capacity>12</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<AI_Combat_Power>3312</AI_Combat_Power>
+		<Size_Value>8</Size_Value>		
+		
+		<Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior>SPAWN_SQUADRON, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+
+		<!-- Fighter Spawners -->
+		<Starting_Spawned_Units_Tech_0>FV_Type11_Squadron, 2</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		<Reserve_Spawned_Units_Tech_0>FV_Type11_Squadron, 2</Reserve_Spawned_Units_Tech_0> 
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Death_Leave_Hulk_Behind> No </Death_Leave_Hulk_Behind>
+		<Death_Clone>Damage_Normal, FV_Excelsior_Lakota_Death_Clone</Death_Clone>
+
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1400.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>
+			HP_Nebula_Engine,
+			HP_Nebula_Shield,
+			HP_Nebula_Phaser_00,
+			HP_Nebula_Phaser_01,
+			HP_Nebula_Fighter_Bay,
+			HP_Nebula_Torpedo_00,
+			HP_Nebula_Torpedo_01,
+			HP_Nebula_Torpedo_02,
+			HP_Nebula_Torpedo_03
+		</HardPoints>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_MC30_Frigate</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Nebulon_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Federation_Nebula_Medic_Unit_Select</SFXEvent_Select>
+		<SFXEvent_Move>Federation_Nebula_Medic_Movement</SFXEvent_Move>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Federation_Nebula_Medic_Attackrun</SFXEvent_Attack>
+		<SFXEvent_Guard></SFXEvent_Guard>
+		<SFXEvent_Barrage></SFXEvent_Barrage>
+		<SFXEvent_Move_Into_Asteroid_Field>  </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula>  </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Damaged_By_Asteroid> SFX_Asteroid_Detonation </SFXEvent_Damaged_By_Asteroid>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Federation_Nebula_Medic_Weapon_Damage </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,   </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,   </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Federation_Nebula_Medic_Shield_Damage </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Federation_Nebula_Medic_Engine_Destroyed </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Nebulon_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Nebulon_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Nebulon_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<CategoryMask> Frigate | AntiCorvette</CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+		<Radar_Icon_Name>i_radar_capital_ship.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.06  0.04</Radar_Icon_Size>
+
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+		<Population_Value>3</Population_Value>
+		<Score_Cost_Credits> 2500</Score_Cost_Credits>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>5500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>30</Build_Limit_Current_Per_Player>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Tactical_Bribe_Cost>700</Tactical_Bribe_Cost>
+	
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>25</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Interceptor_IV</SFXEvent_GUI_Unit_Ability_Activated>
+				<GUI_Activated_Ability_Name>Interceptor_Full_Salvo</GUI_Activated_Ability_Name> 
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-35f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
+			</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+
+ 		<Abilities SubObjectList="Yes">
+
+			<Force_Healing_Ability Name="E_Mineral_Extractor_Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.002</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+		
+		<Ship_Class>frigate</Ship_Class>
+    <Lua_Script>HSW_HATAK</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="FV_Excelsior_Lakota_Death_Clone">
+		<Text_ID>TEXT_UNIT_MC30_FRIGATE</Text_ID>
+		<Space_Model_Name>RV_Galaxy.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Layer_Z_Adjust>-90.0</Layer_Z_Adjust>
+		<Max_Speed>1.2</Max_Speed>
+		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
+		<Max_Thrust>1</Max_Thrust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Affiliation>Underworld</Affiliation>
+		<Ship_Class>frigate</Ship_Class>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceUnit>
+    <!--Оружие-->
+	<!--Фазер-->
+	<Projectile Name="Nebula_Phasor">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>P_FEDERATION_PHASER.ALO</Space_Model_Name>
+		<Land_Model_Name>P_FEDERATION_PHASER.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Damage_Type> Damage_Phaser_11 </Damage_Type>
+		<Max_Speed>250.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior>IDLE</SpaceBehavior>
+		<LandBehavior>IDLE</LandBehavior>
+		<Projectile_Category>LASER</Projectile_Category>
+		<Projectile_Max_Flight_Distance>4000.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+
+		<Projectile_Damage>15.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>5.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+
+		<Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+
+		<Projectile_Object_Detonation_Particle></Projectile_Object_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Conc_Missile_Detonation_Particle</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Huge_Dud</Projectile_Lifetime_Detonation_Particle>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+	</Projectile>
+	<!--Квантовые торпеды-->
+	<Projectile Name="Proj_Nebula_Quantum_Torpedo">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>quantum.ALO</Space_Model_Name>
+		<Land_Model_Name>quantum.ALO</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>0.8</Scale_Factor>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Max_Speed>16</Max_Speed>
+		<Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>MISSILE</Projectile_Category>
+		<Projectile_Max_Flight_Distance>2200.0</Projectile_Max_Flight_Distance> <!-- was 1200 -->
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>	<!-- was 750, changed so it doesn't reacquire targets -->
+		<Projectile_Damage>70.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>50.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Large_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Object_Detonation_Particle>DB_Missile_Explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>DB_Missile_Explosion</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>DB_Missile_Explosion</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>DB_Missile_Explosion</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>600</AI_Combat_Power>
+	</Projectile>
+	<!--Фотонные торпеды-->
+	<Projectile Name="Proj_Nebula_Photonic_Torpedo">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>photon.ALO</Space_Model_Name>
+		<Land_Model_Name>photon.ALO</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Max_Speed>14</Max_Speed>
+		<Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>MISSILE</Projectile_Category>
+		<Projectile_Max_Flight_Distance>2200.0</Projectile_Max_Flight_Distance> <!-- was 1200 -->
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>	<!-- was 750, changed so it doesn't reacquire targets -->
+		<Projectile_Damage>50.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>50.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Large_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Object_Detonation_Particle>Small_Explosion_Space</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Small_Explosion_Space</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Small_Explosion_Space</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Small_Explosion_Space</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>600</AI_Combat_Power>
+	</Projectile>
+</FV_Nebula_Data>

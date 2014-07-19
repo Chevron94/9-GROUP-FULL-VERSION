@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+<SpecialStructure Name="9Group_Base_Shield">
+		<Text_ID>TEXT_GROUND_BASE_SHIELD1</Text_ID>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name>9GROUP_shieldgen.ALO</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+		<Behavior>DUMMY_GROUND_STRUCTURE, SELECTABLE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,REVEAL,BASE_SHIELD,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,TERRAIN_TEXTURE_MODIFICATION,EARTHQUAKE_TARGET</LandBehavior>
+		<Obstacle_Proxy_Type> R_Ground_Base_Shield_Build_Pad </Obstacle_Proxy_Type>
+		<Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>			
+		<Terrain_Texture_Modifier_Join_Distance>1.0</Terrain_Texture_Modifier_Join_Distance>	
+		<Terrain_Texture_Modifier_Square>true</Terrain_Texture_Modifier_Square>				
+		<Shield_On_Anim>SHIELD_ON</Shield_On_Anim>
+		<Shield_Off_Anim>SHIELD_OFF</Shield_Off_Anim>
+		<Base_Shield_Radius>740</Base_Shield_Radius>
+		<Base_Shield_Always_Off> False </Base_Shield_Always_Off>
+		<SecondaryOccupationPassability> Shield </SecondaryOccupationPassability>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Ranged_Target_Z_Adjust>30.0</Ranged_Target_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Radar_Range_Icon_Name>i_radar_shield.tga</Radar_Range_Icon_Name>
+		
+		<Select_Box_Scale>190</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>0.75</Scale_Factor> <!-- Temp scale change for scale test - change back once models resized -->
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<GUI_Bounds_Scale>0.05</GUI_Bounds_Scale>
+		<Is_Dummy>No</Is_Dummy>
+
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius>775</Reinforcement_Prevention_Radius>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+		<Obstacle_Width>40.0</Obstacle_Width>
+		<Obstacle_Height>40.0</Obstacle_Height>
+		<Obstacle_X_Offset>-20.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-20.0</Obstacle_Y_Offset>
+		<Fine_Tune_Occupied_Passability> false </Fine_Tune_Occupied_Passability>
+		<Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+		
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Custom_Hard_XExtent> 50.0 </Custom_Hard_XExtent>
+  		<Custom_Hard_YExtent> 50.0 </Custom_Hard_YExtent>
+ 		<Custom_Soft_Footprint_Radius> 40.0 </Custom_Soft_Footprint_Radius>
+ 		
+		<Land_Damage_Thresholds>1, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation</Land_Damage_SFX>
+
+		<Shield_Normal_Color>0.2, 0.2, 0.8, 1.0</Shield_Normal_Color>
+		<Shield_Upgraded_Color>0.2, 0.7, 0.8, 1.0</Shield_Upgraded_Color>
+		
+		<Affiliation>Underworld</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>2400</Build_Cost_Credits>
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Size_Value>50</Size_Value>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Slice_Cost_Credits>400</Slice_Cost_Credits>
+		<Base_Position>In_Base</Base_Position>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>Barracks</Required_Special_Structures>
+		<Required_Planets></Required_Planets>		
+		<Build_Limit_Current_Per_Player>20</Build_Limit_Current_Per_Player>
+		<Tactical_Additional_Structure_Type>Power_Generator_R</Tactical_Additional_Structure_Type>
+		<Tactical_Health>650</Tactical_Health>
+		<Icon_Name>I_BUTTON_9GROUPSCHIELD.tga</Icon_Name>                
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		
+		<SFXEvent_Build_Started>RHD_Shield_Generator_Build</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> RHD_Shield_Generator_Under_Attack </SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost> RHD_Shield_Generator_Destroyed </SFXEvent_Unit_Lost>
+		<SFXEvent_Select> Structure_Shield_Gen_Select_SFX </SFXEvent_Select>
+		<SFXEvent_Powered_Active_Loop> Structure_Shutter_Shield_Generator_Loop </SFXEvent_Powered_Active_Loop>
+
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<CategoryMask> Structure </CategoryMask>
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		
+		<Tactical_Buildable_Objects_Campaign> 
+			Underworld,
+				RL_Enhanced_Base_Shield_Upgrade_NoPre,
+		</Tactical_Buildable_Objects_Campaign>
+		
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				RL_Enhanced_Base_Shield_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>
+		
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BASE_SHIELD_001 </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SCHILD</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 20000 </Score_Cost_Credits>
+		<Property_Flags>InBase</Property_Flags>
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="R_Base_Shield_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>	
+	
+	</SpecialStructure>
+</SpecialStructures>	

@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<FV_AURORA_Data>
+       <SpaceUnit Name="AURORA">
+		<Text_ID>TEXT_UNIT_AURORA</Text_ID>
+		<Encyclopedia_Good_Against> Victory_Destroyer Star_Destroyer WhraitHive </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Bomber Star_Destroyer WhraitHive </Encyclopedia_Vulnerable_To>
+		<!--<Required_Planets>Taranis1</Required_Planets>-->
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>Aurora.alo</Space_Model_Name>
+		<GUI_Bracket_Height>500</GUI_Bracket_Height>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Mass>1.0</Mass>
+		<Scale_Factor>3.9</Scale_Factor>
+		<Ranking_In_Category>6</Ranking_In_Category>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Max_Speed>2.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Capital </Space_Layer>
+		<Layer_Z_Adjust>-300.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>6</Bank_Turn_Angle>
+		<OverrideAcceleration> .025 </OverrideAcceleration>
+		<OverrideDeceleration> .025 </OverrideDeceleration>
+		<Max_Thrust>0.15</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>2.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.3</Maintenance_Cost>
+		<Armor_Type> Armor_Missile_Cruiser </Armor_Type>
+		<Shield_Armor_Type>Shield_SSD</Shield_Armor_Type>
+		<Damage>100</Damage>
+		<Autoresolve_Health>12132</Autoresolve_Health>
+		<Shield_Points>6000</Shield_Points>
+		<Tactical_Health>7000</Tactical_Health>
+		<Shield_Refresh_Rate>90</Shield_Refresh_Rate>
+		<Energy_Capacity>30000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Affiliation>Underworld, Pirates</Affiliation>
+		<Tech_Level>4</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>Federation_Werft</Required_Special_Structures>
+		<Ship_Class>capital</Ship_Class>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>10</Squadron_Capacity>
+		<Transport_Capacity>10</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<Build_Cost_Credits>11000</Build_Cost_Credits>
+		<AI_Combat_Power>6524</AI_Combat_Power>
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Size_Value>8</Size_Value>
+		<Behavior>DUMMY_STARSHIP, BARAGE, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Starting_Spawned_Units_Tech_0>Jumper_Squadron, 3</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>7</Spawned_Squadron_Delay_Seconds>
+		<Reserve_Spawned_Units_Tech_0>Jumper_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Death_Clone>Damage_Normal, AURORA_Death_Clone</Death_Clone>
+		<Neutralization_Cost>0.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+		<Space_FOW_Reveal_Range>2700.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		<HardPoints> 
+			HP_Aurora_LaserA_1,        
+			HP_Aurora_LaserA_2, 
+			HP_Aurora_LaserA_3, 
+			HP_Aurora_LaserA_4, 
+			HP_Aurora_LaserA_5, 
+			HP_Aurora_LaserA_6, 
+			HP_Aurora_LaserA_7,
+			HP_Aurora_LaserA_8,
+			HP_Aurora_LaserA_9,     
+			HP_Aurora_LaserB_1,      
+			HP_Aurora_LaserB_2,
+			HP_Aurora_LaserB_3,
+			HP_Aurora_LaserB_4,
+			HP_Aurora_LaserB_5,
+			HP_Aurora_LaserB_6,
+			HP_Aurora_LaserB_7,
+			HP_Aurora_LaserB_8,     
+			HP_Aurora_Tank_1,        
+			HP_Aurora_Tank_2,
+			HP_Aurora_Tank_3,                  
+			HP_Aurora_Tank_4,              
+			HP_Aurora_Hangar,   
+			HP_Aurora_Shield,    
+			HP_Aurora_Antrieb     
+		</HardPoints>
+		<CategoryMask> Capital | SpaceHero | AntiFrigate | AntiCapital </CategoryMask>
+		<Icon_Name>I_BUTTON_AURORA.tga</Icon_Name>                       
+		<GUI_Model_Name>Aurora.alo</GUI_Model_Name>
+		<GUI_Distance>900</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Lorne</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Antikerkriegsschiff_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Unit_Select_Lorne</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Lorne</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Lorne</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Lorne</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Lorne</SFXEvent_Guard>
+		<SFXEvent_Stop>Unit_Stop_Lorne</SFXEvent_Stop>
+		<SFXEvent_Barrage>Unit_Barrage_Lorne</SFXEvent_Barrage>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_Lorne </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Lorne </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Damaged_By_Asteroid> SFX_Asteroid_Detonation </SFXEvent_Damaged_By_Asteroid>
+		<SFXEvent_Engine_Idle_Loop> Unit_Antikerkriegsschiff_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Antikerkriegsschiff_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Antikerkriegsschiff_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.078  0.078</Radar_Icon_Size>
+		<Radar_Icon_Name>i_radar_capital_ship.tga</Radar_Icon_Name>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>SpaceArtillery</Targeting_Priority_Set>
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.9f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-5.0</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.5f</Mod_Multiplier>
+				<Recharge_Seconds>50</Recharge_Seconds>
+				<Expiration_Seconds>12</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Oberoth</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		        <!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier> <!-- make it faster to recharge -->
+				<Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier> <!-- make it faster to recharge -->
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	5.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.8f</Mod_Multiplier>
+				<Recharge_Seconds>45</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+		
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Oberoth</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+		        </Unit_Ability>
+		</Unit_Abilities_Data>
+		<!-- Hero abilities moved to ship; Ackbar "movable" unit removed -->
+		<Encyclopedia_Text>TEXT_UNIT_AURORA_TOOLTIP</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_AURORA </Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1800</Score_Cost_Credits>
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>11000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>70</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites/>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>12</Population_Value>
+	        <Lua_Script>ObjectScript_PowerToShields</Lua_Script>
+<Lua_Script>HSW_lantian_large</Lua_Script>
+	</SpaceUnit>
+
+        <SpaceUnit Name="AURORA_Death_Clone">
+		<Text_ID> TEXT_UNIT_LORNE </Text_ID>
+		<Space_Model_Name>Aurora_D.ALO</Space_Model_Name>
+		<xxxSpace_Model_Name>Aurora_D_die_00.ALO</xxxSpace_Model_Name>	
+		<Death_SFXEvent_Start_Die> Unit_Calamari_Death_SFX </Death_SFXEvent_Start_Die>
+		<Scale_Factor> 3.9 </Scale_Factor>
+		<Layer_Z_Adjust> -300.0 </Layer_Z_Adjust>
+		<Max_Speed> 0.25 </Max_Speed>
+		<Max_Rate_Of_Turn> 0.4 </Max_Rate_Of_Turn>
+		<Max_Thrust> 0.05 </Max_Thrust>
+		<Max_Rate_Of_Roll> 0.02 </Max_Rate_Of_Roll>
+		<Bank_Turn_Angle> 5 </Bank_Turn_Angle>
+		<Affiliation> Asuraner </Affiliation>
+		<Ship_Class> capital </Ship_Class>
+		<Glory_Cinematics> CAM_Calamari_Cruiser_Die.tec </Glory_Cinematics>
+		<Death_Persistence_Duration>0</Death_Persistence_Duration>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceUnit>
+	<!--Оружие-->
+	<!--Лазеры-->
+        <Projectile Name="Proj_Ship_AURORA_3">     			                             
+		<!-- SG_TEXT_WEAPON_LASER_ANTIKER_0 -->
+		<!-- Unit_Antiker_Laser -->
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>Projectile_AntikerLaser2.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Damage_Type> Damage_Calamari_Cruiser </Damage_Type>
+		<Max_Speed>26.0</Max_Speed> 
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior> AFFECTED_BY_SHIELD </SpaceBehavior>
+		<Projectile_Max_Flight_Distance>1700</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>15.0</Projectile_Damage> 
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>10</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle> Medium_Damage_Space_Antiker </Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Medium_Damage_Space_Antiker</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Small_Damage_Space_Antiker</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Shield_Absorb_Antiker_Railgun</Projectile_Absorbed_By_Shields_Particle> 
+		<AI_Combat_Power>140</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation         </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+	
+		<Projectile Name="Proj_Ship_AURORA_1">                                    
+		<!-- SG_TEXT_WEAPON_LASER_ANTIKER_2 -->
+		<!-- Unit_Antiker_Laser -->
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>Projectile_AntikerLaser.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Damage_Type> Damage_Calamari_Cruiser </Damage_Type>
+		<Max_Speed>26.0</Max_Speed> 
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior> AFFECTED_BY_SHIELD </SpaceBehavior>
+		<Projectile_Max_Flight_Distance>2000</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>25.0</Projectile_Damage> 
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>20</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle> Medium_Damage_Space_Antiker_1 </Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Medium_Damage_Space_Antiker_1</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Small_Damage_Space_Antiker</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Shield_Absorb_Antiker_Railgun_1</Projectile_Absorbed_By_Shields_Particle> 
+		<AI_Combat_Power>140</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation         </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+	<!--Дроны-->
+	<Projectile Name="Proj_AURORA_Drohne">	                                
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>Drohne2.ALO</Land_Model_Name>
+		<Space_Model_Name>Drohne2.ALO</Space_Model_Name>
+		<Damage_Type> Damage_Proton_Torp </Damage_Type>
+		<Projectile_Damages_Random_Hard_Points>yes</Projectile_Damages_Random_Hard_Points>
+		<Scale_Factor>0.07</Scale_Factor>
+		<Max_Speed>14.5</Max_Speed>
+		<Max_Rate_Of_Turn>16.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>MISSILE</Projectile_Category>		
+		<Projectile_Max_Flight_Distance>6000.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>1000.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>4.0</Projectile_Damage>		
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>10</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Small_Dud</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Large_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Small_Dud</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Proton_Torpedo_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<AI_Combat_Power>600</AI_Combat_Power>
+	</Projectile>
+	
+</FV_AURORA_Data>

@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+
+<Kedalbe_Battleship_Data>
+
+	<SpaceUnit Name="SGC_304_Carrier">
+		<Text_ID>TEXT_UNIT_MATAN_CARRIER</Text_ID>
+		<Encyclopedia_Good_Against> Tartan_Patrol_Cruiser Corellian_Corvette Crusader_Gunship </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> B-wing TIE_Defender MC30_Frigate </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text> TEXT_UNIT_MATAN_CARRIER_TOOLTIP</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CORVETTE </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_SGC_304_CARRIER.TGA</Icon_Name>
+		<Variant_Of_Existing_Type>Matan</Variant_Of_Existing_Type>
+		
+		<Space_Model_Name>X-304Carrier.ALO</Space_Model_Name>
+				
+        <Ranking_In_Category>6</Ranking_In_Category>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Max_Speed>3.0</Max_Speed>
+		<MovementClass> Space </MovementClass>
+		<Max_Rate_Of_Roll>1.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>45</Bank_Turn_Angle>
+		<Tech_Level>1</Tech_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Planets/>
+		<Required_Special_Structures/>
+		<Build_Cost_Credits>1800</Build_Cost_Credits>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.2</Maintenance_Cost>
+
+		<Armor_Type> Armor_Assault_Frigate </Armor_Type>
+        <Shield_Armor_Type>Shield_Frigate</Shield_Armor_Type>
+		<Damage>40</Damage>
+		<Autoresolve_Health>9307</Autoresolve_Health>
+		<AI_Combat_Power>5004</AI_Combat_Power>
+		<Shield_Points>5500</Shield_Points>
+		<Tactical_Health>4500</Tactical_Health>
+		<Shield_Refresh_Rate>160</Shield_Refresh_Rate>
+		<Energy_Capacity>3000</Energy_Capacity>
+		<Energy_Refresh_Rate>500</Energy_Refresh_Rate>
+	    <Build_Time_Seconds>45</Build_Time_Seconds>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures />
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+
+		
+		<AI_Combat_Power>5000</AI_Combat_Power>
+		<Size_Value>3</Size_Value>			
+		
+		<Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, ABILITY_COUNTDOWN, REVEAL, TARGETING, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SPAWN_SQUADRON</SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Death_Leave_Hulk_Behind> No </Death_Leave_Hulk_Behind>
+		<Death_Clone>Damage_Normal, Medium_Explosion_Death</Death_Clone>
+        <Starting_Spawned_Units_Tech_0>F-302_Squadron, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>F-302_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>8</Spawned_Squadron_Delay_Seconds>
+		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints> 
+			HP_304_Missle_01,
+			HP_304_Missle_02,
+			HP_304_Missle_03,
+			HP_304_Missle_04,
+			HP_304_Missle_05,
+			HP_304_Missle_06,
+			HP_304_Missle_07,
+			HP_304_Missle_08,
+			HP_304_Autocannon_01,
+			HP_304_Autocannon_02,
+			HP_304_Autocannon_03,
+			HP_304_Autocannon_04,
+			HP_304_Autocannon_05,
+			HP_304_Autocannon_06,
+			HP_304_Autocannon_07,
+			HP_304_Autocannon_08,
+			HP_304_Autocannon_09,
+			HP_304_Autocannon_10,
+			HP_304_Autocannon_11,
+			HP_304_Autocannon_12,
+			HP_304_Autocannon_13,
+			HP_304_Autocannon_14,
+			HP_304_Autocannon_15,
+			HP_304_Autocannon_16,
+			HP_304_Autocannon_Extra_2,
+			HP_304_Superlaser_1,
+			HP_304_Superlaser_2,
+			HP_304_Hangar_01,
+			HP_304_Hangar_02,
+			HP_304_Hangar_03,
+			HP_304_Shields,
+			HP_304_Engines,
+		</HardPoints>
+
+		
+		<CategoryMask> Corvette | AntiFighter | AntiBomber</CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+		<Hover_Offset>5</Hover_Offset>
+
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>400.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>800.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+		<Score_Cost_Credits> 2500</Score_Cost_Credits>
+		<Autonomous_Move_Extension_Vs_Attacker>1000.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1550</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Bribe_Cost>1550</Tactical_Bribe_Cost>
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		<Population_Value>7</Population_Value>
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+
+		<Lua_Script>ObjectScript_MC30</Lua_Script>
+	
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+           	<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+			
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-25.0</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.2f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>7</Expiration_Seconds>
+				
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Tartan</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+
+		</Abilities>
+		
+		<Ship_Class>frigate</Ship_Class>
+        <Lua_Script>HSW_BC304</Lua_Script>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Prototype_1">
+	  <Variant_Of_Existing_Type>SGC_304_Carrier</Variant_Of_Existing_Type>
+	  <Text_ID>TEXT_UNIT_MATAN_CARRIER</Text_ID>
+	  <Affiliation>Pirates</Affiliation>
+	  <Shield_Points>5500</Shield_Points>
+	  <Tactical_Health>4500</Tactical_Health>
+	  <Shield_Refresh_Rate>200</Shield_Refresh_Rate>
+	</SpaceUnit>
+</Kedalbe_Battleship_Data>

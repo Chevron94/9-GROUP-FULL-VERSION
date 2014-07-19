@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+
+
+<B5_windows>
+
+	<SpaceProp Name="Jumphole_Opening">
+
+		<Text_ID>TEXT_NONE</Text_ID>
+
+		<Space_Model_Name>Jumphole.alo</Space_Model_Name>
+
+		<Is_Decoration> No </Is_Decoration>
+
+		<Is_Discardable> No </Is_Discardable>
+
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+
+		<Layer_Z_Adjust>0</Layer_Z_Adjust>
+
+		<Is_Visible_On_Radar> Yes </Is_Visible_On_Radar>
+
+		<Behavior> SPACE_OBSTACLE, DYNAMIC_TRANSFORM</Behavior>
+
+		<Space_Obstacle_Radius> 0 </Space_Obstacle_Radius>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+ 
+		<Space_Layer> StaticObject </Space_Layer>
+
+		<Is_Visible_On_Radar> True </Is_Visible_On_Radar>
+
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+
+		<Radar_Icon_Size>0.18  0.18</Radar_Icon_Size>
+
+		<Affiliation>Empire, Neutral, Rebel, Underworld, B5</Affiliation>
+
+	<Dynamic_Transform_Delay_Seconds>0.0</Dynamic_Transform_Delay_Seconds>
+
+        <Dynamic_Transform_Start_Scale>0.01</Dynamic_Transform_Start_Scale>
+
+        <Dynamic_Transform_End_Scale>40.0</Dynamic_Transform_End_Scale>
+
+        <Dynamic_Transform_Seconds>30</Dynamic_Transform_Seconds>
+ 
+       <Dynamic_Transform_Start_Color>1.0, 1.0, 1.0, 1.0</Dynamic_Transform_Start_Color>
+
+        <Dynamic_Transform_End_Color>1.0, 1.0, 1.0, 1.0</Dynamic_Transform_End_Color>
+
+		<Lua_Script>Jumphole_Close</Lua_Script>
+
+	</SpaceProp>
+
+
+
+	<SpaceProp Name="Jumphole_Closing">
+
+		<Text_ID>TEXT_NONE</Text_ID>
+
+		<Space_Model_Name>Jumphole.alo</Space_Model_Name>
+
+		<Is_Decoration> No </Is_Decoration>
+
+		<Is_Discardable> No </Is_Discardable>
+
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+
+		<Layer_Z_Adjust>0</Layer_Z_Adjust>
+
+		<Is_Visible_On_Radar> Yes </Is_Visible_On_Radar>
+
+		<Behavior> SPACE_OBSTACLE, DYNAMIC_TRANSFORM</Behavior>
+
+		<Space_Obstacle_Radius> 0 </Space_Obstacle_Radius>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+ 
+		<Space_Layer> StaticObject </Space_Layer>
+
+		<Is_Visible_On_Radar> True </Is_Visible_On_Radar>
+	
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+
+		<Radar_Icon_Size>0.18  0.18</Radar_Icon_Size>
+
+		<Affiliation>Empire, Neutral, Rebel, Underworld, B5</Affiliation>
+
+	<Dynamic_Transform_Delay_Seconds>2.0</Dynamic_Transform_Delay_Seconds>
+
+        <Dynamic_Transform_Start_Scale>40.0</Dynamic_Transform_Start_Scale>
+
+        <Dynamic_Transform_End_Scale>0.01</Dynamic_Transform_End_Scale>
+
+        <Dynamic_Transform_Seconds>30</Dynamic_Transform_Seconds>
+ 
+       <Dynamic_Transform_Start_Color>1.0, 1.0, 1.0, 1.0</Dynamic_Transform_Start_Color>
+        <Dynamic_Transform_End_Color>1.0, 1.0, 1.0, 1.0</Dynamic_Transform_End_Color>
+
+		<Lua_Script>Jumphole_Despawn</Lua_Script>
+
+	</SpaceProp>
+
+
+
+	<SpaceProp Name="Jumphole_Distance">
+
+		<Text_ID>TEXT_NONE</Text_ID>
+
+		<Space_Model_Name>JumpholeCreationDistance.alo</Space_Model_Name>
+
+		<Is_Decoration> No </Is_Decoration>
+
+		<Is_Discardable> No </Is_Discardable>
+
+		<Scale_Factor>9.5</Scale_Factor>
+
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+
+		<Layer_Z_Adjust>0</Layer_Z_Adjust>
+
+		<Is_Visible_On_Radar> Yes </Is_Visible_On_Radar>
+
+		<Behavior> SPACE_OBSTACLE</Behavior>
+
+		<Space_Obstacle_Radius> 0 </Space_Obstacle_Radius>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+ 
+		<Space_Layer> StaticObject </Space_Layer>
+
+		<Is_Visible_On_Radar> True </Is_Visible_On_Radar>
+	
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+
+		<Radar_Icon_Size>0.18  0.18</Radar_Icon_Size>
+
+		<Affiliation>Empire, Neutral, Rebel, Underworld, B5</Affiliation>
+
+	</SpaceProp>
+
+</B5_windows>

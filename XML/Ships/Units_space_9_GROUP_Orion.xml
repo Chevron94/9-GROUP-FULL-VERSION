@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<FV_Orion_Data>
+        <SpaceUnit Name="Orion">
+		<Text_ID>TEXT_UNIT_ORION</Text_ID>
+		<Encyclopedia_Good_Against> Pirate_Frigate WhraitHive Alliance_Assault_Frigate </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> WhraitHive Calamari_Cruiser Star_Destroyer </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>AntikerKreuzer.ALO</Space_Model_Name>
+		<Select_Box_Scale>60</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Mass>0.995</Mass>
+		<Scale_Factor>5.1</Scale_Factor>
+		<Damage>50</Damage>
+		<Dense_FOW_Reveal_Range_Multiplier>0.24</Dense_FOW_Reveal_Range_Multiplier>
+		<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Ranking_In_Category>5</Ranking_In_Category>
+		<Max_Speed>2.5</Max_Speed>
+
+		<Max_Rate_Of_Turn>0.5</Max_Rate_Of_Turn>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-150.0</Layer_Z_Adjust>
+		<OverrideAcceleration> .035 </OverrideAcceleration>
+		<OverrideDeceleration> .035 </OverrideDeceleration>
+                <Moniker>Antikerkreuzer.txt</Moniker>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Armor_Type> Armor_Missile_Cruiser </Armor_Type>
+		<Shield_Armor_Type>Shield_SSD</Shield_Armor_Type>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>10</Bank_Turn_Angle>	
+		<Max_Thrust>0.3</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>2.0</Hyperspace_Speed>
+		<Maintenance_Cost>0.3</Maintenance_Cost>
+
+		<Death_Clone>Damage_Normal, Orion_Death_Clone</Death_Clone>
+
+		<Affiliation>Underworld, Pirates</Affiliation>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Slice_Cost_Credits>0</Slice_Cost_Credits>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>4</Required_Star_Base_Level>
+		 <Required_Special_Structures>9GroundWerft</Required_Special_Structures>
+		<Required_Planets/>
+		<Autoresolve_Health>7600</Autoresolve_Health>
+		<Tactical_Health>4000</Tactical_Health>
+		<Shield_Points>6000</Shield_Points>
+		<Shield_Refresh_Rate>65</Shield_Refresh_Rate>
+		<Energy_Capacity>10000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Ship_Class>frigate</Ship_Class>
+		<Formation_Priority>5</Formation_Priority>
+		<Political_Faction>Underworld, Pirates</Political_Faction>
+		<Squadron_Capacity>10</Squadron_Capacity>
+		<Build_Cost_Credits>6500</Build_Cost_Credits>
+		<AI_Combat_Power>4095</AI_Combat_Power>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>8</Size_Value>
+		<Behavior> SELECTABLE, DUMMY_STARSHIP </Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, TARGETING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<Space_FOW_Reveal_Range>2400.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
+		<Death_Clone />
+		<CategoryMask> Frigate | AntiCorvette | AntiFrigate </CategoryMask>
+
+		<HardPoints> 
+			HP_Orion_LaserA_1, 
+			HP_Orion_LaserA_2, 
+			HP_Orion_LaserA_3, 
+			HP_Orion_LaserA_4, 
+			HP_Orion_LaserA_5, 
+			HP_Orion_LaserA_6, 
+			HP_Orion_LaserA_7,
+			HP_Orion_LaserA_8,   
+			HP_Orion_LaserB_1,
+			HP_Orion_LaserB_2,
+			HP_Orion_LaserB_3,
+			HP_Orion_LaserB_4,
+			HP_Orion_LaserB_5,
+			HP_Orion_LaserB_6,   
+			HP_Orion_Tank_1,
+			HP_Orion_Tank_2,
+			HP_Orion_Tank_3,
+			HP_Orion_Tank_4,    
+			HP_Orion_Shield,     
+			HP_Orion_Antrieb     
+		</HardPoints>
+
+		<Icon_Name>I_BUTTON_ANTIKERKREUZER.tga</Icon_Name>              
+		<GUI_Model_Name>AntikerKreuzer.ALO</GUI_Model_Name>
+		<GUI_Distance>700</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Asuran</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Antikerkriegsschiff_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+
+		<SFXEvent_Select>Unit_Select_Asuran</SFXEvent_Select>  
+		<SFXEvent_Move>Unit_Move_Asuran</SFXEvent_Move>         
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Asuran</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Asuran</SFXEvent_Attack>   
+		<SFXEvent_Guard>Unit_Guard_Asuran</SFXEvent_Guard>
+		<SFXEvent_Stop>Unit_Stop_Asuran</SFXEvent_Stop>
+		<SFXEvent_Barrage>Unit_Barrage_Asuran</SFXEvent_Barrage>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_Asuran </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Asuran </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Damaged_By_Asteroid> SFX_Asteroid_Detonation </SFXEvent_Damaged_By_Asteroid>
+                <SFXEvent_Health_Low_Warning> Unit_Health_Low_Asuran </SFXEvent_Health_Low_Warning>  
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Antikerkriegsschiff_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Antikerkriegsschiff_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Antikerkriegsschiff_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_SFXEvent_Start_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+        
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.07  0.07</Radar_Icon_Size>
+		<Radar_Icon_Name>i_radar_capital_ship.tga</Radar_Icon_Name>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+		
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<!-- Non-Hero unit abilities description -->
+
+       
+		<Encyclopedia_Text> TEXT_UNIT_ORION_TOOLTIP</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FRIGATE2 </Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 42500 </Score_Cost_Credits>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>6500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>8</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>6</Population_Value>
+	<Lua_Script>HSW_lantian_medium</Lua_Script>
+	</SpaceUnit>
+
+        <SpaceUnit Name="Orion_Death_Clone">
+		<Text_ID> SG_TEXT_UNIT_ANTIKER_KREUZER </Text_ID>
+		<Space_Model_Name>AntikerKreuzer_D.ALO</Space_Model_Name>
+		<xxxSpace_Model_Name>AntikerKreuzer_D_die_00.ALO</xxxSpace_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Scale_Factor>5.1</Scale_Factor>
+		<Layer_Z_Adjust>-200.0</Layer_Z_Adjust>
+		<Max_Speed>1.2</Max_Speed>
+		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
+		<Max_Thrust>1</Max_Thrust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Affiliation>Underworld</Affiliation>
+		<Ship_Class>frigate</Ship_Class>
+		<Death_Persistence_Duration>0</Death_Persistence_Duration>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceUnit>
+<!--Лазеры-->
+<Projectile Name="Proj_Orion_1">     			                             
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>Projectile_AntikerLaser2.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Damage_Type> Damage_Calamari_Cruiser </Damage_Type>
+		<Max_Speed>26.0</Max_Speed> 
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior> AFFECTED_BY_SHIELD </SpaceBehavior>
+		<Projectile_Max_Flight_Distance>1700</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>15.0</Projectile_Damage> 
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>10</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle> Medium_Damage_Space_Antiker </Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Medium_Damage_Space_Antiker</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Small_Damage_Space_Antiker</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Shield_Absorb_Antiker_Railgun</Projectile_Absorbed_By_Shields_Particle> 
+		<AI_Combat_Power>140</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation         </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+	<Projectile Name="Proj_Orion_2">        			                          
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>Projectile_AntikerLaser1.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Damage_Type> Damage_Calamari_Cruiser </Damage_Type>
+		<Max_Speed>26.0</Max_Speed> 
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior> AFFECTED_BY_SHIELD </SpaceBehavior>
+		<Projectile_Max_Flight_Distance>1900</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>25.0</Projectile_Damage> 
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>15</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle> Medium_Damage_Space_Antiker </Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Medium_Damage_Space_Antiker</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Small_Damage_Space_Antiker</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Shield_Absorb_Antiker_Railgun</Projectile_Absorbed_By_Shields_Particle> 
+		<AI_Combat_Power>140</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation         </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+<!--Дроны-->
+	<Projectile Name="Proj_Orion_Drohne">	                                
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>Drohne2.ALO</Land_Model_Name>
+		<Space_Model_Name>Drohne2.ALO</Space_Model_Name>
+		<Damage_Type> Damage_Proton_Torp </Damage_Type>
+		<Projectile_Damages_Random_Hard_Points>yes</Projectile_Damages_Random_Hard_Points>
+		<Scale_Factor>0.07</Scale_Factor>
+		<Max_Speed>14.5</Max_Speed>
+		<Max_Rate_Of_Turn>16.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>MISSILE</Projectile_Category>		
+		<Projectile_Max_Flight_Distance>6000.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>1000.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>3.0</Projectile_Damage>		
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>10</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Small_Dud</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Large_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Small_Dud</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Proton_Torpedo_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<AI_Combat_Power>600</AI_Combat_Power>
+	</Projectile>
+</FV_Orion_Data>

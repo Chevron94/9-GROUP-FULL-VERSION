@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<FV_WS_Data>
+        
+		<SpaceUnit Name="WS">
+		<Text_ID>TEXT_UNIT_ISAWEITSTAR</Text_ID>
+		<Variant_Of_Existing_Type>Differencial</Variant_Of_Existing_Type>
+	     <Encyclopedia_Good_Against>Crusader_Gunship EASHHYBRIT CENHFA </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>EASBBHADES DSBB SHCV</Encyclopedia_Vulnerable_To>
+		<Space_Model_Name> ISAWS.ALO </Space_Model_Name>
+		<Icon_Name>I_BUTTON_ISAWS.tga</Icon_Name>
+		<Mass>0.995</Mass>
+		<Affiliation>Underworld, Pirates</Affiliation>
+		<Scale_Factor>1.3</Scale_Factor>
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+        <Ranking_In_Category>3</Ranking_In_Category>
+		<Max_Speed>6.5</Max_Speed>
+		<Max_Rate_Of_Turn>1.5</Max_Rate_Of_Turn>
+		<Max_Lift>2.0</Max_Lift>
+		<Max_Thrust>1.0</Max_Thrust>
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>40</Bank_Turn_Angle>
+		<Layer_Z_Adjust> -100.0 </Layer_Z_Adjust>
+		<Begin_Turn_Towards_Distance>900.0</Begin_Turn_Towards_Distance>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+        <Shield_Armor_Type>Shield_Frigate</Shield_Armor_Type>
+		<Ship_Class>frigate</Ship_Class>
+		<Formation_Priority>5</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Autoresolve_Health>10000</Autoresolve_Health>
+		<AI_Combat_Power>5140</AI_Combat_Power>
+		<Shield_Points>4000</Shield_Points>
+		<Tactical_Health>6000</Tactical_Health>
+		<Shield_Refresh_Rate>25</Shield_Refresh_Rate>
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+		<Size_Value>120</Size_Value>
+		<Damage>50</Damage>
+		<Build_Cost_Credits>9000</Build_Cost_Credits>
+		<Tech_Level>5</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<!--Required_Planets>SchwarzesLoch_1</Required_planets-->
+		<Required_Special_Structures>Federation_Werft</Required_Special_Structures>
+		<Encyclopedia_Text>TEXT_UNIT_ISAWEITSTAR_TOOLTIP</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE2</Encyclopedia_Unit_Class>
+		<HardPoints>
+                 HP_ISAWS, 
+                 HP_ISAWS01, 
+                 HP_ISAWS02, 
+                 HP_ISAWS03,
+                 HP_ISAWS04
+		</HardPoints>
+		<Death_Clone>Damage_Normal, Houndstooth_Death_Clone</Death_Clone>
+		<SFXEvent_Build_Started>Unit_Elite_Move</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>Unit_Elite_Select</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>9_GROUP_white_star_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Carrack_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Unit_Elite_Select</SFXEvent_Select>
+		<SFXEvent_Move>9_GROUP_white_star_Move</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>9_GROUP_white_star_Move</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>9_GROUP_white_star_Attack</SFXEvent_Attack>
+		<SFXEvent_Guard>9_GROUP_white_star_Guard</SFXEvent_Guard>
+		<SFXEvent_Stop>Unit_Elite_Select</SFXEvent_Stop>
+		<SFXEvent_Barrage>9_GROUP_white_star_Attack</SFXEvent_Barrage>
+		<SFXEvent_Move_Into_Nebula> Unit_Elite_Move </SFXEvent_Move_Into_Nebula>
+		<Death_SFXEvent_Start_Die>9_GROUP_white_star_Death</Death_SFXEvent_Start_Die>
+		
+		<Tactical_Build_Cost_Multiplayer>9000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>5</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Lua_Script />
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name> HoundsTooth_Sensor_Jamming </GUI_Activated_Ability_Name> 
+				<Recharge_Seconds>75.0</Recharge_Seconds>
+				<Expiration_Seconds>30.0</Expiration_Seconds>
+				<Effective_Radius>900.0</Effective_Radius> 
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Sensor_Jamming_Ability Name="HoundsTooth_Sensor_Jamming">
+				<Activation_Style> User_Input </Activation_Style>
+                <Owner_Particle_Effect>Sensor_Jamming_Effect</Owner_Particle_Effect>
+			</Sensor_Jamming_Ability>
+
+		</Abilities>
+		<Population_Value>8</Population_Value>
+		<Lua_Script>Jumphole_Medium</Lua_Script>
+	</SpaceUnit>
+	
+		<SpaceUnit Name="Houndstooth_Death_Clone">
+		<Encyclopedia_Text> TEXT_TOOLTIP_HOUNDSTOOTH </Encyclopedia_Text>
+		<Space_Model_Name>UV_HoundsTooth_D.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+    </SpaceUnit>
+	<!--Оружие-->
+	<!--Главный калибр-->
+	<Projectile Name="Proj_WS_SUPER">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>P_BEAM_WESTRAHL.ALO</Space_Model_Name>
+		<Scale_Factor>1.20</Scale_Factor>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Max_Speed>40.5</Max_Speed>
+		<Max_Rate_Of_Turn>0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Rocket_Curve_Distance>1500</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>0</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>1500</Projectile_Rocket_Straight_Distance>
+		<Projectile_Max_Flight_Distance>2500.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>1500.0</Projectile_Max_Scan_Range>
+		<Explode_When_Reached_Target_Radius> Yes </Explode_When_Reached_Target_Radius>
+		<Projectile_Damage>100</Projectile_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Death_Explosions>p_MC80M_detonate</Death_Explosions> 
+  		<Death_SFXEvent_Start_Die> SFX_Sizemic_Detonation </Death_SFXEvent_Start_Die>
+		<Projectile_SFXEvent_Detonate>SFX_Sizemic_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>500</Projectile_Energy_Per_Shot>
+		<Projectile_SFXEvent_Detonate> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<AI_Combat_Power>500</AI_Combat_Power>
+	</Projectile>
+	<!--Тяжелые плазменные снаряды-->
+	<Projectile Name="Proj_WS_PLASMA">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>Proj_CENCAHG.ALO</Space_Model_Name>
+		<Projectile_Width>1</Projectile_Width><!--5,10-->
+		<Projectile_Length>70</Projectile_Length>
+		<Projectile_Texture_Slot>1,0</Projectile_Texture_Slot>
+		<Scale_Factor>1.60</Scale_Factor>
+		<Damage_Type> Damage_Turbolaser </Damage_Type>
+		<Max_Speed>38.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>2500.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>45.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>20</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle> Large_Damage_Space </Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Large_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle />
+		<Projectile_Lifetime_Detonation_Particle />
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>800</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+</FV_WS_Data>

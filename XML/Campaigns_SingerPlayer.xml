@@ -1,0 +1,999 @@
+<?xml version="1.0"?>
+<Campaigns>
+ 
+
+ 
+ 
+<!-- ******************************************************************** -->
+<!-- ***** SANDBOX CAMPAIGN "Equal Footing - All Planets Populated" ***** -->
+<!-- ******************************************************************** -->
+
+
+	<Campaign Name="Sandbox_Episode_2">
+
+		<Campaign_Set> Sandbox_Gateways_Underworld </Campaign_Set>
+
+        <Text_ID> TEXT_CAMPAIGN_SINGLE_16 </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_16 </Description_Text>
+
+        <Camera_Shift_X> -200.0 </Camera_Shift_X>
+        <Camera_Shift_Y> -681.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Andaria_NEW, 
+				Atlantis_NEW,
+				Belsa_NEW,
+				CLOM,
+				Cohall_NEW,
+				Dravidia,
+				Ears_NEW,
+				Epsilon,
+				Gallifrey,
+				Gamma,
+				Genii_NEW,
+				Helioptis,
+				Ikar,
+				Krion,
+				Micron,
+				Nibiru,
+				Omega
+				Skaro,
+				Solaris,
+				Sontar,
+				Supergate3,
+				Supergate4,
+				Tau,
+				Trill,
+				Vega
+		</Locations>
+		
+		<Trade_Routes>
+				Andaria_Cohall,
+				Andaria_Ears,
+				Andaria_Genii,				
+				Belsa_Atlantis,
+				Belsa_Ears,
+				Belsa_Genii,
+				CLOM_Dravidia,
+				CLOM_Gallifrey,
+				CLOM_Nibiru,
+				CLOM_Sontar,
+				Dravidia_Gallifrey,
+				Earth_Gate3, 
+				Gate3_Gate4,
+				Gate4_IKAR,
+				Helioptis_Epsilon,
+				Helioptis_Gallifrey,
+				Helioptis_Micron,
+				IKAR_Epsilon,
+				IKAR_Skaro,
+				IKAR_Solaris,
+				IKAR_Tau,
+				Krion_Epsilon,
+				Krion_Micron,
+				Micron_Gallifrey,
+				Micron_Sontar,
+				Nibiru_Gamma,
+				Omega_Gamma,
+				Omega_Skaro,
+				Sontar_Gallifrey,
+				Solaris_Dravidia,
+				TAU_Dravidia,
+				TAU_Gallifrey,
+				Trill_Dravidia,
+				Trill_Gamma,
+				Trill_Nibiru,
+				Trill_Solaris,
+				Vega_Omega,
+				Vega_Skaro,
+				Vega_Solaris,
+				Vega_Trill
+		</Trade_Routes>
+
+        <!--Home_Location> Rebel, Skaro </Home_Location>
+        <Home_Location> Empire, Gamma </Home_Location-->
+        <Home_Location> Underworld, Earth_NEW </Home_Location>
+		<Home_Location> Daleks, Skaro </Home_Location>
+
+        <Starting_Active_Player> Underworld </Starting_Active_Player>
+
+		<!--Rebel_Story_Name>Story_Plots_Rebel_AI_Heroes_EXP.xml</Rebel_Story_Name>
+        <Empire_Story_Name>Story_Plots_Empire_AI_Heroes_EXP.xml</Empire_Story_Name-->
+		<Daleks_Story_Name>Story_Plots_Underworld_AI_Heroes.xml</Daleks_Story_Name>
+        <Underworld_Story_Name>Story_Plots_Sandbox_episode2_Underworld.xml</Underworld_Story_Name>
+        
+        <!--AI_Player_Control> Empire, None </AI_Player_Control>
+		<AI_Player_Control> Rebel, None </AI_Player_Control-->
+		<AI_Player_Control> Daleks, AI_Player_Underworld </AI_Player_Control>
+		<AI_Player_Control> Underworld, SandboxHuman </AI_Player_Control>
+
+		<!--Markup_Filename>Empire, ShipyardsOfKuatHints </Markup_Filename>
+		<Markup_Filename>Rebel, ShipyardsOfKuatHints </Markup_Filename-->
+		<Markup_Filename>Underworld, ShipyardsOfKuatHints </Markup_Filename>
+		<Markup_Filename>Daleks, ShipyardsOfKuatHints </Markup_Filename>
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+		
+<!--
+		<Starting_Credits> Rebel,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 5 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 5 </Max_Tech_Level>
+		
+		
+		<Starting_Forces> Rebel, SKARO, Rebel_Star_Base_5 </Starting_Forces>
+		<Starting_Forces> Rebel, SKARO, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, SKARO, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, SKARO, Nebulon_B_Frigate_reb </Starting_Forces>
+		
+
+
+		<Starting_Credits> Empire,  8000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 5 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+    
+		<Starting_Forces> Empire, Gamma, Empire_Star_Base_5 </Starting_Forces>
+		<Starting_Forces> Empire, Gamma, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Gamma, Acclamator_Assault_Ship </Starting_Forces>
+		<Starting_Forces> Empire, Gamma, Victory_Destroyer </Starting_Forces>
+	-->			
+		<Starting_Credits> Daleks,  45000 </Starting_Credits>
+		<Starting_Tech_Level> Daleks, 5 </Starting_Tech_Level>
+		<Max_Tech_Level> Daleks, 5 </Max_Tech_Level>
+		
+    
+		<Starting_Forces> Daleks, SKARO, Underworld_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Daleks, SKARO, Bossk_Team </Starting_Forces>
+		<Starting_Forces> Daleks, SKARO, Tyber_Zann_Team </Starting_Forces>
+		<Starting_Forces> Daleks, SKARO, Urai_Fen_Team </Starting_Forces>
+		<Starting_Forces> Daleks, SKARO, IG88_Team </Starting_Forces>
+		<Starting_Forces> Daleks, SKARO, Silri_Team </Starting_Forces>
+		<Starting_Forces> Daleks, SKARO, U_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Daleks, SKARO, U_Ground_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Daleks, SKARO, Pirates_Ground_Jumper </Starting_Forces>
+		<Starting_Forces> Daleks, SKARO, Pirates_Ground_Jumper </Starting_Forces>
+		<Starting_Forces> Daleks, SKARO, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
+		<Starting_Forces> Daleks, SKARO, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
+		
+		<Starting_Forces> Daleks, Vega, Underworld_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Daleks, Vega, U_Ground_Barracks </Starting_Forces>
+		
+		<Starting_Forces> Daleks, Gallifrey, Underworld_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Daleks, Gallifrey, Krayt_Class_Destroyer </Starting_Forces>
+		<Starting_Forces> Daleks, Gallifrey, Krayt_Class_Destroyer </Starting_Forces>
+		<Starting_Forces> Daleks, Gallifrey, Crusader_Gunship </Starting_Forces>
+		<Starting_Forces> Daleks, Gallifrey, U_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Daleks, Gallifrey, U_Ground_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Daleks, Gallifrey, Pirates_Ground_Jumper </Starting_Forces>
+		<Starting_Forces> Daleks, Gallifrey, Pirates_Ground_Jumper </Starting_Forces>
+		<Starting_Forces> Daleks, Gallifrey, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
+		<Starting_Forces> Daleks, Gallifrey, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
+		
+		<Starting_Forces> Daleks, Ikar, Underworld_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Daleks, Ikar, Krayt_Class_Destroyer </Starting_Forces>
+		<Starting_Forces> Daleks, Ikar, Krayt_Class_Destroyer </Starting_Forces>
+		<Starting_Forces> Daleks, Ikar, Crusader_Gunship </Starting_Forces>
+		<Starting_Forces> Daleks, Ikar, U_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Daleks, Ikar, U_Ground_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Daleks, Ikar, Pirates_Ground_Jumper </Starting_Forces>
+		<Starting_Forces> Daleks, Ikar, Pirates_Ground_Jumper </Starting_Forces>
+		<Starting_Forces> Daleks, Ikar, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
+		<Starting_Forces> Daleks, Ikar, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
+		
+		<Starting_Forces> Daleks, GAMMA, Underworld_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Daleks, GAMMA, U_Ground_Barracks </Starting_Forces>
+		
+		<Starting_Credits> Underworld,  12000 </Starting_Credits>
+		<Starting_Tech_Level> Underworld, 5 </Starting_Tech_Level>
+		<Max_Tech_Level> Underworld, 5 </Max_Tech_Level>
+		
+		
+		<Starting_Forces> Underworld, Ears_NEW, Federation_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Underworld, Ears_NEW, ZHENYA</Starting_Forces>
+		<Starting_Forces> Underworld, Ears_NEW, Differencial </Starting_Forces>
+		<Starting_Forces> Underworld, Ears_NEW, Matan </Starting_Forces>
+		<Starting_Forces> Underworld, Ears_NEW, Barraks </Starting_Forces>
+		<Starting_Forces> Underworld, Ears_NEW, GAZ2330_SQR </Starting_Forces>
+
+    </Campaign> 
+
+
+	<Campaign Name="Sandbox_Alderaans_Demise_UNDERWORLD">
+
+		<Campaign_Set> Sandbox_Alderaans_Demise </Campaign_Set>
+		<Sort_Order>5</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_WARS </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_56 </Description_Text>
+
+        <Camera_Shift_X> -200.0 </Camera_Shift_X>
+        <Camera_Shift_Y> -681.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+        <Locations> 
+				Galaxy_Core_Art_Model, 
+				Abregado_Rae,
+				AetenII, 
+				Alderaan, 
+				AlzocIII, 
+				Anaxes, 
+				Atzerri, 
+				Bespin, 
+				Bestine, 
+				Bonadan, 
+				Bothawui, 
+				Byss, 
+				Carida, 
+				Corellia, 
+				Corulag, 
+				Coruscant, 
+				Dagobah, 
+				Dantooine, 
+				Dathomir, 
+				Endor, 
+				Eriadu, 
+				Felucia, 
+				Fondor, 
+				Fresia, 
+				Geonosis, 
+				Honoghr, 
+				Hoth, 
+				Hypori, 
+				Ilum, 
+				Jabiim, 
+				Kamino, 
+				Kashyyyk, 
+				Empire_Shipyard,
+				Kessel, 
+				Korriban, 
+				Kuat, 
+				Manaan, 
+				Mandalore, 
+				MonCalimari, 
+				Mustafar, 
+				Muunilinst, 
+				Myrkr, 
+				Naboo, 
+				NalHutta, 
+				Polus,
+				Ryloth, 
+				Saleucami, 
+				Shola, 
+				Sullust, 
+				Taris, 
+				Tatooine, 
+				The_Maw, 
+				Thyferra, 
+				Utapau, 
+				VergessoAsteroids, 
+				Wayland, 
+				Yavin,
+				Ears,
+                Andaria, 
+				Asuras, 
+				Athos, 
+				Atlantis, 
+				Belkan, 
+				Belsa, 
+				Cohall, 
+				Dagan, 
+				Danira, 
+				Doronda, 
+				Genii, 
+				Hoff, 
+				Lesaria,      
+	            M7G677, 
+				Manaria, 
+				Midway, 
+				Olesia, 
+				Proculus, 
+				Ratira, 
+				Sateda, 
+				SchwarzesLoch_1, 
+				Taranis1,
+				PASKHALKA,
+				Supergate1,
+				Supergate2
+		</Locations>
+
+        <Trade_Routes> 
+				Hoth_Mustafar, 
+				Mustafar_VergessoAsteroids,
+				Fondor_Thyferra, 
+				Bestine_Fondor, 
+				Bespin_Bestine, 
+				Anaxes_Coruscant, 
+				AetenII_Anaxes, 
+				AetenII_Dantooine, 
+				Bothawui_Ryloth, 
+				Bothawui_Corellia, 
+				MonCalimari_Saleucami, 
+				Kamino_MonCalimari, 
+				Kamino_Shola,
+				Bonadan_Muunilinst,
+				Bonadan_Yavin,
+				Midway_Utapau,
+				MIDWAY_PASKHALKA,
+				Ears_Supergate1,
+				SGate1_SGate2,
+				Bonadan_Supergate2
+		</Trade_Routes>
+
+        <Home_Location> Rebel, Hoth </Home_Location>
+        <Home_Location> Empire, Coruscant </Home_Location>
+        <Home_Location> UNDERWORLD, Ears </Home_Location>
+
+        <Starting_Active_Player> UNDERWORLD </Starting_Active_Player>
+
+		<Rebel_Story_Name>Story_Plots_Rebel_AI_Heroes10B.xml</Rebel_Story_Name>
+        <Empire_Story_Name>Story_Plots_Empire_AI_Heroes10B.xml</Empire_Story_Name>
+        <UNDERWORLD_Story_Name>Story_Plots_Sandbox_episode1_Underworld.xml</UNDERWORLD_Story_Name>
+        
+		<AI_Player_Control> Empire, BasicEmpire </AI_Player_Control>
+		<AI_Player_Control> Rebel, BasicRebel </AI_Player_Control>
+		<AI_Player_Control> Pirates, None </AI_Player_Control>
+		<AI_Player_Control> Underworld, SandboxHuman </AI_Player_Control>
+		
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Pirates, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints </Markup_Filename>
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+		<!-- Rebel Starting Forces -->
+		
+		<Starting_Credits> Pirates,  45000 </Starting_Credits>
+		<Starting_Tech_Level> Pirates, 5 </Starting_Tech_Level>
+		<Max_Tech_Level> Pirates, 5 </Max_Tech_Level>
+		
+		<!-- Pirate Space Forces -->
+		
+		<!-- Andaria -->
+		<Starting_Forces> Pirates, Andaria, Hive </Starting_Forces>
+		<Starting_Forces> Pirates, Andaria, Valkyrie </Starting_Forces>
+		<Starting_Forces> Pirates, Andaria, Tiger </Starting_Forces>
+		<Starting_Forces> Pirates, Andaria, New_Galactica </Starting_Forces>
+		<Starting_Forces> Pirates, Andaria, New_Galactica </Starting_Forces>
+		
+		<!-- Asuras -->
+		
+		<Starting_Forces> Pirates, Asuras, Pirates_Star_Base_5 </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>	
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, AURORA </Starting_Forces>		
+		<Starting_Forces> Pirates, Asuras, Atlantis_Ship </Starting_Forces>
+		
+		<Starting_Forces> Pirates, Asuras, Rebel_Tank_Buster_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, Rebel_Light_Tank_Brigade </Starting_Forces>	
+		<Starting_Forces> Pirates, Asuras, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, Rebel_Tank_Buster_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Asuras, Rebel_Light_Tank_Brigade </Starting_Forces>	
+		<Starting_Forces> Pirates, Asuras, Rebel_Infantry_Squad </Starting_Forces>
+		
+		<!-- Athos -->
+
+		<Starting_Forces> Pirates, Athos,Pirates_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Pirates, Athos, Ears_Ship </Starting_Forces>
+		<Starting_Forces> Pirates, Athos, Ears_Ship </Starting_Forces>
+		<Starting_Forces> Pirates, Athos, FV_DS9 </Starting_Forces>
+		<Starting_Forces> Pirates, Athos, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Athos, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Athos, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Athos, HIVE </Starting_Forces>	
+		
+		<Starting_Forces> Pirates, Athos, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Athos, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Athos, Imperial_Stormtrooper_Squad </Starting_Forces>
+		
+		<!-- Belkan -->
+		
+		<Starting_Forces> Pirates, Belkan, SASHA_P </Starting_Forces>
+		
+		<!-- Belsa -->
+		
+		<Starting_Forces> Pirates, Belsa,Pirates_Star_Base_1 </Starting_Forces>
+		<Starting_Forces> Pirates, Belsa, Strikestar </Starting_Forces>
+		<Starting_Forces> Pirates, Belsa, Strikestar </Starting_Forces>
+		<Starting_Forces> Pirates, Belsa, Strikestar </Starting_Forces>		
+		
+		<Starting_Forces> Pirates, Belsa, Imperial_Light_Scout_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Belsa, Imperial_Heavy_Scout_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Belsa, Imperial_Anti_Infantry_Brigade </Starting_Forces>
+		
+		<!-- Cohall -->
+		
+		<Starting_Forces> Pirates, Cohall, Pirates_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Pirates, Cohall, ZPM_HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Cohall, Talos </Starting_Forces>
+		<Starting_Forces> Pirates, Cohall, WS </Starting_Forces>
+		<Starting_Forces> Pirates, Cohall, WS </Starting_Forces>
+		<Starting_Forces> Pirates, Cohall, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Cohall, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Cohall, FV_DS9 </Starting_Forces>
+		<Starting_Forces> Pirates, Cohall, New_Pegasus</Starting_Forces>
+		<Starting_Forces> Pirates, Cohall, FV_Relativity </Starting_Forces>
+		<Starting_Forces> Pirates, Cohall, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Cohall, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Cohall, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Cohall, Defender </Starting_Forces>
+		
+		<Starting_Forces> Pirates, Cohall, Rebel_Light_Tank_Brigade </Starting_Forces>	
+		<Starting_Forces> Pirates, Cohall, Rebel_Light_Tank_Brigade </Starting_Forces>	
+		<Starting_Forces> Pirates, Cohall, Rebel_Light_Tank_Brigade </Starting_Forces>	
+		
+		<!-- Genii -->
+		
+		<Starting_Forces> Pirates, Genii, Pirates_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Pirates, Genii, Tiger </Starting_Forces>
+		<Starting_Forces> Pirates, Genii, Tiger </Starting_Forces>
+		<Starting_Forces> Pirates, Genii, Firestar </Starting_Forces>
+		
+		<Starting_Forces> Pirates, Genii, Imperial_Light_Scout_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Genii, Imperial_Heavy_Scout_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Genii, Imperial_Anti_Infantry_Brigade </Starting_Forces>
+		
+		<!-- Geonosis -->
+		
+		<Starting_Forces> Pirates, Geonosis, New_Pegasus </Starting_Forces>
+		<Starting_Forces> Pirates, Geonosis, Defender </Starting_Forces>
+		<Starting_Forces> Pirates, Geonosis, Defender </Starting_Forces>
+		<Starting_Forces> Pirates, Geonosis, New_Pegasus </Starting_Forces>
+		<Starting_Forces> Pirates, Geonosis, Pirates_Destroyer_Cruiser </Starting_Forces>
+		<Starting_Forces> Pirates, Geonosis, Ears_Ship </Starting_Forces>
+		
+		<!-- Hoff -->
+		
+		<Starting_Forces> Pirates, Hoff, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Hoff, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Hoff, Firestar </Starting_Forces>
+		<Starting_Forces> Pirates, Hoff, Defender </Starting_Forces>
+		<Starting_Forces> Pirates, Hoff, Defender </Starting_Forces>
+		<Starting_Forces> Pirates, Hoff, HIVE </Starting_Forces>
+		
+		<Starting_Forces> Pirates, Hoff, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Hoff, Imperial_Light_Scout_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Hoff, Imperial_Heavy_Scout_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Hoff, Imperial_Anti_Infantry_Brigade </Starting_Forces>
+		
+		<!-- Hypori -->
+		
+		<Starting_Forces> Pirates, Hypori, New_Pegasus </Starting_Forces>
+		<Starting_Forces> Pirates, Hypori, New_Pegasus </Starting_Forces>
+		<Starting_Forces> Pirates, Hypori, New_Pegasus </Starting_Forces>
+		<Starting_Forces> Pirates, Hypori, Pirates_Destroyer_Cruiser </Starting_Forces>
+		<Starting_Forces> Pirates, Hypori, Defender </Starting_Forces>
+		<Starting_Forces> Pirates, Hypori, Defender </Starting_Forces>
+		<Starting_Forces> Pirates, Hypori, Predel </Starting_Forces>
+		<Starting_Forces> Pirates, Hypori, Predel </Starting_Forces>
+		<Starting_Forces> Pirates, Hypori, Predel </Starting_Forces>
+		<Starting_Forces> Pirates, Hypori, Predel </Starting_Forces>
+		
+		<!-- Lesaria -->		
+		
+		<Starting_Forces> Pirates, Lesaria, Pirates_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Pirates, Lesaria, Hive </Starting_Forces>
+		<Starting_Forces> Pirates, Lesaria, ZPM_Hive </Starting_Forces>
+		<Starting_Forces> Pirates, Lesaria, ZPM_Hive </Starting_Forces>
+		<Starting_Forces> Pirates, Lesaria, Pirates_Destroyer_Cruiser </Starting_Forces>
+		<Starting_Forces> Pirates, Lesaria, Pirates_Destroyer_Cruiser</Starting_Forces>
+		<Starting_Forces> Pirates, Lesaria, FV_DS9 </Starting_Forces>
+		<Starting_Forces> Pirates, Lesaria, FV_DS9 </Starting_Forces>
+		<Starting_Forces> Pirates, Lesaria, Hive </Starting_Forces>
+		<Starting_Forces> Pirates, Lesaria, Hive </Starting_Forces>
+		<Starting_Forces> Pirates, Lesaria, Hive </Starting_Forces>
+		
+		<Starting_Forces> Pirates, Lesaria, Rebel_Tank_Buster_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Lesaria, Rebel_Tank_Buster_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Lesaria, Rebel_Tank_Buster_Squad </Starting_Forces>
+
+		<!-- M7G677 -->
+		
+		<Starting_Forces> Pirates, M7G677, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, M7G677, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, M7G677, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, M7G677, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, M7G677, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, M7G677, Pirates_Destroyer_Cruiser </Starting_Forces>
+		<Starting_Forces> Pirates, M7G677, Pirates_Destroyer_Cruiser </Starting_Forces>
+		<Starting_Forces> Pirates, M7G677, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, M7G677, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, M7G677, AURORA </Starting_Forces>	
+	
+		<!-- Midway -->
+	
+		<Starting_Forces> Pirates, Midway, FV_Relativity </Starting_Forces>
+		<Starting_Forces> Pirates, Midway, New_Pegasus </Starting_Forces>
+		<Starting_Forces> Pirates, Midway, ZPM_HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Midway, ZPM_HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Midway, Orion </Starting_Forces>
+		<Starting_Forces> Pirates, Midway, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Midway, AURORA </Starting_Forces>
+		
+		<!-- Olesia -->
+		
+		<Starting_Forces> Pirates, Olesia, Pirates_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Pirates, Olesia, ZPM_HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Olesia, Talos </Starting_Forces>
+		<Starting_Forces> Pirates, Olesia, Talos </Starting_Forces>
+		<Starting_Forces> Pirates, Olesia, ZPM_HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Olesia, New_Pegasus </Starting_Forces>
+		<Starting_Forces> Pirates, Olesia, New_Pegasus </Starting_Forces>
+		<Starting_Forces> Pirates, Olesia, Defender </Starting_Forces>
+		<Starting_Forces> Pirates, Olesia, Defender </Starting_Forces>
+		<Starting_Forces> Pirates, Olesia, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Olesia, HIVE </Starting_Forces>
+		
+		<Starting_Forces> Pirates, Olesia, Rebel_Light_Tank_Brigade </Starting_Forces>	
+		<Starting_Forces> Pirates, Olesia, Rebel_Light_Tank_Brigade </Starting_Forces>	
+		<Starting_Forces> Pirates, Olesia, Rebel_Light_Tank_Brigade </Starting_Forces>
+		<Starting_Forces> Pirates, Olesia, Rebel_Light_Tank_Brigade </Starting_Forces>	
+		<Starting_Forces> Pirates, Olesia, Rebel_Light_Tank_Brigade </Starting_Forces>	
+		<Starting_Forces> Pirates, Olesia, Rebel_Light_Tank_Brigade </Starting_Forces>	
+		
+		<!-- Proculus -->
+		
+		<Starting_Forces> Pirates, Proculus, Pirates_Star_Base_1 </Starting_Forces>
+		<Starting_Forces> Pirates, Proculus, FV_Relativity </Starting_Forces>
+		<Starting_Forces> Pirates, Proculus, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Proculus, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, Proculus, Pirates_Destroyer_Cruiser </Starting_Forces>
+		<Starting_Forces> Pirates, Proculus, FV_DS9 </Starting_Forces>
+		<Starting_Forces> Pirates, Proculus, WS </Starting_Forces>
+		<Starting_Forces> Pirates, Proculus, WS </Starting_Forces>
+		
+		<!-- Sateda -->
+		
+		<Starting_Forces> Pirates, Sateda, Pirates_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Pirates, Sateda, Predel </Starting_Forces>
+		<Starting_Forces> Pirates, Sateda, Predel </Starting_Forces>
+		<Starting_Forces> Pirates, Sateda, Firestar </Starting_Forces>
+		<Starting_Forces> Pirates, Sateda, WS_P </Starting_Forces>
+		<Starting_Forces> Pirates, Sateda, Strikestar </Starting_Forces>
+		<Starting_Forces> Pirates, Sateda, Jumper_Squadron </Starting_Forces>
+		<Starting_Forces> Pirates, Sateda, Jumper_Squadron </Starting_Forces>
+		<Starting_Forces> Pirates, Sateda, FV_DS9 </Starting_Forces>
+		<Starting_Forces> Pirates, Sateda, AURORA </Starting_Forces>
+		
+		<Starting_Forces> Pirates, Sateda, Rebel_Light_Tank_Brigade </Starting_Forces>	
+		<Starting_Forces> Pirates, Sateda, Rebel_Infantry_Squad </Starting_Forces>	
+		<Starting_Forces> Pirates, Sateda, Rebel_Infantry_Squad </Starting_Forces>
+		
+		<!-- Taranis1 -->
+		
+		<Starting_Forces> Pirates, Taranis1, Pirates_Star_Base_1 </Starting_Forces>
+		<Starting_Forces> Pirates, Taranis1, Defender</Starting_Forces>
+		<Starting_Forces> Pirates, Taranis1, Defender </Starting_Forces>
+		<Starting_Forces> Pirates, Taranis1, FV_Relativity </Starting_Forces>
+		<Starting_Forces> Pirates, Taranis1, Tiger </Starting_Forces>
+		<Starting_Forces> Pirates, Taranis1, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Taranis1, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, Taranis1, HIVE </Starting_Forces>
+		
+		<Starting_Forces> Pirates, Taranis1, Rebel_Tank_Buster_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Taranis1, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Pirates, Taranis1, Rebel_Light_Tank_Brigade </Starting_Forces>	
+		<Starting_Forces> Pirates, Taranis1, Rebel_Infantry_Squad </Starting_Forces>	
+		
+		<!-- Black Hole -->		
+				
+		<Starting_Forces> Pirates, SchwarzesLoch_1, Defender </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, talos </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, FV_Relativity </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, FV_DS9 </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, FV_DS9 </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, WS </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, WS </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, AURORA </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, ZPM_HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, ZPM_HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, New_Pegasus  </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, HIVE </Starting_Forces>
+		<Starting_Forces> Pirates, SchwarzesLoch_1, Talos</Starting_Forces>
+		
+		
+		
+		<Starting_Credits> Rebel,  45000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 4 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+		
+		<Starting_Forces> Rebel, Atzerri, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Atzerri, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Atzerri, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Atzerri, Nebulon_B_Frigate </Starting_Forces> 
+
+		<!-- Bespin Space Forces -->
+		<Starting_Forces> Rebel, Bespin, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Bespin, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Bespin, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Bespin, Nebulon_B_Frigate </Starting_Forces>
+
+		<!-- Bonadan Space Forces -->
+		<Starting_Forces> Rebel, Bonadan, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Bonadan, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Bonadan, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Bonadan, Nebulon_B_Frigate </Starting_Forces>
+
+		<!-- Dagobah Space Forces -->		
+		<Starting_Forces> Rebel, Dagobah, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Dagobah, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Dagobah, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Dagobah, Nebulon_B_Frigate </Starting_Forces>
+
+		<!-- Dantooine Space Forces -->
+		<Starting_Forces> Rebel, Carida, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Carida, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Carida, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Carida, Nebulon_B_Frigate </Starting_Forces>
+
+		<!-- Dathomir Space Forces -->
+		<Starting_Forces> Rebel, Dathomir, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Dathomir, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Dathomir, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Dathomir, Nebulon_B_Frigate </Starting_Forces>
+
+		<!-- Endor Space Forces -->
+		<Starting_Forces> Rebel, Endor, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Endor, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Endor, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Endor, Corellian_Corvette </Starting_Forces>
+
+		<!-- Honoghr Space Forces -->
+		<Starting_Forces> Rebel, Honoghr, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Honoghr, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Honoghr, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Honoghr, Corellian_Corvette </Starting_Forces>
+                  
+        <!-- Hoth Space Forces -->
+		<Starting_Forces> Rebel, Hoth, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Hoth, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Hoth, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Hoth, Corellian_Corvette </Starting_Forces>
+
+		<!-- Korriban Space Forces -->
+		<Starting_Forces> Rebel, Korriban, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Korriban, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Korriban, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Korriban, Nebulon_B_Frigate </Starting_Forces>
+		<Starting_Forces> Rebel, Korriban, Nebulon_B_Frigate </Starting_Forces>
+
+		<!-- Manaan Space Forces -->
+		<Starting_Forces> Rebel, Manaan, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Manaan, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Manaan, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Manaan, Nebulon_B_Frigate </Starting_Forces>
+	
+		<!-- MonCalimari Space Forces -->
+		<Starting_Forces> Rebel, MonCalimari, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, MonCalimari, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, MonCalimari, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, MonCalimari, Nebulon_B_Frigate </Starting_Forces>
+
+		<!-- Mustafar Space Forces -->
+		<Starting_Forces> Rebel, Mustafar, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Mustafar, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Mustafar, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Mustafar, Nebulon_B_Frigate </Starting_Forces>
+
+		<!-- Muunilinst Space Forces -->
+		<Starting_Forces> Rebel, Muunilinst, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Muunilinst, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Muunilinst, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Muunilinst, Nebulon_B_Frigate </Starting_Forces>
+
+		<!-- Naboo Space Forces -->
+		<Starting_Forces> Rebel, Naboo, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Naboo, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Naboo, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Naboo, Nebulon_B_Frigate </Starting_Forces>
+		
+		<!-- Saleucami Space Forces -->
+		<Starting_Forces> Rebel, Saleucami, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Saleucami, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Saleucami, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Saleucami, Nebulon_B_Frigate </Starting_Forces>
+		
+		<!-- VergessoAsteroids Space Forces -->
+		<Starting_Forces> Rebel, Kamino, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Kamino, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Kamino, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Kamino, Nebulon_B_Frigate </Starting_Forces>
+				
+		<!-- Yavin Space Forces -->
+		<Starting_Forces> Rebel, Yavin, Rebel_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin, Nebulon_B_Frigate </Starting_Forces>
+
+		<!-- Empire Starting Forces -->
+
+		<Starting_Credits> Empire,  50000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 5 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> Empire, Abregado_Rae, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Broadside_Class_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Abregado_Rae, Acclamator_Assault_Ship </Starting_Forces>
+		
+		<!-- AetenII Space Forces -->
+		<Starting_Forces> Empire, AetenII, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, AetenII, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, AetenII, Acclamator_Assault_Ship </Starting_Forces>
+		
+		<!-- Alderaan Space Forces -->
+		<Starting_Forces> Empire, Alderaan, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Alderaan, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Alderaan, Acclamator_Assault_Ship </Starting_Forces>
+		
+		<!-- Anaxes Space Forces -->
+		<Starting_Forces> Empire, Anaxes, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Anaxes, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Anaxes, Acclamator_Assault_Ship </Starting_Forces>
+		
+		<!-- Byss Space Forces -->
+		<Starting_Forces> Empire, Byss, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Byss, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Byss, Acclamator_Assault_Ship </Starting_Forces>
+		
+		<!-- Byss Space Forces -->
+		<Starting_Forces> Empire, Empire_Shipyard, Empire_Star_Base_5 </Starting_Forces>
+		
+		<!-- Carida Space Forces -->
+		<Starting_Forces> Empire, Dantooine, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Dantooine, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Dantooine, Acclamator_Assault_Ship </Starting_Forces>
+		
+		<!-- Corellia Space Forces -->
+		<Starting_Forces> Empire, Corellia, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Corellia, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Corellia, Acclamator_Assault_Ship </Starting_Forces>
+
+		<!-- Corulag Space Forces -->
+		<Starting_Forces> Empire, Corulag, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Corulag, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Corulag, Acclamator_Assault_Ship </Starting_Forces>
+
+        <!-- Coruscant Space Forces -->
+		<Starting_Forces> Empire, Coruscant, Empire_Star_Base_5 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Acclamator_Assault_Ship </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Star_Destroyer </Starting_Forces>
+
+
+		<!-- Eriadu Space Forces -->
+		<Starting_Forces> Empire, Eriadu, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Eriadu, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Eriadu, Acclamator_Assault_Ship </Starting_Forces>
+		
+		<!-- Felucia Space Forces -->
+		<Starting_Forces> Empire, Felucia, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Felucia, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Felucia, Acclamator_Assault_Ship </Starting_Forces>
+		
+		<!-- Fresia Space Forces -->
+		<Starting_Forces> Empire, Fresia, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Fresia, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Fresia, Acclamator_Assault_Ship </Starting_Forces>
+		
+		<!-- Ilum Space Forces -->
+		<Starting_Forces> Empire, Ilum, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Ilum, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Ilum, Acclamator_Assault_Ship </Starting_Forces>
+		
+		<!-- Kashyyyk Space Forces -->
+		<Starting_Forces> Empire, Kashyyyk, Empire_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Empire, Kashyyyk, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Kashyyyk, Acclamator_Assault_Ship </Starting_Forces>
+		<Starting_Forces> Empire, Kashyyyk, Victory_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Kashyyyk, Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Kashyyyk, Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Kashyyyk, Star_Destroyer </Starting_Forces>
+		
+		<!-- Kessel Space Forces -->
+		<Starting_Forces> Empire, Kessel, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Kessel, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Kessel, Acclamator_Assault_Ship </Starting_Forces>
+		
+		<!-- Kuat Space Forces -->
+		<Starting_Forces> Empire, Kuat, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Kuat, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Kuat, Acclamator_Assault_Ship </Starting_Forces>
+
+		<!-- Myrkr Space Forces -->
+		<Starting_Forces> Empire, Myrkr, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Myrkr, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Myrkr, Acclamator_Assault_Ship </Starting_Forces>
+
+		<!-- Sullust Space Forces -->
+		<Starting_Forces> Empire, Sullust, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Sullust, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Sullust, Acclamator_Assault_Ship </Starting_Forces>
+		<Starting_Forces> Empire, Sullust, Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Sullust, Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Sullust, Star_Destroyer </Starting_Forces>
+
+		
+		<!-- Wayland Space Forces -->
+		<Starting_Forces> Empire, Wayland, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Wayland, TIE_Scout_Squadron </Starting_Forces>
+		<Starting_Forces> Empire, Wayland, Acclamator_Assault_Ship </Starting_Forces>
+		<Starting_Forces> Empire, Wayland, Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Wayland, Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Wayland, Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Wayland, Star_Destroyer </Starting_Forces>
+
+				<!-- Utapau Space Forces -->
+		<Starting_Forces> Empire, Utapau, Empire_Star_Base_5 </Starting_Forces>
+		<Starting_Forces> Empire, Utapau, Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Utapau, Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Utapau, Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Utapau, Star_Destroyer </Starting_Forces>
+
+		
+		<!-- Federation Starting Forces -->
+
+		<Starting_Credits> UNDERWORLD,  20000 </Starting_Credits>
+		<Starting_Tech_Level> UNDERWORLD, 5 </Starting_Tech_Level>
+		<Max_Tech_Level> UNDERWORLD, 5 </Max_Tech_Level>
+		
+		<!-- Thyferra Space Forces -->
+		<Starting_Forces> UNDERWORLD, Ears, X-301_Squadron</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, T-90_SQR</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, ZHENYA</Starting_Forces>
+
+
+    </Campaign>
+	
+	
+	
+	
+	<Campaign Name="Sandbox_Tutolar_UNDERWORLD">
+
+		<Campaign_Set> Sandbox_Tutolar </Campaign_Set>
+		<Sort_Order>5</Sort_Order>
+
+        <Text_ID> TEXT_CAMPAIGN_TUTOLAR </Text_ID>
+        <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_TUTOLAR </Description_Text>
+
+        <Camera_Shift_X> -200.0 </Camera_Shift_X>
+        <Camera_Shift_Y> -681.0 </Camera_Shift_Y>
+        <Camera_Distance> 1200.0 </Camera_Distance>
+
+        <Locations>
+				Ears,
+                Andaria, 
+				Belsa,  
+				Genii 
+		</Locations>
+		
+		<Home_Location> Rebel, Belsa </Home_Location>
+        <Home_Location> Empire, Genii </Home_Location>
+        <Home_Location> UNDERWORLD, Ears </Home_Location>
+
+        <Starting_Active_Player> UNDERWORLD </Starting_Active_Player>
+
+		<Rebel_Story_Name>Story_Plots_Rebel_AI_Heroes10B.xml</Rebel_Story_Name>
+        <Empire_Story_Name>Story_Plots_Empire_AI_Heroes10B.xml</Empire_Story_Name>
+        <UNDERWORLD_Story_Name>Story_Plots_Sandbox_TUTOLAR_Underworld.xml</UNDERWORLD_Story_Name>
+        
+		<AI_Player_Control> Empire, None </AI_Player_Control>
+		<AI_Player_Control> Rebel, None </AI_Player_Control>
+		<AI_Player_Control> Pirates, None </AI_Player_Control>
+		<AI_Player_Control> Underworld, SandboxHuman </AI_Player_Control>
+		
+		<Markup_Filename>Empire, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Pirates, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Rebel, DefaultGalacticHints </Markup_Filename>
+		<Markup_Filename>Underworld, DefaultGalacticHints </Markup_Filename>
+		
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<!-- Win Conditions -->
+
+		<Human_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</Human_Victory_Conditions>
+
+		<AI_Victory_Conditions>
+				Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+	
+		<Starting_Forces> Pirates, Andaria, Pirates_Star_Base_1 </Starting_Forces>
+		<Starting_Forces> Pirates, Andaria, Strikestar </Starting_Forces>
+		<Starting_Forces> Pirates, Andaria, Strikestar </Starting_Forces>
+		<Starting_Forces> Pirates, Andaria, Strikestar </Starting_Forces>	
+		<!--Повстанцы-->
+		<!--Starting_Forces> Rebel, Belsa, Rebel_Star_Base_2 </Starting_Forces>	
+		<Starting_Forces> Rebel, Belsa, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Belsa, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Belsa, Rebel_X-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Belsa, Y-Wing_Squadron </Starting_Forces>
+		<Starting_Forces> Rebel, Belsa, Corellian_Corvette </Starting_Forces-->
+		
+		<Starting_Forces> Rebel, Belsa, R_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Rebel, Belsa, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Rebel, Belsa, Field_Com_Rebel_Team </Starting_Forces>
+		<Starting_Forces> Rebel, Belsa, Rebel_Infantry_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Belsa, Rebel_Tank_Buster_Squad </Starting_Forces>
+		<Starting_Forces> Rebel, Belsa, Rebel_Light_Tank_Brigade </Starting_Forces>
+		<!--Империя-->
+		<Starting_Forces> Empire, Genii, Empire_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Empire, Genii, Tartan_Patrol_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Genii, Acclamator_Assault_Ship </Starting_Forces>
+		
+		<Starting_Forces> Empire, Genii, E_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Empire, Genii, E_Ground_Officer_Academy </Starting_Forces>
+		<Starting_Forces> Empire, Genii, Field_Com_Empire_Team </Starting_Forces>
+		<Starting_Forces> Empire, Genii, Imperial_Stormtrooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Genii, Imperial_Heavy_Scout_Squad </Starting_Forces>
+		<!--9 Группа-->
+		
+		<Starting_Credits> UNDERWORLD,  20000 </Starting_Credits>
+		<Starting_Tech_Level> UNDERWORLD, 5 </Starting_Tech_Level>
+		<Max_Tech_Level> UNDERWORLD, 5 </Max_Tech_Level>
+		
+		<Starting_Forces> UNDERWORLD, Ears, X-301_Squadron</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, T-90_SQR</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, ZHENYA</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, Nikita_Team</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, Roman_Team</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, Valera</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, Igor_Team</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, Artem</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, Pascal</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, Predel</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, Rita_Team</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, White_Star</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, NX_01</Starting_Forces>
+		<Starting_Forces> UNDERWORLD, Ears, Differencial</Starting_Forces>
+	</Campaign>	
+ </Campaigns>

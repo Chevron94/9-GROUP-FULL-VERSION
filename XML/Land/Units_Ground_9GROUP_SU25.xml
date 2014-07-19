@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+<GroundCompany Name="SU25_SQR">
+  <Text_ID>TEXT_UNIT_SU25</Text_ID> 
+		<Encyclopedia_Good_Against> UC_Empire_Buildable_Anti_Vehicle_Turret UC_Empire_Buildable_Anti_Infantry_Turret Stormtrooper </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> AT_AA_Walker </Encyclopedia_Vulnerable_To>
+		<GUI_Row> 1 </GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>24</Damage>
+		<Autoresolve_Health>40</Autoresolve_Health>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>670</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Slice_Cost_Credits>2000</Slice_Cost_Credits>
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<CanCellStack>yes</CanCellStack>
+		<!--<Required_Ground_Base_Level>2</Required_Ground_Base_Level>-->
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>AIRPORT</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Prority>1</Formation_Prority>
+		<Is_Escort>yes</Is_Escort>
+		<Ship_Class>walker</Ship_Class>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>SU25, SU25, SU25</Company_Units>
+        <Icon_Name>i_button_su25.tga</Icon_Name> 
+		<GUI_Model>RV_snowspeeder.ALO</GUI_Model>
+		<GUI_Distance>70</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Assault_Speeder</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
+		<Score_Cost_Credits>225</Score_Cost_Credits>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+        <Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer> 
+        <Tactical_Build_Time_Seconds>21</Tactical_Build_Time_Seconds> 
+		<Tactical_Build_Prerequisites>RC_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+  		
+  <Encyclopedia_Text>TEXT_TOOLTIP_SU25</Encyclopedia_Text> 
+  <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUND_ATTACK_PLANE</Encyclopedia_Unit_Class> 
+        <Maintenance_Cost>0.05</Maintenance_Cost>
+		<Population_Value>1</Population_Value>
+	</GroundCompany>
+
+<GroundVehicle Name="SU25">
+    <Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level> 
+    <Blob_Shadow_Scale>40.0, 40.0</Blob_Shadow_Scale> 
+    <Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name> 
+  
+  <Text_ID>TEXT_UNIT_SU25</Text_ID> 
+  <Encyclopedia_Good_Against>AT_AT_Walker MZ8_Pulse_Cannon_Tank</Encyclopedia_Good_Against> 
+  <Encyclopedia_Vulnerable_To>AT_AA_Walker Dark_Trooper_PhaseIII MAL_Rocket_Vehicle</Encyclopedia_Vulnerable_To> 
+  <Encyclopedia_Text>TEXT_TOOLTIP_SU25</Encyclopedia_Text> 
+  <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GROUND_ATTACK_PLANE</Encyclopedia_Unit_Class> 
+  <Land_Model_Name>9GROUP_SU25.ALO</Land_Model_Name> 
+  
+  <Mass>0.985</Mass> 
+  <Scale_Factor>1</Scale_Factor> 
+  <Size_Value>15</Size_Value> 
+  <Select_Box_Scale>40</Select_Box_Scale> 
+  <Ranking_In_Category>6</Ranking_In_Category> 
+  <Max_Speed>16.0</Max_Speed> 
+  <Min_Speed>6.0</Min_Speed> 
+  <OverrideAcceleration>.2</OverrideAcceleration> 
+  <OverrideDeceleration>.2</OverrideDeceleration> 
+  <Max_Rate_Of_Turn>0.8</Max_Rate_Of_Turn> 
+  <Max_Rate_Of_Roll>0.8</Max_Rate_Of_Roll> 
+  <Bank_Turn_Angle>80</Bank_Turn_Angle> 
+  
+  <Max_Lift>3.0</Max_Lift> 
+  <Space_Layer>Frigate</Space_Layer> 
+  <Stationary_Space_Layer>Land</Stationary_Space_Layer> 
+  <FormationGrouping>Solo</FormationGrouping> 
+  <PathFrameDelay>4</PathFrameDelay> 
+  <Hover_Offset>250.0</Hover_Offset> 
+  <Prepare_Strafe_Height>5.0</Prepare_Strafe_Height> 
+  <MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames> 
+  <Should_Cause_Limited_Turrets_To_Turn>false</Should_Cause_Limited_Turrets_To_Turn> 
+  
+  <AI_Combat_Power>2500</AI_Combat_Power> 
+  
+  <Behavior>SELECTABLE, POWERED</Behavior> 
+  <LandBehavior>ABILITY_COUNTDOWN, FLYING_LOCOMOTOR,REVEAL,HIDE_WHEN_FOGGED, AMBIENT_SFX,UNIT_AI,TARGETING,WEAPON,STUNNABLE, WIND_DISTURBANCE,DAMAGE_TRACKING</LandBehavior>  
+  <Weather_Category>Speeder</Weather_Category> 
+  <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living> 
+  <Is_Affected_By_Gravity_Control_Field>Yes</Is_Affected_By_Gravity_Control_Field> 
+  <Affiliation>Underworld</Affiliation> 
+  <Political_Control>0</Political_Control> 
+  <Armor_Type>Armor_Protected_Plane</Armor_Type> 
+  <Damage>8</Damage> 
+  <Autoresolve_Health>40.0</Autoresolve_Health> 
+  
+  <Shield_Points>0</Shield_Points> 
+  <Tactical_Health>150</Tactical_Health> 
+  <Shield_Refresh_Rate>0</Shield_Refresh_Rate> 
+  <Energy_Capacity>1000</Energy_Capacity> 
+  <Energy_Refresh_Rate>999</Energy_Refresh_Rate> 
+  <Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust> 
+  <Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range> 
+  <Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance> 
+  <Turret_Rotate_Extent_Degrees>30.0</Turret_Rotate_Extent_Degrees> 
+  <Turret_Elevate_Extent_Degrees>80.0</Turret_Elevate_Extent_Degrees> 
+  <Projectile_Damage>10.0</Projectile_Damage> 
+  
+    <Hardpoints>HP_GSH_30_2,hp_SU25_anti_air, hp_SU25_NUR1, hp_SU25_PTUR2, hp_SU25_bombs</Hardpoints> 
+  <Projectile_Types></Projectile_Types>
+  <Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds> 
+  <Projectile_Fire_Pulse_Count>6</Projectile_Fire_Pulse_Count> 
+  <Projectile_Fire_Pulse_Delay_Seconds>0.01</Projectile_Fire_Pulse_Delay_Seconds> 
+  <Targeting_Fire_Inaccuracy>Infantry, 20.0</Targeting_Fire_Inaccuracy> 
+  <Targeting_Fire_Inaccuracy>Vehicle, 10.0</Targeting_Fire_Inaccuracy> 
+  <Targeting_Fire_Inaccuracy>Air, 20.0</Targeting_Fire_Inaccuracy> 
+  <Targeting_Fire_Inaccuracy>Structure, 20.0</Targeting_Fire_Inaccuracy> 
+  
+  <Damaged_Smoke_Asset_Name>P_Smoke_Small02.alo</Damaged_Smoke_Asset_Name> 
+  <Death_Explosions>Medium_Explosion_Land</Death_Explosions> 
+  <Spin_Away_On_Death>Yes</Spin_Away_On_Death> 
+  <Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance> 
+  <Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time> 
+  <Spin_Away_On_Death_Explosion>Medium_Explosion_Land</Spin_Away_On_Death_Explosion> 
+  <Spin_Away_On_Death_SFXEvent_Start_Die>Unit_A_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die> 
+  <Remove_Upon_Death>true</Remove_Upon_Death> 
+  <Wind_Disturbance_Radius>100</Wind_Disturbance_Radius> 
+  <Wind_Disturbance_Strength>5</Wind_Disturbance_Strength> 
+  <Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha> 
+  <SFXEvent_Fire>Unit_Snow_Speeder_Fire</SFXEvent_Fire> 
+  <SFXEvent_Select>Unit_Select_Assault_Speeder</SFXEvent_Select> 
+  <SFXEvent_Move>Unit_Move_Assault_Speeder</SFXEvent_Move> 
+  <SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move> 
+  <SFXEvent_Attack>Unit_Attack_Assault_Speeder</SFXEvent_Attack> 
+  <SFXEvent_Guard>Unit_Guard_Assault_Speeder</SFXEvent_Guard> 
+  <SFXEvent_Assist_Move>Unit_Assist_Move_Assault_Speeder</SFXEvent_Assist_Move> 
+  <SFXEvent_Assist_Attack>Unit_Assist_Attack_Assault_Speeder</SFXEvent_Assist_Attack> 
+  <Death_SFXEvent_Start_Die>Unit_Snow_Speeder_Death_SFX</Death_SFXEvent_Start_Die> 
+  <SFXEvent_Ambient_Moving>Unit_SnowSpeeder_Fly_By</SFXEvent_Ambient_Moving> 
+  <SFXEvent_Ambient_Moving_Min_Delay_Seconds>5</SFXEvent_Ambient_Moving_Min_Delay_Seconds> 
+  <SFXEvent_Ambient_Moving_Max_Delay_Seconds>7</SFXEvent_Ambient_Moving_Max_Delay_Seconds> 
+  <SFXEvent_Engine_Cinematic_Focus_Loop>Unit_SnowSpeeder_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop> 
+  <SFXEvent_Unit_Lost>RHD_Unit_Destroyed</SFXEvent_Unit_Lost> 
+  <SFXEvent_Tactical_Build_Started>RHD_Reinforcements_En_Route</SFXEvent_Tactical_Build_Started> 
+  <SFXEvent_Tactical_Build_Complete>RHD_Reinforcements_Available</SFXEvent_Tactical_Build_Complete> 
+  <SFXEvent_Tactical_Build_Cancelled>RHD_Reinforcements_Cancelled</SFXEvent_Tactical_Build_Cancelled> 
+  
+  <Icon_Name>i_button_su25.tga</Icon_Name> 
+  <CategoryMask>Air</CategoryMask> 
+  <MovementClass>Flying</MovementClass> 
+  <OccupationStyle>1x1</OccupationStyle> 
+  <Victory_Relevant>yes</Victory_Relevant> 
+  <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level> 
+  <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level> 
+  <Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled> 
+  <GUI_Bracket_Size>1</GUI_Bracket_Size> 
+  <Air_Vehicle_Turret_Target>Yes</Air_Vehicle_Turret_Target> 
+  <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar> 
+  <Idle_Chase_Range>50.0</Idle_Chase_Range> 
+  <Guard_Chase_Range>200.0</Guard_Chase_Range> 
+  <Attack_Move_Response_Range>150.0</Attack_Move_Response_Range> 
+  <Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold> 
+  <Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set> 
+  <Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker> 
+  <FormationGrouping>Solo</FormationGrouping> 
+  <Weather_Category>Flying</Weather_Category> 
+  <Score_Cost_Credits>400</Score_Cost_Credits> 
+  <Tactical_Bribe_Cost>100</Tactical_Bribe_Cost> 
+  <Converted_To_Enemy_Die_Time_Seconds>60</Converted_To_Enemy_Die_Time_Seconds> 
+  
+                  <Abilities SubObjectList="Yes">
+        
+			<!-- Redirect Blaster must appear in the special ability list before Absorb Blaster -->
+			<Redirect_Blaster_Ability Name="SU25_Everything_Redirect">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.02</Block_Chance>
+				<Reaction_Arc_In_Degrees>180.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 10.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types (but no missiles or grenades): -->
+				<Applicable_Unit_Categories>Vehicle, Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Rikoshet_Snaradov</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Redirect_Blaster_Ability Name="SU25_Infantry_Redirect">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.10</Block_Chance>
+				<Reaction_Arc_In_Degrees>180.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 10.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types (but no missiles or grenades): -->
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Rikoshet_Pulj</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+		</Abilities>
+  
+    </GroundVehicle>
+
+	<Projectile Name="Proj_GAU8_30MM">
+  <Text_ID>TEXT_NONE</Text_ID> 
+  <Land_Model_Name>proj_fire_m163.ALO</Land_Model_Name> 
+  <Projectile_Width>0.2</Projectile_Width> 
+  <Projectile_Length>40.0</Projectile_Length> 
+  <Projectile_Damage>25.0</Projectile_Damage> 
+  <Projectile_Laser_Color>247, 197,21,150</Projectile_Laser_Color> 
+  <Max_Speed>55.0</Max_Speed> 
+  <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn> 
+  <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior> 
+  <Projectile_Category>Laser</Projectile_Category> 
+  <Projectile_Max_Flight_Distance>900.0</Projectile_Max_Flight_Distance> 
+  <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage> 
+  <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage> 
+  <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage> 
+  <Projectile_Object_Detonation_Particle>p_explosion_gau8_30mm</Projectile_Object_Detonation_Particle> 
+  <Projectile_Object_Armor_Reduced_Detonation_Particle>p_explosion_gau8_30mm</Projectile_Object_Armor_Reduced_Detonation_Particle> 
+  <Projectile_Ground_Detonation_Particle>p_explosion_gau8_30mm</Projectile_Ground_Detonation_Particle> 
+  <Projectile_Lifetime_Detonation_Particle /> 
+  <Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Small</Projectile_Absorbed_By_Shields_Particle> 
+  <Damage_Type>Damage_Projectile_Anti_Air</Damage_Type> 
+  <Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX> 
+  <Projectile_SFXEvent_Detonate_Reduced_By_Armor>Unit_Projectile_Infantry_Ricochet</Projectile_SFXEvent_Detonate_Reduced_By_Armor> 
+  <AI_Combat_Power>40</AI_Combat_Power> 
+  <Projectile_SFXEvent_Detonate></Projectile_SFXEvent_Detonate>
+  <Projectile_Blast_Area_Damage>50.0</Projectile_Blast_Area_Damage> 
+  <Projectile_Blast_Area_Range>30.0</Projectile_Blast_Area_Range>   
+  </Projectile>
+  
+  - <Projectile Name="Proj_KA50_80mm">
+  <Text_ID>TEXT_NONE</Text_ID> 
+  <Land_Model_Name>proj_ka50_80mm.ALO</Land_Model_Name> 
+  <Scale_Factor>0.60</Scale_Factor> 
+  <Projectile_Damage>20.0</Projectile_Damage> 
+  <Max_Speed>50.0</Max_Speed> 
+  <Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn> 
+  <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior> 
+  <Projectile_Category>Laser</Projectile_Category> 
+  <Projectile_Max_Flight_Distance>2000.0</Projectile_Max_Flight_Distance> 
+  <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage> 
+  <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage> 
+  <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage> 
+  <Projectile_Blast_Area_Damage>15</Projectile_Blast_Area_Damage> 
+  <Projectile_Blast_Area_Range>60</Projectile_Blast_Area_Range> 
+  <Projectile_Object_Detonation_Particle>Small_Damage_Land</Projectile_Object_Detonation_Particle>
+  <Projectile_Object_Armor_Reduced_Detonation_Particle>Tiny_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+  <Projectile_Ground_Detonation_Particle>Small_Explosion_Land</Projectile_Ground_Detonation_Particle> 
+  <Projectile_Lifetime_Detonation_Particle>Small_Explosion_Land</Projectile_Lifetime_Detonation_Particle> 
+  <Projectile_Absorbed_By_Shields_Particle>Small_Explosion_Land</Projectile_Absorbed_By_Shields_Particle> 
+  <Damage_Type>Small_Explosion_Land</Damage_Type> 
+  <Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX> 
+  <Projectile_SFXEvent_Detonate_Reduced_By_Armor>Unit_Projectile_Infantry_Ricochet</Projectile_SFXEvent_Detonate_Reduced_By_Armor> 
+  <AI_Combat_Power>40</AI_Combat_Power> 
+  <Projectile_SFXEvent_Detonate>SFX_Infantry_Blaster_Detonation</Projectile_SFXEvent_Detonate> 
+  </Projectile>
+	
+  <Projectile Name="Proj_a10_anti_air">
+  <Space_Model_Name>proj_a10_anti_air_ww3.ALO</Space_Model_Name> 
+  <Land_Model_Name>proj_a10_anti_air_ww3.ALO</Land_Model_Name> 
+  <Text_ID>TEXT_NONE</Text_ID> 
+  <Projectile_Damage>500.0</Projectile_Damage> 
+  <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot> 
+  <Scale_Factor>1.0</Scale_Factor> 
+  <Max_Speed>90.0</Max_Speed> 
+  <Projectile_Blast_Area_Damage>100</Projectile_Blast_Area_Damage> 
+  <Projectile_Blast_Area_Range>100</Projectile_Blast_Area_Range> 
+  <Max_Rate_Of_Turn>25.0</Max_Rate_Of_Turn> 
+  <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior> 
+  <Projectile_Category>MISSILE</Projectile_Category> 
+  <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00> 
+  <Attack_Animation_Is_Overlay>yes</Attack_Animation_Is_Overlay> 
+  <PathFrameDelay>0</PathFrameDelay> 
+  <Projectile_Max_Flight_Distance>1200.0</Projectile_Max_Flight_Distance> 
+  <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage> 
+  <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage> 
+  <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage> 
+  <Projectile_Object_Detonation_Particle /> 
+  <Projectile_Object_Armor_Reduced_Detonation_Particle /> 
+  <Projectile_Ground_Detonation_Particle /> 
+  <Projectile_Lifetime_Detonation_Particle /> 
+  <Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range> 
+  <Projectile_SFXEvent_Detonate_Reduced_By_Armor>SFX_Small_Damage_Detonation</Projectile_SFXEvent_Detonate_Reduced_By_Armor> 
+  <AI_Combat_Power>300</AI_Combat_Power> 
+  <Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate> 
+  </Projectile>	
+	
+	<Projectile Name="Proj_a_10_maverick">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>proj_a10_maverick_ww3.ALO</Land_Model_Name>
+		<Scale_Factor>0.4</Scale_Factor>
+		<Damage_Type> Damage_Missile_Anti_Tank </Damage_Type>
+		<Max_Speed>30.0</Max_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>ROCKET</Projectile_Category>
+		
+		<Projectile_Rocket_Curve_Distance>10</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>2</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>0</Projectile_Rocket_Straight_Distance>
+
+		<Projectile_Target_Point_On_Terrain> False </Projectile_Target_Point_On_Terrain>
+		<Projectile_Max_Flight_Distance>1200.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>1000.0</Projectile_Max_Scan_Range>
+		
+		<Projectile_Damage>120.0</Projectile_Damage>
+		<Projectile_Blast_Area_Range>2.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>120.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		
+		<Projectile_SFXEvent_Detonate>SFX_Plex_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Large_Dud</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Large_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Large_Dud</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Large_Dud</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Large_Dud</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>120</AI_Combat_Power>
+	</Projectile>
+	
+  <Projectile Name="SU25_Bombing_Run_Bomb">
+  <Text_ID>TEXT_NONE</Text_ID> 
+  <Land_Model_Name>proj_su25_bombardment_bomb.ALO</Land_Model_Name> 
+  <Scale_Factor>2.0</Scale_Factor> 
+  <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00> 
+  <Damage_Type>Damage_Bomb</Damage_Type> 
+  <Max_Speed>10.0</Max_Speed> 
+  <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn> 
+  <Behavior>PROJECTILE</Behavior> 
+  <Projectile_Category>BOMB</Projectile_Category> 
+  <Projectile_Bomb_Fall_Accel_Rate>0.10</Projectile_Bomb_Fall_Accel_Rate> 
+  <Projectile_Blast_Area_Damage>100.0</Projectile_Blast_Area_Damage> 
+  <Projectile_Blast_Area_Range>100.0</Projectile_Blast_Area_Range> 
+  <Projectile_Max_Flight_Distance>10000.0</Projectile_Max_Flight_Distance> 
+  <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage> 
+  <Projectile_Damage>220.0</Projectile_Damage> 
+  <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage> 
+  <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage> 
+  <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage> 
+  <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot> 
+  <Projectile_Object_Detonation_Particle>Rebel_Bombing_Run_Explosion_Land</Projectile_Object_Detonation_Particle> 
+  <Projectile_Ground_Detonation_Particle>Rebel_Bombing_Run_Explosion_Land</Projectile_Ground_Detonation_Particle> 
+  <Projectile_Lifetime_Detonation_Particle>Rebel_Bombing_Run_Explosion_Land</Projectile_Lifetime_Detonation_Particle> 
+  <Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle> 
+  <Projectile_SFXEvent_Detonate>Unit_Katarn_Building_Bomb_SFX</Projectile_SFXEvent_Detonate> 
+  <AI_Combat_Power>80</AI_Combat_Power> 
+  </Projectile>
+	
+</SpecialStructures>	

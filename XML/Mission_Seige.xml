@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+
+
+<Story>
+
+<Event Name="ATL"> 
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>0</Event_Param1> 
+</Event> 
+
+<Event Name="NO_AUTORESOLVE"> 
+	<Event_Type>STORY_TRIGGER</Event_Type> 
+	<Reward_Type>HIDE_AUTORESOLVE</Reward_Type> 
+	<Prereq>ATL</Prereq> 
+</Event>
+
+<Event Name="No_Retreat_Pirates">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>DISABLE_RETREAT</Reward_Type>
+	<Reward_Param1>Pirates</Reward_Param1>
+	<Reward_Param2>1</Reward_Param2>
+	<Prereq>ATL</Prereq>
+</Event>
+
+
+<Event Name="No_Retreat_Underworld">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>DISABLE_RETREAT</Reward_Type>
+	<Reward_Param1>Underworld</Reward_Param1>
+	<Reward_Param2>1</Reward_Param2>
+	<Prereq>ATL</Prereq>
+</Event>
+
+<Event Name="MISSION_7_TEXT_5">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>5</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_7_TEXT_5</Reward_Param1> 
+	<Reward_Param2>25</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>ATL</Prereq>
+</Event>
+
+<Event Name="MISSION_7_2">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_7_2</Reward_Param1>
+	<Prereq>MISSION_7_TEXT_5</Prereq>
+</Event>
+
+<Event Name="MISSION_7_3">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_7_3</Reward_Param1>
+	<Prereq>MISSION_7_TEXT_5</Prereq>
+</Event>
+
+<Event Name="MISSION_7_TEXT_6">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>50</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_7_TEXT_6</Reward_Param1> 
+	<Reward_Param2>10</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>ATL</Prereq>
+</Event>
+
+<Event Name="FLEET">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>42</Event_Param1>
+</Event>
+
+	<!--*************************************************-->
+
+<Event Name="ATL_Destroy"> 
+	<Event_Type>STORY_TACTICAL_DESTROYED</Event_Type>
+	<Event_Param1>Underworld</Event_Param1>
+	<Event_Param2>Atlatis_Ship</Event_Param2>   
+	<Prereq>MISSION_7_TEXT_5</Prereq>
+</Event>
+
+	<!--*************************************************-->
+
+<Event Name="UNDERWORLD_LOSE_ALL">
+	<Event_Type>STORY_CHECK_DESTROYED</Event_Type>
+	<Event_Param1>UNDERWORLD</Event_Param1>
+	<Event_Param2>DESTROY_ALL</Event_Param2>
+	<Prereq>MISSION_7_TEXT_5</Prereq>
+</Event>
+
+<Event Name="PIRATES_LOSE_ALL">
+	<Event_Type>STORY_CHECK_DESTROYED</Event_Type>
+	<Event_Param1>Pirates</Event_Param1>
+	<Event_Param2>DESTROY_ALL</Event_Param2>
+	<Prereq>MISSION_7_TEXT_5</Prereq>
+</Event>                                                    
+
+<Event Name="PIRATES_WINNER">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Pirates</Reward_Param1>
+	<Prereq>UNDERWORLD_LOSE_ALL</Prereq>
+	<Prereq>ATL_Destroy</Prereq>
+</Event>
+
+<Event Name="UNDERWORLD_WINNER">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>VICTORY</Reward_Type>
+	<Reward_Param1>Underworld</Reward_Param1>
+	<Prereq>PIRATES_LOSE_ALL</Prereq>
+</Event>
+
+	<!--*************************************************-->
+
+<Event Name="MISSION_7_2_COMPLETE">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+	<Reward_Param1>CAMP_1_MISSION_7_2</Reward_Param1>
+	<Prereq>UNDERWORLD_WINNER</Prereq>
+</Event>
+
+<Event Name="MISSION_7_3_COMPLETE">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+	<Reward_Param1>CAMP_1_MISSION_7_3</Reward_Param1>
+	<Prereq>UNDERWORLD_WINNER</Prereq>
+</Event>
+
+<Event Name="MISSION_7_2_FALLED">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+	<Reward_Param1>CAMP_1_MISSION_7_2</Reward_Param1>
+	<Prereq>PIRATES_WINNER</Prereq>
+</Event>
+
+<Event Name="MISSION_7_3_FALLED">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+	<Reward_Param1>CAMP_1_MISSION_7_3</Reward_Param1>
+	<Prereq>ATL_Destroy</Prereq>
+</Event>
+
+</Story>

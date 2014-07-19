@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+
+
+<!--****************************************************-->
+<!--***** CAMPAIGN: EQUAL FOOTING (Empire Version) *****-->
+<!--****************************************************-->
+
+
+
+<Story>
+	<Event Name="Spawn_03">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>2</Event_Param1>
+	</Event>
+</Story>

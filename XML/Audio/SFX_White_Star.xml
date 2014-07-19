@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<SFXEvents> 
+ 
+ <!--Паскаль-->	
+	  
+	<SFXEvent Name="9_GROUP_white_star_Attack">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\white_star\attack_1.wav Data\Audio\Units\white_star\attack_2.wav Data\Audio\Units\white_star\attack_3.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent> 
+	  
+	<SFXEvent Name="9_GROUP_white_star_Move">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\white_star\move_1.wav Data\Audio\Units\white_star\move_2.wav Data\Audio\Units\white_star\move_3.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent>   
+	  
+	  <SFXEvent Name="9_GROUP_white_star_Death">
+				<Use_Preset>Preset_EXPC</Use_Preset>
+            <Samples>Data\Audio\Units\white_star\destroy_1.wav</Samples>  
+    </SFXEvent>
+	
+	 <SFXEvent Name="9_GROUP_white_star_Guard">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\white_star\guard_1.wav Data\Audio\Units\white_star\guard_2.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent>
+	  
+	  <SFXEvent Name="9_GROUP_white_star_Complete">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\white_star\complete_1.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 			
+			 
+	  </SFXEvent>
+	
+</SFXEvents>	  

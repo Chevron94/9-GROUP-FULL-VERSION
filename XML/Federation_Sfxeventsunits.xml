@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+
+<SFXEvents>
+
+		<SFXEvent Name="Federation_Warp_IN">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/FED_Warp_In.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+		</SFXEvent>
+	  
+	  <SFXEvent Name="Federation_Warp_OUT">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/FED_Warp_Out.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+
+
+	<!-- Nebula Medic -->
+	<SFXEvent Name="Federation_Nebula_Medic_Unit_Select">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Nebula_Medic_Unitselect_1.wav Data/Audio/Nebula_Medic_Unitselect_2.wav Data/Audio/Nebula_Medic_Unitselect_3.wav Data/Audio/Nebula_Medic_Unitselect_4.wav Data/Audio/Nebula_Medic_Unitselect_5.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	  
+	  <SFXEvent Name="Federation_Nebula_Medic_Weapon_Damage">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Nebula_Medic_WeaponDamage_1.wav Data/Audio/Nebula_Medic_WeaponDamage_2.wav Data/Audio/Nebula_Medic_WeaponDamage_3.wav Data/Audio/Nebula_Medic_WeaponDamage_4.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	  
+	  <SFXEvent Name="Federation_Nebula_Medic_Attackrun">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Nebula_Medic_Attackrun_1.wav Data/Audio/Nebula_Medic_Attackrun_2.wav Data/Audio/Nebula_Medic_Attackrun_3.wav Data/Audio/Nebula_Medic_Attackrun_4.wav Data/Audio/Nebula_Medic_Attackrun_5.wav Data/Audio/Nebula_Medic_Attackrun_6.wav Data/Audio/Nebula_Medic_Attackrun_7.wav Data/Audio/Nebula_Medic_Attackrun_8.wav Data/Audio/Nebula_Medic_Attackrun_9.wav Data/Audio/Nebula_Medic_Attackrun_10.wav Data/Audio/Nebula_Medic_Attackrun_11.wav Data/Audio/Nebula_Medic_Attackrun_12.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	  
+	  <SFXEvent Name="Federation_Nebula_Medic_Engine_Destroyed">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Nebula_Medic_EngineDestroyed_1.wav Data/Audio/Nebula_Medic_EngineDestroyed_2.wav Data/Audio/Nebula_Medic_EngineDestroyed_3.wav Data/Audio/Nebula_Medic_EngineDestroyed_4.wav Data/Audio/Nebula_Medic_EngineDestroyed_5.wav Data/Audio/Nebula_Medic_EngineDestroyed_6.wav Data/Audio/Nebula_Medic_EngineDestroyed_7.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	  
+	  <SFXEvent Name="Federation_Nebula_Medic_Shield_Damage">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Nebula_Medic_Shield_Damage_1.wav Data/Audio/Nebula_Medic_Shield_Damage_2.wav Data/Audio/Nebula_Medic_Shield_Damage_3.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	  
+	  <SFXEvent Name="Federation_Nebula_Medic_Movement">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Nebula_Medic_Move_1.wav Data/Audio/Nebula_Medic_Move_2.wav Data/Audio/Nebula_Medic_Move_3.wav Data/Audio/Nebula_Medic_Move_4.wav Data/Audio/Nebula_Medic_Move_5.wav Data/Audio/Nebula_Medic_Move_6.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+
+<!-- Galaxy -->
+
+		<SFXEvent Name="Federation_Galaxy_Attack">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Galaxy_Attack_1.wav Data/Audio/Galaxy_Attack_2.wav Data/Audio/Galaxy_Attack_3.wav Data/Audio/Galaxy_Attack_4.wav Data/Audio/Galaxy_Attack_5.wav Data/Audio/Galaxy_Attack_6.wav Data/Audio/Galaxy_Attack_7.wav Data/Audio/Galaxy_Attack_8.wav Data/Audio/Galaxy_Attack_9.wav Data/Audio/Galaxy_Attack_10.wav Data/Audio/Galaxy_Attack_11.wav Data/Audio/Galaxy_Attack_12.wav Data/Audio/Galaxy_Attack_13.wav Data/Audio/Galaxy_Attack_14.wav Data/Audio/Galaxy_Attack_15.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+
+	<SFXEvent Name="Federation_Galaxy_Select">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Galaxy_Select_1.wav Data/Audio/Galaxy_Select_2.wav Data/Audio/Galaxy_Select_3.wav Data/Audio/Galaxy_Select_4.wav Data/Audio/Galaxy_Select_5.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+
+	<SFXEvent Name="Federation_Galaxy_Move">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Galaxy_Move_1.wav Data/Audio/Galaxy_Move_2.wav Data/Audio/Galaxy_Move_3.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+
+	<SFXEvent Name="Federation_Galaxy_Engine_Damage">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Galaxy_Engine_dam_1.wav Data/Audio/Galaxy_Engine_dam_2.wav Data/Audio/Galaxy_Engine_dam_3.wav Data/Audio/Galaxy_Engine_dam_4.wav Data/Audio/Galaxy_Engine_dam_5.wav Data/Audio/Galaxy_Engine_dam_6.wav Data/Audio/Galaxy_Engine_dam_7.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+
+	<SFXEvent Name="Federation_Galaxy_Shield_Damage">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Galaxy_Shield_dam_1.wav Data/Audio/Galaxy_Shield_dam_2.wav Data/Audio/Galaxy_Shield_dam_3.wav Data/Audio/Galaxy_Shield_dam_4.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+
+	<SFXEvent Name="Federation_Galaxy_Fleet">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Galaxy_Fleet_1.wav Data/Audio/Galaxy_Fleet_2.wav Data/Audio/Galaxy_Fleet_3.wav Data/Audio/Galaxy_Fleet_4.wav Data/Audio/Galaxy_Fleet_5.wav Data/Audio/Galaxy_Fleet_6.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+
+	<SFXEvent Name="Federation_Galaxy_Weapon_Damage">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Galaxy_Weapon_dam_1.wav Data/Audio/Galaxy_Weapon_dam_2.wav Data/Audio/Galaxy_Weapon_dam_3.wav Data/Audio/Galaxy_Weapon_dam_4.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	  
+	  <SFXEvent Name="Federation_Galaxy_Complete">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Galaxy.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	  
+<!-- Excalibur -->  
+	  
+	 <SFXEvent Name="Federation_Excalibur_Attack">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Excalibur_attack_1.wav Data/Audio/Excalibur_attack_2.wav Data/Audio/Excalibur_attack_3.wav Data/Audio/Excalibur_attack_4.wav Data/Audio/Excalibur_attack_5.wav Data/Audio/Excalibur_attack_6.wav Data/Audio/Excalibur_attack_7.wav Data/Audio/Excalibur_attack_8.wav Data/Audio/Excalibur_attack_9.wav Data/Audio/Excalibur_attack_10.wav Data/Audio/Excalibur_attack_11.wav Data/Audio/Excalibur_attack_12.wav Data/Audio/Excalibur_attack_13.wav Data/Audio/Excalibur_attack_14.wav Data/Audio/Excalibur_attack_15.wav Data/Audio/Excalibur_attack_16.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent> 
+	  
+	 <SFXEvent Name="Federation_Excalibur_Complete">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Excalibur.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>   
+	  
+	 <SFXEvent Name="Federation_Excalibur_Select">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Excalibur_Select_1.wav Data/Audio/Excalibur_Select_2.wav Data/Audio/Excalibur_Select_3.wav Data/Audio/Excalibur_Select_4.wav Data/Audio/Excalibur_Select_5.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>   
+	  
+	 <SFXEvent Name="Federation_Excalibur_Move">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Excalibur_Move_1.wav Data/Audio/Excalibur_Move_2.wav Data/Audio/Excalibur_Move_3.wav Data/Audio/Excalibur_Move_4.wav Data/Audio/Excalibur_Move_5.wav Data/Audio/Excalibur_Move_6.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>   
+	  
+	 <SFXEvent Name="Federation_Excalibur_Nebula">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Excalibur_Nebula_1.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>   
+	  
+	 <SFXEvent Name="Federation_Excalibur_Shield_Down">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Excalibur_Shield_dow_1.wav Data/Audio/Excalibur_Shield_dow_2.wav Data/Audio/Excalibur_Shield_dow_3.wav Data/Audio/Excalibur_Shield_dow_4.wav Data/Audio/Excalibur_Shield_dow_5.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>   
+	  
+	 <SFXEvent Name="Federation_Excalibur_Engine_Downs">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Excalibur_Engine_dow_1.wav Data/Audio/Excalibur_Engine_dow_2.wav Data/Audio/Excalibur_Engine_dow_3.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>   
+	  
+	 <SFXEvent Name="Federation_Excalibur_Weapons_Down">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Excalibur_Weapn_dow_1.wav Data/Audio/Excalibur_Weapn_dow_2.wav Data/Audio/Excalibur_Weapn_dow_3.wav Data/Audio/Excalibur_Weapn_dow_4.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>   
+	  
+	  <SFXEvent Name="Federation_Excalibur_Fleet">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Excalibur_Fleet_1.wav Data/Audio/Excalibur_Fleet_2.wav Data/Audio/Excalibur_Fleet_3.wav Data/Audio/Excalibur_Fleet_4.wav Data/Audio/Excalibur_Fleet_5.wav Data/Audio/Excalibur_Fleet_6.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent> 
+	  
+	<!-- Sorveign -->
+	
+	<SFXEvent Name="Federation_Sorveign_Complete">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Sovereign.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent> 
+	
+	<SFXEvent Name="Federation_Sorveign_Attack">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Sorveign_Attack_1.wav Data/Audio/Sorveign_Attack_2.wav Data/Audio/Sorveign_Attack_3.wav Data/Audio/Sorveign_Attack_4.wav Data/Audio/Sorveign_Attack_5.wav Data/Audio/Sorveign_Attack_6.wav Data/Audio/Sorveign_Attack_7.wav Data/Audio/Sorveign_Attack_8.wav Data/Audio/Sorveign_Attack_9.wav Data/Audio/Sorveign_Attack_10.wav Data/Audio/Sorveign_Attack_11.wav Data/Audio/Sorveign_Attack_12.wav Data/Audio/Sorveign_Attack_13.wav Data/Audio/Sorveign_Attack_14.wav Data/Audio/Sorveign_Attack_15.wav Data/Audio/Sorveign_Attack_16.wav Data/Audio/Sorveign_Attack_17.wav Data/Audio/Sorveign_Attack_18.wav Data/Audio/Sorveign_Attack_19.wav Data/Audio/Sorveign_Attack_20.wav Data/Audio/Sorveign_Attack_21.wav Data/Audio/Sorveign_Attack_22.wav Data/Audio/Sorveign_Attack_23.wav Data/Audio/Sorveign_Attack_24.wav Data/Audio/Sorveign_Attack_25.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent> 
+	  
+	<SFXEvent Name="Federation_Sorveign_Select">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Sorveign_Select_1.wav Data/Audio/Sorveign_Select_2.wav Data/Audio/Sorveign_Select_3.wav Data/Audio/Sorveign_Select_4.wav Data/Audio/Sorveign_Select_5.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent> 
+	  
+	<SFXEvent Name="Federation_Sorveign_Move">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Sorveign_Move_1.wav Data/Audio/Sorveign_Move_2.wav Data/Audio/Sorveign_Move_3.wav Data/Audio/Sorveign_Move_4.wav Data/Audio/Sorveign_Move_5.wav Data/Audio/Sorveign_Move_6.wav Data/Audio/Sorveign_Move_7.wav Data/Audio/Sorveign_Move_8.wav Data/Audio/Sorveign_Move_9.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent> 
+	  
+	<SFXEvent Name="Federation_Sorveign_Nebula">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Sorveign_Nebula_1.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent> 
+	  
+	<SFXEvent Name="Federation_Sorveign_Shield_Down">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Sorveign_Shield_down_1.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent> 
+	  
+	<SFXEvent Name="Federation_Sorveign_Engine_Down">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Sorveign_Engine-Dow_1.wav Data/Audio/Sorveign_Engine-Dow_2.wav Data/Audio/Sorveign_Engine-Dow_3.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent> 
+	  
+	<SFXEvent Name="Federation_Sorveign_Weapon_down">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Sorveign_Weapon_down_1.wav Data/Audio/Sorveign_Weapon_down_2.wav Data/Audio/Sorveign_Weapon_down_3.wav Data/Audio/Sorveign_Weapon_down_4.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent> 
+	  
+	<SFXEvent Name="Federation_Sorveign_Fleet">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Sorveign_Fleet_1.wav Data/Audio/Sorveign_Fleet_2.wav Data/Audio/Sorveign_Fleet_3.wav Data/Audio/Sorveign_Fleet_4.wav Data/Audio/Sorveign_Fleet_5.wav Data/Audio/Sorveign_Fleet_6.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent> 
+	
+	<!-- Enterprise -->
+	
+	<SFXEvent Name="Federation_Enterprise_Shield_Special">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Enterprise_Shieldboost_00.wav Data/Audio/Enterprise_Shieldboost_01.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	  
+	  <SFXEvent Name="Federation_Enterprise_Completed">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Enterprise_Completed.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	
+	<SFXEvent Name="Federation_Enterprise_Attack">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Enterprise_Attack_1.wav Data/Audio/Enterprise_Attack_2.wav Data/Audio/Enterprise_Attack_3.wav Data/Audio/Enterprise_Attack_4.wav Data/Audio/Enterprise_Attack_5.wav Data/Audio/Enterprise_Attack_6.wav Data/Audio/Enterprise_Attack_7.wav Data/Audio/Enterprise_Attack_8.wav Data/Audio/Enterprise_Attack_9.wav Data/Audio/Enterprise_Attack_10.wav Data/Audio/Enterprise_Attack_11.wav Data/Audio/Enterprise_Attack_12.wav Data/Audio/Enterprise_Attack_13.wav Data/Audio/Enterprise_Attack_14.wav Data/Audio/Enterprise_Attack_15.wav Data/Audio/Enterprise_Attack_16.wav Data/Audio/Enterprise_Attack_17.wav Data/Audio/Enterprise_Attack_18.wav Data/Audio/Enterprise_Attack_19.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+
+	<SFXEvent Name="Federation_Enterprise_Select">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Enterprise_Select_1.wav Data/Audio/Enterprise_Select_2.wav Data/Audio/Enterprise_Select_3.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	
+	<SFXEvent Name="Federation_Enterprise_Move">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Enterprise_Move_1.wav Data/Audio/Enterprise_Move_2.wav Data/Audio/Enterprise_Move_3.wav Data/Audio/Enterprise_Move_4.wav Data/Audio/Enterprise_Move_5.wav Data/Audio/Enterprise_Move_6.wav Data/Audio/Enterprise_Move_7.wav Data/Audio/Enterprise_Move_8.wav Data/Audio/Enterprise_Move_9.wav Data/Audio/Enterprise_Move_10.wav Data/Audio/Enterprise_Move_11.wav Data/Audio/Enterprise_Move_12.wav Data/Audio/Enterprise_Move_13.wav Data/Audio/Enterprise_Move_14.wav Data/Audio/Enterprise_Move_15.wav Data/Audio/Enterprise_Move_16.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	
+	<SFXEvent Name="Federation_Enterprise_Shield_Down">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Enterprise_Shield_dam_1.wav Data/Audio/Enterprise_Shield_dam_2.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	
+	<SFXEvent Name="Federation_Enterprise_Engine_Down">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Enterprise_Engine_dow_1.wav Data/Audio/Enterprise_Engine_dow_2.wav Data/Audio/Enterprise_Engine_dow_3.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	
+	<SFXEvent Name="Federation_Enterprise_Weapon_Down">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Enterprise_Weapon_dam_1.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	
+	<SFXEvent Name="Federation_Enterprise_Fleet">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Enterprise_Fleet_1.wav Data/Audio/Enterprise_Fleet_2.wav Data/Audio/Enterprise_Fleet_3.wav Data/Audio/Enterprise_Fleet_4.wav </Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	  
+	<SFXEvent Name="Federation_Enterprise_Weapon_Special">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data/Audio/Enterprise_Attack_Special.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 <Text_ID></Text_ID>
+			 <Overlap_Test> Unit_Nebulon </Overlap_Test>
+	  </SFXEvent>
+	
+<!-- Voyager -->
+
+	<SFXEvent Name="Federation_Voyager_Complete">
+		<Use_Preset>Preset_UR</Use_Preset>
+		<Samples>Data/Audio/Voyager.wav </Samples>
+			<Localize> Yes </Localize>
+			<Play_Sequentially> Yes </Play_Sequentially>
+			<Text_ID></Text_ID>
+		<Overlap_Test> Unit_Nebulon </Overlap_Test>
+	 </SFXEvent>
+	 
+	<SFXEvent Name="Federation_Voyager_Attack">
+		<Use_Preset>Preset_UR</Use_Preset>
+		<Samples>Data/Audio/Voyager_Attack_1.wav Data/Audio/Voyager_Attack_2.wav Data/Audio/Voyager_Attack_3.wav Data/Audio/Voyager_Attack_4.wav Data/Audio/Voyager_Attack_5.wav Data/Audio/Voyager_Attack_6.wav Data/Audio/Voyager_Attack_7.wav Data/Audio/Voyager_Attack_8.wav Data/Audio/Voyager_Attack_9.wav Data/Audio/Voyager_Attack_10.wav Data/Audio/Voyager_Attack_11.wav Data/Audio/Voyager_Attack_12.wav Data/Audio/Voyager_Attack_13.wav Data/Audio/Voyager_Attack_14.wav Data/Audio/Voyager_Attack_15.wav Data/Audio/Voyager_Attack_16.wav Data/Audio/Voyager_Attack_17.wav </Samples>
+			<Localize> Yes </Localize>
+			<Play_Sequentially> Yes </Play_Sequentially>
+			<Text_ID></Text_ID>
+		<Overlap_Test> Unit_Nebulon </Overlap_Test>
+	 </SFXEvent>
+	 
+	 	<SFXEvent Name="Federation_Voyager_Select">
+		<Use_Preset>Preset_UR</Use_Preset>
+		<Samples>Data/Audio/Voyager_Select_1.wav Data/Audio/Voyager_Select_2.wav</Samples>
+			<Localize> Yes </Localize>
+			<Play_Sequentially> Yes </Play_Sequentially>
+			<Text_ID></Text_ID>
+		<Overlap_Test> Unit_Nebulon </Overlap_Test>
+	 </SFXEvent>
+	 
+	 	<SFXEvent Name="Federation_Voyager_Move">
+		<Use_Preset>Preset_UR</Use_Preset>
+		<Samples>Data/Audio/Voyager_Move_1.wav Data/Audio/Voyager_Move_2.wav Data/Audio/Voyager_Move_3.wav Data/Audio/Voyager_Move_4.wav </Samples>
+			<Localize> Yes </Localize>
+			<Play_Sequentially> Yes </Play_Sequentially>
+			<Text_ID></Text_ID>
+		<Overlap_Test> Unit_Nebulon </Overlap_Test>
+	 </SFXEvent>
+	 
+	 	<SFXEvent Name="Federation_Voyager_Shieldsdown">
+		<Use_Preset>Preset_UR</Use_Preset>
+		<Samples>Data/Audio/Voyager_Shield_1.wav </Samples>
+			<Localize> Yes </Localize>
+			<Play_Sequentially> Yes </Play_Sequentially>
+			<Text_ID></Text_ID>
+		<Overlap_Test> Unit_Nebulon </Overlap_Test>
+	 </SFXEvent>
+	 
+	 	<SFXEvent Name="Federation_Voyager_Engine_Down">
+		<Use_Preset>Preset_UR</Use_Preset>
+		<Samples>Data/Audio/Voyager_Engine_1.wav Data/Audio/Voyager_Engine_2.wav</Samples>
+			<Localize> Yes </Localize>
+			<Play_Sequentially> Yes </Play_Sequentially>
+			<Text_ID></Text_ID>
+		<Overlap_Test> Unit_Nebulon </Overlap_Test>
+	 </SFXEvent>
+	 
+	 	<SFXEvent Name="Federation_Voyager_Weapon_Down">
+		<Use_Preset>Preset_UR</Use_Preset>
+		<Samples>Data/Audio/Voyager_Weapon_1.wav </Samples>
+			<Localize> Yes </Localize>
+			<Play_Sequentially> Yes </Play_Sequentially>
+			<Text_ID></Text_ID>
+		<Overlap_Test> Unit_Nebulon </Overlap_Test>
+	 </SFXEvent>
+	 
+	 	<SFXEvent Name="Federation_Voyager_Fleet">
+		<Use_Preset>Preset_UR</Use_Preset>
+		<Samples>Data/Audio/Voyager_Fleet_1.wav Data/Audio/Voyager_Fleet_2.wav Data/Audio/Voyager_Fleet_3.wav Data/Audio/Voyager_Fleet_4.wav Data/Audio/Voyager_Fleet_5.wav Data/Audio/Voyager_Fleet_6.wav Data/Audio/Voyager_Fleet_7.wav Data/Audio/Voyager_Fleet_8.wav </Samples>
+			<Localize> Yes </Localize>
+			<Play_Sequentially> Yes </Play_Sequentially>
+			<Text_ID></Text_ID>
+		<Overlap_Test> Unit_Nebulon </Overlap_Test>
+	 </SFXEvent>
+	  
+	  
+</SFXEvents>

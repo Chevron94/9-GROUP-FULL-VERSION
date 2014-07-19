@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<FV_AURORA_Data>
+       <SpaceUnit Name="ATLANTIS_SHIP">
+		<Text_ID>TEXT_UNIT_ATLANTIS</Text_ID>
+		<Encyclopedia_Good_Against> Victory_Destroyer Star_Destroyer WhraitHive </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> TIE_Bomber Star_Destroyer WhraitHive </Encyclopedia_Vulnerable_To>
+		<!--<Required_Planets>Taranis1</Required_Planets>-->
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>Tauri_Space_Unit_Atlantis.ALO</Space_Model_Name>
+		<GUI_Bracket_Height>500</GUI_Bracket_Height>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Ranking_In_Category>6</Ranking_In_Category>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Max_Speed>2.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Capital </Space_Layer>
+		<Layer_Z_Adjust>-300.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>6</Bank_Turn_Angle>
+		<OverrideAcceleration> .025 </OverrideAcceleration>
+		<OverrideDeceleration> .025 </OverrideDeceleration>
+		<Max_Thrust>0.15</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>5.0</Hyperspace_Speed>
+		<Maintenance_Cost>0.1</Maintenance_Cost>
+		<Armor_Type> Armor_Missile_Cruiser </Armor_Type>
+		<Shield_Armor_Type>Shield_SSD</Shield_Armor_Type>
+		<Damage>100</Damage>
+		<Autoresolve_Health>18999</Autoresolve_Health>
+		<Shield_Points>12000</Shield_Points>
+		<Tactical_Health>14000</Tactical_Health>
+		<Shield_Refresh_Rate>150</Shield_Refresh_Rate>
+		<Energy_Capacity>30000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Affiliation>Underworld, Pirates</Affiliation>
+		<Tech_Level>4</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>Federation_Werft</Required_Special_Structures>
+		<Ship_Class>capital</Ship_Class>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>10</Squadron_Capacity>
+		<Transport_Capacity>10</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<Build_Cost_Credits>25000</Build_Cost_Credits>
+		<AI_Combat_Power>9800</AI_Combat_Power>
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+		<Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+		<Size_Value>8</Size_Value>
+		<Behavior>DUMMY_STARSHIP, BARAGE, SELECTABLE, POWERED, SHIELDED</Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Starting_Spawned_Units_Tech_0>Jumper_Squadron, 10</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>
+		<Reserve_Spawned_Units_Tech_0>Jumper_Squadron, 10</Reserve_Spawned_Units_Tech_0>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Death_Clone>Damage_Normal</Death_Clone>
+		<Neutralization_Cost>0.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+		<Space_FOW_Reveal_Range>2700.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		<HardPoints> 
+         HP_ATLANTIS_1,
+         HP_ATLANTIS_2,
+         HP_ATLANTIS_3,
+		 HP_ATLANTIS_SHEILD,
+		 HP_ATLANTIS_HANGAR,
+		 HP_ATLANTIS_ENGINE,
+		 
+		</HardPoints>
+		<CategoryMask> Capital | SpaceHero | AntiFrigate | AntiCapital </CategoryMask>
+		<Icon_Name>TAURI_SPACE_UNIT_ATLANTIS.tga</Icon_Name>                       
+		<GUI_Model_Name>Tauri_Space_Unit_Atlantis.ALO</GUI_Model_Name>
+		<GUI_Distance>900</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Lorne</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Antikerkriegsschiff_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Unit_Select_Lorne</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Lorne</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Lorne</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Lorne</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Lorne</SFXEvent_Guard>
+		<SFXEvent_Stop>Unit_Stop_Lorne</SFXEvent_Stop>
+		<SFXEvent_Barrage>Unit_Barrage_Lorne</SFXEvent_Barrage>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_Lorne </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Lorne </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Damaged_By_Asteroid> SFX_Asteroid_Detonation </SFXEvent_Damaged_By_Asteroid>
+		<SFXEvent_Engine_Idle_Loop> Unit_Antikerkriegsschiff_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Antikerkriegsschiff_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Antikerkriegsschiff_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.078  0.078</Radar_Icon_Size>
+		<Radar_Icon_Name>i_radar_capital_ship.tga</Radar_Icon_Name>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>SpaceArtillery</Targeting_Priority_Set>
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.9f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-5.0</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.5f</Mod_Multiplier>
+				<Recharge_Seconds>50</Recharge_Seconds>
+				<Expiration_Seconds>12</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Oberoth</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		        <!-- Secondary ability -->
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	1.0f</Mod_Multiplier> <!-- make it faster to recharge -->
+				<Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER,	1.0f</Mod_Multiplier> <!-- make it faster to recharge -->
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			1.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Oberoth</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+		        </Unit_Ability>
+		</Unit_Abilities_Data>
+		<!-- Hero abilities moved to ship; Ackbar "movable" unit removed -->
+		<Abilities SubObjectList="Yes">		
+			<Combat_Bonus_Ability Name="Lorne_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Capital</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Capital</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.1</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.1</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.1</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+		<Encyclopedia_Text>TEXT_UNIT_ATLANTIS_TOOLTIP</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_AURORA </Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1800</Score_Cost_Credits>
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>15000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>70</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites/>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies> 
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<Population_Value>12</Population_Value>
+	        <Lua_Script>ObjectScript_PowerToShields</Lua_Script>
+	<Lua_Script>HSW_lantian_large</Lua_Script>
+	    </SpaceUnit>
+<!--Оружие-->
+
+<Projectile Name="Proj_Atlantis_Drohne">	                                
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>Drohne2.ALO</Land_Model_Name>
+		<Space_Model_Name>Drohne2.ALO</Space_Model_Name>
+		<Damage_Type> Damage_Proton_Torp </Damage_Type>
+		<Projectile_Damages_Random_Hard_Points>yes</Projectile_Damages_Random_Hard_Points>
+		<Scale_Factor>0.07</Scale_Factor>
+		<Max_Speed>14.5</Max_Speed>
+		<Max_Rate_Of_Turn>16.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>MISSILE</Projectile_Category>		
+		<Projectile_Max_Flight_Distance>6000.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>1000.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>10.0</Projectile_Damage>		
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>10</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Small_Dud</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Large_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Small_Dud</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Proton_Torpedo_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<AI_Combat_Power>600</AI_Combat_Power>
+	</Projectile>
+
+</FV_AURORA_Data>

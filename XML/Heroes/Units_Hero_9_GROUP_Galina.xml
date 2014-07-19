@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<FV_WS_Data>
+        
+		<UniqueUnit Name="Galina">
+		<Text_ID>TEXT_UNIT_GALINA</Text_ID>
+		<Variant_Of_Existing_Type>Matan</Variant_Of_Existing_Type>
+		<Is_Named_Hero>true</Is_Named_Hero>
+	    <Encyclopedia_Good_Against>Crusader_Gunship EASHHYBRIT CENHFA </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>EASBBHADES DSBB SHCV</Encyclopedia_Vulnerable_To>
+		<Space_Model_Name> ISAWS.ALO </Space_Model_Name>
+		<Icon_Name>I_BUTTON_GALINA.tga</Icon_Name>
+		<Mass>0.995</Mass>
+		<Scale_Factor>1.3</Scale_Factor>
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+                <Ranking_In_Category>3</Ranking_In_Category>
+		<Max_Speed>6.5</Max_Speed>
+		<Min_Speed>3.5</Min_Speed>
+		<Max_Rate_Of_Turn>1.5</Max_Rate_Of_Turn>
+		<Max_Lift>2.0</Max_Lift>
+		<Max_Thrust>1.0</Max_Thrust>
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>30</Bank_Turn_Angle>
+		<Layer_Z_Adjust> -100.0 </Layer_Z_Adjust>
+		<Begin_Turn_Towards_Distance>900.0</Begin_Turn_Towards_Distance>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+        <Shield_Armor_Type>Shield_Frigate</Shield_Armor_Type>
+		<Ship_Class>frigate</Ship_Class>
+		<Formation_Priority>5</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Autoresolve_Health>11000</Autoresolve_Health>
+		<AI_Combat_Power>5640</AI_Combat_Power>
+		<Shield_Points>4500</Shield_Points>
+		<Tactical_Health>6500</Tactical_Health>
+		<Shield_Refresh_Rate>25</Shield_Refresh_Rate>
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+		<Size_Value>120</Size_Value>
+		<Damage>50</Damage>
+		<Build_Cost_Credits>18000</Build_Cost_Credits>
+		<Tech_Level>5</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Build_Tab_Space_Units>NO</Build_Tab_Space_Units>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<!--Required_Planets>SchwarzesLoch_1</Required_planets-->
+		<Required_Special_Structures/>
+		<Encyclopedia_Text>TEXT_UNIT_GALINA_TOOLTIP</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE2</Encyclopedia_Unit_Class>
+		<HardPoints>
+                 HP_ISAWS, 
+                 HP_ISAWS01, 
+                 HP_ISAWS02, 
+                 HP_ISAWS03,
+                 HP_ISAWS04
+		</HardPoints>
+		
+		<Death_Clone>Damage_Normal, Houndstooth_Death_Clone</Death_Clone>
+		
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Lua_Script />
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name> HoundsTooth_Sensor_Jamming </GUI_Activated_Ability_Name> 
+				<Recharge_Seconds>75.0</Recharge_Seconds>
+				<Expiration_Seconds>30.0</Expiration_Seconds>
+				<Effective_Radius>900.0</Effective_Radius> 
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Sensor_Jamming_Ability Name="HoundsTooth_Sensor_Jamming">
+				<Activation_Style> User_Input </Activation_Style>
+                <Owner_Particle_Effect>Sensor_Jamming_Effect</Owner_Particle_Effect>
+			</Sensor_Jamming_Ability>
+
+			<Force_Healing_Ability Name="Repair_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>1000.0</Heal_Range>
+				<Heal_Amount>40.0</Heal_Amount>
+                		<Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Fighter, Transport, Bomber, Corvette, Frigate, Capital, Hero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<Lighting_Effect_Name>Repair_Facility_Effect</Lighting_Effect_Name>
+			</Force_Healing_Ability>
+			
+		</Abilities>
+		<Population_Value>8</Population_Value>
+		<Lua_Script>HSW_Ori</Lua_Script>
+	</UniqueUnit>
+	
+		<SpaceUnit Name="Houndstooth_Death_Clone">
+		<Encyclopedia_Text> TEXT_TOOLTIP_HOUNDSTOOTH </Encyclopedia_Text>
+		<Space_Model_Name>UV_HoundsTooth_D.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<Scale_Factor>1.2</Scale_Factor>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+	</SpaceUnit>
+</FV_WS_Data>

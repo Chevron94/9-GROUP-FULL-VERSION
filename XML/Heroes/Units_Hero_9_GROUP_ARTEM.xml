@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+
+
+<FV_Excalibur_Data>
+
+	<UniqueUnit Name="Artem">
+	<Variant_Of_Existing_Type>Ears_Ship</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_ARTEM</Text_ID>
+        <Is_Named_Hero>true</Is_Named_Hero>
+		<Encyclopedia_Text> TEXT_UNIT_ARTEM_TOOLTIP</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_ARTEM.TGA</Icon_Name>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>FV_Relativity.ALO</Space_Model_Name>
+		<Select_Box_Scale>370</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Mass>0.9995</Mass>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Layer_Z_Adjust> -100.0 </Layer_Z_Adjust>
+		<Moniker>Alliance_Assault_Frigate.txt</Moniker>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+	    <Build_Cost_Credits>30000</Build_Cost_Credits>
+		<Build_Time_Seconds>150</Build_Time_Seconds>
+        <Max_Speed> 2.7 </Max_Speed>
+		<Max_Rate_Of_Turn> 0.3 </Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>1.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>45</Bank_Turn_Angle>
+		<Shield_Points>4000</Shield_Points>
+		<Tactical_Health>6000</Tactical_Health>
+		<AI_Combat_Power>11040</AI_Combat_Power>
+		<Autoresolve_Health>9180</Autoresolve_Health>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Tab_Space_Units>NO</Build_Tab_Space_Units>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Death_Clone>Damage_Normal, Massive_Explosion_Death</Death_Clone>
+		<!--Required_Planets>SchwarzesLoch_1</Required_planets-->
+		<Required_Special_Structures/>
+		<HardPoints>
+			HP_Relativity_1,
+			HP_Relativity_2,
+			HP_Relativity_3,
+			HP_Relativity_4,
+			HP_Relativity_5,
+			HP_Relativity_6,
+			HP_Relativity_7,
+			HP_Relativity_8,
+			HP_Relativity_9,
+			HP_Relativity_10,
+			HP_Relativity_11,
+			HP_Relativity_12,
+			HP_Relativity_13,
+			HP_Relativity_14,
+			HP_Relativity_15,
+			HP_Relativity_Engine,
+			HP_Relativity_Shield,
+		</HardPoints>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		
+		<SFXEvent_Build_Started>Unit_Elite_Move</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>Unit_Elite_Select</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>9_GROUP_igor_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Carrack_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Select>9_GROUP_artem_Select</SFXEvent_Select>
+		<SFXEvent_Move>9_GROUP_artem_Move</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>9_GROUP_artem_Move</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>9_GROUP_artem_Attack</SFXEvent_Attack>
+		<SFXEvent_Guard>9_GROUP_artem_Guard</SFXEvent_Guard>
+		<SFXEvent_Stop>Unit_Elite_Select</SFXEvent_Stop>
+		<SFXEvent_Barrage>9_GROUP_artem_Attack</SFXEvent_Barrage>
+		<SFXEvent_Move_Into_Nebula> Unit_Elite_Move </SFXEvent_Move_Into_Nebula>
+		<Death_SFXEvent_Start_Die>9_GROUP_artem_Death</Death_SFXEvent_Start_Die>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier> <!-- make it faster to recharge -->
+				<Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier> <!-- make it faster to recharge -->
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.8f</Mod_Multiplier>
+				<Recharge_Seconds>40</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Calamari</SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+
+			<Combat_Bonus_Ability Name="Braxton_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Capital | Corvette | Frigate | Fighter | SpaceHero | Super</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Capital | Corvette | Frigate | Fighter | SpaceHero | Super</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage> 1.30</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage> 1.30 </Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage> 1.30 </Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage> 1.30 </Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage> 1.30 </Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage> 1.30 </Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+		</Abilities>
+		<Lua_Script>HSW_anubis</Lua_Script>
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>7000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player> 
+	</UniqueUnit>
+
+</FV_Excalibur_Data>

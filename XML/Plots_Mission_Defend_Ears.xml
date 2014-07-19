@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+
+<Story_Mode_Plots>
+	<Lua_Script>Story_Mission_Defend_Ears</Lua_Script>
+	<Active_Plot>Mission_Defend_Ears.XML</Active_Plot>
+</Story_Mode_Plots>

@@ -1,0 +1,445 @@
+<?xml version="1.0" ?>
+<Story>
+	
+<Event Name="Start_Position">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Ears</Reward_Param1>
+</Event>	
+
+<Event Name="DISABLE0_POWER">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>LOCK_UNIT</Reward_Type>
+    <Reward_Param1>Power</Reward_Param1>
+	<Prereq>Universal_Story_Start</Prereq>
+</Event>
+
+<Event Name="DISABLE_NX01">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>LOCK_UNIT</Reward_Type>
+    <Reward_Param1>NX_01</Reward_Param1>
+	<Prereq>Universal_Story_Start</Prereq>
+</Event>
+<Event Name="DISABLE_NX01_Werft">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>LOCK_UNIT</Reward_Type>
+    <Reward_Param1>NX_WERFT</Reward_Param1>
+	<Prereq>Universal_Story_Start</Prereq>
+</Event>
+<Event Name="DISABLE_303_Werft">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>LOCK_UNIT</Reward_Type>
+    <Reward_Param1>303_WERFT</Reward_Param1>
+	<Prereq>Universal_Story_Start</Prereq>
+</Event>
+	
+<Event Name="Universal_Story_Start">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>2</Event_Param1>
+	<Story_Dialog>Dialog_Expansion_GC_Solo</Story_Dialog>
+	<Story_Chapter>1</Story_Chapter>
+	<Story_Tag>Intro_Tag</Story_Tag>
+</Event>
+
+<Event Name="MISSION_1_Text_1">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>7</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>EVENT_TEXT_TUTOLAR_1_1</Reward_Param1> 
+	<Reward_Param2>5</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>Universal_Story_Start</Prereq>
+</Event>
+
+<Event Name="MISSION_1_Text_2">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>5</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>EVENT_TEXT_TUTOLAR_1_2</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_1_Text_1</Prereq>
+</Event>
+
+<Event Name="MISSION_1_1">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>15</Event_Param1>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_1_1</Reward_Param1>
+    <Prereq>MISSION_1_Text_2</Prereq>
+</Event>
+
+<Event Name="MISSION_1_2">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>15</Event_Param1>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_1_2</Reward_Param1>
+    <Prereq>MISSION_1_Text_2</Prereq>
+</Event>
+
+<Event Name="MISSION_1_1_PROGRESS">
+    <Event_Type>STORY_CONSTRUCT</Event_Type>
+	<Event_Param1>Federation_Star_Base_1</Event_Param1>
+	<Event_Param2>1</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_1_1</Reward_Param1>
+    <Prereq>MISSION_1_Text_2</Prereq>
+</Event>
+
+<Event Name="MISSION_1_2_PROGRESS">
+    <Event_Type>STORY_CONSTRUCT</Event_Type>
+	<Event_Param1>Barracks</Event_Param1>
+	<Event_Param2>1</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_1_2</Reward_Param1>
+    <Prereq>MISSION_1_Text_2</Prereq>
+</Event>
+
+<Event Name="MISSION_1_Text_3">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>5</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>EVENT_TEXT_TUTOLAR_1_3</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_1_2_PROGRESS, MISSION_1_1_PROGRESS</Prereq>
+</Event>
+
+<Event Name="MISSION_1_1_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>2</Event_Param1>
+    <Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_1_1</Reward_Param1>
+    <Prereq>MISSION_1_Text_3</Prereq>
+</Event>
+
+<Event Name="MISSION_1_2_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>2</Event_Param1>
+    <Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_1_2</Reward_Param1>
+    <Prereq>MISSION_1_Text_3</Prereq>
+</Event>
+
+<Event Name="MISSION_2_Text_1">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>20</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>EVENT_TEXT_TUTOLAR_2_1</Reward_Param1> 
+	<Reward_Param2>30</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_1_Text_3</Prereq>
+</Event>
+
+<Event Name="MISSION_2_1">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>30</Event_Param1>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_1</Reward_Param1>
+    <Prereq>MISSION_2_Text_1</Prereq>
+</Event>
+
+<Event Name="MISSION_2_2">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>30</Event_Param1>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_2</Reward_Param1>
+    <Prereq>MISSION_2_Text_1</Prereq>
+</Event>
+
+<Event Name="MISSION_2_1_PROGRESS">
+    <Event_Type>STORY_CONSTRUCT</Event_Type>
+	<Event_Param1>Differencial</Event_Param1>
+	<Event_Param2>5</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_1</Reward_Param1>
+    <Prereq>MISSION_2_Text_1</Prereq>
+</Event>
+
+<Event Name="MISSION_2_2_PROGRESS">
+    <Event_Type>STORY_CONSTRUCT</Event_Type>
+	<Event_Param1>Federation_Star_Base_2</Event_Param1>
+	<Event_Param2>1</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_2</Reward_Param1>
+    <Prereq>MISSION_2_Text_1</Prereq>
+</Event>
+
+<Event Name="MISSION_2_3">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_3</Reward_Param1>
+    <Prereq>MISSION_2_2_PROGRESS</Prereq>
+</Event>
+
+<Event Name="MISSION_2_3_PROGRESS">
+    <Event_Type>STORY_CONSTRUCT</Event_Type>
+	<Event_Param1>Gracefighter_Squadron</Event_Param1>
+	<Event_Param2>10</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_3</Reward_Param1>
+    <Prereq>MISSION_2_Text_1</Prereq>
+</Event>
+
+<Event Name="MISSION_2_4">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>30</Event_Param1>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_4</Reward_Param1>
+    <Prereq>MISSION_2_Text_1</Prereq>
+</Event>
+
+<Event Name="MISSION_2_4_PROGRESS">
+    <Event_Type>STORY_CONSTRUCT</Event_Type>
+	<Event_Param1>Morpeh_Squad</Event_Param1>
+	<Event_Param2>2</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_4</Reward_Param1>
+    <Prereq>MISSION_2_Text_1</Prereq>
+</Event>
+
+<Event Name="MISSION_2_5">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>30</Event_Param1>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_5</Reward_Param1>
+    <Prereq>MISSION_2_Text_1</Prereq>
+</Event>
+
+<Event Name="MISSION_2_5_PROGRESS">
+    <Event_Type>STORY_CONSTRUCT</Event_Type>
+	<Event_Param1>Light_Zavod</Event_Param1>
+	<Event_Param2>1</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_5</Reward_Param1>
+    <Prereq>MISSION_2_Text_1</Prereq>
+</Event>
+
+<Event Name="MISSION_2_6">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_6</Reward_Param1>
+    <Prereq>MISSION_2_5_PROGRESS</Prereq>
+</Event>
+
+<Event Name="MISSION_2_6_PROGRESS">
+    <Event_Type>STORY_CONSTRUCT</Event_Type>
+	<Event_Param1>T72_SQR</Event_Param1>
+	<Event_Param2>2</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_6</Reward_Param1>
+    <Prereq>MISSION_2_Text_1</Prereq>
+</Event>
+
+<Event Name="MISSION_2_Text_2">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>EVENT_TEXT_TUTOLAR_2_2</Reward_Param1> 
+	<Reward_Param2>5</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_2_1_PROGRESS, MISSION_2_2_PROGRESS, MISSION_2_3_PROGRESS, MISSION_2_4_PROGRESS, MISSION_2_5_PROGRESS, MISSION_2_6_PROGRESS</Prereq>
+</Event>
+
+<Event Name="MISSION_2_1_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>7</Event_Param1>
+    <Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_1</Reward_Param1>
+    <Prereq>MISSION_2_Text_2</Prereq>
+</Event>
+
+<Event Name="MISSION_2_2_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>7</Event_Param1>
+    <Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_2</Reward_Param1>
+    <Prereq>MISSION_2_Text_2</Prereq>
+</Event>
+
+<Event Name="MISSION_2_3_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>7</Event_Param1>
+    <Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_3</Reward_Param1>
+    <Prereq>MISSION_2_Text_2</Prereq>
+</Event>
+
+<Event Name="MISSION_2_4_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>7</Event_Param1>
+    <Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_4</Reward_Param1>
+    <Prereq>MISSION_2_Text_2</Prereq>
+</Event>
+
+<Event Name="MISSION_2_5_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>7</Event_Param1>
+    <Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_5</Reward_Param1>
+    <Prereq>MISSION_2_Text_2</Prereq>
+</Event>
+
+<Event Name="MISSION_2_6_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>7</Event_Param1>
+    <Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_6</Reward_Param1>
+    <Prereq>MISSION_2_Text_2</Prereq>
+</Event>
+
+<Event Name="MISSION_2_Text_3">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>7</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>EVENT_TEXT_TUTOLAR_2_3</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_2_Text_2</Prereq>
+</Event>
+
+<Event Name="Spawn_PWerf">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Plasma_Werft</Reward_Param1>
+    <Reward_Param2>Earth</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>MISSION_2_Text_3</Prereq>
+</Event>
+
+<Event Name="Spawn_AWerf">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Anti_Werft</Reward_Param1>
+    <Reward_Param2>Earth</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>MISSION_2_Text_3</Prereq>
+</Event>
+
+<Event Name="Spawn_GWerf">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>9GroundWerft</Reward_Param1>
+    <Reward_Param2>Earth</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>MISSION_2_Text_3</Prereq>
+</Event>
+
+<Event Name="MISSION_2_7">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_7</Reward_Param1>
+    <Prereq>MISSION_2_Text_3</Prereq>
+</Event>
+
+<Event Name="MISSION_2_7_PROGRESS">
+    <Event_Type>STORY_CONSTRUCT</Event_Type>
+	<Event_Param1>Matan</Event_Param1>
+	<Event_Param2>3</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_7</Reward_Param1>
+    <Prereq>MISSION_2_Text_3</Prereq>
+</Event>
+
+<Event Name="MISSION_2_Text_4">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>EVENT_TEXT_TUTOLAR_2_4</Reward_Param1> 
+	<Reward_Param2>5</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_2_7_PROGRESS</Prereq>
+</Event>
+
+<Event Name="MISSION_2_7_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>3</Event_Param1>
+    <Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_2_7</Reward_Param1>
+    <Prereq>MISSION_2_Text_4</Prereq>
+</Event>
+
+<Event Name="MISSION_3_Text_1">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>7</Event_Param1> 
+	<Reward_Param1>EVENT_TEXT_TUTOLAR_3_1</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_2_Text_4</Prereq>
+</Event>
+
+<Event Name="MISSION_3_Text_2">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>22</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>EVENT_TEXT_TUTOLAR_3_2</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_3_Text_1</Prereq>
+</Event>
+
+<Event Name="MISSION_3_Text_3">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>22</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>EVENT_TEXT_TUTOLAR_3_3</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_3_Text_2</Prereq>
+</Event>
+
+<Event Name="MISSION_3_Text_4">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>22</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>EVENT_TEXT_TUTOLAR_3_4</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_3_Text_3</Prereq>
+</Event>
+
+<Event Name="MISSION_3_1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_3_1</Reward_Param1>
+    <Prereq>MISSION_3_Text_4</Prereq>
+</Event>
+
+<Event Name="TUTOLAR_BATTLE">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Andaria</Event_Param1>
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+	<Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_3_1</Reward_Param1>
+	<Prereq>MISSION_3_Text_4</Prereq>
+</Event>
+
+
+<Event Name="MISSION_3_Text_5">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>2</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>EVENT_TEXT_TUTOLAR_3_6_1</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>TUTOLAR_BATTLE</Prereq>
+</Event>
+
+<Event Name="MISSION_3_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>18</Event_Param1>
+    <Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+    <Reward_Param1>EVENT_TEXT_TUTOLAR_MISSION_3_</Reward_Param1>
+    <Prereq>MISSION_3_Text_5</Prereq>
+</Event>
+
+</Story>

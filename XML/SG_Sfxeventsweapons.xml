@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+                                                      
+<SFXEvents>
+
+	  <SFXEvent Name="Unit_MG_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+        	  <Samples>Data\Audio\SFX\MG.wav</Samples>
+		  <Min_Volume> 100 </Min_Volume>
+	          <Max_Volume> 120 </Max_Volume>
+	  </SFXEvent>
+	  <SFXEvent Name="Unit_AK50MALP_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+        	  <Samples>Data\Audio\SFX\Malp_MG.wav</Samples>
+		  <Min_Pitch>90</Min_Pitch>
+		  <Max_Pitch>100</Max_Pitch>
+	  </SFXEvent>
+          <SFXEvent Name="Unit_JAFFA_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+        	  <Samples>Data\Audio\SFX\Stabwaffe.wav</Samples>
+		  <Min_Pitch>90</Min_Pitch>
+		  <Max_Pitch>100</Max_Pitch>
+	  </SFXEvent>
+          <SFXEvent Name="Unit_KULL_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+        	  <Samples>Data\Audio\SFX\Kull_Krieger.wav</Samples>
+		  <Min_Pitch>90</Min_Pitch>
+		  <Max_Pitch>100</Max_Pitch>
+	  </SFXEvent>
+          <SFXEvent Name="Unit_GLEITER_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+        	  <Samples>Data\Audio\SFX\Todesgleiter_Stabwaffe.wav</Samples>
+		  <Min_Pitch>90</Min_Pitch>
+		  <Max_Pitch>100</Max_Pitch>
+	  </SFXEvent>
+          <SFXEvent Name="Unit_ALKESHBOMBE_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+        	  <Samples>Data\Audio\SFX\Alkesh_Bombe.wav</Samples>
+		  <Min_Pitch>90</Min_Pitch>
+		  <Max_Pitch>100</Max_Pitch>
+	  </SFXEvent>
+          <SFXEvent Name="Unit_WRAITH_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+        	  <Samples>Data\Audio\SFX\Wraith_Fire1.wav</Samples>
+		  <Min_Pitch>90</Min_Pitch>
+		  <Max_Pitch>100</Max_Pitch>
+	  </SFXEvent>
+
+
+           <SFXEvent Name="Unit_Ori_Ship_Superlaser_Fire">                      <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Ori_Superlaser_1.wav</Samples>
+   			   <Min_Volume> 50 </Min_Volume>
+			   <Max_Volume> 80 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+           <SFXEvent Name="Unit_Ori_Ship_Laser_Fire">                           <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Ori_Fire1.wav</Samples>
+   			   <Min_Volume> 100 </Min_Volume>
+			   <Max_Volume> 130 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	   <SFXEvent Name="Unit_Rebel_AG3_Fire">      				<!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\AG3_Fire.wav</Samples>
+   			   <Min_Volume> 70 </Min_Volume>
+			   <Max_Volume> 100 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+     	   <SFXEvent Name="Unit_Rebel_Ship_Railgun_Fire">                       <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Railgun_Fire1.wav Data\Audio\SFX\Railgun_Fire2.wav Data\Audio\SFX\Railgun_Fire3.wav</Samples>
+   			   <Min_Volume> 40 </Min_Volume>
+			   <Max_Volume> 70 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+           <SFXEvent Name="Unit_Rebel_Ship_Superlaser_Fire">                    <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\AsgardPlasmabeam.wav</Samples>
+   			   <Min_Volume> 80 </Min_Volume>
+			   <Max_Volume> 110 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+           <SFXEvent Name="Unit_Goauld_Ship_Gleiter_Fire">                      <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Todesgleiter_Fire1.wav</Samples>
+   			   <Min_Volume> 60 </Min_Volume>
+			   <Max_Volume> 90 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	   <SFXEvent Name="Unit_Goauld_Ship_Laser_Fire">                        <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Laser_Goauld.wav</Samples>
+   			   <Min_Volume> 40 </Min_Volume>
+			   <Max_Volume> 70 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>	
+           <SFXEvent Name="Unit_Goauld_Ship_Laser_1_Fire">                      <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Laser_Goauld_1.wav</Samples>
+   			   <Min_Volume> 40 </Min_Volume>
+			   <Max_Volume> 70 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	   <SFXEvent Name="Unit_Goauld_Ship_Bombe_Fire">                      <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Goauld_Bombe_1.wav</Samples>
+   			   <Min_Volume> 30 </Min_Volume>
+			   <Max_Volume> 70 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent> 
+	   <SFXEvent Name="Unit_Grace_Ship_Fire">                               <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Todesgleiter_Fire1.wav</Samples>
+   			   <Min_Volume> 70 </Min_Volume>
+			   <Max_Volume> 100 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>           
+	   <SFXEvent Name="Unit_Asgard_Ship_Ionen_Fire">                        <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Ionengun_Asgard.wav</Samples>          
+   			   <Min_Volume> 50 </Min_Volume>
+			   <Max_Volume> 80 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+           <SFXEvent Name="Unit_Asgard_Ship_Ionen_Pulse">                       <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Ionenpulse_Asgard.wav</Samples>
+   			   <Min_Volume> 80 </Min_Volume>
+			   <Max_Volume> 110 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>	   	
+	   <SFXEvent Name="Unit_Antiker_Laser">                                 <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Phasengeschütze_Fire_1.wav</Samples>
+   			   <Min_Volume> 50 </Min_Volume>
+			   <Max_Volume> 70 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	   <SFXEvent Name="Unit_Antiker_Drohnen_Jumper">                        <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Jumper_Drohne1.wav</Samples>
+   			   <Min_Volume> 50 </Min_Volume>
+			   <Max_Volume> 80 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	   <SFXEvent Name="Unit_Antiker_Drohnen">                               <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Aurora_Drohne1.wav</Samples>
+   			   <Min_Volume> 40 </Min_Volume>
+			   <Max_Volume> 70 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	   <SFXEvent Name="Unit_Tollana_Ionen">                                 <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Tollaner_Fire1.wav</Samples>
+   			   <Min_Volume> 70 </Min_Volume>
+			   <Max_Volume> 100 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>	   
+	   <SFXEvent Name="Unit_Wraiths_Fire_Dart">                             <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Wraiths_Fire1.wav Data\Audio\SFX\Wraiths_Fire2.wav</Samples>
+   			   <Min_Volume> 100 </Min_Volume>
+			   <Max_Volume> 130 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	   <SFXEvent Name="Unit_Wraiths_Fire_1">                                <!-- OK -->
+		 	   <Use_Preset>Preset_GUNV</Use_Preset>
+			   <Samples>Data\Audio\SFX\Wraith_Big_Fire1.wav</Samples>
+   			   <Min_Volume> 100 </Min_Volume>
+			   <Max_Volume> 130 </Max_Volume>
+			   <Volume_Saturation_Distance> 1000.0 </Volume_Saturation_Distance>
+	   </SFXEvent>
+	   <SFXEvent Name="SFX_Beam_Detonation">                                <!-- OK -->
+			<Use_Preset>Preset_EXPC</Use_Preset>
+			<Samples>Data\Audio\SFX\Schockwelle.wav</Samples>     
+			<Min_Volume> 50 </Min_Volume>
+			<Max_Volume> 70 </Max_Volume>
+			<Min_Predelay>1000</Min_Predelay>
+			<Max_Predelay>1000</Max_Predelay>
+           </SFXEvent>
+	   <SFXEvent Name="Unit_1_Death_SFX">
+			<Use_Preset>Preset_EXP</Use_Preset>
+			<Samples>Data\Audio\SFX\EXP_DEATH_1.wav</Samples>
+			<Kills_Previous_Object_SFX>Yes</Kills_Previous_Object_SFX>
+           </SFXEvent>
+	   <SFXEvent Name="Unit_1_Death_SFX">
+			<Use_Preset>Preset_EXP</Use_Preset>
+			<Samples>Data\Audio\SFX\EXP_DEATH_2.wav</Samples>
+			<Kills_Previous_Object_SFX>Yes</Kills_Previous_Object_SFX>
+           </SFXEvent>
+	   <SFXEvent Name="Unit_1_Death_SFX">
+			<Use_Preset>Preset_EXP</Use_Preset>
+			<Samples>Data\Audio\SFX\EXP_DEATH_3.wav</Samples>
+			<Kills_Previous_Object_SFX>Yes</Kills_Previous_Object_SFX>
+           </SFXEvent>
+	   <SFXEvent Name="Unit_1_Death_SFX">
+			<Use_Preset>Preset_EXP</Use_Preset>
+			<Samples>Data\Audio\SFX\EXP_DEATH_4.wav</Samples>
+			<Kills_Previous_Object_SFX>Yes</Kills_Previous_Object_SFX>
+           </SFXEvent>
+	   
+</SFXEvents>

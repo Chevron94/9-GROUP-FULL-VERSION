@@ -1,0 +1,996 @@
+<?xml version="1.0"?>
+<Stargate_Particles>                      
+        
+		
+		
+		
+		
+		
+			
+		<Particle Name="Particle_General_Hit_Small">
+		<Land_Model_Name>General_Particle_Hit_Small.ALO</Land_Model_Name>
+		<Space_Model_Name>General_Particle_Hit_Small.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	<Particle Name="Particle_General_Hit_Medium">
+		<Land_Model_Name>General_Particle_Hit_Medium.ALO</Land_Model_Name>
+		<Space_Model_Name>General_Particle_Hit_Medium.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	<Particle Name="Particle_General_Hit_Heavy">
+		<Land_Model_Name>General_Particle_Hit_Heavy.ALO</Land_Model_Name>
+		<Space_Model_Name>General_Particle_Hit_Heavy.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+		<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+		
+		
+		
+		
+		
+		<Particle Name="Particle_Wraith_Plasma_Light_Shield_Hit">
+		<Land_Model_Name>Wraith_Particle_Plasma_Light_Shield_Hit.ALO</Land_Model_Name>
+		<Space_Model_Name>Wraith_Particle_Plasma_Light_Shield_Hit.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+		<Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+	</Particle>
+	<Particle Name="Particle_Wraith_Fighter_Shield_Hit">
+		<Land_Model_Name>Wraith_Particle_Fighter_Shield_Hit.ALO</Land_Model_Name>
+		<Space_Model_Name>Wraith_Particle_Fighter_Shield_Hit.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+		<Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+	</Particle>
+	<Particle Name="Particle_Wraith_Plasma_Medium_Shield_Hit">
+		<Land_Model_Name>Wraith_Particle_Plasma_Medium_Shield_Hit.ALO</Land_Model_Name>
+		<Space_Model_Name>Wraith_Particle_Plasma_Medium_Shield_Hit.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+		<Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+	</Particle>
+	<Particle Name="Particle_Wraith_Plasma_Heavy_Shield_Hit">
+		<Land_Model_Name>Wraith_Particle_Plasma_Heavy_Shield_Hit.ALO</Land_Model_Name>
+		<Space_Model_Name>Wraith_Particle_Plasma_Heavy_Shield_Hit.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+		<Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+	</Particle>
+	<Particle Name="Particle_Wraith_Plasmabomb_Shield_Hit">
+		<Land_Model_Name>Wraith_Particle_Plasmabomb_Shield_Hit.ALO</Land_Model_Name>
+		<Space_Model_Name>Wraith_Particle_Plasmabomb_Shield_Hit.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+		<Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+	</Particle>
+	<!-- Ori shield effects -->
+	<!-- Replicator shield effects -->
+	<!-- Asuran shield effects -->
+	<!--Traveler shield effects-->
+	<Particle Name="Particle_Traveler_Plasma_Shield_Hit">
+		<Land_Model_Name>Traveler_Particle_Plasma_Shield_Hit.ALO</Land_Model_Name>
+		<Space_Model_Name>Traveler_Particle_Plasma_Shield_Hit.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+		<Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+	</Particle>
+		
+		
+		
+<!-- Land Effekte -->
+        
+        <Particle Name="Small_Damage_Land_Tauri">
+        <Land_Model_Name>p_damage_small00_tauri.alo</Land_Model_Name>
+        <Space_Model_Name>p_damage_small00_tauri.alo</Space_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>Yes</Is_Decoration>
+        <Behavior>PARTICLE</Behavior>
+        <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+    </Particle>
+        <Particle Name="Small_Damage_Land_Goauld">
+        <Land_Model_Name>p_damage_small00_goauld.alo</Land_Model_Name>
+        <Space_Model_Name>p_damage_small00_goauld.alo</Space_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>Yes</Is_Decoration>
+        <Behavior>PARTICLE</Behavior>
+        <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+    	</Particle>
+    	<Particle Name="Medium_Damage_Land_Goauld">
+        <Land_Model_Name>p_damage_medium00_goauld.alo</Land_Model_Name>
+        <Space_Model_Name>p_damage_medium00_goauld.alo</Space_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>Yes</Is_Decoration>
+        <Behavior>PARTICLE</Behavior>
+        <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+    	</Particle>
+	<Particle Name="Tiny_Dud_Goauld">
+        <Land_Model_Name>p_explosion_tiny00_dud_g.alo</Land_Model_Name>
+        <Space_Model_Name>p_explosion_tiny00_dud_g.alo</Space_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>Yes</Is_Decoration>
+        <Behavior>PARTICLE</Behavior>
+        <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="Projectile_Dirt_Collide_MG">
+        <Land_Model_Name>p_desert_ground_puff_mg.alo</Land_Model_Name>
+        <Space_Model_Name>p_desert_ground_puff_mg.alo</Space_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>Yes</Is_Decoration>
+        <Behavior>PARTICLE</Behavior>
+        <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_TINY</Explosion_Scorch_Mark>
+    	</Particle>
+	<Particle Name="Projectile_Dirt_Collide_MG1">
+        <Land_Model_Name>p_desert_ground_puff_mg1.alo</Land_Model_Name>
+        <Space_Model_Name>p_desert_ground_puff_mg1.alo</Space_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>Yes</Is_Decoration>
+        <Behavior>PARTICLE</Behavior>
+        <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_TINY</Explosion_Scorch_Mark>
+    	</Particle>
+	<Particle Name="Projectile_Dirt_Collide_Jaffa">
+        <Land_Model_Name>p_desert_ground_puff_jaffa.alo</Land_Model_Name>
+        <Space_Model_Name>p_desert_ground_puff_jaffa.alo</Space_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>Yes</Is_Decoration>
+        <Behavior>PARTICLE</Behavior>
+        <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_TINY</Explosion_Scorch_Mark>
+    	</Particle>
+        <Particle Name="Projectile_Dirt_Collide_Sonde">
+        <Land_Model_Name>p_desert_ground_puff_sonde.alo</Land_Model_Name>
+        <Space_Model_Name>p_desert_ground_puff_sonde.alo</Space_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>Yes</Is_Decoration>
+        <Behavior>PARTICLE</Behavior>
+        <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_TINY</Explosion_Scorch_Mark>
+    	</Particle>
+	<Particle Name="Projectile_Dirt_Collide_Todesgleiter">
+        <Land_Model_Name>P_desert_ground_puff_gleiter.alo</Land_Model_Name>
+        <Space_Model_Name>P_desert_ground_puff_gleiter.alo</Space_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>Yes</Is_Decoration>
+        <Behavior>PARTICLE</Behavior>
+        <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_TINY</Explosion_Scorch_Mark>
+    	</Particle>
+    	<Particle Name="Goauld_Bombing_Run_Explosion_Land">
+		<Land_Model_Name>p_explosion_thermal_goauld.alo</Land_Model_Name>
+		<Space_Model_Name>p_explosion_thermal_goauld.alo</Space_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
+	</Particle>
+        
+<!-- Tauri Schild Effekte -->
+        
+        <Particle Name="Shield_Absorb_Tauri_Fighter"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Tauri_Fighter.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Tauri_Fighter.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Shield_Absorb_Tauri_Rakete_Klein"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Tauri_Rakete_Small.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Tauri_Rakete_Small.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>      
+        <Particle Name="Shield_Absorb_Tauri_Railgun">          
+        	  <Land_Model_Name>SG_Schield_Effekt_Tauri_Railgun.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Tauri_Railgun.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>                    
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Shield_Absorb_Tauri_Rakete"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Tauri_Rakete.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Tauri_Rakete.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Shield_Absorb_Tauri_Rakete_1"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Tauri_Rakete_1.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Tauri_Rakete_1.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Shield_Absorb_Tauri_Superlaser">     
+        	  <Land_Model_Name>Shield_Absorb_Asgard_Superlaser.ALO</Land_Model_Name>
+        	  <Space_Model_Name>Shield_Absorb_Asgard_Superlaser.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>                    
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+    	<Particle Name="Shield_Absorb_Tauri_AG3">     
+        	  <Land_Model_Name>SG_Schield_Effekt_Tauri_AG3.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Tauri_AG3.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>                    
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>   
+    	
+<!-- Tauri Objekt Effekte -->        
+        
+        <Particle Name="Object_Effekt_Tauri_Rakete">    
+		<Land_Model_Name>SG_Objekt_Effekt_Tauri_Rakete.ALO</Land_Model_Name>
+		<Space_Model_Name>SG_Objekt_Effekt_Tauri_Rakete.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+        <Particle Name="Object_Effekt_Tauri_Rakete_1">    
+		<Land_Model_Name>SG_Objekt_Effekt_Tauri_Rakete_1.ALO</Land_Model_Name>
+		<Space_Model_Name>SG_Objekt_Effekt_Tauri_Rakete_1.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	<Particle Name="Carbonite_Missile_Explosion_1">    
+		<Land_Model_Name>p_carbonite_explosion_1.ALO</Land_Model_Name>
+		<Space_Model_Name>p_carbonite_explosion_1.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+    	<Particle Name="Object_Effekt_Tauri_Superlaser">     
+		<Land_Model_Name>SG_Objekt_Effekt_Asgard_Superlaser.ALO</Land_Model_Name>
+		<Space_Model_Name>SG_Objekt_Effekt_Asgard_Superlaser.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	<Particle Name="Object_Effekt_Tauri_AG3">     
+		<Land_Model_Name>SG_Objekt_Effekt_Tauri_AG3.ALO</Land_Model_Name>
+		<Space_Model_Name>SG_Objekt_Effekt_Tauri_AG3.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle> 
+	<Particle Name="AG3_Effekt_Endung">     
+		<Land_Model_Name>SG_Objekt_Effekt_AG3.ALO</Land_Model_Name>
+		<Space_Model_Name>SG_Objekt_Effekt_AG3.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+        	<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	
+<!-- Asgard Schild Effekte -->
+        
+        <Particle Name="Shield_Absorb_Asgard_Laser"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Asgard_Laser.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Asgard_Laser.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Shield_Absorb_Asgard_Laser0"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Asgard_Laser0.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Asgard_Laser0.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="Shield_Absorb_Asgard_Laser1"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Asgard_Laser1.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Asgard_Laser1.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="Shield_Absorb_Asgard_Laser_Medium"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Asgard_Laser_Medium.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Asgard_Laser_Medium.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="Shield_Absorb_Asgard_Laser_Medium1"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Asgard_Laser_Medium1.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Asgard_Laser_Medium1.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        
+<!-- Asgard Objekt Effekte -->        
+        
+        <Particle Name="Small_Damage_Space_Asgard">       
+        	  <Land_Model_Name>p_damage_asgard1.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_asgard1.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Medium_Damage_Space_Asgard">       
+        	  <Land_Model_Name>p_damage_asgard.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_asgard.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+    	<Particle Name="Big_Damage_Space_Asgard">       
+        	  <Land_Model_Name>p_damage_asgard2.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_asgard2.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Asgard_Plasma_Effekt_Endung">     
+		<Land_Model_Name>SG_Objekt_Effekt_Asgard_Ion_Beliskner1.ALO</Land_Model_Name>
+		<Space_Model_Name>SG_Objekt_Effekt_Asgard_Ion_Beliskner1.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+        	<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	<Particle Name="Asgard_Object_Effekt_Ion">     
+		<Land_Model_Name>SG_Objekt_Effekt_Asgard_Ion_Beliskner.ALO</Land_Model_Name>
+		<Space_Model_Name>SG_Objekt_Effekt_Asgard_Ion_Beliskner.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+        	<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+	<Particle Name="Huge_Damage_Space_Asgard">       
+        	<Land_Model_Name>P_explosion_gungan_blue.alo</Land_Model_Name>
+        	<Space_Model_Name>P_explosion_gungan_blue.alo</Space_Model_Name>
+        	<Scale_Factor>1.0</Scale_Factor>
+        	<Is_Decoration>Yes</Is_Decoration>
+        	<Behavior>PARTICLE</Behavior>
+        	<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+
+<!-- Goauld Schild Effekte -->	
+	
+	<Particle Name="Goauld_Shield_Absorb_Small_Fighter"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Goauld_Fighter.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Goauld_Fighter.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="Goauld_Shield_Absorb_Small_Alkesh"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Goauld_Alkesh.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Goauld_Alkesh.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="Goauld_Shield_Absorb_Small_Hatak"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Goauld_Hatak.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Goauld_Hatak.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="Goauld_Shield_Absorb_Medium_Hatak"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Goauld_Hatak1.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Goauld_Hatak1.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	
+<!-- Goauld Objekt Effekte --> 
+	
+	<Particle Name="Small_Damage_Space_Goauld">       
+        	  <Land_Model_Name>p_damage_goauld1.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_goauld1.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+    	<Particle Name="Small_Damage_Space_Goauld1">       
+        	  <Land_Model_Name>p_damage_goauld3.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_goauld3.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+    	<Particle Name="Medium_Damage_Space_Goauld">       
+        	  <Land_Model_Name>p_damage_goauld2.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_goauld2.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+    	<Particle Name="Big_Damage_Space_Goauld">       
+        	  <Land_Model_Name>p_damage_goauld.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_goauld.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+    	
+<!-- Ori & Wraith Schild Effekte -->    	
+    	
+        <Particle Name="Shield_Absorb_Wraith_Laser"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Wraith_Laser.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Wraith_Laser.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>	
+    	<Particle Name="Shield_Absorb_Wraith_Laser1"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Wraith_Laser1.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Wraith_Laser1.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+    	<Particle Name="Shield_Absorb_Wraith_Laser2"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Wraith_Laser2.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Wraith_Laser2.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="Shield_Absorb_Ori_Superlaser">     
+        	  <Land_Model_Name>SG_Schield_Effekt_Ori_Superlaser.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Ori_Superlaser.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>                    
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+    	
+<!-- Ori & Wraith Objekt Effekte --> 
+
+        <Particle Name="Small_Damage_Space_Wraith">       
+        	  <Land_Model_Name>p_damage_wraith1.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_wraith1.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Medium_Damage_Space_Wraith">       
+        	  <Land_Model_Name>p_damage_wraith2.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_wraith2.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Large_Damage_Space_Wraith">       
+        	  <Land_Model_Name>p_damage_wraith3.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_wraith3.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+       		  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+       		  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="Object_Effekt_Ori_Superlaser">     
+		<Land_Model_Name>SG_Objekt_Effekt_Ori_Superlaser.ALO</Land_Model_Name>
+		<Space_Model_Name>SG_Objekt_Effekt_Ori_Superlaser.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+        
+<!-- Replikator Schild Effekte -->        
+        
+        <Particle Name="Shield_Absorb_Repli_Fighter"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Repli_Fighter.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Repli_Fighter.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Shield_Absorb_Repli_Laser_1">          
+        	  <Land_Model_Name>SG_Schield_Effekt_Repli_Laser_1.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Repli_Laser_1.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>                    
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Shield_Absorb_Repli_Laser_2">          
+        	  <Land_Model_Name>SG_Schield_Effekt_Repli_Laser_2.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Repli_Laser_2.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>                    
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+    	<Particle Name="Shield_Absorb_Repli_Plasma">          
+        	  <Land_Model_Name>SG_Schield_Effekt_Repli_Plasma.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Repli_Plasma.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>                    
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="Shield_Absorb_Repli_Plasma_1">          
+        	  <Land_Model_Name>SG_Schield_Effekt_Repli_Plasma_1.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Repli_Plasma_1.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>                    
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="Shield_Absorb_Repli_Plasma_2">          
+        	  <Land_Model_Name>SG_Schield_Effekt_Repli_Plasma_2.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Repli_Plasma_2.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>                    
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        
+<!-- Replikator Objekt Effekte -->
+
+        <Particle Name="Small_Damage_Space_Repli">       
+        	  <Land_Model_Name>p_damage_repli.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_repli.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Small_Damage_Space_Repli_0">       
+        	  <Land_Model_Name>p_damage_repli0.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_repli0.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="Small_Damage_Space_Repli_1">       
+        	  <Land_Model_Name>p_damage_repli1.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_repli1.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+    	<Particle Name="Repli_Object_Effekt_Plasma">     
+		<Land_Model_Name>SG_Objekt_Effekt_Repli_Plasma.ALO</Land_Model_Name>
+		<Space_Model_Name>SG_Objekt_Effekt_Repli_Plasma.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+    	<Particle Name="Repli_Object_Effekt_Plasma_1">     
+		<Land_Model_Name>SG_Objekt_Effekt_Repli_Plasma_1.ALO</Land_Model_Name>
+		<Space_Model_Name>SG_Objekt_Effekt_Repli_Plasma_1.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+    	
+<!-- Asurander Schild Effekte -->    	
+    	
+        <Particle Name="Shield_Absorb_Antiker_Railgun">           
+        	  <Land_Model_Name>SG_Schield_Effekt_Antiker_Railgun.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Antiker_Railgun.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>                    
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+    	<Particle Name="Shield_Absorb_Antiker_Railgun_1">           
+        	  <Land_Model_Name>SG_Schield_Effekt_Antiker_Railgun_1.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Antiker_Railgun_1.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>                    
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="Shield_Absorb_Grace_Frigate"> 
+        	  <Land_Model_Name>Shield_Absorb_Grace.ALO</Land_Model_Name>
+        	  <Space_Model_Name>Shield_Absorb_Grace.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Shield_Absorb_Grace_Frigate1"> 
+        	  <Land_Model_Name>Shield_Absorb_Grace1.ALO</Land_Model_Name>
+        	  <Space_Model_Name>Shield_Absorb_Grace1.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        
+<!-- Asurander Objekt Effekte -->        
+        
+        <Particle Name="Small_Damage_Space_Antiker">        
+        	  <Land_Model_Name>p_damage_antiker.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_antiker.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Medium_Damage_Space_Antiker">        
+        	  <Land_Model_Name>p_damage_antiker_1.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_antiker_1.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        <Particle Name="Medium_Damage_Space_Antiker_1">        
+        	  <Land_Model_Name>p_damage_antiker_2.alo</Land_Model_Name>
+        	  <Space_Model_Name>p_damage_antiker_2.alo</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <Particle Name="Carbonite_Missile_Explosion">    
+		<Land_Model_Name>p_carbonite_explosion.ALO</Land_Model_Name>
+		<Space_Model_Name>p_carbonite_explosion.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>  
+        <Particle Name="SG_Projectile_Blau_Shield_Absorb"> <!-- Modded by Attractor -->
+        	  <Land_Model_Name>SG_Schild_Partikel_Blau.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schild_Partikel_Blau.ALO</Space_Model_Name>
+        	  <Scale_Factor>3.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+	<Particle Name="SG_Projectile_Gelb_Shield_Absorb"> <!-- Modded by Attractor -->
+        	  <Land_Model_Name>SG_Schild_Partikel_Gelb.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schild_Partikel_Gelb.ALO</Space_Model_Name>
+        	  <Scale_Factor>3.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+        </Particle>
+        
+    	<Particle Name="Shield_Absorb_Asgard_Ion"> 
+        	  <Land_Model_Name>SG_Schield_Effekt_Asgard_Ionen.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Asgard_Ionen.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>
+    	
+    	<Particle Name="Shield_Absorb_Antiker_Railgun">           
+        	  <Land_Model_Name>SG_Schield_Effekt_Antiker_Railgun.ALO</Land_Model_Name>
+        	  <Space_Model_Name>SG_Schield_Effekt_Antiker_Railgun.ALO</Space_Model_Name>
+        	  <Scale_Factor>1.0</Scale_Factor>
+        	  <Is_Decoration>Yes</Is_Decoration>
+        	  <Behavior>PARTICLE</Behavior>                                            
+        	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>                    
+        	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
+        	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle> 
+    	
+	
+	
+	<Particle Name="Mega_Damage_Space_Asgard">       
+        <Land_Model_Name>p_explosion_mega_fett.alo</Land_Model_Name>
+        <Space_Model_Name>p_explosion_mega_fett.alo</Space_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Decoration>Yes</Is_Decoration>
+        <Behavior>PARTICLE</Behavior>
+        <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+    	</Particle>  
+	
+	<Particle Name="Object_Effekt_Antiker_Drohne">  
+		<Land_Model_Name>SG_Objekt_Effekt_Antiker_Drohne.ALO</Land_Model_Name>
+		<Space_Model_Name>SG_Objekt_Effekt_Antiker_Drohne.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
+        <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
+	</Particle>
+ 	
+    	<Particle Name="Mega_Huge_Explosion_Space">
+		<Land_Model_Name>Biggest_Explosion_Space.ALO</Land_Model_Name>                 
+		<Space_Model_Name>Biggest_Explosion_Space.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>4</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_HUGE</Explosion_Scorch_Mark>
+	</Particle>
+	<Particle Name="SG_Small_Explosion_Space_Antiker">   
+		<Land_Model_Name>SG_Explosion_Small_Antiker.alo</Land_Model_Name>
+		<Space_Model_Name>SG_Explosion_Small_Antiker.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>                                          
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>2</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	<Particle Name="SG_Small_Explosion_Space">   
+		<Land_Model_Name>SG_Explosion_Small.alo</Land_Model_Name>
+		<Space_Model_Name>SG_Explosion_Small.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>                                          
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>2</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	<Particle Name="SG_Medium_Explosion_Space">
+		<Land_Model_Name>SG_Explosion_Medium.alo</Land_Model_Name>
+		<Space_Model_Name>SG_Explosion_Medium.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>2</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	<Particle Name="SG_Big_Explosion_Space">
+		<Land_Model_Name>SG_Explosion_Big.alo</Land_Model_Name>
+		<Space_Model_Name>SG_Explosion_Big.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>                                       
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>2</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	<Particle Name="SG_Medium_Explosion_Space_Asgard">
+		<Land_Model_Name>SG_Explosion_Medium_Asgard.alo</Land_Model_Name>
+		<Space_Model_Name>SG_Explosion_Medium_Asgard.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>                     
+		<Explosion_Jitter_Factor>2</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	<Particle Name="SG_Medium_Explosion_Space_Goauld">
+		<Land_Model_Name>SG_Explosion_Medium_Goauld.alo</Land_Model_Name>
+		<Space_Model_Name>SG_Explosion_Medium_Goauld.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>2</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	<Particle Name="SG_Big_Explosion_Space_Goauld">
+		<Land_Model_Name>SG_Explosion_Big_Goauld.alo</Land_Model_Name>
+		<Space_Model_Name>SG_Explosion_Big_Goauld.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>2</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	<Particle Name="SG_HUGE_Explosion_Space">
+		<Land_Model_Name>PE_SGExplosion_Big.alo</Land_Model_Name>
+		<Space_Model_Name>PE_SGExplosion_Big.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>                                       
+		<Behavior>PARTICLE</Behavior>
+		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
+		<Explosion_Jitter_Factor>2</Explosion_Jitter_Factor>
+	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_LARGE</Explosion_Scorch_Mark>
+	</Particle>
+	
+ </Stargate_Particles>

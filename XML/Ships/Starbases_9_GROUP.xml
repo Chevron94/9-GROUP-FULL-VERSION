@@ -1,0 +1,1474 @@
+<?xml version="1.0"?>
+<StarBases>
+
+	<StarBase Name="Federation_Star_Base_1">
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_REBEL_STAR_BASE_1</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION1 TEXT_TOOLTIP_GARRISON_9G_01</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_FB_LVL1.TGA</Icon_Name>
+
+		<GUI_Row> 0 </GUI_Row>
+		<Space_Model_Name>FB_Level_1.ALO</Space_Model_Name>
+		<Galactic_Model_Name>i_ub_01_station.alo</Galactic_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Is_Dummy>No</Is_Dummy>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<AI_Combat_Power>5000</AI_Combat_Power>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>10</Size_Value>
+		<Tech_Level>1</Tech_Level>
+		<Base_Level>1</Base_Level>
+		<Prev_Level_Base />
+		<Next_Level_Base>Federation_Star_Base_2</Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+        <Starting_Spawned_Units_Tech_0>F-302_Squadron, 2</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>8</Spawned_Squadron_Delay_Seconds>
+		<Reserve_Spawned_Units_Tech_0>F-302_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+		
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				US_Reinforced_Structure_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L1_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Autoresolve_Health>750</Autoresolve_Health>
+		<Damage>35</Damage>
+		<Shield_Points>1000</Shield_Points>
+		<Tactical_Health>900</Tactical_Health>
+		<Shield_Refresh_Rate>40</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>
+			HP_Federation_Station_L1_Supply_Dock_Dummy,
+			HP_Federation_Station_L1_Comm_Array_Dummy,
+			HP_Federation_Station_L1_ShieldGen,
+			HP_Federation_Station_L1_Fighter_Bay,
+			HP_Federation_Station_L1_PulsePhasor_00,
+			HP_Federation_Station_L1_PulsePhasor_01,
+			HP_Federation_Station_L1_Torpedolauncher
+		</HardPoints>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_All_Weapons_Destroyed> </SFXEvent_Hardpoint_All_Weapons_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-650.0</Layer_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<Radar_Icon_Name>I_RADAR_FB_LVL1.TGA</Radar_Icon_Name>
+		<Score_Cost_Credits> 1500</Score_Cost_Credits>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_1_Rebel</Retreat_Self_Destruct_Explosion>
+		
+		<Death_Clone>Damage_Normal, Federation_Star_Base_1_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>10</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Federation_Star_Base_1_Death_Clone">
+		<Text_ID>TEXT_REBEL_STAR_BASE_1</Text_ID>
+		<Space_Model_Name>FB_Level_1.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+
+
+
+
+
+	<StarBase Name="Federation_Star_Base_2">
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_REBEL_STAR_BASE_2</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION2 TEXT_TOOLTIP_GARRISON_9G_02</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_FB_LVL2.TGA</Icon_Name>
+
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>No</Is_Dummy>
+		<Space_Model_Name>FB_Level_2.ALO</Space_Model_Name>
+		<Galactic_Model_Name>i_ub_02_station.alo</Galactic_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>1600</Build_Cost_Credits>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>20</Size_Value>
+		<Tech_Level>2</Tech_Level>
+		<Base_Level>2</Base_Level>
+		<Prev_Level_Base>Federation_Star_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Federation_Star_Base_3</Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Autoresolve_Health>1250</Autoresolve_Health>
+		<Damage>45</Damage>
+		<Shield_Points>1500</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Shield_Refresh_Rate>80</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>F-302_Squadron, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>F-302_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>X-301_Squadron, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>X-301_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+		
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				US_Reinforced_Structure_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L1_Upgrade,
+				US_BlackMarket_Reactors_L1_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+			HP_Federation_Station_L1_Supply_Dock_Dummy,
+			HP_Federation_Station_L1_Comm_Array_Dummy,
+			HP_Federation_Station_L1_ShieldGen,
+			HP_Federation_Station_L1_Fighter_Bay,
+			HP_Federation_Station_L2_PulsePhasor_00,
+			HP_Federation_Station_L2_PulsePhasor_01,
+			HP_Federation_Station_L2_PulsePhasor_02,
+			HP_Federation_Station_L2_PulsePhasor_03,
+			HP_Federation_Station_L2_Torpedolauncher_00,
+			HP_Federation_Station_L2_Torpedolauncher,
+		</HardPoints>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Custom_Soft_Footprint_Radius> 450 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>I_RADAR_FB_LVL2.TGA</Radar_Icon_Name>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<Score_Cost_Credits> 3000</Score_Cost_Credits>
+
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_2_Rebel</Retreat_Self_Destruct_Explosion>
+		<Death_Clone>Damage_Normal, Federation_Star_Base_2_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>13</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Federation_Star_Base_2_Death_Clone">
+		<Text_ID>TEXT_REBEL_STAR_BASE_2</Text_ID>
+		<Space_Model_Name>FB_Level_2.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+
+
+
+
+
+	<StarBase Name="Federation_Star_Base_3">
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_REBEL_STAR_BASE_3</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION3 TEXT_TOOLTIP_GARRISON_9G_03</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_FB_LVL3.TGA</Icon_Name>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>No</Is_Dummy>
+		<Space_Model_Name>FB_Level_3.ALO</Space_Model_Name>
+		<Galactic_Model_Name>i_ub_03_station.alo</Galactic_Model_Name>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<AI_Combat_Power>15000</AI_Combat_Power>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>30</Size_Value>
+		<Tech_Level>3</Tech_Level>
+		<Base_Level>3</Base_Level>
+		<Prev_Level_Base>Federation_Star_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Federation_Star_Base_4</Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Autoresolve_Health>1750</Autoresolve_Health>
+		<Damage>55</Damage>
+		<Shield_Points>2500</Shield_Points>
+		<Tactical_Health>2500</Tactical_Health>
+		<Shield_Refresh_Rate>120</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>F-302_Squadron, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>F-302_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>X-301_Squadron, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>X-301_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Differencial, 1</Starting_Spawned_Units_Tech_0>	
+		<Reserve_Spawned_Units_Tech_0>Differencial, -1</Reserve_Spawned_Units_Tech_0>
+		
+		
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				US_Magnetically_Sealed_Armor_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L2_Upgrade,
+				US_BlackMarket_Reactors_L1_Upgrade,
+				US_BlackMarket_Reactors_L2_Upgrade,
+				US_Carbonite_Coolant_Systems_L1_Upgrade,
+				US_Reinforced_Structure_L1_Upgrade,
+				US_Reinforced_Structure_L2_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2500.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+			HP_Federation_Station_L1_Supply_Dock_Dummy,
+			HP_Federation_Station_L1_Comm_Array_Dummy,
+			HP_Federation_Station_L1_ShieldGen,
+			HP_Federation_Station_L1_Fighter_Bay,
+			HP_Federation_Station_L3_PulsePhasor_00,
+			HP_Federation_Station_L3_PulsePhasor_01,
+			HP_Federation_Station_L3_PulsePhasor_02,
+			HP_Federation_Station_L3_PulsePhasor_03,
+			HP_Federation_Station_L3_PulsePhasor_04,
+			HP_Federation_Station_L3_PulsePhasor_05,
+			HP_Federation_Station_L3_PulsePhasor_06,
+			HP_Federation_Station_L3_PulsePhasor_07
+			HP_Federation_Station_L3_Torpedolauncher_00,
+			HP_Federation_Station_L3_Torpedolauncher_01,
+			HP_Federation_Station_L2_Torpedolauncher,
+		</HardPoints>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Custom_Soft_Footprint_Radius> 450 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>I_RADAR_FB_LVL3.TGA</Radar_Icon_Name>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<Score_Cost_Credits> 6000</Score_Cost_Credits>
+		
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_3_Rebel</Retreat_Self_Destruct_Explosion>
+		
+		<Death_Clone>Damage_Normal, Federation_Star_Base_3_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>15</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Federation_Star_Base_3_Death_Clone">
+		<Text_ID>TEXT_REBEL_STAR_BASE_3</Text_ID>
+		<Space_Model_Name>FB_Level_3.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+
+
+
+
+
+	<StarBase Name="Federation_Star_Base_4">
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_REBEL_STAR_BASE_4</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION4 TEXT_TOOLTIP_GARRISON_9G_04</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_FB_LVL4_5.TGA</Icon_Name>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>No</Is_Dummy>
+		<Space_Model_Name>FB_Level_4.ALO</Space_Model_Name>
+		<Galactic_Model_Name>i_ub_04_station.alo</Galactic_Model_Name>
+		<Select_Box_Scale>1200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>5800</Build_Cost_Credits>
+		<AI_Combat_Power>20000</AI_Combat_Power>
+		<Build_Time_Seconds>50</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>40</Size_Value>
+		<Tech_Level>4</Tech_Level>
+		<Base_Level>4</Base_Level>
+		<Prev_Level_Base>Federation_Star_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Federation_Star_Base_5</Next_Level_Base>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Autoresolve_Health>2250</Autoresolve_Health>
+		<Damage>65</Damage>
+		<Shield_Points>4750</Shield_Points>
+		<Tactical_Health>4750</Tactical_Health>
+		<Shield_Refresh_Rate>160</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>F-302_Squadron, 6</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>F-302_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>X-301_Squadron, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>X-301_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Gracefighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Gracefighter_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Differencial, 2</Starting_Spawned_Units_Tech_0>	
+		<Reserve_Spawned_Units_Tech_0>Differencial, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Matan, 1</Starting_Spawned_Units_Tech_0>	
+		<Reserve_Spawned_Units_Tech_0>Matan, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				US_Targeting_Systems_L1_Upgrade,
+				US_Targeting_Systems_L2_Upgrade,
+				US_Magnetically_Sealed_Armor_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L2_Upgrade,
+				US_BlackMarket_Reactors_L1_Upgrade,
+				US_BlackMarket_Reactors_L2_Upgrade,
+				US_BlackMarket_Reactors_L3_Upgrade,
+				US_Carbonite_Coolant_Systems_L1_Upgrade,
+				US_Carbonite_Coolant_Systems_L2_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2500.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>700.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+			HP_Federation_Station_L1_Supply_Dock_Dummy,
+			HP_Federation_Station_L1_Comm_Array_Dummy,
+			HP_Federation_Station_L1_ShieldGen,
+			HP_Federation_Station_L4_PulsePhasor_00,
+			HP_Federation_Station_L4_PulsePhasor_01,
+			HP_Federation_Station_L4_PulsePhasor_02,
+			HP_Federation_Station_L4_PulsePhasor_03,
+			HP_Federation_Station_L4_Torpedolauncher_00,
+			HP_Federation_Station_L4_Torpedolauncher_01,
+			HP_Federation_Station_L4_Torpedolauncher_02,
+			HP_Federation_Station_L4_Torpedolauncher_03,
+			HP_Federation_Station_L4_Fighter_Bay_00,
+			HP_Federation_Station_L4_Fighter_Bay_01
+		</HardPoints>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Custom_Soft_Footprint_Radius> 550 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>I_RADAR_FB_LVL4_5.TGA</Radar_Icon_Name>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Score_Cost_Credits> 12000</Score_Cost_Credits>
+
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_4_Rebel</Retreat_Self_Destruct_Explosion>
+		
+		<Death_Clone>Damage_Normal, Federation_Star_Base_4_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>16</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Federation_Star_Base_4_Death_Clone">
+		<Text_ID>TEXT_REBEL_STAR_BASE_4</Text_ID>
+		<Space_Model_Name>FB_Level_4.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+
+
+
+
+
+
+	<StarBase Name="Federation_Star_Base_5">
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<Text_ID>TEXT_REBEL_STAR_BASE_5</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STATION5 TEXT_TOOLTIP_GARRISON_9G_05</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_FB_LVL4_5.TGA</Icon_Name>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>No</Is_Dummy>
+		<Space_Model_Name>FB_Level_5.ALO</Space_Model_Name>
+		<Galactic_Model_Name>i_ub_05_station.alo</Galactic_Model_Name>
+		<Select_Box_Scale>1200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>7500</Build_Cost_Credits>
+		<AI_Combat_Power>35000</AI_Combat_Power>
+		<Build_Time_Seconds>75</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Size_Value>50</Size_Value>
+		<Tech_Level>5</Tech_Level>
+		<Base_Level>5</Base_Level>
+		<Prev_Level_Base>Federation_Star_Base_4</Prev_Level_Base>
+		<Next_Level_Base />
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>4</Required_Star_Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Autoresolve_Health>2750</Autoresolve_Health>
+		<Damage>75</Damage>
+		<Shield_Points>8000</Shield_Points>
+		<Tactical_Health>8000</Tactical_Health>
+		<Shield_Refresh_Rate>200</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		
+		<!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+		<Starting_Spawned_Units_Tech_0>F-302_Squadron, 6</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>F-302_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>X-301_Squadron, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>X-301_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Gracefighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Gracefighter_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Differencial, 2</Starting_Spawned_Units_Tech_0>	
+		<Reserve_Spawned_Units_Tech_0>Differencial, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Matan, 2</Starting_Spawned_Units_Tech_0>	
+		<Reserve_Spawned_Units_Tech_0>Matan, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Predel, 1</Starting_Spawned_Units_Tech_0>	
+		<Reserve_Spawned_Units_Tech_0>Predel, -1</Reserve_Spawned_Units_Tech_0>
+		
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				US_Targeting_Systems_L1_Upgrade,
+				US_Targeting_Systems_L2_Upgrade,
+				US_Targeting_Systems_L3_Upgrade,
+				US_Magnetically_Sealed_Armor_L1_Upgrade,
+				US_Magnetically_Sealed_Armor_L2_Upgrade,
+				US_Magnetically_Sealed_Armor_L3_Upgrade,
+				US_BlackMarket_Reactors_L1_Upgrade,
+				US_BlackMarket_Reactors_L2_Upgrade,
+				US_BlackMarket_Reactors_L3_Upgrade,
+				US_Carbonite_Coolant_Systems_L1_Upgrade,
+				US_Carbonite_Coolant_Systems_L2_Upgrade,
+				US_Reinforced_Structure_L1_Upgrade
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2500.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+		
+		<HardPoints>
+			HP_Federation_Station_L1_Supply_Dock_Dummy,
+			HP_Federation_Station_L1_Comm_Array_Dummy,
+			HP_Federation_Station_L1_ShieldGen,
+			HP_Federation_Station_L5_PulsePhasor_00,
+			HP_Federation_Station_L5_PulsePhasor_01,
+			HP_Federation_Station_L5_PulsePhasor_02,
+			HP_Federation_Station_L5_PulsePhasor_03,
+			HP_Federation_Station_L5_PulsePhasor_04,
+			HP_Federation_Station_L5_PulsePhasor_05,
+			HP_Federation_Station_L5_PulsePhasor_06,
+			HP_Federation_Station_L5_PulsePhasor_07,
+			HP_Federation_Station_L5_Torpedolauncher_00,
+			HP_Federation_Station_L5_Torpedolauncher_01,
+			HP_Federation_Station_L5_Torpedolauncher_02,
+			HP_Federation_Station_L5_Torpedolauncher_03,
+			HP_Federation_Station_L5_Torpedolauncher_04,
+			HP_Federation_Station_L5_Torpedolauncher_05,
+			HP_Federation_Station_L5_Torpedolauncher_06,
+			HP_Federation_Station_L5_Torpedolauncher_07,
+			HP_Federation_Station_L4_Fighter_Bay_00,
+			HP_Federation_Station_L4_Fighter_Bay_01,
+			HP_Federation_Station_L5_Fighter_Bay_02,
+			HP_Federation_Station_L5_Fighter_Bay_03
+		</HardPoints>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Unit_Under_Attack> UHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Custom_Soft_Footprint_Radius> 550 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>I_RADAR_FB_LVL4_5.TGA</Radar_Icon_Name>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<Score_Cost_Credits> 24000</Score_Cost_Credits>
+		
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_5_Rebel</Retreat_Self_Destruct_Explosion>
+		
+		<Death_Clone>Damage_Normal, Federation_Star_Base_5_Death_Clone</Death_Clone>
+		<Additional_Population_Capacity>17</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Federation_Star_Base_5_Death_Clone">
+		<Text_ID>TEXT_REBEL_STAR_BASE_5</Text_ID>
+		<Space_Model_Name>FB_Level_5.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<CategoryMask> Capital </CategoryMask>
+		<Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+	</StarBase>
+
+
+
+	
+	
+	
+	
+	<!-- Underworld Skirmish Starbases -->
+	<StarBase Name="Skirmish_Federation_Star_Base_1">
+		<Variant_Of_Existing_Type>Federation_Star_Base_1</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Icon_Name>i_button_ub_station1.tga</Icon_Name>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+			HP_Federation_Station_L1_Supply_Dock,
+			HP_Federation_Station_L1_Comm_Array,
+			HP_Federation_Station_L1_ShieldGen,
+			HP_Federation_Station_L1_Fighter_Bay,
+			HP_Federation_Station_L1_PulsePhasor_00,
+			HP_Federation_Station_L1_PulsePhasor_01,
+			HP_Federation_Station_L1_Torpedolauncher
+		</HardPoints>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+					FS_Level_Two_Starbase_Upgrade,
+					FS_Enhanced_Reactors_L1_Upgrade,
+					Differencial,
+					X-301_Squadron,
+					F-302_Squadron,
+					Enterpreis_NX_01,
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base />
+		<Next_Level_Base>Skirmish_Federation_Star_Base_2</Next_Level_Base>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="U_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>30</Base_Income_Value>
+				<Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="U_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>20</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Federation_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="U_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+	<StarBase Name="Skirmish_Federation_Star_Base_2">
+		<Variant_Of_Existing_Type>Federation_Star_Base_2</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Icon_Name>i_button_ub_station2.tga</Icon_Name>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+			HP_Federation_Station_L1_Supply_Dock,
+			HP_Federation_Station_L1_Comm_Array,
+			HP_Federation_Station_L1_ShieldGen,
+			HP_Federation_Station_L1_Fighter_Bay,
+			HP_Federation_Station_L2_PulsePhasor_00,
+			HP_Federation_Station_L2_PulsePhasor_01,
+			HP_Federation_Station_L2_PulsePhasor_02,
+			HP_Federation_Station_L2_PulsePhasor_03,
+			HP_Federation_Station_L2_Torpedolauncher_00,
+			HP_Federation_Station_L2_Torpedolauncher,
+		</HardPoints>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+					FS_Level_Three_Starbase_Upgrade,
+					FS_Enhanced_Reactors_L1_Upgrade,
+					FS_Improved_Weapons_L1_Upgrade,
+					Differencial,
+					X-301_Squadron,
+					F-302_Squadron,
+					Gracefighter_Squadron,
+					Matan,
+					ALGEM,
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Federation_Star_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Skirmish_Federation_Star_Base_3</Next_Level_Base>
+			
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="U_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>35.0</Base_Income_Value>
+				<Base_Interval_In_Secs>12</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="U_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>25.0</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Federation_Star_Base_2</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="U_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+	<StarBase Name="Skirmish_Federation_Star_Base_3">
+		<Variant_Of_Existing_Type>Federation_Star_Base_3</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Icon_Name>i_button_ub_station3.tga</Icon_Name>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+			HP_Federation_Station_L1_Supply_Dock,
+			HP_Federation_Station_L1_Comm_Array,
+			HP_Federation_Station_L1_ShieldGen,
+			HP_Federation_Station_L1_Fighter_Bay,
+			HP_Federation_Station_L3_PulsePhasor_00,
+			HP_Federation_Station_L3_PulsePhasor_01,
+			HP_Federation_Station_L3_PulsePhasor_02,
+			HP_Federation_Station_L3_PulsePhasor_03,
+			HP_Federation_Station_L3_PulsePhasor_04,
+			HP_Federation_Station_L3_PulsePhasor_05,
+			HP_Federation_Station_L3_PulsePhasor_06,
+			HP_Federation_Station_L3_PulsePhasor_07
+			HP_Federation_Station_L3_Torpedolauncher_00,
+			HP_Federation_Station_L3_Torpedolauncher_01,
+			HP_Federation_Station_L2_Torpedolauncher,
+		</HardPoints>
+		
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+					FS_Level_Four_Starbase_Upgrade,
+					FS_Enhanced_Reactors_L1_Upgrade,
+					FS_Enhanced_Reactors_L2_Upgrade,
+					FS_Improved_Weapons_L1_Upgrade,
+					FS_Improved_Weapons_L2_Upgrade,
+					FS_Enhanced_Shielding_L1_Upgrade,
+			    	FS_Planetary_Torpedo_Use_Upgrade,
+					Differencial,
+					X-301_Squadron,
+					F-302_Squadron,
+					Gracefighter_Squadron,
+					Matan,
+					ALGEM,
+					Predel,
+					Pascal,
+					Jumper_Squadron,
+					FV_Type11_Squadron,
+					
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Federation_Star_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Skirmish_Federation_Star_Base_4</Next_Level_Base>
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="U_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>40.0</Base_Income_Value>
+				<Base_Interval_In_Secs>14</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="U_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>30</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Federation_Star_Base_3</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="U_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+	<StarBase Name="Skirmish_Federation_Star_Base_4">
+		<Variant_Of_Existing_Type>Federation_Star_Base_4</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Icon_Name>i_button_ub_station4.tga</Icon_Name>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+			HP_Federation_Station_L1_Supply_Dock,
+			HP_Federation_Station_L1_Comm_Array,
+			HP_Federation_Station_L1_ShieldGen,
+			HP_Federation_Station_L3_PulsePhasor_00,
+			HP_Federation_Station_L3_PulsePhasor_01,
+			HP_Federation_Station_L3_PulsePhasor_02,
+			HP_Federation_Station_L3_PulsePhasor_03,
+			HP_Federation_Station_L4_Torpedolauncher_00,
+			HP_Federation_Station_L4_Torpedolauncher_01,
+			HP_Federation_Station_L4_Torpedolauncher_02,
+			HP_Federation_Station_L4_Torpedolauncher_03,
+			HP_Federation_Station_L4_Fighter_Bay_00,
+			HP_Federation_Station_L4_Fighter_Bay_01
+		</HardPoints>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				FS_Level_Five_Starbase_Upgrade,
+				FS_Enhanced_Reactors_L1_Upgrade,
+				FS_Enhanced_Reactors_L2_Upgrade,
+				FS_Enhanced_Reactors_L3_Upgrade,
+				FS_Improved_Weapons_L1_Upgrade,
+				FS_Improved_Weapons_L2_Upgrade,
+				FS_Enhanced_Shielding_L1_Upgrade,
+				FS_Enhanced_Shielding_L2_Upgrade,
+				FS_Planetary_Torpedo_Use_Upgrade,
+					Differencial,
+					X-301_Squadron,
+					F-302_Squadron,
+					Gracefighter_Squadron,
+					Matan,
+					ALGEM,
+					Predel,
+					Pascal,
+					Jumper_Squadron,
+					FV_Type11_Squadron,
+					Orion,
+					FV_Sorveign,
+					FV_Nebula,
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Federation_Star_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Skirmish_Federation_Star_Base_5</Next_Level_Base>
+			
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="U_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>45.0</Base_Income_Value>
+				<Base_Interval_In_Secs>16</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="U_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>35</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Federation_Star_Base_4</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="U_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+
+
+	<StarBase Name="Skirmish_Federation_Star_Base_5">
+		<Variant_Of_Existing_Type>Federation_Star_Base_5</Variant_Of_Existing_Type>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Icon_Name>i_button_ub_station5.tga</Icon_Name>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+			HP_Federation_Station_L1_Supply_Dock,
+			HP_Federation_Station_L1_Comm_Array,
+			HP_Federation_Station_L1_ShieldGen,
+			HP_Federation_Station_L5_PulsePhasor_00,
+			HP_Federation_Station_L5_PulsePhasor_01,
+			HP_Federation_Station_L5_PulsePhasor_02,
+			HP_Federation_Station_L5_PulsePhasor_03,
+			HP_Federation_Station_L5_PulsePhasor_04,
+			HP_Federation_Station_L5_PulsePhasor_05,
+			HP_Federation_Station_L5_PulsePhasor_06,
+			HP_Federation_Station_L5_PulsePhasor_07,
+			HP_Federation_Station_L5_Torpedolauncher_00,
+			HP_Federation_Station_L5_Torpedolauncher_01,
+			HP_Federation_Station_L5_Torpedolauncher_02,
+			HP_Federation_Station_L5_Torpedolauncher_03,
+			HP_Federation_Station_L5_Torpedolauncher_04,
+			HP_Federation_Station_L5_Torpedolauncher_05,
+			HP_Federation_Station_L5_Torpedolauncher_06,
+			HP_Federation_Station_L5_Torpedolauncher_07,
+			HP_Federation_Station_L4_Fighter_Bay_00,
+			HP_Federation_Station_L4_Fighter_Bay_01,
+			HP_Federation_Station_L5_Fighter_Bay_02,
+			HP_Federation_Station_L5_Fighter_Bay_03
+		</HardPoints>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				FS_Enhanced_Reactors_L1_Upgrade,
+				FS_Enhanced_Reactors_L2_Upgrade,
+				FS_Enhanced_Reactors_L3_Upgrade,
+				FS_Improved_Weapons_L1_Upgrade,
+				FS_Improved_Weapons_L2_Upgrade,
+				FS_Improved_Weapons_L3_Upgrade,
+				FS_Enhanced_Shielding_L1_Upgrade,
+				FS_Enhanced_Shielding_L2_Upgrade,
+				FS_Enhanced_Shielding_L3_Upgrade,
+				FS_Planetary_Torpedo_Use_Upgrade,
+					Differencial,
+					X-301_Squadron,
+					F-302_Squadron,
+					Gracefighter_Squadron,
+					Matan,
+					ALGEM,
+					Predel,
+					Pascal,
+					Jumper_Squadron,
+					FV_Type11_Squadron,
+					Orion,
+					FV_Sorveign,
+					FV_Nebula,
+					Ears_Ship,
+					Shipyard,
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+	
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Federation_Star_Base_4</Prev_Level_Base>
+		<Next_Level_Base />
+		
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="U_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>55</Base_Income_Value>
+				<Base_Interval_In_Secs>18</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="U_Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>45</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Federation_Star_Base_5</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+ 			<Enable_Radar_Ability Name="U_Comm_Array_Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>			<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+		
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+	<!--Вооружение-->
+	<Projectile Name="Proj_Fed_Quantum_Torpedo">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>quantum.ALO</Space_Model_Name>
+		<Land_Model_Name>quantum.ALO</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>0.8</Scale_Factor>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Max_Speed>16</Max_Speed>
+		<Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>MISSILE</Projectile_Category>
+		<Projectile_Max_Flight_Distance>2200.0</Projectile_Max_Flight_Distance> <!-- was 1200 -->
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>	<!-- was 750, changed so it doesn't reacquire targets -->
+		<Projectile_Damage>80.0</Projectile_Damage>
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Large_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Object_Detonation_Particle>DB_Missile_Explosion</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>DB_Missile_Explosion</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>DB_Missile_Explosion</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>DB_Missile_Explosion</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>600</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_Fed_Photonic_Torpedo">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>photon.ALO</Space_Model_Name>
+		<Land_Model_Name>photon.ALO</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Max_Speed>14</Max_Speed>
+		<Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>MISSILE</Projectile_Category>
+		<Projectile_Max_Flight_Distance>2200.0</Projectile_Max_Flight_Distance> <!-- was 1200 -->
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>	<!-- was 750, changed so it doesn't reacquire targets -->
+		<Projectile_Damage>40.0</Projectile_Damage>
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Large_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Object_Detonation_Particle>Small_Explosion_Space</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Small_Explosion_Space</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Small_Explosion_Space</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Small_Explosion_Space</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>600</AI_Combat_Power>
+	</Projectile>
+	<!--Фазеры-->
+	<Projectile Name="Fed_Phasor_Class_9">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>P_FEDERATION_PHASER.ALO</Space_Model_Name>
+		<Land_Model_Name>P_FEDERATION_PHASER.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Damage_Type> Damage_Phaser_9 </Damage_Type>
+		<Max_Speed>250.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior>IDLE</SpaceBehavior>
+		<LandBehavior>IDLE</LandBehavior>
+		<Projectile_Category>LASER</Projectile_Category>
+		<Projectile_Max_Flight_Distance>10000.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+
+		<Projectile_Damage>25.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>40.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+
+		<Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+
+		<Projectile_Object_Detonation_Particle></Projectile_Object_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Conc_Missile_Detonation_Particle</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Huge_Dud</Projectile_Lifetime_Detonation_Particle>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Fed_Phasor_Class_10">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>P_FEDERATION_PHASER.ALO</Space_Model_Name>
+		<Land_Model_Name>P_FEDERATION_PHASER.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Damage_Type> Damage_Phaser_10 </Damage_Type>
+		<Max_Speed>250.0</Max_Speed>
+		<Projectile_Width>0.5</Projectile_Width>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior>IDLE</SpaceBehavior>
+		<LandBehavior>IDLE</LandBehavior>
+		<Projectile_Category>LASER</Projectile_Category>
+		<Projectile_Max_Flight_Distance>10000.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+
+		<Projectile_Damage>27.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>45.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+
+		<Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+
+		<Projectile_Object_Detonation_Particle></Projectile_Object_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Conc_Missile_Detonation_Particle</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Huge_Dud</Projectile_Lifetime_Detonation_Particle>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Fed_Phasor_Class_11">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>P_FEDERATION_PHASER.ALO</Space_Model_Name>
+		<Land_Model_Name>P_FEDERATION_PHASER.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Damage_Type> Damage_Phaser_11 </Damage_Type>
+		<Max_Speed>250.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior>IDLE</SpaceBehavior>
+		<LandBehavior>IDLE</LandBehavior>
+		<Projectile_Category>LASER</Projectile_Category>
+		<Projectile_Max_Flight_Distance>10000.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+
+		<Projectile_Damage>28.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>55.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+
+		<Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+
+		<Projectile_Object_Detonation_Particle></Projectile_Object_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Conc_Missile_Detonation_Particle</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Huge_Dud</Projectile_Lifetime_Detonation_Particle>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Fed_Phasor_Class_12">
+	<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>P_FEDERATION_PHASER.ALO</Space_Model_Name>
+		<Land_Model_Name>P_FEDERATION_PHASER.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Damage_Type> Damage_Phaser_12 </Damage_Type>
+		<Max_Speed>250.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior>IDLE</SpaceBehavior>
+		<LandBehavior>IDLE</LandBehavior>
+		<Projectile_Category>LASER</Projectile_Category>
+		<Projectile_Max_Flight_Distance>10000.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+
+		<Projectile_Damage>30.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>50.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+
+		<Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+
+		<Projectile_Object_Detonation_Particle></Projectile_Object_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Conc_Missile_Detonation_Particle</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Huge_Dud</Projectile_Lifetime_Detonation_Particle>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Fed_Phasor_Class_13">
+	<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>P_FEDERATION_PHASER.ALO</Space_Model_Name>
+		<Land_Model_Name>P_FEDERATION_PHASER.ALO</Land_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Damage_Type> Damage_Phaser_13 </Damage_Type>
+		<Max_Speed>250.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior>IDLE</SpaceBehavior>
+		<LandBehavior>IDLE</LandBehavior>
+		<Projectile_Category>LASER</Projectile_Category>
+		<Projectile_Max_Flight_Distance>10000.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+
+		<Projectile_Damage>40.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>60.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+
+		<Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+
+		<Projectile_Object_Detonation_Particle></Projectile_Object_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Conc_Missile_Detonation_Particle</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Huge_Dud</Projectile_Lifetime_Detonation_Particle>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+	</Projectile>
+</StarBases>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<SFXEvents> 
+ 
+ <SFXEvent Name="9_GROUP_valera_Shield_Down">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\valera\shield_1.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent>   
+	  
+	<SFXEvent Name="9_GROUP_valera_Attack">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\valera\attack_1.wav Data\Audio\Units\valera\attack_2.wav Data\Audio\Units\valera\attack_3.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent> 
+	  
+	<SFXEvent Name="9_GROUP_valera_Select">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples></Samples>
+				<Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent> 
+	  
+	<SFXEvent Name="9_GROUP_valera_Move">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\valera\move_1.wav Data\Audio\Units\valera\move_2.wav Data\Audio\Units\valera\move_3.wav Data\Audio\Units\valera\move_4.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent>   
+	  
+	  <SFXEvent Name="9_GROUP_valera_Death">
+				<Use_Preset>Preset_EXPC</Use_Preset>
+            <Samples></Samples>  
+    </SFXEvent>
+	
+	 <SFXEvent Name="9_GROUP_valera_Guard">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\valera\guard_1.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent>
+	
+	<SFXEvent Name="9_GROUP_valera_Complete">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples></Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 			
+			 
+	  </SFXEvent>
+
+</SFXEvents>	  

@@ -1,0 +1,2528 @@
+<?xml version="1.0" ?>
+<Story>
+
+	
+	
+<Event Name="Start_Position">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0</Event_Param1>
+	<Reward_Type>POSITION_CAMERA</Reward_Type>
+	<Reward_Param1>Ears</Reward_Param1>
+</Event>	
+	
+<Event Name="Universal_Story_Start">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0</Event_Param1>
+	<Story_Dialog>Dialog_Expansion_GC_Solo</Story_Dialog>
+	<Story_Chapter>1</Story_Chapter>
+	<Story_Tag>Intro_Tag</Story_Tag>
+	<Prereq>Start_Position</Prereq>
+</Event>
+
+<Event Name="Lock_Branch_01">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>DISABLE_BRANCH</Reward_Type>
+    <Reward_Param1>Branch_01</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>Universal_Story_Start</Prereq>
+</Event>
+<!--Заблокированные планеты при старте игры-->
+<Event Name="Lock_Belkan">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Belkan</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>Universal_Story_Start</Prereq>
+</Event>
+	
+<Event Name="Lock_Utapau">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Utapau</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>Universal_Story_Start</Prereq>
+</Event>
+
+<Event Name="Lock_Empire_Shipyard">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Empire_Shipyard</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>Universal_Story_Start</Prereq>
+</Event>
+
+<Event Name="Lock_Asuras">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Asuras</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>Universal_Story_Start</Prereq>
+</Event>
+
+<Event Name="Lock_Atlantis">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Atlantis</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>Universal_Story_Start</Prereq>
+</Event>
+
+<Event Name="Lock_Ratira">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Ratira</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>Universal_Story_Start</Prereq>
+</Event>
+
+<Event Name="Lock_Supergate1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Supergate1</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>Universal_Story_Start</Prereq>
+</Event>
+
+<Event Name="Lock_Supergate2">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Supergate2</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>Universal_Story_Start</Prereq>
+</Event>
+<!--Конец списка-->
+<!--Заблокированные постройки-->
+<Event Name="DISABLE0_POWER">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>LOCK_UNIT</Reward_Type>
+    <Reward_Param1>Power</Reward_Param1>
+	<Prereq>Universal_Story_Start</Prereq>
+</Event>
+
+<Event Name="DISABLE_NX01">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>LOCK_UNIT</Reward_Type>
+    <Reward_Param1>NX_01</Reward_Param1>
+	<Prereq>Universal_Story_Start</Prereq>
+</Event>
+<Event Name="DISABLE_NX01_Werft">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>LOCK_UNIT</Reward_Type>
+    <Reward_Param1>NX_WERFT</Reward_Param1>
+	<Prereq>Universal_Story_Start</Prereq>
+</Event>
+<Event Name="DISABLE_303_Werft">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>LOCK_UNIT</Reward_Type>
+    <Reward_Param1>303_WERFT</Reward_Param1>
+	<Prereq>Universal_Story_Start</Prereq>
+</Event>
+<!--Конец списка-->
+<!--*************************************миссия 1*************************************--> 
+<Event Name="MISSION_1_TEXT_1">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>5</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_1_TEXT_1</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>Universal_Story_Start</Prereq>
+</Event>
+
+<Event Name="MISSION_1_1">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>1</Event_Param1>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_1_1</Reward_Param1>
+    <Prereq>MISSION_1_TEXT_1</Prereq>
+</Event>
+
+<Event Name="MISSION_1_1_PROGRESS">
+    <Event_Type>STORY_CONSTRUCT</Event_Type>
+	<Event_Param1>Federation_Star_Base_1</Event_Param1>
+	<Event_Param2>1</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_1_1</Reward_Param1>
+    <Prereq>MISSION_1_TEXT_1</Prereq>
+</Event>
+
+<Event Name="MISSION_1_2">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_1_2</Reward_Param1>
+    <Prereq>MISSION_1_1_PROGRESS</Prereq>
+</Event>
+
+<Event Name="MISSION_1_2_PROGRESS">
+    <Event_Type>STORY_CONSTRUCT</Event_Type>
+	<Event_Param1>Federation_Orbital_Research_Station</Event_Param1>
+	<Event_Param2>1</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_1_2</Reward_Param1>
+    <Prereq>MISSION_1_TEXT_1</Prereq>
+</Event>
+
+<Event Name="MISSION_1_TEXT_2">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_1_TEXT_2</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_1_2_PROGRESS</Prereq>
+</Event>
+
+<Event Name="MISSION_1_3">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_1_3</Reward_Param1>
+    <Prereq>MISSION_1_TEXT_2</Prereq>
+</Event>
+
+<Event Name="Show_Genii">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Genii</Reward_Param1>
+	<Prereq>MISSION_1_3</Prereq>
+</Event>
+
+<Event Name="Genii_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Genii</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Genii_GUI_Flash</Reward_Param4> 
+	<Prereq>Show_Genii</Prereq>
+</Event>
+		
+<Event Name="Genii_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>5</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>Genii_GUI_Flash</Reward_Param1>
+	<Prereq>Genii_Marker</Prereq>
+</Event>
+
+<Event Name="MISSION_1_3_PROGRESS">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Genii</Event_Param1>
+    <Event_Param2 />
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>MULTIMEDIA</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_1_TEXT_3</Reward_Param1> 
+	<Reward_Param2>5</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_1_2</Prereq>
+</Event>
+
+<Event Name="MISSION_1_3_C">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_1_3</Reward_Param1>
+	<Prereq>MISSION_1_3</Prereq>
+</Event>	
+<!--***Появление героев***-->   
+<Event Name="Spawn_Igor">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Genii</Event_Param1>
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Igor_Team</Reward_Param1>
+    <Reward_Param2>Genii</Reward_Param2>
+    <Prereq>MISSION_1_2</Prereq>
+</Event>
+
+<Event Name="Spawn_Roman">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Genii</Event_Param1>
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Roman_Team</Reward_Param1>
+    <Reward_Param2>Genii</Reward_Param2>
+    <Prereq>MISSION_1_2</Prereq>
+</Event>
+
+<Event Name="Spawn_Tanya">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Genii</Event_Param1>
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Tanya</Reward_Param1>
+    <Reward_Param2>Genii</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>MISSION_1_2</Prereq>
+</Event>
+
+<Event Name="Spawn_Marina">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Genii</Event_Param1>
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Marina_Team</Reward_Param1>
+    <Reward_Param2>Genii</Reward_Param2>
+    <Prereq>MISSION_1_2</Prereq>
+</Event>
+
+<Event Name="Spawn_Nikita">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Genii</Event_Param1>
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Nikita_Team</Reward_Param1>
+    <Reward_Param2>Genii</Reward_Param2>
+    <Prereq>MISSION_1_2</Prereq>
+</Event>
+
+<Event Name="Spawn_Andrei">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Genii</Event_Param1>
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Andrei</Reward_Param1>
+    <Reward_Param2>Genii</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>MISSION_1_2</Prereq>
+</Event>
+
+<Event Name="MISSION_1_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+ 	<Event_Param1>2</Event_Param1>
+    <Reward_Type>REMOVE_ALL_OBJECTIVES</Reward_Type>
+    <Prereq>MISSION_1_3_PROGRESS</Prereq>
+</Event>
+<!--*************************************Конец миссии 1*************************************-->
+
+<!--*************************************Миссии 2*************************************--> 
+<Event Name="MISSION_2_TEXT_1">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>40</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_2_TEXT_1</Reward_Param1> 
+	<Reward_Param2>40</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_1_REMOVED</Prereq>
+</Event>
+
+<Event Name="MISSION_2_TEXT_2">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>42</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_2_TEXT_2</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_2_TEXT_1</Prereq>
+</Event>
+
+<Event Name="MISSION_2_1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_2_1</Reward_Param1>
+    <Prereq>MISSION_2_TEXT_2</Prereq>
+</Event>
+
+<Event Name="Show_Andaria">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Andaria</Reward_Param1>
+	<Prereq>MISSION_2_1</Prereq>
+</Event>
+
+<Event Name="Andaria_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Andaria</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Andaria_GUI_Flash</Reward_Param4> 
+	<Prereq>Show_Andaria</Prereq>
+</Event>
+		
+<Event Name="Andaria_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>5</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>Andaria_GUI_Flash</Reward_Param1>
+	<Prereq>Andaria_Marker</Prereq>
+</Event>
+
+<Event Name="MISSION_2_1_PROGRESS">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Andaria</Event_Param1>
+    <Event_Param2 />
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_2_1</Reward_Param1>
+</Event>
+
+<Event Name="MISSION_1_3_C">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>CREDITS</Reward_Type>
+    <Reward_Param1>10000</Reward_Param1>
+	<Prereq>MISSION_2_1_PROGRESS</Prereq>
+</Event>
+
+<Event Name="MISSION_2_TEXT_3">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>10</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_2_TEXT_3</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_2_1_PROGRESS</Prereq>
+</Event>
+
+<Event Name="IGOR_REMOVE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Igor_Team</Reward_Param1>
+	<Prereq>MISSION_2_TEXT_3</Prereq>
+</Event>
+
+<Event Name="ROMAN_REMOVE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Roman_Team</Reward_Param1>
+	<Prereq>MISSION_2_TEXT_3</Prereq>
+</Event>
+
+<Event Name="NIKITA_REMOVE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Nikita_Team</Reward_Param1>
+	<Prereq>MISSION_2_TEXT_3</Prereq>
+</Event>
+
+<Event Name="ANDREI_REMOVE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Andrei</Reward_Param1>
+	<Prereq>MISSION_2_TEXT_3</Prereq>
+</Event>
+<!--*************************************Конец миссии 2*************************************-->
+
+<!--*************************************Миссия 3*************************************-->  
+<Event Name="Destroy_Orbital_Research_Station">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>120</Event_Param1>
+    <Reward_Type>DESTROY_OBJECT</Reward_Type>
+    <Reward_Param1>Federation_Orbital_Research_Station</Reward_Param1>
+    <Prereq>MISSION_2_TEXT_3</Prereq>
+</Event>
+
+<Event Name="MISSION_3_TEXT_1">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>120</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_3_TEXT_1</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>Destroy_Orbital_Research_Station</Prereq>
+</Event>
+	
+<Event Name="MISSION_3">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_3_1</Reward_Param1>
+    <Prereq>MISSION_3_TEXT_1</Prereq>
+</Event>
+	
+<Event Name="Show_Belkan">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Belkan</Reward_Param1>
+	<Prereq>MISSION_3_TEXT_1</Prereq>
+</Event>
+
+<Event Name="Belkan_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Belkan</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Belkan_GUI_Flash</Reward_Param4> 
+	<Prereq>MISSION_3</Prereq>
+</Event>
+		
+<Event Name="Belkan_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>Belkan_GUI_Flash</Reward_Param1>
+	<Prereq>Belkan_Marker</Prereq>
+</Event>
+	
+<Event Name="UNLOCK_BELKAN"> 
+    <Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Belkan</Event_Param1> 
+	<Event_Param3>Marina_Team</Event_Param3> 
+	<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type> 
+	<Reward_Param1>Belkan</Reward_Param1> 
+	<Reward_Param2>0</Reward_Param2> 
+	<Prereq>MISSION_3_TEXT_1</Prereq> 
+</Event>
+<!--***Марина против Саши***-->	
+<Event Name="Marina_Sasha">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>LINK_TACTICAL</Reward_Type>
+	<Reward_Param1>Belkan</Reward_Param1>
+	<Reward_Param2>SPACE</Reward_Param2>
+	<Reward_Param3>Pirates</Reward_Param3>
+	<Reward_Param4>_SPACE_PLANET_BELKAN_011.ted</Reward_Param4>
+	<Reward_Param5>Underworld</Reward_Param5>
+	<Reward_Param7>Plots_Mission_Marina_Sasha.xml</Reward_Param7>
+	<Reward_Param8>1</Reward_Param8>
+	<Prereq>UNLOCK_BELKAN</Prereq>
+</Event>
+<!--***Появление Саши на Земле***-->	
+<Event Name="Spawn_Sasha1">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Belkan</Event_Param1>
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>SASHA</Reward_Param1>
+    <Reward_Param2>Ears</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>MISSION_3_TEXT_1</Prereq>
+</Event>
+   
+<Event Name="MISSION_3_COMPLETE">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_3_1</Reward_Param1>
+    <Prereq>Spawn_Sasha1</Prereq>
+</Event>  
+   
+<Event Name="MISSION_3_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>10</Event_Param1>
+	<Reward_Type>REMOVE_ALL_OBJECTIVES</Reward_Type>
+    <Prereq>MISSION_3_COMPLETE</Prereq>
+</Event> 
+  
+<Event Name="MISSION_3_TEXT_2">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_3_TEXT_3</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_3_COMPLETE</Prereq>
+</Event>
+
+<Event Name="MISSION_3_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>10</Event_Param1>
+	<Reward_Type>REMOVE_ALL_OBJECTIVES</Reward_Type>
+    <Prereq>MISSION_3_COMPLETE</Prereq>
+</Event> 
+
+<!--*************************************Конец миссии 3*************************************--> 
+
+ 	
+<!--*************************************Миссия 4*************************************-->
+ <Event Name="MISSION_4_TEXT_1">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>120</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_4_TEXT_1</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_3_TEXT_2</Prereq>
+</Event> 
+
+<Event Name="Spawn_Orbital_Research_Station">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Federation_Orbital_Research_Station</Reward_Param1>
+    <Reward_Param2>Earth</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>MISSION_4_TEXT_1</Prereq>
+</Event>
+
+<Event Name="MISSION_4">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_4_1</Reward_Param1>
+    <Prereq>MISSION_4_TEXT_1</Prereq>
+</Event>
+
+<!--***Сражение за Землю***-->	
+
+<Event Name="IGOR_SPAWN">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Igor_Team</Reward_Param1>
+	<Reward_Param2>Ears</Reward_Param2>
+	<Prereq>MISSION_4_TEXT_1</Prereq>
+</Event>
+
+<Event Name="ROMAN_SPAWN">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Roman_Team</Reward_Param1>
+    <Reward_Param2>Ears</Reward_Param2>
+	<Prereq>MISSION_4_TEXT_1</Prereq>
+</Event>
+
+<Event Name="NIKITA_SPAWN">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Nikita_Team</Reward_Param1>
+	<Reward_Param2>Ears</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+	<Prereq>MISSION_4_TEXT_1</Prereq>
+</Event>
+
+<Event Name="ANDREI_SPAWN">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>UNIQUE_UNIT</Reward_Type>
+	<Reward_Param1>Andrei</Reward_Param1>
+	<Reward_Param2>Ears</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+	<Prereq>MISSION_4_TEXT_1</Prereq>
+</Event>
+
+<Event Name="EARS_BATTLE">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>20</Event_Param1>
+	<Reward_Type>LINK_TACTICAL</Reward_Type>
+	<Reward_Param1>Ears</Reward_Param1>
+	<Reward_Param2>SPACE</Reward_Param2>
+	<Reward_Param3>Empire</Reward_Param3>
+	<Reward_Param4>_SPACE_PLANET_ERDE_02.ted</Reward_Param4>
+	<Reward_Param5>UNDERWORLD</Reward_Param5>
+	<Reward_Param7>Plots_Mission_Defend_Ears.xml</Reward_Param7>
+	<Reward_Param8>0</Reward_Param8>
+	<Prereq>MISSION_4_TEXT_1</Prereq>
+</Event>
+
+<Event Name="Empire_won_battle">
+	<Event_Type>STORY_LOSE_BATTLES</Event_Type>
+	<Event_Param1>1</Event_Param1>
+	<Event_Param2>SPACE</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+	<Prereq>EARS_BATTLE</Prereq>
+</Event>
+
+<Event Name="Empire_fleet_Ears">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>1</Event_Param1>
+	<Reward_Type>STORY_ELEMENT</Reward_Type>
+	<Reward_Param1>Story_Ep1_Underworld_SPAWN_EARS</Reward_Param1>
+	<Prereq>Ears_to_Empire</Prereq>
+</Event>
+
+<Event Name="MISSION_4_FALLED">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+	<Reward_Param1>CAMP_1_MISSION_4_1</Reward_Param1>
+	<Prereq>Empire_won_battle</Prereq>
+</Event>
+
+<Event Name="Ears_to_Empire">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>PLANET_FACTION</Reward_Type>
+	<Reward_Param1>Ears</Reward_Param1>
+	<Reward_Param2>Empire</Reward_Param2>
+	<Prereq>Empire_won_battle</Prereq>
+</Event>
+
+<Event Name="Lose_Ears">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_4_TEXT_6</Reward_Param1> 
+	<Reward_Param2>10</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>Empire_won_battle</Prereq>
+</Event>
+
+<Event Name="MISSION_4_RESERVE">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_4_3</Reward_Param1>
+    <Prereq>Empire_won_battle</Prereq>
+</Event>
+
+<Event Name="BACK_EARS">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Ears</Event_Param1>
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_4_3</Reward_Param1>
+</Event>
+
+<!--************************-->
+<Event Name="Group_won_battle">
+	<Event_Type>STORY_WIN_BATTLES</Event_Type>
+	<Event_Param1>1</Event_Param1>
+	<Event_Param2>SPACE</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+	<Prereq>EARS_BATTLE</Prereq>
+</Event>
+
+<Event Name="Victory_Bonus">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>CREDITS</Reward_Type>
+	<Reward_Param1>10000</Reward_Param1>
+    <Prereq>Group_won_battle</Prereq>
+</Event>
+
+<Event Name="MISSION_4_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>10</Event_Param1>
+	<Reward_Type>REMOVE_ALL_OBJECTIVES</Reward_Type>
+    <Prereq>BACK_EARS</Prereq>
+	<Prereq>Group_won_battle</Prereq>
+</Event> 
+
+<Event Name="FINISH_1"><!-- I know that it can be strange but if you do not close the STORY_LOSE_BATTLES the event will not be finished when it be completed -->
+   <Event_Type>STORY_TRIGGER</Event_Type>
+   <Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+   <Reward_Param1>Empire_won_battle</Reward_Param1>
+   <Reward_Param2>1</Reward_Param2>
+   <Prereq>Group_won_battle</Prereq>
+</Event>
+
+<Event Name="FINISH_2"><!-- I know that it can be strange but if you do not close the STORY_LOSE_BATTLES the event will not be finished when it be completed -->
+   <Event_Type>STORY_TRIGGER</Event_Type>
+   <Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+   <Reward_Param1>Group_won_battle</Reward_Param1>
+   <Reward_Param2>1</Reward_Param2>
+   <Prereq>Empire_won_battle</Prereq>
+</Event>
+<!--*************************************Конец миссии 4*************************************-->  
+
+<!--*************************************Миссия 5*************************************-->
+<Event Name="MISSION_5_TEXT_1">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>50</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_5_TEXT_1</Reward_Param1> 
+	<Reward_Param2>25</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_4_REMOVED</Prereq>
+</Event> 
+
+<Event Name="ENABLE_POWER">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+    <Reward_Param1>Power</Reward_Param1>
+	<Prereq>MISSION_5_TEXT_1</Prereq>
+</Event>
+
+<Event Name="MISSION_5_1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_5_1</Reward_Param1>
+    <Prereq>MISSION_5_TEXT_1</Prereq>
+</Event>
+
+<Event Name="MISSION_5_1_PROGRESS">
+    <Event_Type>STORY_CONSTRUCT</Event_Type>
+	<Event_Param1>Power</Event_Param1>				
+	<Event_Param2>1</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_5_1</Reward_Param1>
+    <Prereq>MISSION_5_1</Prereq>
+</Event>
+
+<Event Name="MISSION_5_TEXT_2">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_5_TEXT_2</Reward_Param1> 
+	<Reward_Param2>25</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_5_1_PROGRESS</Prereq>
+</Event> 
+
+<Event Name="MISSION_5_2">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_5_2</Reward_Param1>
+    <Prereq>MISSION_5_1_PROGRESS</Prereq>
+</Event>
+
+<Event Name="Show_Gate1">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Supergate1</Reward_Param1>
+	<Prereq>MISSION_5_1_PROGRESS</Prereq>
+</Event>
+
+<Event Name="Gate1_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Supergate1</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>SUPERGATE1_GUI_Flash</Reward_Param4> 
+	<Prereq>Show_Gate1</Prereq>
+</Event>
+		
+<Event Name="Gate1_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>5</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>SUPERGATE1_GUI_Flash</Reward_Param1>
+	<Prereq>Gate1_Marker</Prereq>
+</Event>
+
+<Event Name="UnLock_Supergate1">
+    <Event_Type>STORY_ENTER</Event_Type>
+	<Event_Param1>Supergate1</Event_Param1> 
+	<Event_Param3>Power</Event_Param3>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Supergate1</Reward_Param1>
+    <Reward_Param2>0</Reward_Param2>
+    <Prereq>MISSION_5_TEXT_2</Prereq>
+</Event>
+
+<Event Name="Show_Gate2">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Supergate2</Reward_Param1>
+	<Prereq>UnLock_Supergate1</Prereq>
+</Event>
+
+<Event Name="Gate2_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Supergate2</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>SUPERGATE2_GUI_Flash</Reward_Param4> 
+	<Prereq>Show_Gate2</Prereq>
+</Event>
+		
+<Event Name="Gate2_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>5</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>SUPERGATE2_GUI_Flash</Reward_Param1>
+	<Prereq>Gate2_Marker</Prereq>
+</Event>
+
+<Event Name="UnLock_Supergate2">
+    <Event_Type>STORY_ENTER</Event_Type>
+	<Event_Param1>Supergate2</Event_Param1> 
+	<Event_Param3>Power</Event_Param3>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Supergate2</Reward_Param1>
+    <Reward_Param2>0</Reward_Param2>
+    <Prereq>UnLock_Supergate1</Prereq>
+</Event>
+
+<Event Name="MISSION_5_2_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_5_2</Reward_Param1>
+	<Prereq>POWER_1</Prereq>
+</Event>	
+	
+<Event Name="POWER_1">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Power</Reward_Param1>
+	<Prereq>UnLock_Supergate2</Prereq>
+</Event>
+
+<Event Name="MISSION_5_C">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>CREDITS</Reward_Type>
+    <Reward_Param1>30000</Reward_Param1>
+	<Prereq>POWER_1</Prereq>
+</Event>
+
+<Event Name="MISSION_5_3">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_5_3</Reward_Param1>
+    <Prereq>MISSION_5_2_COMPLETE</Prereq>
+</Event>
+
+<Event Name="Lock2_Supergate1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Supergate1</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>MISSION_5_3</Prereq>
+</Event>
+
+<Event Name="UnLock2_Supergate1">
+    <Event_Type>STORY_ENTER</Event_Type>
+	<Event_Param1>Supergate1</Event_Param1> 
+	<Event_Param3>Power</Event_Param3>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Supergate1</Reward_Param1>
+    <Reward_Param2>0</Reward_Param2>
+    <Prereq>MISSION_5_3</Prereq>
+</Event>
+
+<Event Name="MISSION_5_3_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_5_3</Reward_Param1>
+	<Prereq>POWER_2</Prereq>
+	<Prereq>HAHAHA_2</Prereq>
+</Event>	
+
+<Event Name="POWER_2">
+	<Event_Type>STORY_ENTER</Event_Type>
+	<Event_Param1>Supergate2</Event_Param1> 
+	<Event_Param3>Power</Event_Param3>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Power</Reward_Param1>
+	<Prereq>UnLock2_Supergate1</Prereq>
+</Event>
+
+<Event Name="HAHAHA_2">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>30</Event_Param1>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Power</Reward_Param1>
+	<Prereq>UnLock2_Supergate1</Prereq>
+</Event>
+
+<Event Name="MISSION_5_4">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_5_4</Reward_Param1>
+    <Prereq>MISSION_5_3_COMPLETE</Prereq>
+</Event>
+
+<Event Name="Lock3_Supergate1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Supergate1</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>MISSION_5_4</Prereq>
+</Event>
+
+<Event Name="UnLock3_Supergate1">
+    <Event_Type>STORY_ENTER</Event_Type>
+	<Event_Param1>Supergate1</Event_Param1> 
+	<Event_Param3>Power</Event_Param3>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Supergate1</Reward_Param1>
+    <Reward_Param2>0</Reward_Param2>
+    <Prereq>MISSION_5_4</Prereq>
+</Event>
+
+<Event Name="MISSION_5_4_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_5_4</Reward_Param1>
+	<Prereq>POWER_3</Prereq>
+	<Prereq>HAHAHA_3</Prereq>
+</Event>	
+
+<Event Name="POWER_3">
+	<Event_Type>STORY_ENTER</Event_Type>
+	<Event_Param1>Supergate2</Event_Param1> 
+	<Event_Param3>Power</Event_Param3>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Power</Reward_Param1>
+	<Prereq>UnLock3_Supergate1</Prereq>
+</Event>
+
+<Event Name="HAHAHA_3">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>30</Event_Param1>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Power</Reward_Param1>
+	<Prereq>UnLock3_Supergate1</Prereq>
+</Event>
+
+<Event Name="Lock4_Supergate1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Supergate1</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>MISSION_5_4_COMPLETE</Prereq>
+</Event>
+
+<Event Name="DISABLE_POWER">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>LOCK_UNIT</Reward_Type>
+    <Reward_Param1>Power</Reward_Param1>
+	<Prereq>MISSION_5_4_COMPLETE</Prereq>
+</Event>
+
+<Event Name="MISSION_5_TEXT_3">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_5_TEXT_3</Reward_Param1> 
+	<Reward_Param2>25</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>DISABLE_POWER</Prereq>
+</Event> 
+
+<Event Name="MISSION_5_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>10</Event_Param1>
+	<Reward_Type>REMOVE_ALL_OBJECTIVES</Reward_Type>
+    <Prereq>DISABLE_POWER</Prereq>
+</Event> 
+<!--*************************************Конец миссии 5*************************************-->  
+<Event Name="Pirates_On">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>80</Event_Param1>
+	<Reward_Type>SWITCH_CONTROL</Reward_Type>
+	<Reward_Param1>Pirates</Reward_Param1>
+	<Reward_Param2>BasicEmpire</Reward_Param2>
+	<Prereq>MISSION_5_TEXT_3</Prereq>
+</Event>
+
+<!--*************************************миссия 6*************************************--> 
+<Event Name="MISSION_6_TEXT_1">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>100</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_6_TEXT_1</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>Pirates_On</Prereq>
+</Event>
+    	
+<Event Name="MISSION_6_1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_6_1</Reward_Param1>
+    <Prereq>MISSION_6_TEXT_1</Prereq>
+</Event>
+
+<Event Name="Show_Ratira">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Ratira</Reward_Param1>
+	<Prereq>MISSION_6_1</Prereq>
+</Event>
+
+<Event Name="Ratira_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Ratira</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Ratira_GUI_Flash</Reward_Param4> 
+	<Prereq>MISSION_6_1</Prereq>
+</Event>
+	
+<Event Name="Ratira_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>Ratira_GUI_Flash</Reward_Param1>
+	<Prereq>Ratira_Marker</Prereq>
+</Event>
+
+<Event Name="Ratira_ZHENYA"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Ratira</Event_Param1> 
+	<Event_Param3>ZHENYA</Event_Param3> 
+    <Prereq>MISSION_6_1</Prereq>
+</Event>
+
+<Event Name="Ratira_Sasha"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Ratira</Event_Param1> 
+	<Event_Param3>Sasha</Event_Param3> 
+    <Prereq>MISSION_6_1</Prereq>
+</Event>
+
+<Event Name="Ratira_Marina"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Ratira</Event_Param1> 
+	<Event_Param3>Marina_Team</Event_Param3> 
+    <Prereq>MISSION_6_1</Prereq>
+</Event>
+<!--***Переговоры***-->	
+<Event Name="Ratira_1"> 
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_6_1</Reward_Param1>
+	<Prereq>Ratira_ZHENYA, Ratira_Sasha, Ratira_Marina</Prereq> 
+</Event>
+<!--***Женя на переговорах***-->
+<Event Name="HIDE_ZHENYA_RATIRA">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>ZHENYA</Reward_Param1>
+	<Prereq>Ratira_ZHENYA</Prereq>
+</Event>
+<!--***Саша на переговорах***-->
+<Event Name="HIDE_Sasha_RATIRA">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Sasha</Reward_Param1>
+	<Prereq>Ratira_Sasha</Prereq>
+</Event>
+<!--***Марина на переговорах***-->
+<Event Name="HIDE_Marina_RATIRA">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Marina_Team</Reward_Param1>
+	<Prereq>Ratira_Marina</Prereq>
+</Event>	
+<!--Конец переговоров. Атака Асураса-->
+<Event Name="MISSION_6_TEXT_2">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>90</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_6_TEXT_2</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>Ratira_1</Prereq>
+</Event>
+    	
+<Event Name="MISSION_6_2">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_6_2</Reward_Param1>
+    <Prereq>MISSION_6_TEXT_2</Prereq>
+</Event>
+
+<Event Name="UNLock_Ratira">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Ratira</Reward_Param1>
+    <Reward_Param2>0</Reward_Param2>
+    <Prereq>MISSION_6_TEXT_2</Prereq>
+</Event>
+
+<Event Name="Ratira_to_9Group">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>PLANET_FACTION</Reward_Type>
+	<Reward_Param1>Ratira</Reward_Param1>
+	<Reward_Param2>Underworld</Reward_Param2>
+	<Prereq>MISSION_6_2</Prereq>
+</Event>
+
+<Event Name="Unlock_Asuras">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Asuras</Reward_Param1>
+    <Reward_Param2>0</Reward_Param2>
+    <Prereq>MISSION_6_2_History</Prereq>
+</Event>
+	
+<Event Name="Show_ASURAS">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>ASURAS</Reward_Param1>
+	<Prereq>MISSION_6_2</Prereq>
+</Event>
+
+<Event Name="ASURAS_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>ASURAS</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>ASURAS_GUI_Flash</Reward_Param4> 
+	<Prereq>MISSION_6_2</Prereq>
+</Event>
+	
+<Event Name="ASURAS_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>ASURAS_GUI_Flash</Reward_Param1>
+	<Prereq>ASURAS_Marker</Prereq>
+</Event>
+<!-- Герои и союзный флот-->
+<Event Name="Spawn_ZHENYA_Ratira">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Zhenya</Reward_Param1>
+    <Reward_Param2>Ratira</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>Ratira_to_9Group</Prereq>
+</Event>
+
+<Event Name="Spawn_Sasha_Ratira">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Sasha</Reward_Param1>
+    <Reward_Param2>Ratira</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>Ratira_to_9Group</Prereq>
+</Event>
+
+<Event Name="Spawn_Marina_Ratira">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Marina_Team</Reward_Param1>
+    <Reward_Param2>Ratira</Reward_Param2>
+    <Prereq>Ratira_to_9Group</Prereq>
+</Event>
+
+<Event Name="Spawn_HIVES">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Hive</Reward_Param1>
+    <Reward_Param2>Ratira</Reward_Param2>
+    <Reward_Param3>7</Reward_Param3>
+    <Prereq>Ratira_to_9Group</Prereq>
+</Event>
+
+<Event Name="Spawn_Aurora">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Aurora</Reward_Param1>
+    <Reward_Param2>Ratira</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>Ratira_to_9Group</Prereq>
+</Event>
+
+<Event Name="Spawn_Darts">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Dart_Fighter_Squadron</Reward_Param1>
+    <Reward_Param2>Ratira</Reward_Param2>
+    <Reward_Param3>4</Reward_Param3>
+    <Prereq>Ratira_to_9Group</Prereq>
+</Event>
+<!--Конец списка-->
+<Event Name="MISSION_6_2_START">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>ASURAS</Event_Param1>
+    <Event_Param2 />
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>MULTIMEDIA</Reward_Type>
+	<Reward_Param1>CAMP_1_MISSION_6_TEXT_3</Reward_Param1> 
+	<Reward_Param2>10</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_6_2</Prereq>
+</Event>
+	
+<Event Name="Spawn_AURORS">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>ASURAS</Event_Param1>
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>AURORA</Reward_Param1>
+    <Reward_Param2>ASURAS</Reward_Param2>
+    <Reward_Param3>3</Reward_Param3>
+    <Prereq>MISSION_6_2_START</Prereq>
+</Event>
+
+<Event Name="MISSION_6_2_Complete"> 
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_6_2</Reward_Param1>
+	<Prereq>MISSION_6_2_Start</Prereq> 
+</Event>
+
+
+<Event Name="MISSION_6_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>10</Event_Param1>
+	<Reward_Type>REMOVE_ALL_OBJECTIVES</Reward_Type>
+    <Prereq>MISSION_6_2_Complete</Prereq>
+</Event> 
+<!--*************************************Конец миссии 6*************************************-->  
+
+<!--*************************************Миссия 7*************************************-->
+
+<Event Name="MISSION_7_TEXT_1">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>60</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_7_TEXT_1</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_6_REMOVED</Prereq>
+</Event>
+  
+<Event Name="MISSION_7_1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_7_1</Reward_Param1>
+    <Prereq>MISSION_7_TEXT_1</Prereq>
+</Event>
+
+<Event Name="Show_Atlantis">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Atlantis</Reward_Param1>
+	<Prereq>MISSION_7_1</Prereq>
+</Event>
+
+<Event Name="Atlantis_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Atlantis</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Atlantis_GUI_Flash</Reward_Param4> 
+	<Prereq>MISSION_7_1</Prereq>
+</Event>
+	
+<Event Name="Atlantis_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>Atlantis_GUI_Flash</Reward_Param1>
+	<Prereq>Atlantis_Marker</Prereq>
+</Event>
+
+<Event Name="Atlantis_Roman"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Atlantis</Event_Param1> 
+	<Event_Param3>Roman_Team</Event_Param3> 
+    <Prereq>MISSION_7_1</Prereq>
+</Event>
+
+<Event Name="Atlantis_Igor"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Atlantis</Event_Param1> 
+	<Event_Param3>Igor_Team</Event_Param3> 
+    <Prereq>MISSION_7_1</Prereq>
+</Event>
+
+<Event Name="Atlantis_Nikita"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Atlantis</Event_Param1> 
+	<Event_Param3>Nikita_Team</Event_Param3> 
+    <Prereq>MISSION_7_1</Prereq>
+</Event>
+<!--***Снятие блокировки с Атлантиды***-->	
+<Event Name="UNLOCK_Atlantis"> 
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type> 
+	<Reward_Param1>Atlantis</Reward_Param1> 
+	<Reward_Param2>0</Reward_Param2> 
+	<Prereq>Atlantis_Roman, Atlantis_Nikita, Atlantis_Igor</Prereq> 
+</Event>
+<!--***Атлантида переходит к 9 группе***-->
+<Event Name="Atlantis_to_9Group">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>PLANET_FACTION</Reward_Type>
+	<Reward_Param1>Atlantis</Reward_Param1>
+	<Reward_Param2>Underworld</Reward_Param2>
+	<Prereq>UNLOCK_Atlantis</Prereq>
+</Event>
+<!--***Рома на Атлантиде***-->
+<Event Name="HIDE_Roman">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Roman_Team</Reward_Param1>
+	<Prereq>Atlantis_Roman</Prereq>
+</Event>
+<!--***Игорь на Атлантиде***-->
+<Event Name="HIDE_Igor">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Igor_Team</Reward_Param1>
+	<Prereq>Atlantis_Igor</Prereq>
+</Event>
+<!--***Никита на Атлантиде***-->
+<Event Name="HIDE_Nikita">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Nikita_Team</Reward_Param1>
+	<Prereq>Atlantis_Nikita</Prereq>
+</Event>	
+<!--***Подарок 3000***-->
+<Event Name="BONUS">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>CREDITS</Reward_Type>
+	<Reward_Param1>3000</Reward_Param1>
+    <Prereq>UNLOCK_Atlantis</Prereq>
+</Event>
+
+<Event Name="MISSION_7_COMPLETE">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_7_1</Reward_Param1>
+    <Prereq>UNLOCK_Atlantis</Prereq>
+</Event>  
+
+<Event Name="MISSION_7_TEXT_2">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>15</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_7_TEXT_2</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_7_COMPLETE</Prereq>
+</Event>
+
+<Event Name="MISSION_7_TEXT_3">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>30</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_7_TEXT_3</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_7_TEXT_2</Prereq>
+</Event>
+
+<Event Name="Atlantis_Marker_1">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Atlantis</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Atlantis_GUI_Flash_1</Reward_Param4> 
+	<Prereq>MISSION_7_TEXT_3</Prereq>
+</Event>
+	
+<Event Name="Atlantis_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>Atlantis_GUI_Flash_1</Reward_Param1>
+	<Prereq>Atlantis_Marker_1</Prereq>
+</Event>
+
+<Event Name="MISSION_7_TEXT_4">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>50</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_7_TEXT_4</Reward_Param1> 
+	<Reward_Param2>25</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_7_TEXT_3</Prereq>
+</Event>
+
+<Event Name="MISSION_7_4">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_7_4</Reward_Param1>
+    <Prereq>MISSION_7_TEXT_4</Prereq>
+</Event>
+
+<Event Name="Lock_Atlantis_2">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Atlantis</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>IGOR_SPAWN_ATL, ROMAN_SPAWN_ATL, NIKITA_SPAWN_ATL, Spawn_ATLANTIS</Prereq>
+</Event>
+
+<Event Name="IGOR_SPAWN_ATL">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Igor_Team</Reward_Param1>
+	<Reward_Param2>Atlantis</Reward_Param2>
+	<Prereq>MISSION_7_TEXT_4</Prereq>
+</Event>
+
+<Event Name="ROMAN_SPAWN_ATL">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Roman_Team</Reward_Param1>
+    <Reward_Param2>Atlantis</Reward_Param2>
+	<Prereq>MISSION_7_TEXT_4</Prereq>
+</Event>
+
+<Event Name="NIKITA_SPAWN_ATL">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Roman_Team</Reward_Param1>
+    <Reward_Param2>Atlantis</Reward_Param2>
+	<Prereq>MISSION_7_TEXT_4</Prereq>
+</Event>
+
+<Event Name="Spawn_ATLANTIS">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>ATLANTIS_SHIP</Reward_Param1>
+    <Reward_Param2>Atlantis</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>MISSION_7_TEXT_4</Prereq>
+</Event>
+
+<Event Name="SEIGE_BATTLE">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>35</Event_Param1>
+	<Reward_Type>LINK_TACTICAL</Reward_Type>
+	<Reward_Param1>Atlantis</Reward_Param1>
+	<Reward_Param2>SPACE</Reward_Param2>
+	<Reward_Param3>Pirates</Reward_Param3>
+	<Reward_Param4>_SPACE_MISSION_SEIGE.ted</Reward_Param4>
+	<Reward_Param5>UNDERWORLD</Reward_Param5>
+	<Reward_Param7>Plots_Mission_Seige.xml</Reward_Param7>
+	<Reward_Param8>1</Reward_Param8>
+	<Prereq>MISSION_7_TEXT_4</Prereq>
+</Event>
+
+<Event Name="UnLock_Atlantis_2">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Atlantis</Reward_Param1>
+    <Reward_Param2>0</Reward_Param2>
+    <Prereq>SEIGE_BATTLE</Prereq>
+</Event>
+
+
+<!--************************-->
+<Event Name="ATL_WIN">
+	<Event_Type>STORY_WIN_BATTLES</Event_Type>
+	<Event_Param1>1</Event_Param1>
+	<Event_Param2>SPACE</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+	<Prereq>SEIGE_BATTLE</Prereq>
+</Event>
+
+<Event Name="ATL_LOSE">
+	<Event_Type>STORY_LOSE_BATTLES</Event_Type>
+	<Event_Param1>1</Event_Param1>
+	<Event_Param2>SPACE</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+	<Prereq>SEIGE_BATTLE</Prereq>
+</Event>
+<!--************************-->
+<Event Name="MISSION_7_TEXT_7">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>5</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_7_TEXT_7</Reward_Param1> 
+	<Reward_Param2>10</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>ATL_WIN</Prereq>
+</Event>
+
+<Event Name="MISSION_7_TEXT_8">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>5</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_7_TEXT_8</Reward_Param1> 
+	<Reward_Param2>10</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>ATL_LOSE</Prereq>
+</Event>
+
+<Event Name="MISSION_7_2_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_7_4</Reward_Param1>
+	<Prereq>ATL_WIN</Prereq>
+</Event>	
+
+<Event Name="MISSION_7_2_FALLED">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+	<Reward_Param1>CAMP_1_MISSION_7_4</Reward_Param1>
+	<Prereq>ATL_LOSE</Prereq>
+</Event>
+
+<Event Name="Spawn_Pirates_Atlantis">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>1</Event_Param1>
+	<Reward_Type>STORY_ELEMENT</Reward_Type>
+	<Reward_Param1>Story_Ep1_Underworld_SPAWN_Atlantis</Reward_Param1>
+	<Prereq>ATL_LOSE</Prereq>
+</Event>
+
+<Event Name="MISSION_7_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>10</Event_Param1>
+	<Reward_Type>REMOVE_ALL_OBJECTIVES</Reward_Type>
+    <Prereq>MISSION_7_2_COMPLETE</Prereq>
+	<Prereq>MISSION_7_2_FALLED</Prereq>
+</Event> 
+
+<Event Name="FINISH_3"><!-- I know that it can be strange but if you do not close the STORY_LOSE_BATTLES the event will not be finished when it be completed -->
+   <Event_Type>STORY_TRIGGER</Event_Type>
+   <Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+   <Reward_Param1>ATL_WIN</Reward_Param1>
+   <Reward_Param2>1</Reward_Param2>
+   <Prereq>ATL_LOSE</Prereq>
+</Event>
+
+<Event Name="FINISH_4"><!-- I know that it can be strange but if you do not close the STORY_LOSE_BATTLES the event will not be finished when it be completed -->
+   <Event_Type>STORY_TRIGGER</Event_Type>
+   <Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+   <Reward_Param1>ATL_LOSE</Reward_Param1>
+   <Reward_Param2>1</Reward_Param2>
+   <Prereq>ATL_WIN</Prereq>
+</Event>
+<!--*************************************Конец миссии 7*************************************-->  
+
+<!--*************************************Миссия 8*************************************-->
+<Event Name="MISSION_8_TEXT_1">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>120</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_8_TEXT_1</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_7_2_REMOVED</Prereq>
+</Event>
+    	
+<Event Name="MISSION_8_1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_8_1</Reward_Param1>
+    <Prereq>MISSION_8_TEXT_1</Prereq>
+</Event>
+
+<Event Name="Show_MIDWAY">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>MIDWAY</Reward_Param1>
+	<Prereq>MISSION_8_1</Prereq>
+</Event>
+
+<Event Name="MIDWAY_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>MIDWAY</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>MIDWAY_GUI_Flash</Reward_Param4> 
+	<Prereq>MISSION_8_1</Prereq>
+</Event>
+	
+<Event Name="MIDWAY_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>MIDWAY_GUI_Flash</Reward_Param1>
+	<Prereq>MIDWAY_Marker</Prereq>
+</Event>
+
+<Event Name="MISSION_8_1_START">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>MIDWAY</Event_Param1>
+    <Event_Param2 />
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>CREDITS</Reward_Type>
+	<Reward_Param1>15000</Reward_Param1> 
+	<Prereq>MISSION_8</Prereq>
+</Event>
+
+<Event Name="MISSION_8_1_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_8_1</Reward_Param1>
+	<Prereq>MISSION_8_1_START</Prereq>
+</Event>
+
+<Event Name="MISSION_8_TEXT_2">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>20</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_8_TEXT_2</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_8_1_COMPLETE</Prereq>
+</Event>
+
+<Event Name="MISSION_8_2">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_8_2</Reward_Param1>
+    <Prereq>MISSION_8_TEXT_2</Prereq>
+</Event>
+
+<Event Name="Utapau_Marina"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Utapau</Event_Param1> 
+	<Event_Param3>Marina_Team</Event_Param3> 
+    <Prereq>MISSION_8_2</Prereq>
+</Event>
+
+<Event Name="Utapau_Igor"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Utapau</Event_Param1> 
+	<Event_Param3>Igor_Team</Event_Param3> 
+    <Prereq>MISSION_8_2</Prereq>
+</Event>
+
+<Event Name="UNLOCK_Utapau"> 
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type> 
+	<Reward_Param1>Utapau</Reward_Param1> 
+	<Reward_Param2>0</Reward_Param2> 
+	<Prereq>Utapau_Igor, Utapau_Marina</Prereq> 
+</Event>
+
+<Event Name="Show_Utapau">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Utapau</Reward_Param1>
+	<Prereq>MISSION_8_2</Prereq>
+</Event>
+
+<Event Name="Utapau_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Utapau</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Utapau_GUI_Flash</Reward_Param4> 
+	<Prereq>MISSION_8_2</Prereq>
+</Event>
+	
+<Event Name="Utapau_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>Utapau_GUI_Flash</Reward_Param1>
+	<Prereq>Utapau_Marker</Prereq>
+</Event>
+
+<Event Name="MISSION_8_2_START">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Utapau</Event_Param1>
+    <Event_Param2 />
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>CREDITS</Reward_Type>
+	<Reward_Param1>5000</Reward_Param1> 
+	<Prereq>MISSION_8_2</Prereq>
+</Event>
+
+<Event Name="MISSION_8_2_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_8_2</Reward_Param1>
+	<Prereq>MISSION_8_2_START</Prereq>
+</Event>
+
+<Event Name="MISSION_8_TEXT_3">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>15</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_8_TEXT_3</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_8_2_COMPLETE</Prereq>
+</Event>
+
+<Event Name="UNLock_Branch_01">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>DISABLE_BRANCH</Reward_Type>
+    <Reward_Param1>Branch_01</Reward_Param1>
+    <Reward_Param2>0</Reward_Param2>
+    <Prereq>MISSION_8_TEXT_3</Prereq>
+</Event>
+
+<Event Name="VergessoAsteroids_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>VergessoAsteroids</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>VergessoAsteroids_GUI_Flash</Reward_Param4> 
+	<Branch>Branch_01</Branch>
+</Event>
+
+<Event Name="Geonosis_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Geonosis</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Geonosis_GUI_Flash</Reward_Param4> 
+	<Branch>Branch_01</Branch>
+</Event>
+
+<Event Name="Bothawui_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Bothawui</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Bothawui_GUI_Flash</Reward_Param4> 
+	<Branch>Branch_01</Branch>
+</Event>
+
+<Event Name="Kashyyyk_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Kashyyyk</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Kashyyyk_GUI_Flash</Reward_Param4> 
+	<Branch>Branch_01</Branch>
+</Event>
+
+<Event Name="The_Maw_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>The_Maw</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>The_Maw_GUI_Flash</Reward_Param4> 
+	<Branch>Branch_01</Branch>
+</Event>
+
+<Event Name="Saleucami_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Saleucami</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Saleucami_GUI_Flash</Reward_Param4> 
+	<Branch>Branch_01</Branch>
+</Event>
+
+<Event Name="Yavin_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Yavin</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Yavin_GUI_Flash</Reward_Param4> 
+	<Branch>Branch_01</Branch>
+</Event>
+
+<Event Name="Bonadan_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Bonadan</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Bonadan_GUI_Flash</Reward_Param4> 
+	<Branch>Branch_01</Branch>
+</Event>
+
+<Event Name="Supergate2_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Supergate2</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Supergate2_GUI_Flash</Reward_Param4> 
+	<Branch>Branch_01</Branch>
+</Event>
+
+<Event Name="MISSION_8_3">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_8_3</Reward_Param1>
+    <Prereq>MISSION_8_TEXT_3</Prereq>
+</Event>
+
+<Event Name="MISSION_8_3_START">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>VergessoAsteroids</Event_Param1>
+    <Event_Param2 />
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>CREDITS</Reward_Type>
+	<Reward_Param1>5000</Reward_Param1> 
+	<Prereq>MISSION_8_3</Prereq>
+</Event>
+
+<Event Name="MISSION_8_3_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_8_3</Reward_Param1>
+	<Prereq>MISSION_8_3_START</Prereq>
+</Event>
+
+<Event Name="MISSION_8_4">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_8_4</Reward_Param1>
+    <Prereq>MISSION_8_3_COMPLETE</Prereq>
+</Event>
+
+<Event Name="MISSION_8_4_START">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Geonosis</Event_Param1>
+    <Event_Param2 />
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>CREDITS</Reward_Type>
+	<Reward_Param1>5000</Reward_Param1> 
+	<Prereq>MISSION_8_4</Prereq>
+</Event>
+
+<Event Name="MISSION_8_4_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_8_4</Reward_Param1>
+	<Prereq>MISSION_8_4_START</Prereq>
+</Event>
+
+<Event Name="Lock1_Branch_01">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>DISABLE_BRANCH</Reward_Type>
+    <Reward_Param1>Branch_01</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>MISSION_8_4_COMPLETE</Prereq>
+</Event>
+
+<Event Name="MISSION_8_TEXT_4">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_8_TEXT_4</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>Lock1_Branch_01</Prereq>
+</Event>
+
+<Event Name="Utapau_Empire">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>PLANET_FACTION</Reward_Type>
+	<Reward_Param1>Utapau</Reward_Param1>
+	<Reward_Param2>Empire</Reward_Param2>
+	<Prereq>MISSION_8_TEXT_4</Prereq>
+</Event>
+
+<Event Name="Asteroids_Empire">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>PLANET_FACTION</Reward_Type>
+	<Reward_Param1>VergessoAsteroids</Reward_Param1>
+	<Reward_Param2>Empire</Reward_Param2>
+	<Prereq>MISSION_8_TEXT_4</Prereq>
+</Event>
+
+<Event Name="Empire_Asteroids">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>1</Event_Param1>
+	<Reward_Type>STORY_ELEMENT</Reward_Type>
+	<Reward_Param1>Story_Ep1_Underworld_SPAWN_Utapau_And_Asteroids</Reward_Param1>
+	<Prereq>Asteroids_Empire</Prereq>
+</Event>
+
+<Event Name="MISSION_8_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>10</Event_Param1>
+	<Reward_Type>REMOVE_ALL_OBJECTIVES</Reward_Type>
+    <Prereq>MISSION_8_TEXT_4</Prereq>
+</Event> 
+
+<!--*************************************Конец миссии 8*************************************-->  
+
+<!--*************************************Миссия 9*************************************-->
+
+<Event Name="MISSION_9_TEXT_1">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>120</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_9_TEXT_1</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_SESSIYA_END</Prereq>
+</Event>
+
+<Event Name="MISSION_9_1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_9_1</Reward_Param1>
+    <Prereq>MISSION_9_TEXT_1</Prereq>
+</Event>
+
+<Event Name="Show_Kashyyyk_1">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Kashyyyk</Reward_Param1>
+	<Prereq>MISSION_9_1</Prereq>
+</Event>
+
+<Event Name="Kashyyyk_1_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Kashyyyk</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Kashyyyk_1_GUI_Flash</Reward_Param4> 
+	<Prereq>MISSION_9_1</Prereq>
+</Event>
+	
+<Event Name="Kashyyyk_1_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>Kashyyyk_1_GUI_Flash</Reward_Param1>
+	<Prereq>Kashyyyk_1_Marker</Prereq>
+</Event>
+
+<Event Name="Kashyyyk_Roman"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Kashyyyk</Event_Param1> 
+	<Event_Param3>Roman_Team</Event_Param3> 
+    <Prereq>MISSION_9_1</Prereq>
+</Event>
+
+<Event Name="Kashyyyk_Nikita"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Kashyyyk</Event_Param1> 
+	<Event_Param3>Nikita_Team</Event_Param3> 
+    <Prereq>MISSION_9_1</Prereq>
+</Event>
+
+<Event Name="MISSION_9_1_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_9_1</Reward_Param1>
+	<Prereq>Kashyyyk_Roman, Kashyyyk_Nikita</Prereq>
+</Event>
+
+<Event Name="ROMAN_REMOVE_Kashyyyk">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Roman_Team</Reward_Param1>
+	<Prereq>Kashyyyk_Roman</Prereq>
+</Event>
+
+<Event Name="NIKITA_REMOVE_Kashyyyk">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Nikita_Team</Reward_Param1>
+	<Prereq>Kashyyyk_Nikita</Prereq>
+</Event>
+
+<Event Name="ROMAN_SPAWN_Kashyyyk">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>60</Event_Param1>
+	<Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Roman_Team</Reward_Param1>
+    <Reward_Param2>Geonosis</Reward_Param2>
+	<Prereq>MISSION_9_1_COMPLETE</Prereq>
+</Event>
+	
+<Event Name="NIKITA_SPAWN_Kashyyyk">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>60</Event_Param1>
+	<Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Nikita_Team</Reward_Param1>
+    <Reward_Param2>Geonosis</Reward_Param2>
+	<Prereq>MISSION_9_1_COMPLETE</Prereq>
+</Event>
+
+<Event Name="MISSION_9_TEXT_2">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>60</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_9_TEXT_2</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_9_1_COMPLETE</Prereq>
+</Event>
+ 
+<Event Name="MISSION_9_2">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_9_2</Reward_Param1>
+    <Prereq>MISSION_9_TEXT_2</Prereq>
+</Event>
+
+<Event Name="Show_Empire_Shipyard">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Empire_Shipyard</Reward_Param1>
+	<Prereq>MISSION_9_2</Prereq>
+</Event>
+
+<Event Name="Empire_Shipyard_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Empire_Shipyard</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Empire_Shipyard_GUI_Flash</Reward_Param4> 
+	<Prereq>MISSION_9_2</Prereq>
+</Event>
+	
+<Event Name="Empire_Shipyard_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>Empire_Shipyard_GUI_Flash</Reward_Param1>
+	<Prereq>Empire_Shipyard_Marker</Prereq>
+</Event>
+
+<Event Name="UnLock_Empire_Shipyard">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Empire_Shipyard</Reward_Param1>
+    <Reward_Param2>0</Reward_Param2>
+    <Prereq>MISSION_9_2</Prereq>
+</Event>
+
+<Event Name="Fleet_to_Empire_Shipyard">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>STORY_ELEMENT</Reward_Type>
+	<Reward_Param1>Story_Ep1_Underworld_SPAWN_Coruscant_Shipyard_Hoth</Reward_Param1>
+	<Prereq>UnLock_Empire_Shipyard</Prereq>
+</Event>
+
+<Event Name="MISSION_9_2_START">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Empire_Shipyard</Event_Param1>
+    <Event_Param2 />
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>CREDITS</Reward_Type>
+	<Reward_Param1>5000</Reward_Param1> 
+	<Prereq>MISSION_9_2</Prereq>
+</Event>
+
+<Event Name="MISSION_9_2_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_9_2</Reward_Param1>
+	<Prereq>MISSION_9_2_START</Prereq>
+</Event>	
+
+<Event Name="MISSION_9_TEXT_3">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>5</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_9_TEXT_3</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_9_2_COMPLETE</Prereq>
+</Event>
+
+<Event Name="MISSION_9_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>10</Event_Param1>
+	<Reward_Type>REMOVE_ALL_OBJECTIVES</Reward_Type>
+    <Prereq>MISSION_9_2_COMPLETE</Prereq>
+</Event> 
+
+<Event Name="MISSION_9_TEXT_4">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>30</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_9_TEXT_4</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_9_TEXT_3</Prereq>
+</Event>
+<!--*************************************Конец миссии 9*************************************-->  
+
+<!--*************************************Миссия 10*************************************-->
+
+<Event Name="MISSION_10_TEXT_1">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>120</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_10_TEXT_1</Reward_Param1> 
+	<Reward_Param2>25</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_9_TEXT_4</Prereq>
+</Event>
+
+<Event Name="MISSION_10_1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_10_1</Reward_Param1>
+    <Prereq>MISSION_10_TEXT_1</Prereq>
+</Event>
+
+<Event Name="Show_Coruscant">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Coruscant</Reward_Param1>
+	<Prereq>MISSION_10_1</Prereq>
+</Event>
+
+<Event Name="Coruscant_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Coruscant</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Coruscant_GUI_Flash</Reward_Param4> 
+	<Prereq>MISSION_10_1</Prereq>
+</Event>
+	
+<Event Name="Coruscant_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>Coruscant_GUI_Flash</Reward_Param1>
+	<Prereq>Coruscant_Marker</Prereq>
+</Event>
+
+<Event Name="Coruscant_ZHENYA"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Coruscant</Event_Param1> 
+	<Event_Param3>ZHENYA</Event_Param3> 
+    <Prereq>MISSION_10_1</Prereq>
+</Event>
+
+<Event Name="ZHENYA_REMOVE_Coruscant">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>ZHENYA</Reward_Param1>
+	<Prereq>Coruscant_ZHENYA</Prereq>
+</Event>
+
+<Event Name="MISSION_10_1_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_10_1</Reward_Param1>
+	<Prereq>ZHENYA_REMOVE_Coruscant</Prereq>
+</Event>
+
+<Event Name="Spawn_ZHENYA_Coruscant">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>45</Event_Param1>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Zhenya</Reward_Param1>
+    <Reward_Param2>Ears</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>ZHENYA_REMOVE_Coruscant</Prereq>
+</Event>
+
+<Event Name="MISSION_10_TEXT_2">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_10_TEXT_2</Reward_Param1> 
+	<Reward_Param2>25</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>Spawn_ZHENYA_Coruscant</Prereq>
+</Event>
+
+<Event Name="MISSION_10_2">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_10_2</Reward_Param1>
+    <Prereq>MISSION_10_TEXT_2</Prereq>
+</Event>
+
+<Event Name="MISSION_10_2_START">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Coruscant</Event_Param1>
+    <Event_Param2 />
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+	<Reward_Param1>New_Galactica</Reward_Param1>
+    <Reward_Param2>Ears</Reward_Param2>
+    <Reward_Param3>5</Reward_Param3>
+	<Prereq>MISSION_10_2</Prereq>
+</Event>
+
+<Event Name="MISSION_10_2_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_10_2</Reward_Param1>
+	<Prereq>MISSION_10_2_START</Prereq>
+</Event>
+
+<Event Name="MISSION_10_TEXT_3">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_10_TEXT_3</Reward_Param1> 
+	<Reward_Param2>25</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_10_2_COMPLETE</Prereq>
+</Event>
+
+<Event Name="MISSION_10_3">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_10_3</Reward_Param1>
+    <Prereq>MISSION_10_TEXT_2</Prereq>
+</Event>
+
+<Event Name="Show_Hoth">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Hoth</Reward_Param1>
+	<Prereq>MISSION_10_3</Prereq>
+</Event>
+
+<Event Name="Hoth_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Hoth</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Hoth_GUI_Flash</Reward_Param4> 
+	<Prereq>MISSION_10_3</Prereq>
+</Event>
+	
+<Event Name="Hoth_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>Hoth_GUI_Flash</Reward_Param1>
+	<Prereq>Hoth_Marker</Prereq>
+</Event>
+
+<Event Name="Hoth_ZHENYA"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Hoth</Event_Param1> 
+	<Event_Param3>ZHENYA</Event_Param3> 
+    <Prereq>MISSION_10_3</Prereq>
+</Event>
+
+<Event Name="ZHENYA_REMOVE_Hoth">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>ZHENYA</Reward_Param1>
+	<Prereq>Hoth_ZHENYA</Prereq>
+</Event>
+
+<Event Name="MISSION_10_3_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_10_3</Reward_Param1>
+	<Prereq>ZHENYA_REMOVE_Hoth</Prereq>
+</Event>
+
+<Event Name="Spawn_ZHENYA_Hoth">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>45</Event_Param1>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Zhenya</Reward_Param1>
+    <Reward_Param2>Ears</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>ZHENYA_REMOVE_Hoth</Prereq>
+</Event>
+
+<Event Name="MISSION_10_TEXT_4">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_10_TEXT_4</Reward_Param1> 
+	<Reward_Param2>25</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>Spawn_ZHENYA_Hoth</Prereq>
+</Event>
+
+<Event Name="MISSION_10_4">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_10_4</Reward_Param1>
+    <Prereq>MISSION_10_TEXT_4</Prereq>
+</Event>
+
+<Event Name="MISSION_10_4_START">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>Hoth</Event_Param1>
+    <Event_Param2 />
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+	<Reward_Param1>Mediator_Cruiser</Reward_Param1>
+    <Reward_Param2>Ears</Reward_Param2>
+    <Reward_Param3>2</Reward_Param3>
+	<Prereq>MISSION_10_4</Prereq>
+</Event>
+
+<Event Name="MISSION_10_4_COMPLETE">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_10_4</Reward_Param1>
+	<Prereq>MISSION_10_4_START</Prereq>
+</Event>
+
+<Event Name="MISSION_10_TEXT_5">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_10_TEXT_5</Reward_Param1> 
+	<Reward_Param2>25</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_10_4_COMPLETE</Prereq>
+</Event>
+
+<Event Name="MISSION_10_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>10</Event_Param1>
+	<Reward_Type>REMOVE_ALL_OBJECTIVES</Reward_Type>
+    <Prereq>MISSION_10_TEXT_5</Prereq>
+</Event> 
+<!--*************************************Конец миссии 10*************************************-->  
+
+<!--*************************************Миссия 11*************************************-->
+
+<Event Name="MISSION_11_1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_11_1</Reward_Param1>
+    <Prereq>MISSION_10_REMOVED</Prereq>
+</Event>
+
+<Event Name="MISSION_11_2">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_11_2</Reward_Param1>
+    <Prereq>MISSION_10_REMOVED</Prereq>
+</Event>
+
+<Event Name="MISSION_11_3">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_11_3</Reward_Param1>
+    <Prereq>MISSION_10_REMOVED</Prereq>
+</Event>
+
+<!--*************************************Конец миссии 11*************************************-->  
+
+<!--Суперврата-->
+<Event Name="ENABLE_POWER_CONST">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+    <Reward_Param1>Power</Reward_Param1>
+	<Prereq>MISSION_9_REMOVED</Prereq>
+</Event>
+
+<Event Name="UnLock_Const_Supergate1">
+    <Event_Type>STORY_ENTER</Event_Type>
+	<Event_Param1>Supergate1</Event_Param1> 
+	<Event_Param3>Power</Event_Param3>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Supergate1</Reward_Param1>
+    <Reward_Param2>0</Reward_Param2>
+    <Prereq>MISSION_9_REMOVED</Prereq>
+	<Perpetual>True</Perpetual> 
+</Event>
+
+<Event Name="POWER_Const">
+	<Event_Type>STORY_ENTER</Event_Type>
+	<Event_Param1>Supergate2</Event_Param1> 
+	<Event_Param3>Power</Event_Param3>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Power</Reward_Param1>
+	<Prereq>UnLock_Const_Supergate1</Prereq>
+	<Perpetual>True</Perpetual> 
+</Event>
+
+<Event Name="HAHAHA_Const">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>30</Event_Param1>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Power</Reward_Param1>
+	<Prereq>UnLock_Const_Supergate1</Prereq>
+	<Perpetual>True</Perpetual> 
+</Event>
+
+<Event Name="Lock_Const_Supergate1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Supergate1</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>POWER_Const</Prereq>
+	<Prereq>HAHAHA_Const</Prereq>
+	<Perpetual>True</Perpetual> 
+</Event>
+
+<!--********************************Пасхалки********************************-->
+<Event Name="Unlock_PASKHALKA">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>PASKHALKA</Reward_Param1>
+    <Reward_Param2>0</Reward_Param2>
+    <Prereq>MISSION_8_TEXT_1</Prereq>
+</Event>
+	
+<Event Name="Spawn_Artem">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>PASKHALKA</Event_Param1>
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Artem</Reward_Param1>
+    <Reward_Param2>PASKHALKA</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>MISSION_8_TEXT_1</Prereq>
+</Event>
+
+<!--*************************************Сессия*************************************--> 
+<Event Name="MISSION_SESSIYA_History">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>60</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_SESSIYA</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_8_REMOVED</Prereq>
+</Event>
+
+<Event Name="SESSIYA_ATTACKED_EARS">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>300</Event_Param1>
+	<Reward_Type>LINK_TACTICAL</Reward_Type>
+	<Reward_Param1>EARS</Reward_Param1>
+	<Reward_Param2>SPACE</Reward_Param2>
+	<Reward_Param3>Pirates</Reward_Param3>
+	<Reward_Param4>_SPACE_PLANET_SESSIYA.ted</Reward_Param4>
+	<Reward_Param5>UNDERWORLD</Reward_Param5>
+	<Reward_Param7>Plots_Mission_SESSIYA.xml</Reward_Param7>
+	<Reward_Param8>1</Reward_Param8>
+	<Prereq>MISSION_SESSIYA_History</Prereq>
+</Event>
+
+
+<Event Name="SESSIYA_WIN">
+	<Event_Type>STORY_WIN_BATTLES</Event_Type>
+	<Event_Param1>1</Event_Param1>
+	<Event_Param2>SPACE</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+	<Prereq>SESSIYA_ATTACKED_EARS</Prereq>
+</Event>
+
+<Event Name="BONUS_2">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>CREDITS</Reward_Type>
+	<Reward_Param1>17000</Reward_Param1>
+    <Prereq>SESSIYA_WIN</Prereq>
+</Event>
+
+<Event Name="MISSION_SESSIYA_END">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_SESSIYA_END</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>BONUS_2</Prereq>
+</Event>
+
+<Event Name="SESSIYA_LOSE">
+	<Event_Type>STORY_LOSE_BATTLES</Event_Type>
+	<Event_Param1>1</Event_Param1>
+	<Event_Param2>SPACE</Event_Param2>
+	<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+	<Prereq>SESSIYA_ATTACKED_EARS</Prereq>
+</Event>
+
+<Event Name="MISSION_SESSIYA_END_1">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_SESSIYA_END_1</Reward_Param1> 
+	<Reward_Param2>15</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>SESSIYA_LOSE</Prereq>
+</Event>
+
+<Event Name="FINISH_5"><!-- I know that it can be strange but if you do not close the STORY_LOSE_BATTLES the event will not be finished when it be completed -->
+   <Event_Type>STORY_TRIGGER</Event_Type>
+   <Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+   <Reward_Param1>SESSIYA_WIN</Reward_Param1>
+   <Reward_Param2>1</Reward_Param2>
+   <Prereq>SESSIYA_LOSE</Prereq>
+</Event>
+
+<Event Name="FINISH_6"><!-- I know that it can be strange but if you do not close the STORY_LOSE_BATTLES the event will not be finished when it be completed -->
+   <Event_Type>STORY_TRIGGER</Event_Type>
+   <Reward_Type>DISABLE_STORY_EVENT</Reward_Type>
+   <Reward_Param1>SESSIYA_LOSE</Reward_Param1>
+   <Reward_Param2>1</Reward_Param2>
+   <Prereq>SESSIYA_WIN</Prereq>
+</Event>
+<!--*************************************Конец сессии*************************************--> 
+
+<Event Name="STORY_VICTORY_Underworld">
+	<Event_Type>STORY_VICTORY</Event_Type>
+	<Event_Param1>Underworld</Event_Param1>
+	<Reward_Type>LOAD_CAMPAIGN</Reward_Type>
+	<Reward_Param1>Sandbox_Episode_2</Reward_Param1>
+	<Reward_Param2>1</Reward_Param2>
+</Event>
+
+</Story>

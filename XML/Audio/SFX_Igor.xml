@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<SFXEvents> 
+ 
+ <!--Игорь-->	
+	  
+	<SFXEvent Name="9_GROUP_igor_Attack">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\igor\attack_1.wav Data\Audio\Units\igor\attack_2.wav Data\Audio\Units\igor\attack_3.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent> 
+	  
+	  
+	<SFXEvent Name="9_GROUP_igor_Move">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\igor\move_1.wav Data\Audio\Units\igor\move_2.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent>   
+	  
+	  <SFXEvent Name="9_GROUP_igor_Death">
+				<Use_Preset>Preset_EXPC</Use_Preset>
+            <Samples>Data\Audio\Units\igor\destroy_1.wav Data\Audio\Units\igor\destroy_2.wav Data\Audio\Units\igor\destroy_3.wav</Samples>  
+    </SFXEvent>
+	
+	 <SFXEvent Name="9_GROUP_igor_Guard">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\igor\guard_1.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 
+			 
+	  </SFXEvent>
+	
+	<SFXEvent Name="9_GROUP_igor_Complete">
+			 <Use_Preset>Preset_UR</Use_Preset>
+			 <Samples>Data\Audio\Units\igor\complete_1.wav Data\Audio\Units\igor\complete_2.wav</Samples>
+				 <Localize> Yes </Localize>
+				 <Play_Sequentially> Yes </Play_Sequentially>
+				 			
+			 
+	  </SFXEvent>
+	
+</SFXEvents>	  
