@@ -67,6 +67,14 @@
     <Prereq>Universal_Story_Start</Prereq>
 </Event>
 
+<Event Name="Lock_Midway">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Midway</Reward_Param1>
+    <Reward_Param2>1</Reward_Param2>
+    <Prereq>Universal_Story_Start</Prereq>
+</Event>
+
 <Event Name="Lock_Ratira">
     <Event_Type>STORY_TRIGGER</Event_Type>
     <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
@@ -121,7 +129,7 @@
 <!--*************************************миссия 1*************************************--> 
 <Event Name="MISSION_1_TEXT_1">
     <Event_Type>STORY_ELAPSED</Event_Type>
-	<Event_Param1>5</Event_Param1>
+	<Event_Param1>1</Event_Param1>
 	<Reward_Type>MULTIMEDIA</Reward_Type> 
 	<Reward_Param1>CAMP_1_MISSION_1_TEXT_1</Reward_Param1> 
 	<Reward_Param2>15</Reward_Param2>
@@ -134,7 +142,7 @@
 	<Event_Param1>1</Event_Param1>
     <Reward_Type>ADD_OBJECTIVE</Reward_Type>
     <Reward_Param1>CAMP_1_MISSION_1_1</Reward_Param1>
-    <Prereq>MISSION_1_TEXT_1</Prereq>
+    <Prereq>Universal_Story_Start</Prereq>
 </Event>
 
 <Event Name="MISSION_1_1_PROGRESS">
@@ -178,7 +186,7 @@
     <Event_Type>STORY_TRIGGER</Event_Type>
     <Reward_Type>ADD_OBJECTIVE</Reward_Type>
     <Reward_Param1>CAMP_1_MISSION_1_3</Reward_Param1>
-    <Prereq>MISSION_1_TEXT_2</Prereq>
+    <Prereq>MISSION_1_2_PROGRESS</Prereq>
 </Event>
 
 <Event Name="Show_Genii">
@@ -299,29 +307,30 @@
 <!--*************************************Миссии 2*************************************--> 
 <Event Name="MISSION_2_TEXT_1">
     <Event_Type>STORY_ELAPSED</Event_Type>
-	<Event_Param1>40</Event_Param1>
+	<Event_Param1>20</Event_Param1>
 	<Reward_Type>MULTIMEDIA</Reward_Type> 
 	<Reward_Param1>CAMP_1_MISSION_2_TEXT_1</Reward_Param1> 
-	<Reward_Param2>40</Reward_Param2>
+	<Reward_Param2>30</Reward_Param2>
 	<Reward_Param10>0</Reward_Param10>
 	<Prereq>MISSION_1_REMOVED</Prereq>
 </Event>
 
 <Event Name="MISSION_2_TEXT_2">
     <Event_Type>STORY_ELAPSED</Event_Type>
-	<Event_Param1>42</Event_Param1>
+	<Event_Param1>25</Event_Param1>
 	<Reward_Type>MULTIMEDIA</Reward_Type> 
 	<Reward_Param1>CAMP_1_MISSION_2_TEXT_2</Reward_Param1> 
 	<Reward_Param2>15</Reward_Param2>
 	<Reward_Param10>0</Reward_Param10>
-	<Prereq>MISSION_2_TEXT_1</Prereq>
+	<Prereq>MISSION_1_REMOVED</Prereq>
 </Event>
 
 <Event Name="MISSION_2_1">
-    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>25</Event_Param1>
     <Reward_Type>ADD_OBJECTIVE</Reward_Type>
     <Reward_Param1>CAMP_1_MISSION_2_1</Reward_Param1>
-    <Prereq>MISSION_2_TEXT_2</Prereq>
+    <Prereq>MISSION_1_REMOVED</Prereq>
 </Event>
 
 <Event Name="Show_Andaria">
@@ -1564,6 +1573,14 @@
 	<Prereq>MISSION_7_2_REMOVED</Prereq>
 </Event>
     	
+<Event Name="UNLOCK_Midway"> 
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type> 
+	<Reward_Param1>Midway</Reward_Param1> 
+	<Reward_Param2>0</Reward_Param2> 
+	<Prereq>MISSION_8_TEXT_1</Prereq> 
+</Event>
+		
 <Event Name="MISSION_8_1">
     <Event_Type>STORY_TRIGGER</Event_Type>
     <Reward_Type>ADD_OBJECTIVE</Reward_Type>
