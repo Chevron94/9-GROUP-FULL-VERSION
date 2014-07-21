@@ -236,7 +236,7 @@
 	<SpaceUnit Name="NG_Death_Clone">
 		<Text_ID>TEXT_UNIT_LEGACY</Text_ID>
 		<Space_Model_Name>CN_Galactica.alo</Space_Model_Name>
-		<Death_SFXEvent_Start_Die> Unit_Calamari_Death_SFX </Death_SFXEvent_Start_Die>
+		<Death_SFXEvent_Start_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_Start_Die>
 		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
 		<Scale_Factor> 2.5 </Scale_Factor>
 		<Layer_Z_Adjust> -290.0 </Layer_Z_Adjust>
@@ -262,7 +262,7 @@
 		<SpaceBehavior> AFFECTED_BY_SHIELD </SpaceBehavior>
 		<Projectile_Category>Laser</Projectile_Category>
 		<Projectile_Max_Flight_Distance>2200.0</Projectile_Max_Flight_Distance>
-		<Projectile_Damage>5.0</Projectile_Damage>
+		<Projectile_Damage>20.0</Projectile_Damage>
 		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
 		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
 		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
