@@ -106,7 +106,7 @@
         
         <!--AI_Player_Control> Empire, None </AI_Player_Control>
 		<AI_Player_Control> Rebel, None </AI_Player_Control-->
-		<AI_Player_Control> Hutts, <!--AI_Player_Underworld--> None </AI_Player_Control>
+		<AI_Player_Control> Hutts, AI_Player_Underworld </AI_Player_Control>
 		<AI_Player_Control> Underworld, SandboxHuman </AI_Player_Control>
 
 		<!--Markup_Filename>Empire, ShipyardsOfKuatHints </Markup_Filename>
@@ -196,10 +196,6 @@
 		
 		<Starting_Forces> Hutts, GAMMA, Underworld_Star_Base_3 </Starting_Forces>
 		<Starting_Forces> Hutts, GAMMA, U_Ground_Barracks </Starting_Forces>
-		
-		<Starting_Forces> Hutts, Atlantis_NEW, Barracks </Starting_Forces>
-
-		<Starting_Forces> Hutts, Belsa_NEW, U_Ground_Barracks </Starting_Forces>
 		
 		<Starting_Credits> Underworld,  12000 </Starting_Credits>
 		<Starting_Tech_Level> Underworld, 5 </Starting_Tech_Level>
