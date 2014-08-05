@@ -4,7 +4,6 @@
 
 		<Is_Debug_Switchable_To> Yes </Is_Debug_Switchable_To>
 		<Create_Player_In_Multiplayer_Games> No </Create_Player_In_Multiplayer_Games>
-
 		<Text_ID>TEXT_FACTION_9GROUP</Text_ID>
 		<Icon_Name> I_ICON_GROUP.TGA </Icon_Name>
 		<Alternate_Icon_Name> empire_icon.tga </Alternate_Icon_Name>

@@ -39,6 +39,7 @@
 		<Damage>20</Damage>
 		<Shield_Points>0</Shield_Points>
 		<Tactical_Health>300</Tactical_Health> 
+		<Autoresolve_Health>300</Autoresolve_Health>
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>999</Energy_Capacity>
 		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
@@ -130,7 +131,7 @@
 		<No_Refraction_Below_Detail_Level>3</No_Refraction_Below_Detail_Level>
 		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
 		
-		<AI_Combat_Power>2000</AI_Combat_Power>
+		<AI_Combat_Power>1000</AI_Combat_Power>
 
 		<Idle_Chase_Range>0.0</Idle_Chase_Range>
 		<Guard_Chase_Range>200.0</Guard_Chase_Range>
@@ -209,7 +210,6 @@
 		<Encyclopedia_Text>TEXT_UNIT_ROMAN_TOOLTIP</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
 		<Icon_Name>I_BUTTON_ROMAN_A.tga</Icon_Name>  
-		
 		<Is_Dummy>Yes</Is_Dummy>
 		<Damage>80</Damage>
 		<Affiliation>Underworld</Affiliation>
@@ -221,13 +221,14 @@
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures />
 		<Required_Planets />
-		
+		<Is_Named_Hero>true</Is_Named_Hero>
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 		<Company_Transport_Unit>Roman</Company_Transport_Unit>
 		<Company_Units>Roman_Ground, T-90, T-90, T-90, T-90</Company_Units>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Is_Stealth_Company>no</Is_Stealth_Company>
+		<Is_Force_Sensitive>no</Is_Force_Sensitive>
 		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
 		<Can_Be_Only_One>true</Can_Be_Only_One>
 
 		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
@@ -236,16 +237,6 @@
 		<SFXEvent_Hero_Respawned>9_GROUP_roman_Select</SFXEvent_Hero_Respawned>
 		<SFXEvent_Fleet_Move>9_GROUP_roman_Move</SFXEvent_Fleet_Move>
 
-		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
-		<CategoryMask> LandHero | SpaceHero </CategoryMask>
-		<Ranking_In_Category> 2 </Ranking_In_Category>
-		<Population_Value>1</Population_Value>
-
-		<Cheap_Bribe_Cost>0</Cheap_Bribe_Cost>
-		<Expensive_Bribe_Cost>0</Expensive_Bribe_Cost>
-
-		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
-		
 		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
@@ -253,6 +244,12 @@
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
 		
+		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
+		
+		<CategoryMask> LandHero | SpaceHero </CategoryMask>
+		<Ranking_In_Category> 2 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+
 	</HeroCompany>
 
 	<!-- Urai's Flagship  -->

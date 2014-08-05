@@ -95,24 +95,24 @@
         <!--Home_Location> Rebel, Skaro </Home_Location>
         <Home_Location> Empire, Gamma </Home_Location-->
         <Home_Location> Underworld, Earth_NEW </Home_Location>
-		<Home_Location> Daleks, Skaro </Home_Location>
+		<Home_Location> Hutts, Skaro </Home_Location>
 
         <Starting_Active_Player> Underworld </Starting_Active_Player>
 
 		<!--Rebel_Story_Name>Story_Plots_Rebel_AI_Heroes_EXP.xml</Rebel_Story_Name>
         <Empire_Story_Name>Story_Plots_Empire_AI_Heroes_EXP.xml</Empire_Story_Name-->
-		<Daleks_Story_Name>Story_Plots_Underworld_AI_Heroes.xml</Daleks_Story_Name>
+		<Hutts_Story_Name>Story_Plots_Underworld_AI_Heroes.xml</Hutts_Story_Name>
         <Underworld_Story_Name>Story_Plots_Sandbox_episode2_Underworld.xml</Underworld_Story_Name>
         
         <!--AI_Player_Control> Empire, None </AI_Player_Control>
 		<AI_Player_Control> Rebel, None </AI_Player_Control-->
-		<AI_Player_Control> Daleks, AI_Player_Underworld </AI_Player_Control>
+		<AI_Player_Control> Hutts, <!--AI_Player_Underworld--> None </AI_Player_Control>
 		<AI_Player_Control> Underworld, SandboxHuman </AI_Player_Control>
 
 		<!--Markup_Filename>Empire, ShipyardsOfKuatHints </Markup_Filename>
 		<Markup_Filename>Rebel, ShipyardsOfKuatHints </Markup_Filename-->
 		<Markup_Filename>Underworld, ShipyardsOfKuatHints </Markup_Filename>
-		<Markup_Filename>Daleks, ShipyardsOfKuatHints </Markup_Filename>
+		<Markup_Filename>Hutts, ShipyardsOfKuatHints </Markup_Filename>
 		
 		<Supports_Custom_Settings>True</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -151,51 +151,55 @@
 		<Starting_Forces> Empire, Gamma, Acclamator_Assault_Ship </Starting_Forces>
 		<Starting_Forces> Empire, Gamma, Victory_Destroyer </Starting_Forces>
 	-->			
-		<Starting_Credits> Daleks,  45000 </Starting_Credits>
-		<Starting_Tech_Level> Daleks, 5 </Starting_Tech_Level>
-		<Max_Tech_Level> Daleks, 5 </Max_Tech_Level>
+		<Starting_Credits> Hutts,  45000 </Starting_Credits>
+		<Starting_Tech_Level> Hutts, 5 </Starting_Tech_Level>
+		<Max_Tech_Level> Hutts, 5 </Max_Tech_Level>
 		
     
-		<Starting_Forces> Daleks, SKARO, Underworld_Star_Base_4 </Starting_Forces>
-		<Starting_Forces> Daleks, SKARO, Bossk_Team </Starting_Forces>
-		<Starting_Forces> Daleks, SKARO, Tyber_Zann_Team </Starting_Forces>
-		<Starting_Forces> Daleks, SKARO, Urai_Fen_Team </Starting_Forces>
-		<Starting_Forces> Daleks, SKARO, IG88_Team </Starting_Forces>
-		<Starting_Forces> Daleks, SKARO, Silri_Team </Starting_Forces>
-		<Starting_Forces> Daleks, SKARO, U_Ground_Barracks </Starting_Forces>
-		<Starting_Forces> Daleks, SKARO, U_Ground_Vehicle_Factory </Starting_Forces>
-		<Starting_Forces> Daleks, SKARO, Pirates_Ground_Jumper </Starting_Forces>
-		<Starting_Forces> Daleks, SKARO, Pirates_Ground_Jumper </Starting_Forces>
-		<Starting_Forces> Daleks, SKARO, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
-		<Starting_Forces> Daleks, SKARO, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
+		<Starting_Forces> Hutts, SKARO, Underworld_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Hutts, SKARO, Bossk_Team </Starting_Forces>
+		<Starting_Forces> Hutts, SKARO, Tyber_Zann_Team </Starting_Forces>
+		<Starting_Forces> Hutts, SKARO, Urai_Fen_Team </Starting_Forces>
+		<Starting_Forces> Hutts, SKARO, IG88_Team </Starting_Forces>
+		<Starting_Forces> Hutts, SKARO, Silri_Team </Starting_Forces>
+		<Starting_Forces> Hutts, SKARO, U_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Hutts, SKARO, U_Ground_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Hutts, SKARO, Pirates_Ground_Jumper </Starting_Forces>
+		<Starting_Forces> Hutts, SKARO, Pirates_Ground_Jumper </Starting_Forces>
+		<Starting_Forces> Hutts, SKARO, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
+		<Starting_Forces> Hutts, SKARO, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
 		
-		<Starting_Forces> Daleks, Vega, Underworld_Star_Base_2 </Starting_Forces>
-		<Starting_Forces> Daleks, Vega, U_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Hutts, Vega, Underworld_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Hutts, Vega, U_Ground_Barracks </Starting_Forces>
 		
-		<Starting_Forces> Daleks, Gallifrey, Underworld_Star_Base_4 </Starting_Forces>
-		<Starting_Forces> Daleks, Gallifrey, Krayt_Class_Destroyer </Starting_Forces>
-		<Starting_Forces> Daleks, Gallifrey, Krayt_Class_Destroyer </Starting_Forces>
-		<Starting_Forces> Daleks, Gallifrey, Crusader_Gunship </Starting_Forces>
-		<Starting_Forces> Daleks, Gallifrey, U_Ground_Barracks </Starting_Forces>
-		<Starting_Forces> Daleks, Gallifrey, U_Ground_Vehicle_Factory </Starting_Forces>
-		<Starting_Forces> Daleks, Gallifrey, Pirates_Ground_Jumper </Starting_Forces>
-		<Starting_Forces> Daleks, Gallifrey, Pirates_Ground_Jumper </Starting_Forces>
-		<Starting_Forces> Daleks, Gallifrey, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
-		<Starting_Forces> Daleks, Gallifrey, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
+		<Starting_Forces> Hutts, Gallifrey, Underworld_Star_Base_4 </Starting_Forces>
+		<Starting_Forces> Hutts, Gallifrey, Krayt_Class_Destroyer </Starting_Forces>
+		<Starting_Forces> Hutts, Gallifrey, Krayt_Class_Destroyer </Starting_Forces>
+		<Starting_Forces> Hutts, Gallifrey, Crusader_Gunship </Starting_Forces>
+		<Starting_Forces> Hutts, Gallifrey, U_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Hutts, Gallifrey, U_Ground_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Hutts, Gallifrey, Pirates_Ground_Jumper </Starting_Forces>
+		<Starting_Forces> Hutts, Gallifrey, Pirates_Ground_Jumper </Starting_Forces>
+		<Starting_Forces> Hutts, Gallifrey, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
+		<Starting_Forces> Hutts, Gallifrey, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
 		
-		<Starting_Forces> Daleks, Ikar, Underworld_Star_Base_2 </Starting_Forces>
-		<Starting_Forces> Daleks, Ikar, Krayt_Class_Destroyer </Starting_Forces>
-		<Starting_Forces> Daleks, Ikar, Krayt_Class_Destroyer </Starting_Forces>
-		<Starting_Forces> Daleks, Ikar, Crusader_Gunship </Starting_Forces>
-		<Starting_Forces> Daleks, Ikar, U_Ground_Barracks </Starting_Forces>
-		<Starting_Forces> Daleks, Ikar, U_Ground_Vehicle_Factory </Starting_Forces>
-		<Starting_Forces> Daleks, Ikar, Pirates_Ground_Jumper </Starting_Forces>
-		<Starting_Forces> Daleks, Ikar, Pirates_Ground_Jumper </Starting_Forces>
-		<Starting_Forces> Daleks, Ikar, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
-		<Starting_Forces> Daleks, Ikar, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
+		<Starting_Forces> Hutts, Ikar, Underworld_Star_Base_2 </Starting_Forces>
+		<Starting_Forces> Hutts, Ikar, Krayt_Class_Destroyer </Starting_Forces>
+		<Starting_Forces> Hutts, Ikar, Krayt_Class_Destroyer </Starting_Forces>
+		<Starting_Forces> Hutts, Ikar, Crusader_Gunship </Starting_Forces>
+		<Starting_Forces> Hutts, Ikar, U_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Hutts, Ikar, U_Ground_Vehicle_Factory </Starting_Forces>
+		<Starting_Forces> Hutts, Ikar, Pirates_Ground_Jumper </Starting_Forces>
+		<Starting_Forces> Hutts, Ikar, Pirates_Ground_Jumper </Starting_Forces>
+		<Starting_Forces> Hutts, Ikar, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
+		<Starting_Forces> Hutts, Ikar, Pirates_Ground_SUPERFLAGSHIP_FIGHTER </Starting_Forces>
 		
-		<Starting_Forces> Daleks, GAMMA, Underworld_Star_Base_3 </Starting_Forces>
-		<Starting_Forces> Daleks, GAMMA, U_Ground_Barracks </Starting_Forces>
+		<Starting_Forces> Hutts, GAMMA, Underworld_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Hutts, GAMMA, U_Ground_Barracks </Starting_Forces>
+		
+		<Starting_Forces> Hutts, Atlantis_NEW, Barracks </Starting_Forces>
+
+		<Starting_Forces> Hutts, Belsa_NEW, U_Ground_Barracks </Starting_Forces>
 		
 		<Starting_Credits> Underworld,  12000 </Starting_Credits>
 		<Starting_Tech_Level> Underworld, 5 </Starting_Tech_Level>

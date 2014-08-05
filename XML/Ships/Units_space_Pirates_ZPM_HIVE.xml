@@ -33,7 +33,7 @@
 		<Hyperspace>Yes</Hyperspace>
 		<Hyperspace_Speed>2.0</Hyperspace_Speed>
 		<Maintenance_Cost>0.3</Maintenance_Cost>
-		<Affiliation>Pirates, Daleks</Affiliation>
+		<Affiliation>Pirates, Hutts</Affiliation>
 		<Ship_Class>super</Ship_Class>
 		<Tech_Level>4</Tech_Level>
 		<Required_Timeline>0</Required_Timeline>
@@ -155,7 +155,7 @@
 		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_Per_Player>7</Build_Limit_Current_Per_Player>
+		<Build_Limit_Current_Per_Player>5</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
 		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
 		<!-- Non-Hero unit abilities description -->

@@ -55,8 +55,8 @@ end
 function State_Spawn_01(message)
 	if message == OnEnter then
 		cohall_pl = Find_First_Object("Cohall_NEW")
-		daleks_player = Find_Player("Daleks")
-		fleet = SpawnList(fleet_list1, cohall_pl, daleks_player, true, false)
+		Hutts_player = Find_Player("Hutts")
+		fleet = SpawnList(fleet_list1, cohall_pl, Hutts_player, true, false)
 	elseif message == OnUpdate then
 -- Do nothing
 	elseif message == OnExit then

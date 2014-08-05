@@ -244,11 +244,11 @@
 	<Prereq>MISSION_1_REMOVED</Prereq>
 </Event>
 
-<Event Name="Daleks_Cohall">
+<Event Name="Hutts_Cohall">
 	<Event_Type>STORY_TRIGGER</Event_Type>
 	<Reward_Type>PLANET_FACTION</Reward_Type>
 	<Reward_Param1>Cohall_NEW</Reward_Param1>
-	<Reward_Param2>Daleks</Reward_Param2>
+	<Reward_Param2>Hutts</Reward_Param2>
 	<Prereq>MISSION_2_TEXT_1</Prereq>
 </Event>
 

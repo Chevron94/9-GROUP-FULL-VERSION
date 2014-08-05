@@ -7,14 +7,14 @@
 	 <Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level> 
     <Blob_Shadow_Scale>40.0, 40.0</Blob_Shadow_Scale> 
     <Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name> 
-  
+  <Is_Named_Hero>true</Is_Named_Hero>
+  <Is_Force_Sensitive>No</Is_Force_Sensitive>
   <Text_ID>TEXT_UNIT_IGOR</Text_ID>
   <Encyclopedia_Good_Against>AT_AT_Walker MZ8_Pulse_Cannon_Tank</Encyclopedia_Good_Against> 
   <Encyclopedia_Vulnerable_To>AT_AA_Walker Dark_Trooper_PhaseIII MAL_Rocket_Vehicle</Encyclopedia_Vulnerable_To> 
   <Encyclopedia_Text>TEXT_TOOLTIP_SU25</Encyclopedia_Text> 
   <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class> 
   <Land_Model_Name>9GROUP_SU25.ALO</Land_Model_Name> 
-  <Is_Named_Hero>Yes</Is_Named_Hero>
   <Mass>0.985</Mass> 
   <Scale_Factor>1.4</Scale_Factor> 
   <Size_Value>15</Size_Value> 
@@ -38,7 +38,7 @@
   <MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames> 
   <Should_Cause_Limited_Turrets_To_Turn>false</Should_Cause_Limited_Turrets_To_Turn> 
   
-  <AI_Combat_Power>2500</AI_Combat_Power> 
+  <AI_Combat_Power>1500</AI_Combat_Power> 
   
   <Behavior>SELECTABLE, POWERED</Behavior> 
   <LandBehavior>ABILITY_COUNTDOWN, FLYING_LOCOMOTOR,REVEAL,HIDE_WHEN_FOGGED, AMBIENT_SFX,UNIT_AI,TARGETING,WEAPON,STUNNABLE, WIND_DISTURBANCE,DAMAGE_TRACKING</LandBehavior> 
@@ -53,6 +53,7 @@
   
   <Shield_Points>0</Shield_Points> 
   <Tactical_Health>150</Tactical_Health> 
+  <Autoresolve_Health>200</Autoresolve_Health>
   <Shield_Refresh_Rate>0</Shield_Refresh_Rate> 
   <Energy_Capacity>1000</Energy_Capacity> 
   <Energy_Refresh_Rate>999</Energy_Refresh_Rate> 
@@ -102,7 +103,7 @@
   <SFXEvent_Tactical_Build_Complete>RHD_Reinforcements_Available</SFXEvent_Tactical_Build_Complete> 
   <SFXEvent_Tactical_Build_Cancelled>RHD_Reinforcements_Cancelled</SFXEvent_Tactical_Build_Cancelled> 
   <Icon_Name>I_BUTTON_IGOR.tga</Icon_Name>  
-  <CategoryMask> LandHero | SpaceHero | Air </CategoryMask> 
+  <CategoryMask> LandHero | Air </CategoryMask> 
   <MovementClass>Flying</MovementClass> 
   <OccupationStyle>1x1</OccupationStyle> 
   <Victory_Relevant>yes</Victory_Relevant> 
@@ -169,7 +170,6 @@
 		<Encyclopedia_Text> TEXT_UNIT_IGOR_TOOLTIP</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
 		<Icon_Name>I_BUTTON_IGOR.tga</Icon_Name>  
-		
 		<Is_Dummy>Yes</Is_Dummy>
 		<Damage>80</Damage>
 		<Affiliation>Underworld</Affiliation>
@@ -181,13 +181,13 @@
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures />
 		<Required_Planets />
-		
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 		<Company_Transport_Unit>IGOR</Company_Transport_Unit>
 		<Company_Units>IGOR_Ground, SU25, SU25</Company_Units>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Is_Stealth_Company>no</Is_Stealth_Company>
+		<Is_Force_Sensitive>No</Is_Force_Sensitive>
 		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
 		<Can_Be_Only_One>true</Can_Be_Only_One>
 
 		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
@@ -195,24 +195,23 @@
 		<SFXEvent_Build_Complete>Federation_Voyager_Select</SFXEvent_Build_Complete>
 		<SFXEvent_Hero_Respawned>Federation_Voyager_Select</SFXEvent_Hero_Respawned>
 		<SFXEvent_Fleet_Move>9_GROUP_igor_Move</SFXEvent_Fleet_Move>
-
-		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
-		<CategoryMask> LandHero | SpaceHero </CategoryMask>
-		<Ranking_In_Category> 2 </Ranking_In_Category>
-		<Population_Value>1</Population_Value>
-
-		<Cheap_Bribe_Cost>0</Cheap_Bribe_Cost>
-		<Expensive_Bribe_Cost>0</Expensive_Bribe_Cost>
-
-		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
 		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
 		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
+		 <!--<MULTIPLAYER SKIRMISH VALUES END>-->
 		
+		 <!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
+		
+		<CategoryMask>LandHero</CategoryMask>
+		<Ranking_In_Category> 2 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+
 	</HeroCompany>
 	
 	<!-- Urai's Flagship  -->

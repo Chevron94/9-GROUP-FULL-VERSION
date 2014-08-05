@@ -39,11 +39,12 @@
 		<Size_Value>75</Size_Value>
 		<Damage>20</Damage>
 		<Shield_Points>0</Shield_Points>
-		<Tactical_Health>90</Tactical_Health> 
+		<Tactical_Health>190</Tactical_Health> 
+		<Autoresolve_Health>190</Autoresolve_Health>
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>999</Energy_Capacity>
 		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
-        <AI_Combat_Power>600</AI_Combat_Power>
+        <AI_Combat_Power>400</AI_Combat_Power>
 
 		<Behavior> SELECTABLE </Behavior>
 		<LandBehavior>AFFECTED_BY_SHIELD, TREAD_SCROLL, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, TURRET, POWERED, REVEAL, HIDE_WHEN_FOGGED, SQUASH, SURFACE_FX, UNIT_AI, TELEKINESIS_TARGET,STUNNABLE,DAMAGE_TRACKING</LandBehavior>

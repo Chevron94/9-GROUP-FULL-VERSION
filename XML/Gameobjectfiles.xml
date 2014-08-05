@@ -50,16 +50,16 @@
 	<File>Heroes\Units_Hero_9_GROUP_ZHENYA.xml</File>
 	<File>Heroes\Units_Hero_9_GROUP_Andrei.xml</File>
 	<!--Преступный мир-->
-	<File>Heroes\Units_Hero_Daleks_Bossk.xml</File>
-	<File>Heroes\Units_Hero_Daleks_IG88.xml</File>
-	<File>Heroes\Units_Hero_Daleks_Silri.xml</File>
-	<File>Heroes\Units_Hero_Daleks_Tyber_Zann.xml</File>
-	<File>Heroes\Units_Hero_Daleks_Urai_Fen.xml</File>
+	<File>Heroes\Units_Hero_Hutts_Bossk.xml</File>
+	<File>Heroes\Units_Hero_Hutts_IG88.xml</File>
+	<File>Heroes\Units_Hero_Hutts_Silri.xml</File>
+	<File>Heroes\Units_Hero_Hutts_Tyber_Zann.xml</File>
+	<File>Heroes\Units_Hero_Hutts_Urai_Fen.xml</File>
 	
 <!--Верфь-->	
 	<File>Ships\HCaW_Space_UNSC_Shipyard.xml</File>
 	<File>Ships\Starbases_9_GROUP.xml</File>
-	<File>Ships\Starbases_Daleks.xml</File>
+	<File>Ships\Starbases_Hutts.xml</File>
 	<File>Ships\Starbases_TEST.xml</File>
 <!--Прираты-->
 	<File>Ships\Units_space_Pirates_newgalactica.xml</File>
@@ -84,17 +84,17 @@
 	<File>Ships\Units_space_Empire_Eclipse.xml</File>
 	<File>Ships\Units_space_Empire_Titan_Cruiser.xml</File>
 <!--Преступный мир-->	
-	<File>Ships\Units_Space_Daleks_Buzz_Droids.xml</File>
+	<File>Ships\Units_Space_Hutts_Buzz_Droids.xml</File>
 	<File>Ships\Units_space_Pirates_SUPERFLAGSHIP.xml</File>	
-	<File>Ships\Units_space_Daleks_Dalek.xml</File>	
-	<File>Ships\Units_space_Daleks_DalekShip.xml</File>	
-	<File>Ships\Units_Space_Daleks_Crusader_Gunship.xml</File>
-	<File>Ships\Units_Space_Daleks_Interceptor4.xml</File>	
-	<File>Ships\Units_Space_Daleks_Kadalbe_Battleship.xml</File>	
-	<File>Ships\Units_Space_Daleks_Krayt_Destroyer.xml</File>	
-	<File>Ships\Units_Space_Daleks_Skipray.xml</File>	
-	<File>Ships\Units_Space_Daleks_StarViper.xml</File>	
-	<File>Ships\Units_Space_Daleks_Vengeance.xml</File>	
+	<File>Ships\Units_space_Hutts_Dalek.xml</File>	
+	<File>Ships\Units_space_Hutts_DalekShip.xml</File>	
+	<File>Ships\Units_Space_Hutts_Crusader_Gunship.xml</File>
+	<File>Ships\Units_Space_Hutts_Interceptor4.xml</File>	
+	<File>Ships\Units_Space_Hutts_Kadalbe_Battleship.xml</File>	
+	<File>Ships\Units_Space_Hutts_Krayt_Destroyer.xml</File>	
+	<File>Ships\Units_Space_Hutts_Skipray.xml</File>	
+	<File>Ships\Units_Space_Hutts_StarViper.xml</File>	
+	<File>Ships\Units_Space_Hutts_Vengeance.xml</File>	
 
 	
 <!--Постройки-->	
@@ -107,7 +107,7 @@
 	<File>Buildings\Academy.xml</File>
 	<File>Buildings\RocketDefencer.xml</File>
 	<File>Buildings\SheildBase.xml</File>
-	<File>Buildings\SpecialStructures_Daleks.xml</File>
+	<File>Buildings\SpecialStructures_Hutts.xml</File>
 <!--наземные Юниты-->
 	<!--9 группа-->
 	<File>Land\Units_Ground_9GROUP_SU25.xml</File>
@@ -124,17 +124,17 @@
 	<File>Land\Units_Ground_Pirates_Ground_Jumper.xml</File>
 	<File>Land\Units_Ground_Pirates_Ground_SUPERFLAGSHIP_FIGHTER.xml</File>
 	<!--Преступный мир-->
-	<File>Land\Units_Ground_Daleks_Canderous_Tank.xml</File>
-	<File>Land\Units_Ground_Daleks_DestroyerDroids.xml</File>
-	<File>Land\Units_Ground_Daleks_DisruptorInf.xml</File>
-	<File>Land\Units_Ground_Daleks_Ewok_Bomber.xml</File>
-	<File>Land\Units_Ground_Daleks_F9TZ_Transport.xml</File>
-	<File>Land\Units_Ground_Daleks_MAL.xmll</File>
-	<File>Land\Units_Ground_Daleks_MercenaryInf.xml</File>
-	<File>Land\Units_Ground_Daleks_NightSister.xml</File>
-	<File>Land\Units_Ground_Daleks_PulseTank.xml</File>
-	<File>Land\Units_Ground_Daleks_ScavengerDroids.xml</File>
-	<File>Land\Units_Ground_Daleks_Vornskr.xml</File>
+	<File>Land\Units_Ground_Hutts_Canderous_Tank.xml</File>
+	<File>Land\Units_Ground_Hutts_DestroyerDroids.xml</File>
+	<File>Land\Units_Ground_Hutts_DisruptorInf.xml</File>
+	<File>Land\Units_Ground_Hutts_Ewok_Bomber.xml</File>
+	<File>Land\Units_Ground_Hutts_F9TZ_Transport.xml</File>
+	<File>Land\Units_Ground_Hutts_MAL.xmll</File>
+	<File>Land\Units_Ground_Hutts_MercenaryInf.xml</File>
+	<File>Land\Units_Ground_Hutts_NightSister.xml</File>
+	<File>Land\Units_Ground_Hutts_PulseTank.xml</File>
+	<File>Land\Units_Ground_Hutts_ScavengerDroids.xml</File>
+	<File>Land\Units_Ground_Hutts_Vornskr.xml</File>
 
 	
 	<File>SpaceUnitsCapital.xml</File>
@@ -145,7 +145,7 @@
 	
 <!--Остальное-->	
 	<File>TransportUnits.xml</File>
-	<File>Ships\Daleks_TransportUnits.xml</File>
+	<File>Ships\Hutts_TransportUnits.xml</File>
 	<File>MULTIPLAYER_STRUCTURE_MARKERS.xml</File>
 
 	<File>TechBuilding.xml</File>		<!-- AJA 10/12/2005 - Moved to the top so that tech upgrades always show up on the left of the build bar. -->
@@ -210,7 +210,7 @@
 
 	<File>MiscObjects.xml</File>
 	<File>UpgradeObjects.xml</File>
-	<File>UpgradeObjects_Daleks.xml</File>
+	<File>UpgradeObjects_Hutts.xml</File>
 	<File>SecondaryStructures.xml</File>
 
 	<File>Props_Temperate.xml</File>

@@ -92,8 +92,7 @@
   <Prepare_Strafe_Height>5.0</Prepare_Strafe_Height> 
   <MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames> 
   <Should_Cause_Limited_Turrets_To_Turn>false</Should_Cause_Limited_Turrets_To_Turn> 
-  
-  <AI_Combat_Power>2500</AI_Combat_Power> 
+  <AI_Combat_Power>1000</AI_Combat_Power> 
   
   <Behavior>SELECTABLE, POWERED</Behavior> 
   <LandBehavior>ABILITY_COUNTDOWN, FLYING_LOCOMOTOR,REVEAL,HIDE_WHEN_FOGGED, AMBIENT_SFX,UNIT_AI,TARGETING,WEAPON,STUNNABLE, WIND_DISTURBANCE,DAMAGE_TRACKING</LandBehavior>  

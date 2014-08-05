@@ -1,13 +1,7 @@
 <?xml version="1.0"?>
-<Stargate_Particles>                      
-        
-		
-		
-		
-		
-		
-			
-		<Particle Name="Particle_General_Hit_Small">
+<Stargate_Particles> 
+                     
+<Particle Name="Particle_General_Hit_Small">
 		<Land_Model_Name>General_Particle_Hit_Small.ALO</Land_Model_Name>
 		<Space_Model_Name>General_Particle_Hit_Small.ALO</Space_Model_Name>
 		<Scale_Factor>1.0</Scale_Factor>
@@ -90,7 +84,7 @@
 	<!-- Ori shield effects -->
 	<!-- Replicator shield effects -->
 	<!-- Asuran shield effects -->
-	<!--Traveler shield effects-->
+	<!--Traveler shield effects>
 	<Particle Name="Particle_Traveler_Plasma_Shield_Hit">
 		<Land_Model_Name>Traveler_Particle_Plasma_Shield_Hit.ALO</Land_Model_Name>
 		<Space_Model_Name>Traveler_Particle_Plasma_Shield_Hit.ALO</Space_Model_Name>
@@ -99,7 +93,7 @@
 		<Behavior>PARTICLE</Behavior>
 		<Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
 		<Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
-	</Particle>
+	</Particle> <-->
 		
 		
 		
@@ -115,7 +109,7 @@
         <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
 	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
     </Particle>
-        <Particle Name="Small_Damage_Land_Goauld">
+ <!--       <Particle Name="Small_Damage_Land_Goauld">
         <Land_Model_Name>p_damage_small00_goauld.alo</Land_Model_Name>
         <Space_Model_Name>p_damage_small00_goauld.alo</Space_Model_Name>
         <Scale_Factor>1.0</Scale_Factor>
@@ -143,7 +137,7 @@
         <Behavior>PARTICLE</Behavior>
         <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
         <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
-    	</Particle>
+    	</Particle> -->
 	<Particle Name="Projectile_Dirt_Collide_MG">
         <Land_Model_Name>p_desert_ground_puff_mg.alo</Land_Model_Name>
         <Space_Model_Name>p_desert_ground_puff_mg.alo</Space_Model_Name>
@@ -164,6 +158,9 @@
         <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
 	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_TINY</Explosion_Scorch_Mark>
     	</Particle>
+		
+		<!--
+		
 	<Particle Name="Projectile_Dirt_Collide_Jaffa">
         <Land_Model_Name>p_desert_ground_puff_jaffa.alo</Land_Model_Name>
         <Space_Model_Name>p_desert_ground_puff_jaffa.alo</Space_Model_Name>
@@ -174,6 +171,9 @@
         <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
 	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_TINY</Explosion_Scorch_Mark>
     	</Particle>
+		
+		-->
+		
         <Particle Name="Projectile_Dirt_Collide_Sonde">
         <Land_Model_Name>p_desert_ground_puff_sonde.alo</Land_Model_Name>
         <Space_Model_Name>p_desert_ground_puff_sonde.alo</Space_Model_Name>
@@ -184,7 +184,8 @@
         <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
 	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_TINY</Explosion_Scorch_Mark>
     	</Particle>
-	<Particle Name="Projectile_Dirt_Collide_Todesgleiter">
+		
+	<!--Particle Name="Projectile_Dirt_Collide_Todesgleiter">
         <Land_Model_Name>P_desert_ground_puff_gleiter.alo</Land_Model_Name>
         <Space_Model_Name>P_desert_ground_puff_gleiter.alo</Space_Model_Name>
         <Scale_Factor>1.0</Scale_Factor>
@@ -193,8 +194,9 @@
         <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
         <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
 	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_TINY</Explosion_Scorch_Mark>
-    	</Particle>
-    	<Particle Name="Goauld_Bombing_Run_Explosion_Land">
+    	</Particle-->
+		
+    	<!--Particle Name="Goauld_Bombing_Run_Explosion_Land">
 		<Land_Model_Name>p_explosion_thermal_goauld.alo</Land_Model_Name>
 		<Space_Model_Name>p_explosion_thermal_goauld.alo</Space_Model_Name>
 		<Scale_Factor>2.0</Scale_Factor>
@@ -203,7 +205,7 @@
 		<Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
 		<Explosion_Jitter_Factor>1</Explosion_Jitter_Factor>
 		<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_MEDIUM</Explosion_Scorch_Mark>
-	</Particle>
+	</Particle-->
         
 <!-- Tauri Schild Effekte -->
         
@@ -302,6 +304,8 @@
 	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
         <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
 	</Particle>
+	
+	
 	<Particle Name="Carbonite_Missile_Explosion_1">    
 		<Land_Model_Name>p_carbonite_explosion_1.ALO</Land_Model_Name>
 		<Space_Model_Name>p_carbonite_explosion_1.ALO</Space_Model_Name>
@@ -313,6 +317,8 @@
 	<Explosion_Scorch_Mark>EXPLOSION_SCORCH_MARK_SMALL</Explosion_Scorch_Mark>
         <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
 	</Particle>
+	
+	
     	<Particle Name="Object_Effekt_Tauri_Superlaser">     
 		<Land_Model_Name>SG_Objekt_Effekt_Asgard_Superlaser.ALO</Land_Model_Name>
 		<Space_Model_Name>SG_Objekt_Effekt_Asgard_Superlaser.ALO</Space_Model_Name>
@@ -461,7 +467,7 @@
         	<No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
     	</Particle>
 
-<!-- Goauld Schild Effekte -->	
+<!-- Goauld Schild Effekte> 	
 	
 	<Particle Name="Goauld_Shield_Absorb_Small_Fighter"> 
         	  <Land_Model_Name>SG_Schield_Effekt_Goauld_Fighter.ALO</Land_Model_Name>
@@ -502,9 +508,9 @@
         	  <Particle_Lifetime_Frames>12</Particle_Lifetime_Frames>
         	  <Particle_Attach_To_Collision>1</Particle_Attach_To_Collision>
         	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
-    	</Particle>
+    	</Particle> -->
 	
-<!-- Goauld Objekt Effekte --> 
+<!-- Goauld Objekt Effekte> 
 	
 	<Particle Name="Small_Damage_Space_Goauld">       
         	  <Land_Model_Name>p_damage_goauld1.alo</Land_Model_Name>
@@ -541,7 +547,7 @@
         	  <Behavior>PARTICLE</Behavior>
         	  <Particle_Lifetime_Frames>30</Particle_Lifetime_Frames>
         	  <No_Particle_Below_Detail_Level>0.7</No_Particle_Below_Detail_Level>
-    	</Particle>
+    	</Particle>-->
     	
 <!-- Ori & Wraith Schild Effekte -->    	
     	

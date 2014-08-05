@@ -231,7 +231,8 @@
 			<Reduce_Production_Price_Ability Name="Erde_Production_Boost">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types> Matan, Predel, Algem, Differencial, Orion, FV_Nebula, Puddle_Jumper_Squadron, Ears, FV_Sorveign, Pascal, Andromeda, X-301_Squadron, F-302_Squadron, Destroyer  </Applicable_Unit_Types>
+				<Applicable_Unit_Types> Matan, Predel, Algem, Differencial, Orion, FV_Nebula, Puddle_Jumper_Squadron, Ears_Ship, FV_Sorveign, Pascal, Andromeda, X-301_Squadron, F-302_Squadron, Destroyer, Buzz_Droids, ZPM_Hive, Crusader_Gunship, Daleks_Squad, Dalek_Saucer, Interceptor4_Frigate, Kedalbe_Battleship, Krayt_Class_Destroyer, Skipray_Squadron, StarViper_Squadron, Vengeance_Frigate, SUPERFLAGSHIP, SUPERFLAGSHIP_Squadron, X-301_Squadron, F-302_Squadron, Gracefighter_Squadron, Jumper_Squadron, FV_Type9_Squadron, FV_Type11_Squadron
+							</Applicable_Unit_Types>
 				<Applicable_Unit_Types/>
 				<Price_Reduction_Percentage>0.50</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
@@ -301,7 +302,8 @@
 			<Reduce_Production_Price_Ability Name="ErdeP_Production_Boost">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types> Matan, Predel, Algem, Differencial, Orion, FV_Nebula, Puddle_Jumper_Squadron, Ears, FV_Sorveign, Pascal, Andromeda, X-301_Squadron, F-302_Squadron, Destroyer  </Applicable_Unit_Types>
+				<Applicable_Unit_Types> Matan, Predel, Algem, Differencial, Orion, FV_Nebula, Puddle_Jumper_Squadron, Ears_Ship, FV_Sorveign, Pascal, Andromeda, X-301_Squadron, F-302_Squadron, Destroyer, Buzz_Droids, ZPM_Hive, Crusader_Gunship, Daleks_Squad, Dalek_Saucer, Interceptor4_Frigate, Kedalbe_Battleship, Krayt_Class_Destroyer, Skipray_Squadron, StarViper_Squadron, Vengeance_Frigate, SUPERFLAGSHIP, SUPERFLAGSHIP_Squadron, X-301_Squadron, F-302_Squadron, Gracefighter_Squadron, Jumper_Squadron, FV_Type9_Squadron, FV_Type11_Squadron
+							</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.50</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide> No </Galaxy_Wide>
@@ -1120,7 +1122,8 @@
 			<Reduce_Production_Price_Ability Name="IKAR_Production_Boost">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types> Matan, Predel, Algem, Differencial, Orion, FV_Nebula, Puddle_Jumper_Squadron, Ears, FV_Sorveign, Pascal, Andromeda, X-301_Squadron, F-302_Squadron, Destroyer  </Applicable_Unit_Types>
+				<Applicable_Unit_Types> Matan, Predel, Algem, Differencial, Orion, FV_Nebula, Puddle_Jumper_Squadron, Ears_Ship, FV_Sorveign, Pascal, Andromeda, X-301_Squadron, F-302_Squadron, Destroyer, Buzz_Droids, ZPM_Hive, Crusader_Gunship, Daleks_Squad, Dalek_Saucer, Interceptor4_Frigate, Kedalbe_Battleship, Krayt_Class_Destroyer, Skipray_Squadron, StarViper_Squadron, Vengeance_Frigate, SUPERFLAGSHIP, SUPERFLAGSHIP_Squadron, X-301_Squadron, F-302_Squadron, Gracefighter_Squadron, Jumper_Squadron, FV_Type9_Squadron, FV_Type11_Squadron
+							</Applicable_Unit_Types>
 				<Applicable_Unit_Types/>
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>

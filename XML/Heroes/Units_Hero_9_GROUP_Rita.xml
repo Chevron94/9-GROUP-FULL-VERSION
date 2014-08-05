@@ -49,12 +49,12 @@
 	
 		<Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
 
-		<Affiliation>Ori</Affiliation>
+		<Affiliation>Underworld</Affiliation>
 		<Political_Control>0</Political_Control>
 
 		<Armor_Type> Armor_Mauler </Armor_Type>
 		<Damage>30</Damage>
-		<Autoresolve_Health>40.0</Autoresolve_Health>
+		<Autoresolve_Health>240.0</Autoresolve_Health>
 		<Shield_Points>30</Shield_Points>
 		<Tactical_Health>240</Tactical_Health>
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
@@ -218,8 +218,7 @@
 		<Text_ID>TEXT_UNIT_RITA</Text_ID>
 		<Encyclopedia_Text> TEXT_UNIT_RITA_TOOLTIP </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
-		<Icon_Name>I_BUTTON_RITA.tga</Icon_Name>  
-		
+		<Icon_Name>I_BUTTON_RITA.tga</Icon_Name>  	
 		<Is_Dummy>Yes</Is_Dummy>
 		<Damage>80</Damage>
 		<Affiliation>Underworld</Affiliation>
@@ -231,13 +230,13 @@
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures />
 		<Required_Planets />
-		
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 		<Company_Transport_Unit>RITA_NX_05</Company_Transport_Unit>
 		<Company_Units>Ground_Rita, Ground_Jumper, Ground_Jumper</Company_Units>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Is_Stealth_Company>no</Is_Stealth_Company>
+		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
 		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
 		<Can_Be_Only_One>true</Can_Be_Only_One>
 
 		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
@@ -246,16 +245,6 @@
 		<SFXEvent_Hero_Respawned>Federation_Voyager_Select</SFXEvent_Hero_Respawned>
 		<SFXEvent_Fleet_Move>9_GROUP_rita_Move</SFXEvent_Fleet_Move>
 
-		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
-		<CategoryMask> LandHero | SpaceHero </CategoryMask>
-		<Ranking_In_Category> 2 </Ranking_In_Category>
-		<Population_Value>1</Population_Value>
-
-		<Cheap_Bribe_Cost>0</Cheap_Bribe_Cost>
-		<Expensive_Bribe_Cost>0</Expensive_Bribe_Cost>
-
-		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
-		
 		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
@@ -263,6 +252,12 @@
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
 		
+		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
+		
+		<CategoryMask> LandHero  </CategoryMask>
+		<Ranking_In_Category> 2 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+	
 	</HeroCompany>
 
 <UniqueUnit Name="Rita_NX_05">
