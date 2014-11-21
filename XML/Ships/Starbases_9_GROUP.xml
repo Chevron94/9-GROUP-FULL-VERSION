@@ -644,13 +644,13 @@
 		<Reserve_Spawned_Units_Tech_0>Gracefighter_Squadron, 1</Reserve_Spawned_Units_Tech_0>
 		
 		<Starting_Spawned_Units_Tech_0>Differencial, 2</Starting_Spawned_Units_Tech_0>	
-		<Reserve_Spawned_Units_Tech_0>Differencial, -1</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Differencial, 1</Reserve_Spawned_Units_Tech_0>
 
 		<Starting_Spawned_Units_Tech_0>Matan, 2</Starting_Spawned_Units_Tech_0>	
-		<Reserve_Spawned_Units_Tech_0>Matan, -1</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Matan, 1</Reserve_Spawned_Units_Tech_0>
 
 		<Starting_Spawned_Units_Tech_0>Predel, 1</Starting_Spawned_Units_Tech_0>	
-		<Reserve_Spawned_Units_Tech_0>Predel, -1</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Predel, 1</Reserve_Spawned_Units_Tech_0>
 		
 		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
 

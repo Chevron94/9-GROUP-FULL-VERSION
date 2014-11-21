@@ -170,7 +170,7 @@
 		<Projectile_Lifetime_Detonation_Particle>Huge_Dud</Projectile_Lifetime_Detonation_Particle>
 		<AI_Combat_Power>3000</AI_Combat_Power>
 	</Projectile>
-	<!--Торпеда(я бы сказал летающая смерть)-->
+	
     <Projectile Name="Proj_Relativity_Torpedo">
 		<Text_ID>TEXT_NONE</Text_ID>
 		<Space_Model_Name>borg_torpedo.ALO</Space_Model_Name>
