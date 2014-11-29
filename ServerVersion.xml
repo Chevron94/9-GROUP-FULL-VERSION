@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ServerInfo>
+	<ServerVersion>0.4.3</ServerVersion>
+	<Updates>
+		<Update Name="0.4.2">4
+			<Link>NoName</Link>
+			<Size>100</Size>
+			<Unpack>100</Unpack>
+		</Update>
+		<Update Name="0.0.0">
+			<Link>https://github.com/Chevron94/9-GROUP-FULL-VERSION/archive/master.zip</Link>
+			<Size>421558040</Size>
+			<Unpack>1386090522</Unpack>
+		</Update>
+	</Updates>
+</ServerInfo>
