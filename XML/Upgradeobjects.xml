@@ -4514,7 +4514,7 @@
 			<Combat_Bonus_Ability Name="FS_Enhanced_Reactors_L1_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>FV_Type9, FV_Type11, FV_Danube, FV_Aeroshuttle</Applicable_Unit_Types>
+				<Applicable_Unit_Types>FV_Type9, FV_Type11, X-301, F-302, Gracefighter, Jumper, Dart_Fighter</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -4554,7 +4554,7 @@
 			<Combat_Bonus_Ability Name="FS_Enhanced_Reactors_L2_Fighter_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>FV_Type9, FV_Type11, FV_Danube, FV_Aeroshuttle </Applicable_Unit_Types>
+				<Applicable_Unit_Types>FV_Type9, FV_Type11, X-301, F-302, Gracefighter, Jumper, Dart_Fighter </Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -4566,7 +4566,7 @@
 			<Combat_Bonus_Ability Name="FS_Enhanced_Reactors_L2_Frigate_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>FV_Nebula, FV_Norway, FV_Intrepid, FV_Excelsior_Lakota</Applicable_Unit_Types>
+				<Applicable_Unit_Types>FV_Nebula, Matan, NX_01, Differencial, Algem, Predel, WS</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -4606,7 +4606,7 @@
 			<Combat_Bonus_Ability Name="FS_Enhanced_Reactors_L3_Fighter_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>FV_Type9, FV_Type11, FV_Danube, FV_Aeroshuttle</Applicable_Unit_Types>
+				<Applicable_Unit_Types>FV_Type9, FV_Type11, X-301, F-302, Gracefighter, Jumper, Dart_Fighter</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -4618,7 +4618,7 @@
 			<Combat_Bonus_Ability Name="FS_Enhanced_Reactors_L3_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>FV_Nebula, FV_Sorveign, FV_Excalibur, FV_Norway, FV_Intrepid, FV_Galaxy, FV_Excelsior_Lakota</Applicable_Unit_Types>
+				<Applicable_Unit_Types>FV_Nebula, FV_Sorveign, Pascal, Matan, NX_01, Differencial, Algem, Predel, WS, Orion, Ears_Ship, Relativity</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -4662,7 +4662,7 @@
 			<Combat_Bonus_Ability Name="FS_Enhanced_Shielding_L1_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>FV_Type9, FV_Type11, FV_Danube, FV_Aeroshuttle</Applicable_Unit_Types>
+				<Applicable_Unit_Types>FV_Type9, FV_Type11, X-301, F-302, Gracefighter, Jumper, Dart_Fighter</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -4702,7 +4702,7 @@
 			<Combat_Bonus_Ability Name="FS_Enhanced_Shielding_L2_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>FV_Type9, FV_Type11, FV_Danube, FV_Aeroshuttle, FV_Nebula, FV_Norway, FV_Intrepid, FV_Excelsior_Lakota</Applicable_Unit_Types>
+				<Applicable_Unit_Types>FV_Type9, FV_Type11, X-301, F-302, Gracefighter, Jumper, Dart_Fighter, FV_Nebula, Matan, NX_01, Differencial, Algem, Predel, WS</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -4742,7 +4742,7 @@
 			<Combat_Bonus_Ability Name="FS_Enhanced_Shielding_L3_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>FV_Type9, FV_Type11, FV_Danube, FV_Aeroshuttle, FV_Nebula, FV_Norway, FV_Intrepid, FV_Excelsior_Lakota, FV_Excalibur, FV_Sorveign</Applicable_Unit_Types>
+				<Applicable_Unit_Types>FV_Type9, FV_Type11, X-301, F-302, Gracefighter, Jumper, Dart_Fighter, FV_Nebula, Matan, NX_01, Differencial, Algem, Predel, WS, Orion, Ears_Ship, Relativity, FV_Sorveign </Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -4782,7 +4782,7 @@
 			<Combat_Bonus_Ability Name="FS_Improved_Weapons_L1_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>FV_Type9, FV_Type11, FV_Danube, FV_Aeroshuttle</Applicable_Unit_Types>
+				<Applicable_Unit_Types>FV_Type9, FV_Type11, X-301, F-302, Gracefighter, Jumper, Dart_Fighter</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -4822,7 +4822,7 @@
 			<Combat_Bonus_Ability Name="FS_Improved_Weapons_L2_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>FV_Type9, FV_Type11, FV_Danube, FV_Aeroshuttle, FV_Nebula, FV_Norway, FV_Intrepid, FV_Excelsior_Lakota</Applicable_Unit_Types>
+				<Applicable_Unit_Types>FV_Type9, FV_Type11, X-301, F-302, Gracefighter, Jumper, Dart_Fighter, FV_Nebula, Matan, NX_01, Differencial, Algem, Predel, WS</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -4862,7 +4862,7 @@
 			<Combat_Bonus_Ability Name="FS_Improved_Weapons_L3_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>FV_Type9, FV_Type11, FV_Danube, FV_Aeroshuttle, FV_Nebula, FV_Norway, FV_Intrepid, FV_Excelsior_Lakota, FV_Excalibur, FV_Sorveign</Applicable_Unit_Types>
+				<Applicable_Unit_Types>FV_Type9, FV_Type11, X-301, F-302, Gracefighter, Jumper, Dart_Fighter, FV_Nebula, Matan, NX_01, Differencial, Algem, Predel, WS, Orion, Ears_Ship, Relativity, FV_Sorveign</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>

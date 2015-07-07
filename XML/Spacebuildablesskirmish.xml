@@ -1716,7 +1716,7 @@
 		</Tactical_Buildable_Objects_Multiplayer>
 	</SpaceBuildable>
 	
-	<SpaceBuildable Name="Underworld_Mineral_Extractor">
+	<SpaceBuildable Name="Federation_Mineral_Extractor">
 		<Variant_Of_Existing_Type>Empire_Mineral_Extractor</Variant_Of_Existing_Type>
 		<Affiliation>Underworld</Affiliation>
 		<Abilities SubObjectList="Yes">

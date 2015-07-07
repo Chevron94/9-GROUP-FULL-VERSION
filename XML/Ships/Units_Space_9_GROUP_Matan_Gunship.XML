@@ -10,7 +10,7 @@
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CORVETTE </Encyclopedia_Unit_Class>
 		<Icon_Name>I_BUTTON_SGC_304_GUNSHIP.TGA</Icon_Name>
 		<Variant_Of_Existing_Type>Matan</Variant_Of_Existing_Type>
-		
+		<Scale_Factor>0.25</Scale_Factor>
 		<Space_Model_Name>X-304Gunship.ALO</Space_Model_Name>
 				
         <Ranking_In_Category>6</Ranking_In_Category>
@@ -167,7 +167,7 @@
 		<Scale_Factor>0.8</Scale_Factor>
 		<Projectile_Category>Laser</Projectile_Category>
 		<Damage_Type> Damage_Corellian_Corvette </Damage_Type>
-		<Max_Speed>5.0</Max_Speed> 
+		<Max_Speed>30.0</Max_Speed> 
 		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
 		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
 		<SpaceBehavior> AFFECTED_BY_SHIELD </SpaceBehavior>
@@ -192,7 +192,7 @@
 		<Scale_Factor>0.8</Scale_Factor>
 		<Damage_Type> Damage_Diamond_Missile </Damage_Type>
 		<Projectile_Damages_Random_Hard_Points>yes</Projectile_Damages_Random_Hard_Points>
-		<Max_Speed>9.0</Max_Speed>
+		<Max_Speed>19.0</Max_Speed>
 		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
 		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
 		<Projectile_Category>ROCKET</Projectile_Category>

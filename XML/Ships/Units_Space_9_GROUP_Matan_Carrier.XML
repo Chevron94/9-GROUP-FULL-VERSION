@@ -10,7 +10,7 @@
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CORVETTE </Encyclopedia_Unit_Class>
 		<Icon_Name>I_BUTTON_SGC_304_CARRIER.TGA</Icon_Name>
 		<Variant_Of_Existing_Type>Matan</Variant_Of_Existing_Type>
-		
+		<Scale_Factor>0.25</Scale_Factor>
 		<Space_Model_Name>X-304Carrier.ALO</Space_Model_Name>
 				
         <Ranking_In_Category>6</Ranking_In_Category>
