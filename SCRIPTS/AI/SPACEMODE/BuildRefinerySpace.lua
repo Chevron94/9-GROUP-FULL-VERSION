@@ -49,7 +49,7 @@ function Definitions()
 	TaskForce = {
 	{
 		"MainForce"
-		,"UC_Empire_Mineral_Extractor | UC_Rebel_Mineral_Extractor | UC_Underworld_Mineral_Extractor | UC_Federation_Mineral_Extractor = 1"
+		,"UC_Empire_Mineral_Extractor | UC_Rebel_Mineral_Extractor | UC_Federation_Mineral_Extractor | UC_Hutts_Mineral_Extractor = 1"
 	}
 	}
 --	RequiredCategories = {"Structure"}
@@ -79,9 +79,9 @@ function MainForce_Thread()
 		elseif faction_name == "REBEL" then
 			MainForce.Build("UC_Rebel_Mineral_Extractor", good_pad)
 		elseif faction_name == "UNDERWORLD" then
-			MainForce.Build("UC_Underworld_Mineral_Extractor", good_pad)	
-		elseif faction_name == "Federation" then
-			MainForce.Build("UC_Federation_Mineral_Extractor", good_pad)
+			MainForce.Build("UC_Federation_Mineral_Extractor", good_pad)	
+		elseif faction_name == "HUTTS" then
+			MainForce.Build("UC_Hutts_Mineral_Extractor", good_pad)
 		else
 			MessageBox("unexpected faction name: %s", faction_name)
 		end

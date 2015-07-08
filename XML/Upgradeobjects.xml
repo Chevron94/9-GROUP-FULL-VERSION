@@ -4366,7 +4366,7 @@
 		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
 		<Abilities SubObjectList="Yes">
-			<Income_Stream_Mod_Ability Name="RS_Increased_Supplies1_L1_Bonus">
+			<Income_Stream_Mod_Ability Name="FS_Increased_Supplies1_L1_Bonus">
 				<Income_Multiplier>1.20</Income_Multiplier>
 				<Income_Additive_Value>0.0</Income_Additive_Value>
 				<Interval_Multiplier>1.0</Interval_Multiplier>
@@ -4414,7 +4414,8 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
-	
+
+	<!-- Increased Supplies (Level 2): Increases starbase income by 40%. -->
 	<UpgradeObject Name="FS_Increased_Supplies_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -4486,7 +4487,6 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
-
 <!-- Enhanced Reactors all 3 Levels movement speed increase. -->
 <UpgradeObject Name="FS_Enhanced_Reactors_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>

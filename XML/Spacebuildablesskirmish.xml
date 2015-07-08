@@ -1404,7 +1404,7 @@
 				UC_Rebel_Mineral_Extractor,
 			
 			Underworld,
-				UC_Underworld_Mineral_Extractor,
+				UC_Federation_Mineral_Extractor,
 				
 			Hutts,
 				UC_Hutts_Mineral_Extractor,
@@ -1590,11 +1590,11 @@
 		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
 	</SpaceBuildable>		
 
-	<SpaceBuildable Name="UC_Underworld_Mineral_Extractor">
+	<SpaceBuildable Name="UC_Federation_Mineral_Extractor">
 		<Variant_Of_Existing_Type>UC_Empire_Mineral_Extractor</Variant_Of_Existing_Type>
 
-		<Tactical_Buildable_Constructed> Underworld_Mineral_Extractor </Tactical_Buildable_Constructed>
-		<Tactical_Build_Cost_Multiplayer> 1000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Buildable_Constructed> Federation_Mineral_Extractor </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 850 </Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
 
 		<Affiliation>Underworld</Affiliation>
@@ -1721,7 +1721,7 @@
 		<Affiliation>Underworld</Affiliation>
 		<Abilities SubObjectList="Yes">
 			<Income_Stream_Ability Name="U_Mineral_Extractor_Income_Stream">
-				<Base_Income_Value>205</Base_Income_Value>
+				<Base_Income_Value>200</Base_Income_Value>
 				<Base_Interval_In_Secs>10</Base_Interval_In_Secs>
 				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
 				<Split_Favors_Owner>No</Split_Favors_Owner>
@@ -1735,7 +1735,8 @@
 				FS_Increased_Supplies_L1_Upgrade,
 				FS_Increased_Supplies_L2_Upgrade,				
 		</Tactical_Buildable_Objects_Multiplayer>
-		
+	</SpaceBuildable>
+	
 		<SpaceBuildable Name="Hutts_Mineral_Extractor">
 		<Variant_Of_Existing_Type>Empire_Mineral_Extractor</Variant_Of_Existing_Type>
 		<Affiliation>Hutts</Affiliation>
@@ -1757,7 +1758,6 @@
 		</Tactical_Buildable_Objects_Multiplayer>
 	</SpaceBuildable>
 		
-	</SpaceBuildable>	
 	
 	
 	
