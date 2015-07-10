@@ -27,7 +27,7 @@
 		<Max_Rate_Of_Roll>1.2</Max_Rate_Of_Roll>
 		<Bank_Turn_Angle>45</Bank_Turn_Angle>
 		<Shield_Points>4000</Shield_Points>
-		<Tactical_Health>6000</Tactical_Health>
+		<Tactical_Health>7000</Tactical_Health>
 		<AI_Combat_Power>11040</AI_Combat_Power>
 		<Autoresolve_Health>9180</Autoresolve_Health>
 		<Affiliation>Underworld</Affiliation>
@@ -112,7 +112,7 @@
 		</Abilities>
 		<Lua_Script>HSW_anubis</Lua_Script>
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>7000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Multiplayer>15000</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>

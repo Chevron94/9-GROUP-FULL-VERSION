@@ -200,7 +200,7 @@
 				<Type>SUPER_LASER</Type>
 				<Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
 				<GUI_Activated_Ability_Name> Eclipse_Super_Laser_Attack_Ability </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
-				<Recharge_Seconds>60</Recharge_Seconds><!-- jdg was 5  -->
+				<Recharge_Seconds>90</Recharge_Seconds><!-- jdg was 5  -->
 				<Expiration_Seconds>3.0</Expiration_Seconds>
 				<SFXEvent_Target_Ability> EHD_Death_Star_2_Activate</SFXEvent_Target_Ability>
 				<SFXEvent_Special_Ability_Loop>Unit_Energy_Projector_Fire</SFXEvent_Special_Ability_Loop> 
@@ -230,12 +230,12 @@
 	            <Activation_Max_Range>50000</Activation_Max_Range>
 
 				<!-- Modifiers. If 0 - no modifier is applied, 1 - "100% increase or decrease" -->
-				<Damage_Per_Frame>100</Damage_Per_Frame>			
-				<Fire_Frame>105</Fire_Frame>
+				<Damage_Per_Frame>60</Damage_Per_Frame>			
+				<Fire_Frame>100</Fire_Frame>
 				<Beam_Texture_Name>tractor_beam01.tga</Beam_Texture_Name>
 				<Num_Anim_Frames>5</Num_Anim_Frames>
 				<Line_Width>20</Line_Width>
-				<Line_Color>255 240 240 255</Line_Color>
+				<Line_Color>205 6 210 255</Line_Color>
 			</Super_Laser_Ability>
 
 			<Planet_Destruction_Ability Name="Death_Star_Planet_Destruction">
