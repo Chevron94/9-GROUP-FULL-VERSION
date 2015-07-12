@@ -240,11 +240,11 @@
 	<Prereq>MISSION_1_2</Prereq>
 </Event>
 
-<Event Name="MISSION_1_3_C">
+<Event Name="MISSION_1_3_COMPLETE">
     <Event_Type>STORY_TRIGGER</Event_Type>
 	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
     <Reward_Param1>CAMP_1_MISSION_1_3</Reward_Param1>
-	<Prereq>MISSION_1_3</Prereq>
+	<Prereq>MISSION_1_3_PROGRESS</Prereq>
 </Event>	
 <!--***Появление героев***-->   
 <Event Name="Spawn_Igor">
@@ -392,6 +392,7 @@
     <Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
     <Reward_Param1>CAMP_1_MISSION_2_1</Reward_Param1>
 </Event>
+
 
 <Event Name="MISSION_1_3_C">
     <Event_Type>STORY_TRIGGER</Event_Type>
@@ -1018,274 +1019,8 @@
 	<Reward_Type>REMOVE_ALL_OBJECTIVES</Reward_Type>
     <Prereq>DISABLE_POWER</Prereq>
 </Event> 
+
 <!--*************************************Конец миссии 5*************************************-->  
-<Event Name="Pirates_On">
-	<Event_Type>STORY_ELAPSED</Event_Type>
-	<Event_Param1>80</Event_Param1>
-	<Reward_Type>SWITCH_CONTROL</Reward_Type>
-	<Reward_Param1>Pirates</Reward_Param1>
-	<Reward_Param2>BasicEmpire</Reward_Param2>
-	<Prereq>MISSION_5_REMOVED</Prereq>
-</Event>
-<Event Name="ENABLE_ST_L5">
-	<Event_Type>STORY_TRIGGER</Event_Type>
-	<Reward_Type>ENABLE_BUILDABLE</Reward_Type>
-	<Reward_Param1>Federation_Star_Base_5</Reward_Param1>
-	<Prereq>MISSION_5_REMOVED</Prereq>
-</Event>
-
-
-<!--*************************************миссия 6*************************************--> 
-<Event Name="MISSION_6_TEXT_1">
-	<Event_Type>STORY_ELAPSED</Event_Type>
-	<Event_Param1>100</Event_Param1>
-	<Reward_Type>MULTIMEDIA</Reward_Type> 
-	<Reward_Param1>CAMP_1_MISSION_6_TEXT_1</Reward_Param1> 
-	<Reward_Param2>20</Reward_Param2>
-	<Reward_Param10>0</Reward_Param10>
-	<Prereq>Pirates_On</Prereq>
-</Event>
-    	
-<Event Name="MISSION_6_1">
-    <Event_Type>STORY_TRIGGER</Event_Type>
-    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
-    <Reward_Param1>CAMP_1_MISSION_6_1</Reward_Param1>
-    <Prereq>MISSION_6_TEXT_1</Prereq>
-</Event>
-
-<Event Name="Show_Ratira">
-    <Event_Type>STORY_ELAPSED</Event_Type>
-	<Event_Param1>0.5</Event_Param1>
-	<Reward_Type>SCROLL_CAMERA</Reward_Type>
-	<Reward_Param1>Ratira</Reward_Param1>
-	<Prereq>MISSION_6_1</Prereq>
-</Event>
-
-<Event Name="Ratira_Marker">
-	<Event_Type>STORY_TRIGGER</Event_Type>
-	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
-	<Reward_Param1>Ratira</Reward_Param1>
-	<Reward_Param2>FLASH_PLANET</Reward_Param2>
-	<Reward_Param3>1</Reward_Param3>
-	<Reward_Param4>Ratira_GUI_Flash</Reward_Param4> 
-	<Prereq>MISSION_6_1</Prereq>
-</Event>
-	
-<Event Name="Ratira_Marker_End">
-	<Event_Type>STORY_ELAPSED</Event_Type> 
-	<Event_Param1>3</Event_Param1>
-	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
-	<Reward_Param1>Ratira_GUI_Flash</Reward_Param1>
-	<Prereq>Ratira_Marker</Prereq>
-</Event>
-
-<Event Name="Ratira_ZHENYA"> 
-	<Event_Type>STORY_ENTER</Event_Type> 
-	<Event_Param1>Ratira</Event_Param1> 
-	<Event_Param3>ZHENYA</Event_Param3> 
-    <Prereq>MISSION_6_1</Prereq>
-</Event>
-
-<Event Name="Ratira_Sasha"> 
-	<Event_Type>STORY_ENTER</Event_Type> 
-	<Event_Param1>Ratira</Event_Param1> 
-	<Event_Param3>Sasha</Event_Param3> 
-    <Prereq>MISSION_6_1</Prereq>
-</Event>
-
-<Event Name="Ratira_Marina"> 
-	<Event_Type>STORY_ENTER</Event_Type> 
-	<Event_Param1>Ratira</Event_Param1> 
-	<Event_Param3>Marina_Team</Event_Param3> 
-    <Prereq>MISSION_6_1</Prereq>
-</Event>
-<!--***Переговоры***-->	
-<Event Name="Ratira_1"> 
-    <Event_Type>STORY_TRIGGER</Event_Type>
-	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
-    <Reward_Param1>CAMP_1_MISSION_6_1</Reward_Param1>
-	<Prereq>Ratira_ZHENYA, Ratira_Sasha, Ratira_Marina</Prereq> 
-</Event>
-<!--***Женя на переговорах***-->
-<Event Name="HIDE_ZHENYA_RATIRA">
-	<Event_Type>STORY_TRIGGER</Event_Type>
-	<Reward_Type>REMOVE_UNIT</Reward_Type>
-	<Reward_Param1>ZHENYA</Reward_Param1>
-	<Prereq>Ratira_ZHENYA</Prereq>
-</Event>
-<!--***Саша на переговорах***-->
-<Event Name="HIDE_Sasha_RATIRA">
-	<Event_Type>STORY_TRIGGER</Event_Type>
-	<Reward_Type>REMOVE_UNIT</Reward_Type>
-	<Reward_Param1>Sasha</Reward_Param1>
-	<Prereq>Ratira_Sasha</Prereq>
-</Event>
-<!--***Марина на переговорах***-->
-<Event Name="HIDE_Marina_RATIRA">
-	<Event_Type>STORY_TRIGGER</Event_Type>
-	<Reward_Type>REMOVE_UNIT</Reward_Type>
-	<Reward_Param1>Marina_Team</Reward_Param1>
-	<Prereq>Ratira_Marina</Prereq>
-</Event>	
-<!--Конец переговоров. Атака Асураса-->
-<Event Name="MISSION_6_TEXT_2">
-	<Event_Type>STORY_ELAPSED</Event_Type>
-	<Event_Param1>90</Event_Param1>
-	<Reward_Type>MULTIMEDIA</Reward_Type> 
-	<Reward_Param1>CAMP_1_MISSION_6_TEXT_2</Reward_Param1> 
-	<Reward_Param2>20</Reward_Param2>
-	<Reward_Param10>0</Reward_Param10>
-	<Prereq>Ratira_1</Prereq>
-</Event>
-    	
-<Event Name="MISSION_6_2">
-    <Event_Type>STORY_TRIGGER</Event_Type>
-    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
-    <Reward_Param1>CAMP_1_MISSION_6_2</Reward_Param1>
-    <Prereq>MISSION_6_TEXT_2</Prereq>
-</Event>
-
-<Event Name="UNLock_Ratira">
-    <Event_Type>STORY_TRIGGER</Event_Type>
-    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
-    <Reward_Param1>Ratira</Reward_Param1>
-    <Reward_Param2>0</Reward_Param2>
-    <Prereq>MISSION_6_TEXT_2</Prereq>
-</Event>
-
-<Event Name="Ratira_to_9Group">
-	<Event_Type>STORY_TRIGGER</Event_Type>
-	<Reward_Type>PLANET_FACTION</Reward_Type>
-	<Reward_Param1>Ratira</Reward_Param1>
-	<Reward_Param2>Underworld</Reward_Param2>
-	<Prereq>MISSION_6_2</Prereq>
-</Event>
-
-<Event Name="Unlock_Asuras">
-    <Event_Type>STORY_TRIGGER</Event_Type>
-    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
-    <Reward_Param1>Asuras</Reward_Param1>
-    <Reward_Param2>0</Reward_Param2>
-    <Prereq>MISSION_6_2_History</Prereq>
-</Event>
-	
-<Event Name="Show_ASURAS">
-    <Event_Type>STORY_ELAPSED</Event_Type>
-	<Event_Param1>0.5</Event_Param1>
-	<Reward_Type>SCROLL_CAMERA</Reward_Type>
-	<Reward_Param1>ASURAS</Reward_Param1>
-	<Prereq>MISSION_6_2</Prereq>
-</Event>
-
-<Event Name="ASURAS_Marker">
-	<Event_Type>STORY_TRIGGER</Event_Type>
-	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
-	<Reward_Param1>ASURAS</Reward_Param1>
-	<Reward_Param2>FLASH_PLANET</Reward_Param2>
-	<Reward_Param3>1</Reward_Param3>
-	<Reward_Param4>ASURAS_GUI_Flash</Reward_Param4> 
-	<Prereq>MISSION_6_2</Prereq>
-</Event>
-	
-<Event Name="ASURAS_Marker_End">
-	<Event_Type>STORY_ELAPSED</Event_Type> 
-	<Event_Param1>3</Event_Param1>
-	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
-	<Reward_Param1>ASURAS_GUI_Flash</Reward_Param1>
-	<Prereq>ASURAS_Marker</Prereq>
-</Event>
-<!-- Герои и союзный флот-->
-<Event Name="Spawn_ZHENYA_Ratira">
-    <Event_Type>STORY_TRIGGER</Event_Type>
-    <Reward_Type>UNIQUE_UNIT</Reward_Type>
-    <Reward_Param1>Zhenya</Reward_Param1>
-    <Reward_Param2>Ratira</Reward_Param2>
-    <Reward_Param3>1</Reward_Param3>
-    <Prereq>Ratira_to_9Group</Prereq>
-</Event>
-
-<Event Name="Spawn_Sasha_Ratira">
-    <Event_Type>STORY_TRIGGER</Event_Type>
-    <Reward_Type>UNIQUE_UNIT</Reward_Type>
-    <Reward_Param1>Sasha</Reward_Param1>
-    <Reward_Param2>Ratira</Reward_Param2>
-    <Reward_Param3>1</Reward_Param3>
-    <Prereq>Ratira_to_9Group</Prereq>
-</Event>
-
-<Event Name="Spawn_Marina_Ratira">
-    <Event_Type>STORY_TRIGGER</Event_Type>
-    <Reward_Type>SPAWN_HERO</Reward_Type>
-    <Reward_Param1>Marina_Team</Reward_Param1>
-    <Reward_Param2>Ratira</Reward_Param2>
-    <Prereq>Ratira_to_9Group</Prereq>
-</Event>
-
-<Event Name="Spawn_HIVES">
-    <Event_Type>STORY_TRIGGER</Event_Type>
-    <Reward_Type>UNIQUE_UNIT</Reward_Type>
-    <Reward_Param1>Hive</Reward_Param1>
-    <Reward_Param2>Ratira</Reward_Param2>
-    <Reward_Param3>7</Reward_Param3>
-    <Prereq>Ratira_to_9Group</Prereq>
-</Event>
-
-<Event Name="Spawn_Aurora">
-    <Event_Type>STORY_TRIGGER</Event_Type>
-    <Reward_Type>UNIQUE_UNIT</Reward_Type>
-    <Reward_Param1>Aurora</Reward_Param1>
-    <Reward_Param2>Ratira</Reward_Param2>
-    <Reward_Param3>1</Reward_Param3>
-    <Prereq>Ratira_to_9Group</Prereq>
-</Event>
-
-<Event Name="Spawn_Darts">
-    <Event_Type>STORY_TRIGGER</Event_Type>
-    <Reward_Type>UNIQUE_UNIT</Reward_Type>
-    <Reward_Param1>Dart_Fighter_Squadron</Reward_Param1>
-    <Reward_Param2>Ratira</Reward_Param2>
-    <Reward_Param3>4</Reward_Param3>
-    <Prereq>Ratira_to_9Group</Prereq>
-</Event>
-<!--Конец списка-->
-<Event Name="MISSION_6_2_START">
-    <Event_Type>STORY_CONQUER</Event_Type>
-    <Event_Param1>ASURAS</Event_Param1>
-    <Event_Param2 />
-    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
-    <Reward_Type>MULTIMEDIA</Reward_Type>
-	<Reward_Param1>CAMP_1_MISSION_6_TEXT_3</Reward_Param1> 
-	<Reward_Param2>10</Reward_Param2>
-	<Reward_Param10>0</Reward_Param10>
-	<Prereq>MISSION_6_2</Prereq>
-</Event>
-	
-<Event Name="Spawn_AURORS">
-    <Event_Type>STORY_CONQUER</Event_Type>
-    <Event_Param1>ASURAS</Event_Param1>
-    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
-    <Reward_Type>UNIQUE_UNIT</Reward_Type>
-    <Reward_Param1>AURORA</Reward_Param1>
-    <Reward_Param2>ASURAS</Reward_Param2>
-    <Reward_Param3>3</Reward_Param3>
-    <Prereq>MISSION_6_2_START</Prereq>
-</Event>
-
-<Event Name="MISSION_6_2_Complete"> 
-    <Event_Type>STORY_TRIGGER</Event_Type>
-	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
-    <Reward_Param1>CAMP_1_MISSION_6_2</Reward_Param1>
-	<Prereq>MISSION_6_2_Start</Prereq> 
-</Event>
-
-
-<Event Name="MISSION_6_REMOVED">
-    <Event_Type>STORY_ELAPSED</Event_Type>
-	<Event_Param1>10</Event_Param1>
-	<Reward_Type>REMOVE_ALL_OBJECTIVES</Reward_Type>
-    <Prereq>MISSION_6_2_Complete</Prereq>
-</Event> 
-<!--*************************************Конец миссии 6*************************************-->  
 
 <!--*************************************Миссия 7*************************************-->
 
@@ -1296,7 +1031,7 @@
 	<Reward_Param1>CAMP_1_MISSION_7_TEXT_1</Reward_Param1> 
 	<Reward_Param2>20</Reward_Param2>
 	<Reward_Param10>0</Reward_Param10>
-	<Prereq>MISSION_6_REMOVED</Prereq>
+	<Prereq>MISSION_5_REMOVED</Prereq>
 </Event>
   
 <Event Name="MISSION_7_1">
@@ -1607,6 +1342,275 @@
 </Event>
 <!--*************************************Конец миссии 7*************************************-->  
 
+
+<Event Name="Pirates_On">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>80</Event_Param1>
+	<Reward_Type>SWITCH_CONTROL</Reward_Type>
+	<Reward_Param1>Pirates</Reward_Param1>
+	<Reward_Param2>BasicEmpire</Reward_Param2>
+	<Prereq>MISSION_5_REMOVED</Prereq>
+</Event>
+<Event Name="ENABLE_ST_L5">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>ENABLE_BUILDABLE</Reward_Type>
+	<Reward_Param1>Federation_Star_Base_5</Reward_Param1>
+	<Prereq>MISSION_7_REMOVED</Prereq>
+</Event>
+
+
+<!--*************************************миссия 6*************************************--> 
+<Event Name="MISSION_6_TEXT_1">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>100</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_6_TEXT_1</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>Pirates_On</Prereq>
+</Event>
+    	
+<Event Name="MISSION_6_1">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_6_1</Reward_Param1>
+    <Prereq>MISSION_6_TEXT_1</Prereq>
+</Event>
+
+<Event Name="Show_Ratira">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>Ratira</Reward_Param1>
+	<Prereq>MISSION_6_1</Prereq>
+</Event>
+
+<Event Name="Ratira_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>Ratira</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>Ratira_GUI_Flash</Reward_Param4> 
+	<Prereq>MISSION_6_1</Prereq>
+</Event>
+	
+<Event Name="Ratira_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>Ratira_GUI_Flash</Reward_Param1>
+	<Prereq>Ratira_Marker</Prereq>
+</Event>
+
+<Event Name="Ratira_ZHENYA"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Ratira</Event_Param1> 
+	<Event_Param3>ZHENYA</Event_Param3> 
+    <Prereq>MISSION_6_1</Prereq>
+</Event>
+
+<Event Name="Ratira_Sasha"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Ratira</Event_Param1> 
+	<Event_Param3>Sasha</Event_Param3> 
+    <Prereq>MISSION_6_1</Prereq>
+</Event>
+
+<Event Name="Ratira_Marina"> 
+	<Event_Type>STORY_ENTER</Event_Type> 
+	<Event_Param1>Ratira</Event_Param1> 
+	<Event_Param3>Marina_Team</Event_Param3> 
+    <Prereq>MISSION_6_1</Prereq>
+</Event>
+<!--***Переговоры***-->	
+<Event Name="Ratira_1"> 
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_6_1</Reward_Param1>
+	<Prereq>Ratira_ZHENYA, Ratira_Sasha, Ratira_Marina</Prereq> 
+</Event>
+<!--***Женя на переговорах***-->
+<Event Name="HIDE_ZHENYA_RATIRA">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>ZHENYA</Reward_Param1>
+	<Prereq>Ratira_ZHENYA</Prereq>
+</Event>
+<!--***Саша на переговорах***-->
+<Event Name="HIDE_Sasha_RATIRA">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Sasha</Reward_Param1>
+	<Prereq>Ratira_Sasha</Prereq>
+</Event>
+<!--***Марина на переговорах***-->
+<Event Name="HIDE_Marina_RATIRA">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>REMOVE_UNIT</Reward_Type>
+	<Reward_Param1>Marina_Team</Reward_Param1>
+	<Prereq>Ratira_Marina</Prereq>
+</Event>	
+<!--Конец переговоров. Атака Асураса-->
+<Event Name="MISSION_6_TEXT_2">
+	<Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>90</Event_Param1>
+	<Reward_Type>MULTIMEDIA</Reward_Type> 
+	<Reward_Param1>CAMP_1_MISSION_6_TEXT_2</Reward_Param1> 
+	<Reward_Param2>20</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>Ratira_1</Prereq>
+</Event>
+    	
+<Event Name="MISSION_6_2">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>ADD_OBJECTIVE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_6_2</Reward_Param1>
+    <Prereq>MISSION_6_TEXT_2</Prereq>
+</Event>
+
+<Event Name="UNLock_Ratira">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Ratira</Reward_Param1>
+    <Reward_Param2>0</Reward_Param2>
+    <Prereq>MISSION_6_TEXT_2</Prereq>
+</Event>
+
+<Event Name="Ratira_to_9Group">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>PLANET_FACTION</Reward_Type>
+	<Reward_Param1>Ratira</Reward_Param1>
+	<Reward_Param2>Underworld</Reward_Param2>
+	<Prereq>MISSION_6_2</Prereq>
+</Event>
+
+<Event Name="Unlock_Asuras">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+    <Reward_Param1>Asuras</Reward_Param1>
+    <Reward_Param2>0</Reward_Param2>
+    <Prereq>MISSION_6_2_History</Prereq>
+</Event>
+	
+<Event Name="Show_ASURAS">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>0.5</Event_Param1>
+	<Reward_Type>SCROLL_CAMERA</Reward_Type>
+	<Reward_Param1>ASURAS</Reward_Param1>
+	<Prereq>MISSION_6_2</Prereq>
+</Event>
+
+<Event Name="ASURAS_Marker">
+	<Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+	<Reward_Param1>ASURAS</Reward_Param1>
+	<Reward_Param2>FLASH_PLANET</Reward_Param2>
+	<Reward_Param3>1</Reward_Param3>
+	<Reward_Param4>ASURAS_GUI_Flash</Reward_Param4> 
+	<Prereq>MISSION_6_2</Prereq>
+</Event>
+	
+<Event Name="ASURAS_Marker_End">
+	<Event_Type>STORY_ELAPSED</Event_Type> 
+	<Event_Param1>3</Event_Param1>
+	<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+	<Reward_Param1>ASURAS_GUI_Flash</Reward_Param1>
+	<Prereq>ASURAS_Marker</Prereq>
+</Event>
+<!-- Герои и союзный флот-->
+<Event Name="Spawn_ZHENYA_Ratira">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Zhenya</Reward_Param1>
+    <Reward_Param2>Ratira</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>Ratira_to_9Group</Prereq>
+</Event>
+
+<Event Name="Spawn_Sasha_Ratira">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Sasha</Reward_Param1>
+    <Reward_Param2>Ratira</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>Ratira_to_9Group</Prereq>
+</Event>
+
+<Event Name="Spawn_Marina_Ratira">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>SPAWN_HERO</Reward_Type>
+    <Reward_Param1>Marina_Team</Reward_Param1>
+    <Reward_Param2>Ratira</Reward_Param2>
+    <Prereq>Ratira_to_9Group</Prereq>
+</Event>
+
+<Event Name="Spawn_HIVES">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Hive</Reward_Param1>
+    <Reward_Param2>Ratira</Reward_Param2>
+    <Reward_Param3>7</Reward_Param3>
+    <Prereq>Ratira_to_9Group</Prereq>
+</Event>
+
+<Event Name="Spawn_Aurora">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Aurora</Reward_Param1>
+    <Reward_Param2>Ratira</Reward_Param2>
+    <Reward_Param3>1</Reward_Param3>
+    <Prereq>Ratira_to_9Group</Prereq>
+</Event>
+
+<Event Name="Spawn_Darts">
+    <Event_Type>STORY_TRIGGER</Event_Type>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>Dart_Fighter_Squadron</Reward_Param1>
+    <Reward_Param2>Ratira</Reward_Param2>
+    <Reward_Param3>4</Reward_Param3>
+    <Prereq>Ratira_to_9Group</Prereq>
+</Event>
+<!--Конец списка-->
+<Event Name="MISSION_6_2_START">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>ASURAS</Event_Param1>
+    <Event_Param2 />
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>MULTIMEDIA</Reward_Type>
+	<Reward_Param1>CAMP_1_MISSION_6_TEXT_3</Reward_Param1> 
+	<Reward_Param2>10</Reward_Param2>
+	<Reward_Param10>0</Reward_Param10>
+	<Prereq>MISSION_6_2</Prereq>
+</Event>
+	
+<Event Name="Spawn_AURORS">
+    <Event_Type>STORY_CONQUER</Event_Type>
+    <Event_Param1>ASURAS</Event_Param1>
+    <Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+    <Reward_Type>UNIQUE_UNIT</Reward_Type>
+    <Reward_Param1>AURORA</Reward_Param1>
+    <Reward_Param2>ASURAS</Reward_Param2>
+    <Reward_Param3>3</Reward_Param3>
+    <Prereq>MISSION_6_2_START</Prereq>
+</Event>
+
+<Event Name="MISSION_6_2_Complete"> 
+    <Event_Type>STORY_TRIGGER</Event_Type>
+	<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+    <Reward_Param1>CAMP_1_MISSION_6_2</Reward_Param1>
+	<Prereq>MISSION_6_2_Start</Prereq> 
+</Event>
+
+
+<Event Name="MISSION_6_REMOVED">
+    <Event_Type>STORY_ELAPSED</Event_Type>
+	<Event_Param1>10</Event_Param1>
+	<Reward_Type>REMOVE_ALL_OBJECTIVES</Reward_Type>
+    <Prereq>MISSION_6_2_Complete</Prereq>
+</Event> 
+<!--*************************************Конец миссии 6*************************************-->  
+
 <!--*************************************Миссия 8*************************************-->
 <Event Name="MISSION_8_TEXT_1">
 	<Event_Type>STORY_ELAPSED</Event_Type>
@@ -1615,7 +1619,7 @@
 	<Reward_Param1>CAMP_1_MISSION_8_TEXT_1</Reward_Param1> 
 	<Reward_Param2>20</Reward_Param2>
 	<Reward_Param10>0</Reward_Param10>
-	<Prereq>MISSION_7_2_REMOVED</Prereq>
+	<Prereq>MISSION_6_REMOVED</Prereq>
 </Event>
     	
 <Event Name="UNLOCK_Midway"> 

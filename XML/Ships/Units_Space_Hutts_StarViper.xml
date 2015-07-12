@@ -245,7 +245,7 @@
 		<Damage>15</Damage>
 		<Affiliation>Hutts</Affiliation>
 		<Political_Control>0</Political_Control>
-		<Build_Cost_Credits>250</Build_Cost_Credits>
+		<Build_Cost_Credits>400</Build_Cost_Credits>
 		<Build_Time_Seconds>8</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Tech_Level>0</Tech_Level>
@@ -284,7 +284,7 @@
 		<Create_Team_Type> StarViper_Team </Create_Team_Type>
 		
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>675</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Multiplayer>400</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>13</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>

@@ -56,7 +56,7 @@
 		<Squadron_Capacity>25</Squadron_Capacity>
 		<Transport_Capacity>12</Transport_Capacity>
 		<Number_per_Squadron>1</Number_per_Squadron>
-		<Build_Cost_Credits>8500</Build_Cost_Credits>
+		<Build_Cost_Credits>9500</Build_Cost_Credits>
 		<Piracy_Value_Credits>50</Piracy_Value_Credits>
 		<AI_Combat_Power>5343</AI_Combat_Power>
 		<Build_Time_Seconds>30</Build_Time_Seconds>
@@ -177,7 +177,7 @@
 		
 		<Tactical_Bribe_Cost>7000</Tactical_Bribe_Cost>
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>8500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Multiplayer>9500</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>70</Tactical_Build_Time_Seconds>
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<Build_Limit_Current_Per_Player>2</Build_Limit_Current_Per_Player>

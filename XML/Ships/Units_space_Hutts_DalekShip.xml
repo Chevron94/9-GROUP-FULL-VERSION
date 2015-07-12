@@ -32,8 +32,8 @@
 		<Death_Clone>Damage_Normal, Large_Explosion_Space</Death_Clone>
 		<Damage>150</Damage>
 		<Autoresolve_Health>20000</Autoresolve_Health>
-		<Shield_Points>10000</Shield_Points>
-		<Tactical_Health>10000</Tactical_Health>
+		<Shield_Points>5000</Shield_Points>
+		<Tactical_Health>8000</Tactical_Health>
 		<Shield_Refresh_Rate>100</Shield_Refresh_Rate>
 		<Energy_Capacity>15000</Energy_Capacity>
 		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
@@ -215,7 +215,7 @@
 		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
 		<Projectile_Category>Laser</Projectile_Category>
 		<Projectile_Max_Flight_Distance>2200.0</Projectile_Max_Flight_Distance>
-		<Projectile_Damage>200.0</Projectile_Damage>
+		<Projectile_Damage>50.0</Projectile_Damage>
 		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
 		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
 		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>

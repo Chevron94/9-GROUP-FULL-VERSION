@@ -59,7 +59,7 @@
 		<Ship_Class>capital</Ship_Class>
 		<Formation_Priority>5</Formation_Priority>
 		<Squadron_Capacity>40</Squadron_Capacity>
-		<Build_Cost_Credits>4500</Build_Cost_Credits>
+		<Build_Cost_Credits>8000</Build_Cost_Credits>
 		<AI_Combat_Power>4250</AI_Combat_Power>
 		<Build_Time_Seconds>50</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
@@ -151,7 +151,7 @@
 		<Lua_Script>ObjectScript_Krayt</Lua_Script>
 
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>4800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Multiplayer>8000</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>

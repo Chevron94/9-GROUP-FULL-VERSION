@@ -56,7 +56,7 @@
 		<Required_Star_Base_Level>3</Required_Star_Base_Level>
 		<Required_Special_Structures />
 		<Required_Planets />
-		<Build_Cost_Credits>2400</Build_Cost_Credits>
+		<Build_Cost_Credits>5000</Build_Cost_Credits>
 		<Build_Time_Seconds>23</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 
@@ -150,7 +150,7 @@
 		<Death_Clone>Damage_Normal, Interceptor4_Frigate_Death_Clone</Death_Clone>
 		
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>2400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Multiplayer>5000</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>

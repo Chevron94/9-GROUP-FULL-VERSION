@@ -7436,7 +7436,7 @@
 
 <HardPoint Name="HP_Corellian_Destroyer_Shield_Generator">
     <Type> HARD_POINT_SHIELD_GENERATOR </Type>
-    <Is_Targetable>Yes</Is_Targetable>
+    <Is_Targetable>No</Is_Targetable>
     <Is_Destroyable>No</Is_Destroyable>
     <Tooltip_Text>TEXT_SHIELD_GENERATOR_HARDPOINT</Tooltip_Text>
     <Health>400.0</Health>
@@ -7452,7 +7452,7 @@
 
   <HardPoint Name="HP_Corellian_Destroyer_Engines">
     <Type> HARD_POINT_ENGINE </Type>
-    <Is_Targetable>Yes</Is_Targetable>
+    <Is_Targetable>No</Is_Targetable>
     <Is_Destroyable>No</Is_Destroyable>
     <Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
     <Health>400.0</Health>
@@ -7471,7 +7471,7 @@
 
   <HardPoint Name="HP_Corellian_Destroyer_TBL_Bug">
     <Type> HARD_POINT_WEAPON_LASER </Type>
-    <Is_Targetable>Yes</Is_Targetable>
+    <Is_Targetable>No</Is_Targetable>
     <Is_Destroyable>No</Is_Destroyable>
     <Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
     <Health>300.0</Health>
@@ -7514,7 +7514,7 @@
 
   <HardPoint Name="HP_Corellian_Destroyer_Antijagerbatterie_Links">
     <Type> HARD_POINT_WEAPON_LASER </Type>
-    <Is_Targetable>Yes</Is_Targetable>
+    <Is_Targetable>No</Is_Targetable>
     <Is_Destroyable>No</Is_Destroyable>
     <Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
     <Health>300.0</Health>
@@ -7558,7 +7558,7 @@
 
   <HardPoint Name="HP_Corellian_Destroyer_Antijagerbatterie_Rechts">
     <Type> HARD_POINT_WEAPON_LASER </Type>
-    <Is_Targetable>Yes</Is_Targetable>
+    <Is_Targetable>No</Is_Targetable>
     <Is_Destroyable>No</Is_Destroyable>
     <Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
     <Health>300.0</Health>
@@ -7602,7 +7602,7 @@
 
   <HardPoint Name="HP_Corellian_Destroyer_Turbolaser_Turm_Oben">
     <Type> HARD_POINT_WEAPON_LASER </Type>
-    <Is_Targetable>Yes</Is_Targetable>
+    <Is_Targetable>No</Is_Targetable>
     <Is_Destroyable>No</Is_Destroyable>
     <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
     <Health>300.0</Health>
@@ -7647,7 +7647,7 @@
 
   <HardPoint Name="HP_Corellian_Destroyer_Turbolaser_Turm_Unten">
     <Type> HARD_POINT_WEAPON_LASER </Type>
-    <Is_Targetable>Yes</Is_Targetable>
+    <Is_Targetable>No</Is_Targetable>
     <Is_Destroyable>No</Is_Destroyable>
     <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
     <Health>300.0</Health>
@@ -7692,7 +7692,7 @@
 
   <HardPoint Name="HP_Corellian_Destroyer_Raketenwerfer_Links">
     <Type> HARD_POINT_WEAPON_MISSILE </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_CONCUSSIONMISSILE</Tooltip_Text>
             <Health>300.0</Health>
@@ -7724,7 +7724,7 @@
 
   <HardPoint Name="HP_Corellian_Destroyer_Raketenwerfer_Rechts">
     <Type> HARD_POINT_WEAPON_MISSILE </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_CONCUSSIONMISSILE</Tooltip_Text>
             <Health>300.0</Health>
@@ -7756,7 +7756,7 @@
 
   <HardPoint Name="HP_Corellian_Destroyer_Bruckenturm_Ionenkanone">
    <Type> HARD_POINT_WEAPON_ION_CANNON </Type>
-    <Is_Targetable>Yes</Is_Targetable>
+    <Is_Targetable>No</Is_Targetable>
     <Is_Destroyable>No</Is_Destroyable>
     <Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
     <Health>300.0</Health>
@@ -7800,7 +7800,7 @@
 
   <HardPoint Name="HP_Corellian_Destroyer_AntiJager_Achtern_Links">
     <Type> HARD_POINT_WEAPON_LASER </Type>
-    <Is_Targetable>Yes</Is_Targetable>
+    <Is_Targetable>No</Is_Targetable>
     <Is_Destroyable>No</Is_Destroyable>
     <Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
     <Health>300.0</Health>
@@ -7837,7 +7837,7 @@
 
   <HardPoint Name="HP_Corellian_Destroyer_AntiJager_Achtern_Rechts">
     <Type> HARD_POINT_WEAPON_LASER </Type>
-    <Is_Targetable>Yes</Is_Targetable>
+    <Is_Targetable>No</Is_Targetable>
     <Is_Destroyable>No</Is_Destroyable>
     <Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
     <Health>300.0</Health>
@@ -7874,7 +7874,7 @@
 
   <HardPoint Name="HP_Corellian_Destroyer_AntiJager_Achtern_Oben">
     <Type> HARD_POINT_WEAPON_LASER </Type>
-    <Is_Targetable>Yes</Is_Targetable>
+    <Is_Targetable>No</Is_Targetable>
     <Is_Destroyable>No</Is_Destroyable>
     <Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
     <Health>300.0</Health>
@@ -7911,7 +7911,7 @@
 
   <HardPoint Name="HP_Corellian_Destroyer_AntiJager_Achtern_Unten">
     <Type> HARD_POINT_WEAPON_LASER </Type>
-    <Is_Targetable>Yes</Is_Targetable>
+    <Is_Targetable>No</Is_Targetable>
     <Is_Destroyable>No</Is_Destroyable>
     <Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
     <Health>300.0</Health>
@@ -7950,7 +7950,7 @@
 		
     <HardPoint Name="Titan_HP01">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>500.0</Health>
@@ -7994,7 +7994,7 @@
 
         <HardPoint Name="Titan_HP02">
 			<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
-             <Is_Targetable>Yes</Is_Targetable>
+             <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
             <Health>600.0</Health>
@@ -8035,7 +8035,7 @@
 
     <HardPoint Name="Titan_HP03">
 			<Type> HARD_POINT_WEAPON_MISSILE </Type>
-             <Is_Targetable>Yes</Is_Targetable>
+             <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_CONCUSSIONMISSILE</Tooltip_Text>
             <Health>600.0</Health>
@@ -8069,7 +8069,7 @@
       
     <HardPoint Name="Titan_HP04">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>500.0</Health>
@@ -8113,7 +8113,7 @@
 
         <HardPoint Name="Titan_HP05">
 			<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
-             <Is_Targetable>Yes</Is_Targetable>
+             <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
             <Health>800.0</Health>
@@ -8155,7 +8155,7 @@
 
     <HardPoint Name="Titan_HP06">
 			<Type> HARD_POINT_WEAPON_MISSILE </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_CONCUSSIONMISSILE</Tooltip_Text>
             <Health>600.0</Health>
@@ -8189,7 +8189,7 @@
   
     <HardPoint Name="Titan_HP07">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-             <Is_Targetable>Yes</Is_Targetable>
+             <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>500.0</Health>
@@ -8233,7 +8233,7 @@
 
         <HardPoint Name="Titan_HP08">
 			<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
-             <Is_Targetable>Yes</Is_Targetable>
+             <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
             <Health>600.0</Health>
@@ -8274,7 +8274,7 @@
 
     <HardPoint Name="Titan_HP09">
 			<Type> HARD_POINT_FIGHTER_BAY </Type>
-		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
 		<Tooltip_Text>TEXT_FIGHTER_BAY_HARDPOINT</Tooltip_Text>
             	<Health>800.0</Health>
@@ -8295,7 +8295,7 @@
   
     <HardPoint Name="Titan_HP10">
 			<Type> HARD_POINT_SHIELD_GENERATOR </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_SHIELD_GENERATOR_HARDPOINT</Tooltip_Text>
             <Health>800.0</Health>
@@ -8315,7 +8315,7 @@
 
         <HardPoint Name="Titan_HP11">
 				<Type> HARD_POINT_ENGINE </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
             <Health>1000.0</Health>
@@ -8336,7 +8336,7 @@
     <HardPoint Name="Titan_HP12">
 		<Type> HARD_POINT_TRACTOR_BEAM </Type>
 		<Tooltip_Text>TEXT_TRACTOR_BEAM_HARDPOINT</Tooltip_Text>
-		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
 		<Health>600.0</Health>
 
@@ -8357,7 +8357,7 @@
   
     <HardPoint Name="Titan_HP13">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-             <Is_Targetable>Yes</Is_Targetable>
+             <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>500.0</Health>
@@ -8401,7 +8401,7 @@
 
         <HardPoint Name="Titan_HP14">
 			<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
-             <Is_Targetable>Yes</Is_Targetable>
+             <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
             <Health>600.0</Health>
@@ -8442,7 +8442,7 @@
 
     <HardPoint Name="Titan_HP15">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>500.0</Health>
@@ -8486,7 +8486,7 @@
 <HardPoint Name="Mediator_Super">
 		<Fire_Category_Restrictions>Fighter, Bomber, Corvette</Fire_Category_Restrictions>
 		<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_IONCANNON_SUPER</Tooltip_Text>
             <Health>600.0</Health>
@@ -8526,7 +8526,7 @@
 
 <HardPoint Name="Mediator_Hangar01">
 		<Type> HARD_POINT_FIGHTER_BAY </Type>
-		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
 		<Attachment_Bone>hangar01</Attachment_Bone>             
 		<Collision_Mesh>hangar01</Collision_Mesh>
@@ -8538,7 +8538,7 @@
 
 	<HardPoint Name="Mediator_Hangar02">
 		<Type> HARD_POINT_FIGHTER_BAY </Type>
-		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
 		<Attachment_Bone>hangar02</Attachment_Bone>             
 		<Collision_Mesh>hangar02</Collision_Mesh>
@@ -8550,7 +8550,7 @@
 
     	<HardPoint Name="Mediator_Shield01">
 		<Type> HARD_POINT_SHIELD_GENERATOR </Type>
-            	<Is_Targetable>Yes</Is_Targetable>
+            	<Is_Targetable>No</Is_Targetable>
             	<Is_Destroyable>No</Is_Destroyable>
             	<Tooltip_Text>TEXT_SHIELD_GENERATOR_HARDPOINT</Tooltip_Text>
             	<Health>1400.0</Health>
@@ -8567,7 +8567,7 @@
 
     	<HardPoint Name="Mediator_Shield02">
 		<Type> HARD_POINT_SHIELD_GENERATOR </Type>
-            	<Is_Targetable>Yes</Is_Targetable>
+            	<Is_Targetable>No</Is_Targetable>
             	<Is_Destroyable>No</Is_Destroyable>
             	<Tooltip_Text>TEXT_SHIELD_GENERATOR_HARDPOINT</Tooltip_Text>
             	<Health>900.0</Health>
@@ -8586,7 +8586,7 @@
     
         <HardPoint Name="Mediator_Engine01">
 		<Type> HARD_POINT_ENGINE </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
             <Health>1000.0</Health>
@@ -8604,7 +8604,7 @@
     
         <HardPoint Name="Mediator_Engine02">
 		<Type> HARD_POINT_ENGINE </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
             <Health>800.0</Health>
@@ -8622,7 +8622,7 @@
 
         <HardPoint Name="Mediator_Engine03">
 		<Type> HARD_POINT_ENGINE </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
             <Health>800.0</Health>
@@ -8641,7 +8641,7 @@
 
         <HardPoint Name="Mediator_HP01">
 			<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
-             <Is_Targetable>Yes</Is_Targetable>
+             <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
             <Health>450.0</Health>
@@ -8681,7 +8681,7 @@
 
         <HardPoint Name="Mediator_HP02">
 			<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
-             <Is_Targetable>Yes</Is_Targetable>
+             <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
             <Health>400.0</Health>
@@ -8721,7 +8721,7 @@
 
         <HardPoint Name="Mediator_HP13">
 			<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
-             <Is_Targetable>Yes</Is_Targetable>
+             <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
             <Health>400.0</Health>
@@ -8761,7 +8761,7 @@
 
         <HardPoint Name="Mediator_HP15">
 			<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
-             <Is_Targetable>Yes</Is_Targetable>
+             <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
             <Health>400.0</Health>
@@ -8801,7 +8801,7 @@
 
         <HardPoint Name="Mediator_HP14">
 			<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
-             <Is_Targetable>Yes</Is_Targetable>
+             <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
             <Health>400.0</Health>
@@ -8842,7 +8842,7 @@
 
     	<HardPoint Name="Mediator_HP03">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>375.0</Health>
@@ -8882,7 +8882,7 @@
 
     	<HardPoint Name="Mediator_HP04">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>375.0</Health>
@@ -8922,7 +8922,7 @@
 
     	<HardPoint Name="Mediator_HP05">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>375.0</Health>
@@ -8962,7 +8962,7 @@
 
    	<HardPoint Name="Mediator_HP06">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>375.0</Health>
@@ -9002,7 +9002,7 @@
 
    	<HardPoint Name="Mediator_HP07">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>375.0</Health>
@@ -9042,7 +9042,7 @@
 
    	<HardPoint Name="Mediator_HP08">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>375.0</Health>
@@ -9082,7 +9082,7 @@
 
    	<HardPoint Name="Mediator_HP09">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>375.0</Health>
@@ -9122,7 +9122,7 @@
 
    	<HardPoint Name="Mediator_HP10">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>375.0</Health>
@@ -9162,7 +9162,7 @@
 
    	<HardPoint Name="Mediator_HP11">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>375.0</Health>
@@ -9202,7 +9202,7 @@
 
    	<HardPoint Name="Mediator_HP12">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
-            <Is_Targetable>Yes</Is_Targetable>
+            <Is_Targetable>No</Is_Targetable>
             <Is_Destroyable>No</Is_Destroyable>
             <Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
             <Health>375.0</Health>

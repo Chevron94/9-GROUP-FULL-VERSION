@@ -1192,6 +1192,8 @@
 					FV_Nebula,
 					Ears_Ship,
 					Shipyard,
+					Destroyer,
+					Andromeda_Ship
 		</Tactical_Buildable_Objects_Multiplayer>
 		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
 	

@@ -45,7 +45,7 @@
         <Shield_Armor_Type />
 
 		<Affiliation>Hutts</Affiliation>
-		<Build_Cost_Credits>2800</Build_Cost_Credits>
+		<Build_Cost_Credits>5500</Build_Cost_Credits>
 		<Build_Time_Seconds>25</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Tech_Level>0</Tech_Level>
@@ -73,7 +73,7 @@
 		<Damage>30</Damage>
 		<Autoresolve_Health>4000</Autoresolve_Health>
 		<Shield_Points>0</Shield_Points>
-		<Tactical_Health>4000</Tactical_Health>
+		<Tactical_Health>8000</Tactical_Health>
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>3000</Energy_Capacity>
 		<Energy_Refresh_Rate>500</Energy_Refresh_Rate>
@@ -150,7 +150,7 @@
 		<Has_Space_Evaluator>True</Has_Space_Evaluator>
 
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>3300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Multiplayer>5500</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
