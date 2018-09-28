@@ -173,7 +173,7 @@
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>7000</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>26</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites>FS_ASDB_Integration_Section</Tactical_Build_Prerequisites>
+		<Tactical_Build_Prerequisites/>
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<Build_Limit_Current_Per_Player>4</Build_Limit_Current_Per_Player>
         <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
@@ -182,27 +182,7 @@
 		<Tactical_Bribe_Cost>700</Tactical_Bribe_Cost>
 		<Lua_Script>HSW_wraith_hive</Lua_Script>
 		<Lua_Script>ObjectScript_PowerToShields</Lua_Script>
-		
 	
-		<!-- Non-Hero unit abilities description -->
-		<Unit_Abilities_Data SubObjectList="Yes">
-
-			<Unit_Ability>
-				<Type>FULL_SALVO</Type>
-             <Alternate_Icon_Name>ST_ABILITY_BEAM.TGA</Alternate_Icon_Name>
-             <Alternate_Name_Text>TEXT_TOOLTIP_ENTERPRISE_BEAM</Alternate_Name_Text>
-                <Alternate_Description_Text>TEXT_TOOLTIP_ENTERPRISE_BEAM_DETAILS</Alternate_Description_Text>
-
-				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-100.0f</Mod_Multiplier>
-				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.01f</Mod_Multiplier>
-                <Recharge_Seconds>60</Recharge_Seconds>
-                <Expiration_Seconds>15</Expiration_Seconds>
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Interceptor_IV</SFXEvent_GUI_Unit_Ability_Activated>
-                <GUI_Activated_Ability_Name>Interceptor_Full_Salvo</GUI_Activated_Ability_Name> 
-                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
-            </Unit_Ability>
-
-		</Unit_Abilities_Data>
 
  		<Abilities SubObjectList="Yes">
 
@@ -297,4 +277,4 @@
 	</Projectile>
 	
 	
-</Destroyer>	
+</Destroyer>
